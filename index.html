@@ -1,0 +1,2296 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PB Quizes - Admin & Student Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { 50: '#eef2ff', 100: '#e0e7ff', 500: '#1d4ed8', 600: '#1e40af', 700: '#1e3a8a', dark: '#0f172a' }
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        (function () {
+            try {
+                const savedTheme = localStorage.getItem('pbq-theme') || 'system';
+                const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const dark = savedTheme === 'dark' || (savedTheme === 'system' && systemDark);
+                document.documentElement.classList.toggle('dark', dark);
+            } catch (_) { /* Keep the default light theme if storage is unavailable. */ }
+        })();
+    </script>
+    <style>
+        html.dark { color-scheme: dark; }
+        html.dark body { background: #0f172a !important; color: #e2e8f0 !important; }
+        html.dark .bg-white { background-color: #1e293b !important; }
+        html.dark .bg-slate-50, html.dark .bg-slate-100 { background-color: #0f172a !important; }
+        html.dark .bg-slate-200 { background-color: #334155 !important; }
+        html.dark .text-slate-900, html.dark .text-slate-800, html.dark .text-slate-700 { color: #e2e8f0 !important; }
+        html.dark .text-slate-600, html.dark .text-slate-500, html.dark .text-slate-400 { color: #94a3b8 !important; }
+        html.dark .border-slate-100, html.dark .border-slate-200, html.dark .border-slate-300 { border-color: #334155 !important; }
+        html.dark input, html.dark textarea, html.dark select {
+            background-color: #0f172a !important; color: #e2e8f0 !important; border-color: #475569 !important;
+        }
+        html.dark input::placeholder, html.dark textarea::placeholder { color: #64748b !important; }
+        html.dark .bg-rose-50 { background-color: #3b1d2a !important; }
+        html.dark .bg-emerald-50 { background-color: #123329 !important; }
+        html.dark .bg-amber-50 { background-color: #3b2d12 !important; }
+        html.dark .bg-indigo-50, html.dark .bg-brand-50 { background-color: #252b48 !important; }
+        html.dark .border-rose-200 { border-color: #7f1d35 !important; }
+        html.dark .border-emerald-200 { border-color: #166534 !important; }
+        html.dark .border-amber-200 { border-color: #854d0e !important; }
+        html.dark .text-rose-700 { color: #fda4af !important; }
+        html.dark .text-emerald-700, html.dark .text-emerald-600 { color: #6ee7b7 !important; }
+        /* Keep quiz answer labels readable on dark success/error backgrounds. */
+        html.dark .text-emerald-900 { color: #d1fae5 !important; }
+        html.dark .text-rose-900 { color: #ffe4e6 !important; }
+        html.dark .text-amber-700 { color: #fcd34d !important; }
+        /* Explanation card must follow the selected app theme. */
+        html.dark #questionExplanation {
+            background-color: #1e293b !important;
+            border-color: #475569 !important;
+        }
+        html.dark #explanationHeading { color: #bfdbfe !important; }
+        html.dark #explanationText { color: #e2e8f0 !important; }
+        html.dark #answerFeedback.bg-emerald-50 { color: #a7f3d0 !important; }
+        html.dark #answerFeedback.bg-rose-50 { color: #fecdd3 !important; }
+        html.dark .admin-tab-btn { color: #cbd5e1; }
+        html.dark .admin-tab-btn.bg-brand-50 { background-color: #252b48 !important; color: #c7d2fe !important; }
+        html.dark .shadow-sm, html.dark .shadow-md, html.dark .shadow-lg { --tw-shadow-color: rgb(0 0 0 / 0.25); }
+        html.dark ::-webkit-scrollbar-track { background: #0f172a; }
+        html.dark ::-webkit-scrollbar-thumb { background: #475569; }
+
+        ::-webkit-scrollbar { width: 5px; height: 5px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+
+        /* Keep the workspace controls usable on narrow Android screens. */
+        @media (max-width: 420px) {
+            body > header {
+                flex-wrap: wrap;
+                row-gap: 8px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            body > header > div:first-child {
+                min-width: 0;
+                flex: 1 1 100%;
+            }
+            body > header > div:first-child span {
+                font-size: 11px;
+                line-height: 1.2;
+            }
+            body > header > div:last-child {
+                display: flex;
+                width: 100%;
+                justify-content: flex-end;
+                gap: 8px;
+            }
+            body > header > div:last-child button {
+                flex: 0 1 auto;
+                white-space: normal;
+                line-height: 1.2;
+                padding: 7px 10px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans h-full flex flex-col antialiased">
+
+    <!-- Top Interface Switcher Bar -->
+    <header class="bg-slate-800 border-b border-slate-700 px-4 py-2.5 flex items-center justify-between flex-shrink-0 z-50">
+        <div class="flex items-center space-x-2">
+            <div class="w-7 h-7 bg-amber-400 rounded-lg flex items-center justify-center font-bold text-slate-900 text-xs">PB</div>
+            <span class="text-xs font-bold text-white">PB Quizes</span>
+        </div>
+        <div class="flex items-center space-x-2">
+            <label for="appThemeSelect" class="sr-only">App theme</label>
+            <select id="appThemeSelect" onchange="setAppTheme(this.value)" aria-label="Choose app theme" class="bg-slate-700 text-slate-100 border border-slate-600 px-2 py-1.5 rounded-lg text-xs focus:outline-none">
+                <option value="system">System</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+            <button id="btnStudentView" onclick="switchInterface('student')" class="bg-slate-700 hover:bg-slate-600 text-slate-200 px-3 py-1 rounded-lg font-medium text-xs transition">Student Website</button>
+            <button id="btnAdminView" onclick="switchInterface('admin')" class="bg-brand-600 text-white px-3 py-1 rounded-lg font-bold text-xs transition shadow-sm">Admin Panel</button>
+        </div>
+    </header>
+
+    <!-- Main Workspace Container -->
+    <div class="flex-1 relative overflow-hidden flex flex-col">
+
+        <!-- ==================== 1. STUDENT WEBSITE INTERFACE ==================== -->
+        <div id="studentInterface" class="absolute inset-0 flex flex-col bg-slate-50 text-slate-800 overflow-y-auto">
+            <!-- Student Portal Header -->
+            <header class="bg-gradient-to-r from-brand-700 via-brand-600 to-brand-500 text-white px-5 pt-6 pb-5 rounded-b-3xl shadow-lg flex-shrink-0">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-11 h-11 bg-amber-400 rounded-2xl flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-graduation-cap text-brand-900 text-xl"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-extrabold tracking-tight">PB Quizes</h1>
+                            <p class="text-xs text-blue-100 font-medium">Punjab Competitive Exam Preparation</p>
+                        </div>
+                    </div>
+                    <span id="studentTotalCount" class="bg-white/15 text-white text-xs font-bold px-3 py-1 rounded-full border border-white/20">Loading questions…</span>
+                </div>
+            </header>
+
+            <!-- Student Content -->
+            <div class="max-w-md mx-auto w-full p-5 space-y-5 pb-20">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400">Main Subject Categories</h2>
+                <div id="homeSubjectGrid" class="grid grid-cols-2 gap-4">
+                    <div onclick="openTopicScreen('history')" class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm cursor-pointer hover:border-brand-500 transition">
+                        <div class="w-10 h-10 rounded-xl bg-amber-400 text-slate-900 flex items-center justify-center font-bold mb-2"><i class="fa-solid fa-landmark"></i></div>
+                        <h3 class="font-bold text-slate-900 text-sm">Punjab GK & History</h3>
+                        <p id="homeHistoryCount" class="text-xs text-slate-500 mt-1">Loading questions…</p>
+                    </div>
+                    <div onclick="openTopicScreen('computer')" class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm cursor-pointer hover:border-brand-500 transition">
+                        <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold mb-2"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3 class="font-bold text-slate-900 text-sm">Computer PYQs</h3>
+                        <p id="homeComputerCount" class="text-xs text-slate-500 mt-1">Loading questions…</p>
+                    </div>
+                    <div onclick="openTopicScreen('english')" class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm cursor-pointer hover:border-brand-500 transition">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center font-bold mb-2"><i class="fa-solid fa-book-open-reader"></i></div>
+                        <h3 class="font-bold text-slate-900 text-sm">English PYQs</h3>
+                        <p id="homeEnglishCount" class="text-xs text-slate-500 mt-1">Loading questions…</p>
+                    </div>
+                    <div onclick="openTopicScreen('polity')" class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm cursor-pointer hover:border-brand-500 transition">
+                        <div class="w-10 h-10 rounded-xl bg-purple-600 text-white flex items-center justify-center font-bold mb-2"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <h3 class="font-bold text-slate-900 text-sm">Punjab Polity</h3>
+                        <p id="homePolityCount" class="text-xs text-slate-500 mt-1">Loading questions…</p>
+                    </div>
+                </div>
+
+                <button onclick="openMindMapsScreen()" class="w-full text-left bg-gradient-to-r from-indigo-700 to-violet-600 text-white rounded-2xl p-5 shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <div><span class="text-[10px] font-bold uppercase tracking-wider text-indigo-100">Visual Revision</span><h3 class="text-base font-extrabold mt-1">Mind Maps</h3><p class="text-xs text-indigo-100 mt-1">Important topics ko images ke through revise karo</p></div>
+                        <i class="fa-solid fa-diagram-project text-3xl"></i>
+                    </div>
+                </button>
+
+                <div onclick="openTopicScreen('mixed')" class="bg-gradient-to-r from-slate-900 to-brand-900 text-white rounded-2xl p-5 shadow-lg cursor-pointer">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="bg-amber-400 text-slate-900 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Featured Section</span>
+                        <span id="homeMixedCount" class="text-xs font-bold text-amber-300">Loading…</span>
+                    </div>
+                    <h3 class="text-base font-extrabold text-white">Mixed PSSSB Clerk PYQs</h3>
+                    <p class="text-xs text-slate-300 mt-1">Full length mock test covering previous exam patterns.</p>
+                </div>
+            </div>
+            <div class="max-w-md mx-auto w-full px-5 pb-8">
+                <section class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm">
+                    <div class="flex items-center justify-between gap-2 mb-2">
+                        <div>
+                            <h3 class="font-extrabold text-sm text-slate-900">My Progress</h3>
+                            <p class="text-[11px] text-slate-500">Your recent quiz attempts</p>
+                        </div>
+                        <button onclick="loadMyProgress()" class="bg-brand-600 text-white text-xs font-bold px-3 py-2 rounded-lg">Refresh</button>
+                    </div>
+                    <div id="studentProgressSummary" class="text-xs text-slate-500">Your progress will appear here after your first quiz.</div>
+                </section>
+            </div>
+        </div>
+
+        <!-- ==================== 2. TOPIC SELECTION SCREEN ==================== -->
+        <div id="screen-topics" class="absolute inset-0 flex flex-col bg-slate-50 text-slate-800 overflow-y-auto hidden">
+            <header class="bg-gradient-to-r from-brand-700 via-brand-600 to-brand-500 text-white px-5 pt-4 pb-4 shadow-md flex items-center justify-between flex-shrink-0">
+                <div class="flex items-center space-x-3">
+                    <button onclick="navigateTo('home')" class="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-xl flex items-center justify-center transition border border-white/15">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <div>
+                        <h2 id="topicHeaderTitle" class="text-base font-bold">Category Topics</h2>
+                        <p id="topicHeaderSubtitle" class="text-[11px] text-blue-100">Select topic to start quiz</p>
+                    </div>
+                </div>
+            </header>
+            <div id="topicListContainer" class="max-w-md mx-auto w-full p-5 space-y-3.5 pb-20"></div>
+        </div>
+
+        <!-- ==================== 3. QUIZ INTERFACE SCREEN ==================== -->
+        <div id="screen-quiz" class="absolute inset-0 flex flex-col bg-slate-50 text-slate-800 overflow-y-auto hidden">
+            <header class="bg-white border-b border-slate-200 px-5 py-3.5 flex items-center justify-between flex-shrink-0 shadow-sm">
+                <div class="flex items-center space-x-3">
+                    <button onclick="navigateTo('topics')" class="w-9 h-9 bg-slate-100 hover:bg-slate-200 rounded-xl flex items-center justify-center text-slate-700">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div>
+                        <h3 id="quizTitleDisplay" class="text-sm font-bold text-slate-900">Quiz in Progress</h3>
+                        <p id="quizProgressDisplay" class="text-[11px] text-slate-500 font-medium">Question 1 of 1</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <select id="quizLanguageSelect" onchange="setQuizLanguage(this.value)" aria-label="Quiz language" class="bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold rounded-lg px-2 py-2.5">
+                        <option value="en">English</option><option value="pa">ਪੰਜਾਬੀ</option>
+                    </select>
+                    <button onclick="submitQuiz()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl">Submit Quiz</button>
+                </div>
+            </header>
+            <div class="max-w-md mx-auto w-full p-5 space-y-4 pb-8 flex-1">
+                <div class="bg-white border border-slate-200/80 rounded-2xl p-5 shadow-sm">
+                    <p id="questionTextEn" class="text-slate-900 font-semibold text-base leading-relaxed mb-4">Loading question...</p>
+                    <div id="optionsContainer" class="space-y-2.5"></div>
+                    <div id="questionExplanation" class="hidden mt-4 rounded-xl border border-blue-200 bg-blue-50 p-4">
+                        <p id="explanationHeading" class="text-xs font-extrabold text-blue-900 mb-1">💡 Explanation</p>
+                        <p id="explanationText" class="text-sm leading-relaxed text-slate-700 whitespace-pre-wrap"></p>
+                    </div>
+                </div>
+                <!-- Navigation buttons are placed immediately below the question and options. -->
+                <div class="flex items-center justify-between gap-3">
+                    <button onclick="prevQuestion()" id="prevBtn" class="bg-slate-100 text-slate-700 font-semibold text-xs px-5 py-3 rounded-xl">← Back</button>
+                    <button onclick="nextQuestion()" id="nextBtn" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs px-6 py-3 rounded-xl">Next →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== 4. QUIZ RESULT SCREEN ==================== -->
+        <div id="screen-result" class="absolute inset-0 flex flex-col bg-slate-50 text-slate-800 overflow-y-auto hidden">
+            <header class="bg-gradient-to-r from-brand-700 to-brand-500 text-white px-5 py-5 shadow-md">
+                <h2 class="text-xl font-extrabold">Quiz Result</h2>
+                <p id="resultQuizTitle" class="text-xs text-blue-100 mt-1">Your performance summary</p>
+            </header>
+            <main class="max-w-md mx-auto w-full p-5 space-y-4 pb-10">
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white rounded-2xl border border-slate-200 p-4 text-center"><p id="resultTotal" class="text-2xl font-extrabold text-slate-900">0</p><p class="text-xs text-slate-500">Total Questions</p></div>
+                    <div class="bg-emerald-50 rounded-2xl border border-emerald-200 p-4 text-center"><p id="resultCorrect" class="text-2xl font-extrabold text-emerald-700">0</p><p class="text-xs text-emerald-700">Correct</p></div>
+                    <div class="bg-rose-50 rounded-2xl border border-rose-200 p-4 text-center"><p id="resultWrong" class="text-2xl font-extrabold text-rose-700">0</p><p class="text-xs text-rose-700">Wrong</p></div>
+                    <div class="bg-amber-50 rounded-2xl border border-amber-200 p-4 text-center"><p id="resultUnattempted" class="text-2xl font-extrabold text-amber-700">0</p><p class="text-xs text-amber-700">Unattempted</p></div>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-4 text-center">
+                    <p class="text-xs text-slate-500 font-semibold">FINAL SCORE</p>
+                    <p id="resultScore" class="text-2xl font-extrabold text-brand-700 mt-1">0 / 0</p>
+                    <p id="resultPercentage" class="text-sm font-bold text-slate-600 mt-1">0%</p>
+                </div>
+                <div class="flex gap-2">
+                    <button onclick="navigateTo('home')" class="flex-1 bg-slate-800 text-white font-bold text-xs px-4 py-3 rounded-xl">Back to Home</button>
+                    <button onclick="openTopicScreen(activeCategoryKey)" class="flex-1 bg-brand-600 text-white font-bold text-xs px-4 py-3 rounded-xl">Topics</button>
+                </div>
+                <section class="bg-white border border-slate-200 rounded-2xl p-4">
+                    <h3 class="font-extrabold text-sm text-slate-900 mb-3">Answer Review</h3>
+                    <div id="resultReviewList" class="space-y-2"></div>
+                </section>
+            </main>
+        </div>
+
+        <!-- ==================== MIND MAPS STUDENT SCREEN ==================== -->
+        <div id="screen-mindmaps" class="absolute inset-0 flex flex-col bg-slate-50 text-slate-800 overflow-y-auto hidden">
+            <header class="bg-gradient-to-r from-indigo-700 to-violet-600 text-white px-5 pt-4 pb-4 shadow-md flex items-center gap-3 flex-shrink-0">
+                <button onclick="navigateTo('home')" class="w-9 h-9 bg-white/10 rounded-xl flex items-center justify-center border border-white/20"><i class="fa-solid fa-arrow-left"></i></button>
+                <div><h2 class="text-base font-bold">Mind Maps</h2><p class="text-[11px] text-indigo-100">Visual study notes</p></div>
+            </header>
+            <main class="max-w-2xl mx-auto w-full p-4 sm:p-5 space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <select id="studentMindMapSubject" onchange="filterMindMaps()" class="w-full p-3 rounded-xl border border-slate-200 bg-white text-sm"><option value="all">All Subjects</option></select>
+                    <select id="studentMindMapTopic" onchange="filterMindMaps()" class="w-full p-3 rounded-xl border border-slate-200 bg-white text-sm"><option value="all">All Topics</option></select>
+                </div>
+                <div id="studentMindMapGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-4"><p class="text-sm text-slate-500">Loading Mind Maps…</p></div>
+            </main>
+        </div>
+
+        <!-- Full-screen Mind Map viewer with pinch, double-tap and drag zoom -->
+        <div id="mindMapViewer" class="fixed inset-0 z-[70] bg-slate-950/95 hidden flex-col items-center justify-center p-3"
+             onclick="closeMindMapViewer()">
+            <div class="absolute top-3 left-3 right-3 z-10 flex items-center justify-between" onclick="event.stopPropagation()">
+                <span class="text-white text-xs font-semibold">Pinch to zoom · Drag to move</span>
+                <div class="flex items-center gap-2">
+                    <button type="button" onclick="changeMindMapZoom(-0.5)" class="w-9 h-9 rounded-full bg-white/15 text-white text-xl" aria-label="Zoom out">−</button>
+                    <button type="button" onclick="resetMindMapZoom()" class="px-3 h-9 rounded-full bg-white/15 text-white text-xs font-semibold">Reset</button>
+                    <button type="button" onclick="changeMindMapZoom(0.5)" class="w-9 h-9 rounded-full bg-white/15 text-white text-xl" aria-label="Zoom in">+</button>
+                    <button type="button" onclick="closeMindMapViewer()" class="w-9 h-9 rounded-full bg-white/15 text-white text-xl" aria-label="Close">×</button>
+                </div>
+            </div>
+            <div id="mindMapZoomViewport" class="w-full h-full flex items-center justify-center overflow-hidden"
+                 style="touch-action:none" onclick="event.stopPropagation()">
+                <img id="mindMapViewerImage" src="" alt="Mind Map"
+                     class="max-w-full max-h-[82vh] object-contain rounded-lg select-none"
+                     style="transform:translate(0px,0px) scale(1); transform-origin:center center; touch-action:none; user-select:none; -webkit-user-drag:none;"
+                     draggable="false">
+            </div>
+            <p id="mindMapViewerTitle" class="absolute bottom-3 left-4 right-4 text-center text-white text-sm font-semibold pointer-events-none"></p>
+        </div>
+
+        <!-- ==================== 5. ADMIN PANEL INTERFACE ==================== -->
+        <div id="adminInterface" class="absolute inset-0 flex flex-col bg-slate-100 text-slate-900 overflow-hidden hidden">
+            <!-- Admin Login Screen -->
+            <div id="adminLoginScreen" class="absolute inset-0 bg-slate-900 flex items-center justify-center p-4 z-20">
+                <div class="bg-white rounded-3xl max-w-sm w-full p-8 shadow-2xl border border-slate-100">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-xl mb-4 mx-auto shadow-md">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <h2 class="text-xl font-extrabold text-slate-900 text-center mb-1">Admin Portal Login</h2>
+                    <p class="text-xs text-slate-500 text-center mb-6">Enter authorized credentials to manage question database.</p>
+                    <div id="adminErrorBanner" class="hidden bg-rose-50 border border-rose-200 text-rose-700 text-xs p-3 rounded-xl mb-4 font-medium"></div>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Admin Email</label>
+                            <input type="email" id="adminEmailInput" placeholder="Enter admin email" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-brand-600">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Password</label>
+                            <input type="password" id="adminPasswordInput" placeholder="••••••••" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-brand-600">
+                        </div>
+                        <button onclick="handleAdminLogin()" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3 rounded-xl text-sm shadow-md transition">Secure Login</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Admin Dashboard Screen (Protected) -->
+            <div id="adminDashboardScreen" class="absolute inset-0 flex flex-col bg-slate-100 hidden">
+                <header class="bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between flex-shrink-0 shadow-sm">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-9 h-9 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-sm font-bold text-slate-900">PB Quizes Admin Dashboard</h2>
+                            <p class="text-[11px] text-slate-500 font-medium">Authorized Administrator Access</p>
+                        </div>
+                    </div>
+                    <button onclick="handleAdminLogout()" class="bg-slate-100 hover:bg-rose-50 hover:text-rose-600 text-slate-700 text-xs font-bold px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </button>
+                </header>
+
+                <div class="bg-white border-b border-slate-200 px-6 py-2 flex space-x-2 overflow-x-auto flex-shrink-0">
+                    <button id="tabBtnOverview" onclick="switchAdminTab('overview')" class="admin-tab-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-brand-50 text-brand-700 whitespace-nowrap">Dashboard Overview</button>
+                    <button id="tabBtnManage" onclick="switchAdminTab('manage')" class="admin-tab-btn px-3 py-1.5 rounded-lg text-xs font-medium text-slate-600 whitespace-nowrap">Manage Questions</button>
+                    <button id="tabBtnAdd" onclick="switchAdminTab('add')" class="admin-tab-btn px-3 py-1.5 rounded-lg text-xs font-medium text-slate-600 whitespace-nowrap">+ Add Question</button>
+                    <button id="tabBtnImport" onclick="switchAdminTab('import')" class="admin-tab-btn px-3 py-1.5 rounded-lg text-xs font-medium text-slate-600 whitespace-nowrap">Bulk JSON Upload</button>
+                    <button id="tabBtnUploads" onclick="switchAdminTab('uploads')" class="admin-tab-btn px-3 py-1.5 rounded-lg text-xs font-medium text-slate-600 whitespace-nowrap">Manage Quiz Files</button>
+                    <button id="tabBtnSubjects" onclick="switchAdminTab('subjects')" class="admin-tab-btn px-3 py-1.5 rounded-lg text-xs font-medium text-slate-600 whitespace-nowrap">Manage Subjects</button>
+                    <button id="tabBtnParts" onclick="switchAdminTab('parts')" class="admin-tab-btn px-3 py-1.5 rounded-lg text-xs font-medium text-slate-600 whitespace-nowrap">Manage Parts</button>
+                    <button id="tabBtnMindMaps" onclick="switchAdminTab('mindmaps')" class="admin-tab-btn px-3 py-1.5 rounded-lg text-xs font-medium text-slate-600 whitespace-nowrap">Mind Maps</button>
+                    <button id="tabBtnFirestore" onclick="switchAdminTab('firestore')" class="admin-tab-btn px-3 py-1.5 rounded-lg text-xs font-medium text-slate-600 whitespace-nowrap">Firestore Migration</button>
+                </div>
+
+                <div class="flex-1 overflow-y-auto p-6 space-y-6">
+                    <!-- Tab 1: Overview -->
+                    <div id="adminTabOverview" class="admin-tab-pane space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                                <p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Total Questions</p>
+                                <h3 id="statTotalCount" class="text-2xl font-extrabold text-slate-900">—</h3>
+                            </div>
+                            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                                <p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Database Storage</p>
+                                <h3 class="text-2xl font-extrabold text-emerald-600">Cloud Firestore</h3>
+                            </div>
+                            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                                <p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Security Status</p>
+                                <h3 class="text-2xl font-extrabold text-brand-600">Strict Auth Active</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Manage Questions -->
+                    <div id="adminTabManage" class="admin-tab-pane space-y-4 hidden">
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-wrap items-center justify-between gap-3">
+                            <div>
+                                <h3 class="text-sm font-bold text-slate-900">Question Database</h3>
+                                <p class="text-[11px] text-slate-500 mt-1">Download a backup of all Firestore questions. This does not change your database.</p>
+                            </div>
+                            <button id="exportQuestionsBtn" type="button" onclick="exportQuestionsJson()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl">
+                                <i class="fa-solid fa-download mr-1"></i> Export Questions (JSON)
+                            </button>
+                        </div>
+                        <div id="adminQuestionList" class="space-y-3"></div>
+                    </div>
+
+                    <!-- Tab 3: Add Question -->
+                    <div id="adminTabAdd" class="admin-tab-pane bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4 hidden">
+                        <h3 class="text-sm font-bold text-slate-900 mb-2">Add New Question</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Category</label>
+                                <select id="newQCategory" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs">
+                                    <option value="history">Punjab GK & Modern History</option>
+                                    <option value="computer">Computer PYQs</option>
+                                    <option value="english">English PYQs</option>
+                                    <option value="polity">Punjab Polity</option>
+                                    <option value="mixed">Mixed PSSSB Clerk PYQs</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Correct Answer Index (0-3)</label>
+                                <input type="number" id="newQCorrect" min="0" max="3" value="0" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Part / Quiz Name</label>
+                            <input type="text" id="newQTopic" placeholder="e.g. Part 1 Quiz, Part 2 Quiz, Computer Basics" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs">
+                            <p class="text-[10px] text-slate-500 mt-1">Same part name wale questions ek hi quiz banner ke andar dikhेंगे.</p>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Question (English)</label>
+                            <textarea id="newQEn" rows="2" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs"></textarea>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <input type="text" id="newOpt0" placeholder="Option A (English)" class="p-2.5 rounded-xl border border-slate-300 text-xs">
+                            <input type="text" id="newOpt1" placeholder="Option B (English)" class="p-2.5 rounded-xl border border-slate-300 text-xs">
+                            <input type="text" id="newOpt2" placeholder="Option C (English)" class="p-2.5 rounded-xl border border-slate-300 text-xs">
+                            <input type="text" id="newOpt3" placeholder="Option D (English)" class="p-2.5 rounded-xl border border-slate-300 text-xs">
+                        </div>
+                        <div class="border-t border-slate-200 pt-3 space-y-2">
+                            <p class="text-xs font-extrabold text-slate-800">Punjabi Translation (Optional)</p>
+                            <textarea id="newQPa" rows="2" placeholder="ਸਵਾਲ ਪੰਜਾਬੀ ਵਿੱਚ" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs"></textarea>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <input id="newOptPa0" placeholder="ਵਿਕਲਪ ੳ" class="p-2.5 rounded-xl border border-slate-300 text-xs">
+                                <input id="newOptPa1" placeholder="ਵਿਕਲਪ ਅ" class="p-2.5 rounded-xl border border-slate-300 text-xs">
+                                <input id="newOptPa2" placeholder="ਵਿਕਲਪ ੲ" class="p-2.5 rounded-xl border border-slate-300 text-xs">
+                                <input id="newOptPa3" placeholder="ਵਿਕਲਪ ਸ" class="p-2.5 rounded-xl border border-slate-300 text-xs">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 border-t border-slate-200 pt-3">
+                            <div><label class="block text-xs font-bold text-slate-700 mb-1">Explanation (English)</label><textarea id="newExplanationEn" rows="3" placeholder="Explain why the answer is correct..." class="w-full p-2.5 rounded-xl border border-slate-300 text-xs"></textarea></div>
+                            <div><label class="block text-xs font-bold text-slate-700 mb-1">ਵਿਆਖਿਆ (ਪੰਜਾਬੀ)</label><textarea id="newExplanationPa" rows="3" placeholder="ਸਹੀ ਉੱਤਰ ਦੀ ਵਿਆਖਿਆ..." class="w-full p-2.5 rounded-xl border border-slate-300 text-xs"></textarea></div>
+                        </div>
+                        <button onclick="addNewQuestionToFirestore()" class="bg-brand-600 text-white font-bold text-xs px-5 py-2.5 rounded-xl">Save Question</button>
+                    </div>
+
+                    <!-- Tab 4: Bulk JSON Upload -->
+                    <div id="adminTabImport" class="admin-tab-pane bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4 hidden">
+                        <h3 class="text-sm font-bold text-slate-900 mb-2">Bulk JSON Upload (.json File)</h3>
+                        <div class="space-y-3">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Upload Category</label>
+                                    <select id="bulkQCategory" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs">
+                                        <option value="history">Punjab GK & Modern History</option>
+                                        <option value="computer">Computer PYQs</option>
+                                        <option value="english">English PYQs</option>
+                                        <option value="polity">Punjab Polity</option>
+                                        <option value="mixed">Mixed PSSSB Clerk PYQs</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Upload All Questions Into This Part</label>
+                                    <input type="text" id="bulkQTopic" placeholder="e.g. Part 1 Quiz" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs">
+                                </div>
+                            </div>
+                            <p class="text-[11px] text-slate-600">Yahan category aur part select/name karo. Is batch ke <b>saare questions</b> isi category aur part mein upload honge. Part ka naam alag-alag batches mein reuse kar sakte ho.</p>
+                            <input type="file" id="jsonFileInput" accept=".json" onchange="handleJsonFileSelect(event)" class="w-full p-2 rounded-xl border border-slate-300 text-xs bg-slate-50">
+                            <textarea id="bulkJsonInput" rows="5" placeholder="Or paste JSON array here..." class="w-full p-3 rounded-xl border border-slate-300 text-xs font-mono"></textarea>
+                            <div class="flex space-x-3">
+                                <button onclick="previewJsonValidation()" class="bg-slate-800 text-white font-bold text-xs px-4 py-2.5 rounded-xl">Preview & Validate JSON</button>
+                                <button onclick="importJsonQuestions()" class="bg-brand-600 text-white font-bold text-xs px-4 py-2.5 rounded-xl">Import Verified Data</button>
+                            </div>
+                            <div id="jsonValidationResultBox" class="hidden bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs space-y-1"></div>
+                        </div>
+                    </div>
+
+                    <!-- Uploaded JSON file management -->
+                    <div id="adminTabUploads" class="admin-tab-pane bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4 hidden">
+                        <div class="flex flex-wrap items-start justify-between gap-3">
+                            <div>
+                                <h3 class="text-sm font-bold text-slate-900">Manage Uploaded Quiz Files</h3>
+                                <p class="text-xs text-slate-500 mt-1">Delete one uploaded JSON batch and only its questions. Other quizzes remain untouched.</p>
+                            </div>
+                            <button type="button" onclick="loadUploadedQuizFiles()" class="bg-brand-600 text-white text-xs font-bold px-4 py-2 rounded-xl"><i class="fa-solid fa-rotate mr-1"></i> Refresh</button>
+                        </div>
+                        <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-amber-800">
+                            <b>Note:</b> Older JSON imports are detected by their existing question IDs and shown as legacy batches. Their original filename may not be available.
+                        </div>
+                        <div id="uploadedQuizFilesList" class="space-y-3">
+                            <p class="text-xs text-slate-500">Open this tab to load uploaded files.</p>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic subject management -->
+                    <div id="adminTabSubjects" class="admin-tab-pane bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4 hidden">
+                        <div>
+                            <h3 class="text-sm font-bold text-slate-900">Manage Subjects</h3>
+                            <p class="text-xs text-slate-500 mt-1">Naya subject add karo. Save hone ke baad student Home Page par automatically show hoga.</p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Subject Name</label>
+                                <input id="newSubjectName" type="text" placeholder="e.g. Reasoning, Maths, Science" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Banner Image URL (optional)</label>
+                                <input id="newSubjectBanner" type="url" placeholder="https://...image.jpg" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs">
+                            </div>
+                        </div>
+                        <button onclick="addNewSubjectToFirestore()" class="bg-brand-600 text-white font-bold text-xs px-5 py-2.5 rounded-xl">+ Add Subject</button>
+                        <div class="border-t border-slate-200 pt-4">
+                            <h4 class="text-xs font-bold text-slate-800 mb-2">Added Subjects</h4>
+                            <div id="adminSubjectList" class="space-y-2 text-xs text-slate-500">Loading subjects…</div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Manage quiz parts -->
+                    <div id="adminTabParts" class="admin-tab-pane bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4 hidden">
+                        <div>
+                            <h3 class="text-sm font-bold text-slate-900">Manage Quiz Parts</h3>
+                            <p class="text-xs text-slate-500 mt-1">Subject ke andar parts add, rename ya hide/show karo. Hide karne se questions delete nahi honge.</p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Select Subject</label>
+                                <select id="partSubjectSelect" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs"></select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">New Part Name</label>
+                                <input id="newPartName" type="text" placeholder="e.g. Part 1, Number System" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs">
+                            </div>
+                        </div>
+                        <button onclick="addPartToFirestore()" class="bg-brand-600 text-white font-bold text-xs px-5 py-2.5 rounded-xl">+ Add Part</button>
+                        <div class="border-t border-slate-200 pt-4">
+                            <h4 class="text-xs font-bold text-slate-800 mb-2">Parts in Selected Subject</h4>
+                            <div id="adminPartList" class="space-y-2 text-xs text-slate-500">Select a subject to load parts.</div>
+                        </div>
+                    </div>
+
+                    <!-- Mind Maps Admin Upload -->
+                    <div id="adminTabMindMaps" class="admin-tab-pane bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4 hidden">
+                        <div><h3 class="text-sm font-bold text-slate-900">Upload Mind Map</h3><p class="text-xs text-slate-500 mt-1">Image Cloudinary par upload hogi aur details Firestore mein save hongi.</p></div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div><label class="block text-xs font-bold text-slate-700 mb-1">Subject</label><select id="mindMapSubject" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs"></select></div>
+                            <div><label class="block text-xs font-bold text-slate-700 mb-1">Topic / Part</label><input id="mindMapTopic" type="text" placeholder="e.g. Fundamental Rights" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs"></div>
+                        </div>
+                        <div><label class="block text-xs font-bold text-slate-700 mb-1">Mind Map Title</label><input id="mindMapTitle" type="text" placeholder="e.g. Articles 12–35" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs"></div>
+                        <div><label class="block text-xs font-bold text-slate-700 mb-1">Select Image (JPG, PNG, WEBP · Max 5 MB)</label><input id="mindMapFile" type="file" accept="image/jpeg,image/png,image/webp" class="w-full p-2.5 rounded-xl border border-slate-300 text-xs bg-slate-50"></div>
+                        <button id="mindMapUploadBtn" onclick="uploadMindMap()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-5 py-3 rounded-xl"><i class="fa-solid fa-cloud-arrow-up mr-2"></i>Upload Mind Map</button>
+                        <p id="mindMapUploadStatus" class="text-xs text-slate-500"></p>
+                        <div class="border-t border-slate-200 pt-4"><h4 class="text-xs font-bold text-slate-800 mb-2">Uploaded Mind Maps</h4><div id="adminMindMapList" class="space-y-2 text-xs text-slate-500">Open this tab to load uploaded maps.</div></div>
+                    </div>
+
+                    <!-- Tab 7: Firestore Status -->
+                    <div id="adminTabFirestore" class="admin-tab-pane bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4 hidden">
+                        <h3 class="text-sm font-bold text-slate-900 mb-2">Firestore Database Status</h3>
+                        <div id="firestoreStatusBox" class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs font-mono text-slate-700">Click below to check status.</div>
+                        <button onclick="checkFirestoreStatus()" class="bg-slate-800 text-white font-bold text-xs px-4 py-2.5 rounded-xl">Check Live Count</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Notice Modal -->
+    <div id="customModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl">
+            <h3 id="modalTitle" class="text-lg font-bold text-slate-900 mb-1">Notice</h3>
+            <p id="modalMessage" class="text-xs text-slate-600 mb-6">Message goes here.</p>
+            <button onclick="closeModal()" class="w-full bg-brand-600 text-white font-bold py-2.5 rounded-xl text-xs">OK</button>
+        </div>
+    </div>
+
+    <!-- Firebase SDK (Modular v11.6.1) -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, collection, getDocs, setDoc, doc, writeBatch, updateDoc, deleteDoc, query, where } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        import { signInAnonymously } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getDatabase, ref as dbRef, get as dbGet, set as dbSet } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAW-Ap5Ccod4Ujk0P5YfymGUeM7pKznIO8",
+            authDomain: "pb-quizes.firebaseapp.com",
+            projectId: "pb-quizes",
+            storageBucket: "pb-quizes.firebasestorage.app",
+            messagingSenderId: "582034928871",
+            appId: "1:582034928871:web:ee583676f59c0b26439e42",
+            databaseURL: "https://pb-quizes-default-rtdb.asia-southeast1.firebasedatabase.app/"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // Student voting uses a separate Firebase app/auth instance so anonymous
+        // student sessions never interfere with the existing admin email login.
+        const voteApp = initializeApp(firebaseConfig, "pbStudentVoteApp");
+        const voteAuth = getAuth(voteApp);
+        const voteDb = getDatabase(voteApp);
+        let voteAuthReady = signInAnonymously(voteAuth).catch(error => {
+            console.warn("Anonymous vote sign-in unavailable:", error);
+            return null;
+        });
+
+        // Expose a narrow voting helper to the regular (non-module) app script below.
+        // ES module variables such as voteAuthReady/voteDb are otherwise not global.
+        window.pbSaveAndLoadQuestionVotes = async (questionKey, selectedOption, correctOption) => {
+            await voteAuthReady;
+            const user = voteAuth.currentUser;
+            if (!user) throw new Error('Student sign-in is not ready.');
+            const votesRef = dbRef(voteDb, `questionVotes/${questionKey}`);
+            const ownVoteRef = dbRef(voteDb, `questionVotes/${questionKey}/${user.uid}`);
+            const existingSnap = await dbGet(ownVoteRef);
+            if (!existingSnap.exists()) {
+                await dbSet(ownVoteRef, { option: Number(selectedOption), createdAt: Date.now() });
+            }
+            const latestSnap = await dbGet(votesRef);
+            const votes = latestSnap.exists() ? Object.values(latestSnap.val()) : [];
+            let validAttempts = 0;
+            let correctAnswers = 0;
+            votes.forEach(vote => {
+                const option = Number(vote && vote.option);
+                if (Number.isInteger(option) && option >= 0 && option <= 3) {
+                    validAttempts++;
+                    if (option === Number(correctOption)) correctAnswers++;
+                }
+            });
+            return { validAttempts, correctAnswers, percentage: validAttempts ? (correctAnswers / validAttempts) * 100 : null };
+        };
+
+        window.pbDb = db;
+        window.pbCollection = (...args) => collection(db, ...args);
+        window.pbGetDocs = (...args) => getDocs(...args);
+        window.pbQuery = (...args) => query(...args);
+        window.pbWhere = (...args) => where(...args);
+        window.pbDoc = (...args) => doc(db, ...args);
+        window.pbWriteBatch = () => writeBatch(db);
+        window.pbSetDoc = (...args) => setDoc(...args);
+        window.pbUpdateDoc = (...args) => updateDoc(...args);
+        window.pbDeleteDoc = (...args) => deleteDoc(...args);
+        // CDN test build: students fetch static JSON on demand; admin remains Firestore-based.
+
+        onAuthStateChanged(auth, async (user) => {
+            if (user && user.email && ["abhparminder01@gmail.com", "pbquizes.review@gmail.com"].includes(user.email.toLowerCase())) {
+                document.getElementById('adminLoginScreen').classList.add('hidden');
+                document.getElementById('adminDashboardScreen').classList.remove('hidden');
+                loadQuestionsFromFirestore();
+            } else {
+                document.getElementById('adminLoginScreen').classList.remove('hidden');
+                document.getElementById('adminDashboardScreen').classList.add('hidden');
+            }
+        });
+        window.pbCurrentUser = () => auth.currentUser;
+
+        window.handleAdminLogin = async () => {
+            const email = document.getElementById('adminEmailInput').value.trim();
+            const password = document.getElementById('adminPasswordInput').value.trim();
+            const errBanner = document.getElementById('adminErrorBanner');
+            errBanner.classList.add('hidden');
+            try {
+                await signInWithEmailAndPassword(auth, email, password);
+            } catch (error) {
+                errBanner.textContent = `Login Failed: ${error.message}`;
+                errBanner.classList.remove('hidden');
+            }
+        };
+
+        window.handleAdminLogout = async () => { await signOut(auth); };
+    </script>
+
+    <!-- Global App & Navigation Controller -->
+    <script>
+        // Global theme preference shared by Student and Admin interfaces.
+        let pbqThemeMediaQuery = null;
+        function applyAppTheme(theme) {
+            const prefersDark = !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+            const isDark = theme === 'dark' || (theme === 'system' && prefersDark);
+            document.documentElement.classList.toggle('dark', isDark);
+            const selector = document.getElementById('appThemeSelect');
+            if (selector && selector.value !== theme) selector.value = theme;
+            if (window.PBThemeBridge && typeof window.PBThemeBridge.setDarkMode === 'function') {
+                try { window.PBThemeBridge.setDarkMode(isDark); } catch (error) { console.warn('Native theme bridge unavailable', error); }
+            }
+        }
+        function setAppTheme(theme) {
+            if (!['system', 'light', 'dark'].includes(theme)) theme = 'system';
+            try { localStorage.setItem('pbq-theme', theme); } catch (error) { console.warn('Theme preference could not be saved', error); }
+            applyAppTheme(theme);
+        }
+        window.setAppTheme = setAppTheme;
+        (function initAppTheme() {
+            let saved = 'system';
+            try { saved = localStorage.getItem('pbq-theme') || 'system'; } catch (_) {}
+            if (!['system', 'light', 'dark'].includes(saved)) saved = 'system';
+            applyAppTheme(saved);
+            if (window.matchMedia) {
+                pbqThemeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+                const onSystemThemeChange = () => {
+                    let current = 'system';
+                    try { current = localStorage.getItem('pbq-theme') || 'system'; } catch (_) {}
+                    if (current === 'system') applyAppTheme('system');
+                };
+                if (pbqThemeMediaQuery.addEventListener) pbqThemeMediaQuery.addEventListener('change', onSystemThemeChange);
+                else if (pbqThemeMediaQuery.addListener) pbqThemeMediaQuery.addListener(onSystemThemeChange);
+            }
+        })();
+
+        function switchInterface(target) {
+            const studentView = document.getElementById('studentInterface');
+            const adminView = document.getElementById('adminInterface');
+            const btnStudent = document.getElementById('btnStudentView');
+            const btnAdmin = document.getElementById('btnAdminView');
+
+            if (target === 'student') {
+                studentView.classList.remove('hidden');
+                adminView.classList.add('hidden');
+                if (btnStudent) btnStudent.className = "bg-brand-600 text-white px-3 py-1 rounded-lg font-bold text-xs";
+                if (btnAdmin) btnAdmin.className = "bg-slate-700 text-slate-200 px-3 py-1 rounded-lg font-medium text-xs";
+            } else {
+                studentView.classList.add('hidden');
+                adminView.classList.remove('hidden');
+                if (btnAdmin) btnAdmin.className = "bg-brand-600 text-white px-3 py-1 rounded-lg font-bold text-xs";
+                if (btnStudent) btnStudent.className = "bg-slate-700 text-slate-200 px-3 py-1 rounded-lg font-medium text-xs";
+            }
+        }
+        window.switchInterface = switchInterface;
+
+        function switchAdminTab(tabId) {
+            document.querySelectorAll('.admin-tab-pane').forEach(el => el.classList.add('hidden'));
+            if (tabId === 'overview') document.getElementById('adminTabOverview').classList.remove('hidden');
+            else if (tabId === 'manage') {
+                document.getElementById('adminTabManage').classList.remove('hidden');
+                fetchAndRenderAdminQuestions();
+            }
+            else if (tabId === 'add') document.getElementById('adminTabAdd').classList.remove('hidden');
+            else if (tabId === 'import') document.getElementById('adminTabImport').classList.remove('hidden');
+            else if (tabId === 'uploads') { document.getElementById('adminTabUploads').classList.remove('hidden'); loadUploadedQuizFiles(); }
+            else if (tabId === 'subjects') { document.getElementById('adminTabSubjects').classList.remove('hidden'); loadCustomSubjects(); }
+            else if (tabId === 'parts') { document.getElementById('adminTabParts').classList.remove('hidden'); loadPartsManager(); }
+            else if (tabId === 'mindmaps') { document.getElementById('adminTabMindMaps').classList.remove('hidden'); loadMindMapAdminSubjects(); loadAdminMindMaps(); }
+            else if (tabId === 'firestore') document.getElementById('adminTabFirestore').classList.remove('hidden');
+        }
+        window.switchAdminTab = switchAdminTab;
+
+        // Load questions and provide safe inline edit/delete controls for administrators.
+        async function fetchAndRenderAdminQuestions() {
+            const listContainer = document.getElementById('adminQuestionList');
+            if (!listContainer) return;
+            listContainer.innerHTML = '<div class="bg-white p-6 rounded-2xl border border-slate-200 text-center text-xs text-slate-500"><i class="fa-solid fa-spinner fa-spin mr-2"></i>Loading questions from Firestore...</div>';
+            try {
+                if (typeof window.pbGetDocs !== 'function' || typeof window.pbCollection !== 'function') throw new Error('Firestore SDK not initialized.');
+                const querySnapshot = await window.pbGetDocs(window.pbCollection('questions'));
+                const totalCountEl = document.getElementById('statTotalCount');
+                if (totalCountEl) totalCountEl.textContent = querySnapshot.size;
+                listContainer.innerHTML = '';
+                if (querySnapshot.empty) {
+                    listContainer.innerHTML = '<div class="bg-white p-6 rounded-2xl border border-slate-200 text-center text-xs text-slate-500">No questions found in Firestore database.</div>';
+                    return;
+                }
+                let renderedCount = 0;
+                querySnapshot.forEach(docSnap => {
+                    renderedCount++;
+                    const data = docSnap.data() || {};
+                    const docId = docSnap.id;
+                    const category = String(data.subject || data.category || 'Unassigned');
+                    const topic = String(data.topic || 'General Practice');
+                    const qText = String(data.question_en || data.question || 'No question text provided');
+                    const options = Array.isArray(data.options_en) ? data.options_en : (Array.isArray(data.options) ? data.options : []);
+                    const card = document.createElement('div');
+                    card.className = 'bg-white p-4 rounded-2xl border border-slate-200 shadow-sm space-y-2';
+                    const header = document.createElement('div');
+                    header.className = 'flex flex-wrap items-center justify-between gap-2 text-[11px]';
+                    const categoryBadge = document.createElement('span');
+                    categoryBadge.className = 'bg-brand-50 text-brand-700 font-bold px-2 py-0.5 rounded uppercase';
+                    categoryBadge.textContent = `Category: ${category} · ${topic}`;
+                    const idLabel = document.createElement('span');
+                    idLabel.className = 'text-slate-400 font-mono';
+                    idLabel.textContent = `ID: ${docId}`;
+                    header.append(categoryBadge, idLabel);
+                    const questionP = document.createElement('p');
+                    questionP.className = 'text-xs font-bold text-slate-900';
+                    questionP.textContent = `${renderedCount}. ${qText}`;
+                    const optionsDiv = document.createElement('div');
+                    optionsDiv.className = 'grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1';
+                    options.forEach((opt, optIdx) => {
+                        const optSpan = document.createElement('div');
+                        const isCorrect = Number(data.answer_index) === optIdx;
+                        optSpan.className = `text-[11px] p-2 rounded-xl border ${isCorrect ? 'bg-emerald-50 border-emerald-300 text-emerald-900 font-semibold' : 'bg-slate-50 border-slate-200 text-slate-700'}`;
+                        optSpan.textContent = `${String.fromCharCode(65 + optIdx)}. ${String(opt)}${isCorrect ? ' (Correct)' : ''}`;
+                        optionsDiv.appendChild(optSpan);
+                    });
+                    const actions = document.createElement('div');
+                    actions.className = 'flex gap-2 pt-2';
+                    const editBtn = document.createElement('button');
+                    editBtn.type = 'button';
+                    editBtn.className = 'bg-brand-600 text-white text-xs font-bold px-4 py-2 rounded-lg';
+                    editBtn.textContent = 'Edit Question';
+                    const deleteBtn = document.createElement('button');
+                    deleteBtn.type = 'button';
+                    deleteBtn.className = 'bg-rose-50 text-rose-700 border border-rose-200 text-xs font-bold px-4 py-2 rounded-lg';
+                    deleteBtn.textContent = 'Delete';
+                    actions.append(editBtn, deleteBtn);
+                    const editor = document.createElement('div');
+                    editor.className = 'hidden mt-3 p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-2';
+                    const makeField = (labelText, value, multiline=false) => {
+                        const wrap = document.createElement('label');
+                        wrap.className = 'block text-[11px] font-bold text-slate-700';
+                        wrap.textContent = labelText;
+                        const field = document.createElement(multiline ? 'textarea' : 'input');
+                        field.className = 'block w-full mt-1 p-2 rounded-lg border border-slate-300 text-xs font-normal';
+                        if (multiline) { field.rows = 3; field.value = value; } else { field.type = 'text'; field.value = value; }
+                        wrap.appendChild(field);
+                        editor.appendChild(wrap);
+                        return field;
+                    };
+                    const editCategory = makeField('Subject / Category', category);
+                    const editTopic = makeField('Part / Quiz Name', topic);
+                    const editQuestion = makeField('Question (English)', qText, true);
+                    const editOptions = [0,1,2,3].map(i => makeField(`Option ${String.fromCharCode(65+i)} (English)`, String(options[i] ?? '')));
+                    const editQuestionPa = makeField('Question (Punjabi)', String(data.question_pa || ''), true);
+                    const editOptionsPa = [0,1,2,3].map(i => makeField(`Option ${String.fromCharCode(65+i)} (Punjabi)`, String((data.options_pa || [])[i] ?? '')));
+                    const editExplanationEn = makeField('Explanation (English)', String(data.explanation_en || ''), true);
+                    const editExplanationPa = makeField('Explanation (Punjabi)', String(data.explanation_pa || ''), true);
+                    const answerWrap = document.createElement('label');
+                    answerWrap.className = 'block text-[11px] font-bold text-slate-700';
+                    answerWrap.textContent = 'Correct Answer';
+                    const answerSelect = document.createElement('select');
+                    answerSelect.className = 'block w-full mt-1 p-2 rounded-lg border border-slate-300 text-xs font-normal';
+                    ['A','B','C','D'].forEach((letter, i) => { const opt = document.createElement('option'); opt.value = String(i); opt.textContent = letter; answerSelect.appendChild(opt); });
+                    answerSelect.value = String(Number.isInteger(Number(data.answer_index)) ? Number(data.answer_index) : 0);
+                    answerWrap.appendChild(answerSelect); editor.appendChild(answerWrap);
+                    const editorActions = document.createElement('div'); editorActions.className = 'flex gap-2 pt-1';
+                    const saveBtn = document.createElement('button'); saveBtn.type='button'; saveBtn.className='bg-emerald-600 text-white text-xs font-bold px-4 py-2 rounded-lg'; saveBtn.textContent='Save Changes';
+                    const cancelBtn = document.createElement('button'); cancelBtn.type='button'; cancelBtn.className='bg-slate-200 text-slate-700 text-xs font-bold px-4 py-2 rounded-lg'; cancelBtn.textContent='Cancel';
+                    editorActions.append(saveBtn, cancelBtn); editor.appendChild(editorActions);
+                    editBtn.addEventListener('click', () => { editor.classList.toggle('hidden'); });
+                    cancelBtn.addEventListener('click', () => editor.classList.add('hidden'));
+                    saveBtn.addEventListener('click', async () => {
+                        try {
+                            const cleanOptions = editOptions.map(f => f.value.trim());
+                            if (!editCategory.value.trim() || !editTopic.value.trim() || !editQuestion.value.trim() || cleanOptions.some(v => !v)) throw new Error('Subject, Part, Question aur chaaron options bharna zaroori hai.');
+                            if (typeof window.pbUpdateDoc !== 'function') throw new Error('Update function ready nahi hai.');
+                            saveBtn.disabled = true; saveBtn.textContent = 'Saving...';
+                            const updated = {
+                                subject: editCategory.value.trim(), topic: editTopic.value.trim(),
+                                question_en: editQuestion.value.trim(), options_en: cleanOptions,
+                                question_pa: editQuestionPa.value.trim(),
+                                options_pa: editOptionsPa.map(f => f.value.trim()),
+                                explanation_en: editExplanationEn.value.trim(),
+                                explanation_pa: editExplanationPa.value.trim(),
+                                answer_index: Number(answerSelect.value), updatedAt: new Date().toISOString()
+                            };
+                            await window.pbUpdateDoc(window.pbDoc('questions', docId), updated);
+                            await loadQuestionsFromFirestore();
+                            await fetchAndRenderAdminQuestions();
+                            showNotice('Question Updated', 'Question ki details successfully update ho gayi hain.');
+                        } catch (e) { showNotice('Update failed', e.message); saveBtn.disabled=false; saveBtn.textContent='Save Changes'; }
+                    });
+                    deleteBtn.addEventListener('click', async () => {
+                        if (!confirm('Kya aap is question ko permanently delete karna chahte hain? Ye action undo nahi hoga.')) return;
+                        try {
+                            if (typeof window.pbDeleteDoc !== 'function') throw new Error('Delete function ready nahi hai.');
+                            deleteBtn.disabled = true; deleteBtn.textContent = 'Deleting...';
+                            await window.pbDeleteDoc(window.pbDoc('questions', docId));
+                            await loadQuestionsFromFirestore();
+                            await fetchAndRenderAdminQuestions();
+                            showNotice('Question Deleted', 'Selected question delete ho gaya. Baaki questions safe hain.');
+                        } catch (e) { showNotice('Delete failed', e.message); deleteBtn.disabled=false; deleteBtn.textContent='Delete'; }
+                    });
+                    card.append(header, questionP, optionsDiv, actions, editor);
+                    listContainer.appendChild(card);
+                });
+            } catch (error) {
+                console.error('Error fetching admin questions:', error);
+                listContainer.innerHTML = `<div class="bg-rose-50 border border-rose-200 p-4 rounded-2xl text-xs text-rose-700 font-medium">Failed to load questions from Firestore: ${String(error.message || error)}</div>`;
+            }
+        }
+        window.fetchAndRenderAdminQuestions = fetchAndRenderAdminQuestions;
+
+        // Download a read-only JSON backup of every question in Firestore.
+        async function exportQuestionsJson() {
+            const button = document.getElementById('exportQuestionsBtn');
+            if (!button) return;
+            const originalHtml = button.innerHTML;
+            try {
+                if (typeof window.pbGetDocs !== 'function' || typeof window.pbCollection !== 'function') {
+                    throw new Error('Firestore SDK initialize nahi hua. Admin panel refresh karke dobara try karo.');
+                }
+                button.disabled = true;
+                button.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i> Exporting...';
+                const snapshot = await window.pbGetDocs(window.pbCollection('questions'));
+                const questions = [];
+                snapshot.forEach(docSnap => {
+                    const data = docSnap.data() || {};
+                    questions.push({ id: docSnap.id, ...data });
+                });
+                const payload = {
+                    app: 'PB Quizes',
+                    collection: 'questions',
+                    exportedAt: new Date().toISOString(),
+                    count: questions.length,
+                    questions
+                };
+                const json = JSON.stringify(payload, (key, value) => {
+                    if (value && typeof value === 'object' && typeof value.toDate === 'function') return value.toDate().toISOString();
+                    return value;
+                }, 2);
+                const blob = new Blob([json], { type: 'application/json;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = `PB_Quizes_questions_backup_${new Date().toISOString().slice(0,10)}.json`;
+                document.body.appendChild(link);
+                link.click();
+                link.remove();
+                setTimeout(() => URL.revokeObjectURL(url), 1000);
+                showNotice('Export Complete', `${questions.length} questions ki JSON backup file download ho gayi hai. Is file ko safe rakhna.`);
+            } catch (error) {
+                console.error('Question JSON export failed:', error);
+                showNotice('Export Failed', String(error.message || error));
+            } finally {
+                button.disabled = false;
+                button.innerHTML = originalHtml;
+            }
+        }
+        window.exportQuestionsJson = exportQuestionsJson;
+
+        // Clean database store without any hardcoded sample or fallback placeholder questions
+        let questionDatabase = {
+            history: { title: "Punjab GK & History", total: 0, topics: [], questions: [] },
+            computer: { title: "Computer PYQs", total: 0, topics: [], questions: [] },
+            english: { title: "English PYQs", total: 0, topics: [], questions: [] },
+            polity: { title: "Punjab Polity", total: 0, topics: [], questions: [] },
+            mixed: { title: "Mixed PSSSB Clerk PYQs", total: 0, topics: [], questions: [] }
+        };
+
+        let customSubjects = [];
+        const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+
+        async function loadCustomSubjects() {
+            const list = document.getElementById('adminSubjectList');
+            try {
+                if (typeof window.pbGetDocs !== 'function') return;
+                const snap = await window.pbGetDocs(window.pbCollection('subjects'));
+                customSubjects = [];
+                snap.forEach(d => { const v = d.data() || {}; if (v.name) customSubjects.push({ id: d.id, ...v }); });
+                if (list) {
+                    list.innerHTML = customSubjects.length ? '' : '<p class="text-slate-500">Abhi koi custom subject add nahi hua.</p>';
+                    customSubjects.forEach(subject => {
+                        const row = document.createElement('div');
+                        row.className = 'flex items-center justify-between gap-3 border border-slate-200 rounded-xl p-3';
+                        const label = document.createElement('span');
+                        label.className = 'font-semibold text-slate-800';
+                        label.textContent = subject.name;
+                        const status = document.createElement('span');
+                        status.className = 'text-[10px] text-emerald-700';
+                        status.textContent = 'Student Home Page par active';
+                        row.append(label, status); list.appendChild(row);
+                    });
+                }
+                renderCustomSubjectCards();
+                refreshSubjectSelects();
+            } catch (e) {
+                if (list) list.textContent = 'Subjects load nahi hue: ' + e.message;
+            }
+        }
+        window.loadCustomSubjects = loadCustomSubjects;
+
+        function renderCustomSubjectCards() {
+            const grid = document.getElementById('homeSubjectGrid');
+            if (!grid) return;
+            grid.querySelectorAll('[data-custom-subject="true"]').forEach(el => el.remove());
+            customSubjects.forEach(subject => {
+                const card = document.createElement('div');
+                card.dataset.customSubject = 'true';
+                card.className = 'bg-white border border-slate-200 rounded-2xl p-4 shadow-sm cursor-pointer hover:border-brand-500 transition';
+                card.addEventListener('click', () => openTopicScreen(subject.id));
+                if (subject.bannerUrl) {
+                    const img = document.createElement('img'); img.src = subject.bannerUrl; img.alt = subject.name;
+                    img.className = 'w-full h-16 object-cover rounded-xl mb-2'; img.onerror = () => img.remove(); card.appendChild(img);
+                } else {
+                    const icon = document.createElement('div'); icon.className = 'w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold mb-2';
+                    icon.innerHTML = '<i class="fa-solid fa-book-open"></i>'; card.appendChild(icon);
+                }
+                const title = document.createElement('h3'); title.className = 'font-bold text-slate-900 text-sm'; title.textContent = subject.name;
+                const count = document.createElement('p'); count.className = 'text-xs text-slate-500 mt-1'; count.textContent = `${questionDatabase[subject.id]?.questions.length || 0} Questions`;
+                card.append(title, count); grid.appendChild(card);
+            });
+        }
+
+        function refreshSubjectSelects() {
+            ['newQCategory','bulkQCategory'].forEach(id => {
+                const select = document.getElementById(id); if (!select) return;
+                Array.from(select.querySelectorAll('option[data-custom="true"]')).forEach(o => o.remove());
+                customSubjects.forEach(subject => {
+                    const option = document.createElement('option'); option.value = subject.id; option.textContent = subject.name; option.dataset.custom = 'true'; select.appendChild(option);
+                });
+            });
+        }
+
+        async function addNewSubjectToFirestore() {
+            try {
+                const name = document.getElementById('newSubjectName').value.trim();
+                const bannerUrl = document.getElementById('newSubjectBanner').value.trim();
+                if (!name) throw new Error('Subject name enter karo.');
+                const id = name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+                if (!id || ['history','computer','english','polity','mixed'].includes(id)) throw new Error('Is naam se subject key nahi ban sakti ya ye existing category hai.');
+                if (typeof window.pbSetDoc !== 'function') throw new Error('Firebase abhi ready nahi hai.');
+                if (customSubjects.some(s => s.id === id)) throw new Error('Ye subject pehle se add hai.');
+                await window.pbSetDoc(window.pbDoc('subjects', id), { name, bannerUrl, active: true, createdAt: new Date().toISOString() });
+                questionDatabase[id] = { title: name, total: 0, topics: [], questions: [] };
+                document.getElementById('newSubjectName').value = '';
+                document.getElementById('newSubjectBanner').value = '';
+                await loadCustomSubjects();
+                await loadQuestionsFromFirestore();
+                showNotice('Subject Added', `${escapeHtml(name)} student Home Page par add ho gaya.`);
+            } catch (e) { showNotice('Could not add subject', e.message); }
+        }
+        window.addNewSubjectToFirestore = addNewSubjectToFirestore;
+
+
+        // Quiz parts are stored separately as metadata. Question documents are never deleted here.
+        function partDocumentId(subjectId, partName) {
+            const slug = String(partName).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+            return `${subjectId}__${slug}`;
+        }
+
+        async function loadPartsManager() {
+            const subjectSelect = document.getElementById('partSubjectSelect');
+            if (!subjectSelect) return;
+            await loadQuestionsFromFirestore();
+            const subjects = Object.keys(questionDatabase).map(id => ({ id, name: questionDatabase[id].title }));
+            subjectSelect.innerHTML = subjects.map(x => `<option value="${escapeHtml(x.id)}">${escapeHtml(x.name)}</option>`).join('');
+            subjectSelect.onchange = renderAdminParts;
+            await renderAdminParts();
+        }
+
+        async function renderAdminParts() {
+            const subjectId = document.getElementById('partSubjectSelect')?.value;
+            const list = document.getElementById('adminPartList');
+            if (!subjectId || !list) return;
+            list.textContent = 'Loading parts…';
+            try {
+                const [qSnap, pSnap] = await Promise.all([
+                    window.pbGetDocs(window.pbCollection('questions')),
+                    window.pbGetDocs(window.pbCollection('parts'))
+                ]);
+                const counts = new Map();
+                qSnap.forEach(d => {
+                    const q = d.data() || {};
+                    if (String(q.subject || q.category || '') === subjectId) {
+                        const name = String(q.topic || 'General Practice').trim() || 'General Practice';
+                        counts.set(name, (counts.get(name) || 0) + 1);
+                    }
+                });
+                const metadata = new Map();
+                pSnap.forEach(d => {
+                    const p = d.data() || {};
+                    if (p.subjectId === subjectId && p.name) metadata.set(p.name, { id: d.id, ...p });
+                });
+                const names = new Set([...counts.keys(), ...metadata.keys()]);
+                list.innerHTML = '';
+                if (!names.size) {
+                    list.textContent = 'Abhi is subject mein koi part nahi hai. Upar se naya part add karo.';
+                    return;
+                }
+                [...names].sort((a,b) => a.localeCompare(b, undefined, {numeric:true})).forEach(name => {
+                    const meta = metadata.get(name) || { active: true };
+                    const row = document.createElement('div');
+                    row.className = 'flex flex-wrap items-center justify-between gap-2 border border-slate-200 rounded-xl p-3';
+                    const info = document.createElement('div');
+                    info.innerHTML = `<div class="font-semibold text-slate-800">${escapeHtml(name)}</div><div class="text-[10px] text-slate-500">${counts.get(name) || 0} questions · ${meta.active === false ? 'Hidden from students' : 'Visible to students'}</div>`;
+                    const actions = document.createElement('div');
+                    actions.className = 'flex gap-2';
+                    const rename = document.createElement('button');
+                    rename.className = 'px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 font-bold';
+                    rename.textContent = 'Rename';
+                    rename.onclick = () => renamePart(subjectId, name, meta.id);
+                    const toggle = document.createElement('button');
+                    toggle.className = 'px-3 py-1.5 rounded-lg ' + (meta.active === false ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800') + ' font-bold';
+                    toggle.textContent = meta.active === false ? 'Show' : 'Hide';
+                    toggle.onclick = () => togglePartVisibility(subjectId, name, meta);
+                    actions.append(rename, toggle);
+                    row.append(info, actions);
+                    list.appendChild(row);
+                });
+            } catch (e) {
+                list.textContent = 'Parts load nahi hue: ' + e.message;
+            }
+        }
+
+        async function addPartToFirestore() {
+            try {
+                const subjectId = document.getElementById('partSubjectSelect').value;
+                const name = document.getElementById('newPartName').value.trim();
+                if (!subjectId || !name) throw new Error('Subject aur part name select/enter karo.');
+                const id = partDocumentId(subjectId, name);
+                const existing = await window.pbGetDocs(window.pbCollection('parts'));
+                let duplicate = false;
+                existing.forEach(d => { const p = d.data() || {}; if (p.subjectId === subjectId && String(p.name).toLowerCase() === name.toLowerCase()) duplicate = true; });
+                if (duplicate) throw new Error('Ye part pehle se maujood hai.');
+                await window.pbSetDoc(window.pbDoc('parts', id), { subjectId, name, active: true, createdAt: new Date().toISOString() });
+                document.getElementById('newPartName').value = '';
+                await renderAdminParts();
+                showNotice('Part Added', 'Part save ho gaya. Ab Add Question ya Bulk JSON Upload mein isi subject aur part ka naam use karke questions upload karo.');
+            } catch (e) { showNotice('Could not add part', e.message); }
+        }
+        window.addPartToFirestore = addPartToFirestore;
+
+        async function renamePart(subjectId, oldName, metadataId) {
+            const newName = window.prompt('New part name:', oldName);
+            if (newName === null) return;
+            const cleanName = newName.trim();
+            if (!cleanName || cleanName === oldName) return;
+            try {
+                const snap = await window.pbGetDocs(window.pbCollection('questions'));
+                const matching = [];
+                snap.forEach(d => {
+                    const q = d.data() || {};
+                    if (String(q.subject || q.category || '') === subjectId && String(q.topic || 'General Practice').trim() === oldName) matching.push({ ref: d.ref, data: q });
+                });
+                for (let i = 0; i < matching.length; i += 450) {
+                    const batch = window.pbWriteBatch();
+                    matching.slice(i, i + 450).forEach(item => batch.set(item.ref, { ...item.data, topic: cleanName }));
+                    await batch.commit();
+                }
+                const id = metadataId || partDocumentId(subjectId, oldName);
+                await window.pbSetDoc(window.pbDoc('parts', id), { subjectId, name: cleanName, active: true, updatedAt: new Date().toISOString() });
+                if (metadataId && metadataId !== id) await window.pbSetDoc(window.pbDoc('parts', metadataId), { active: false }, { merge: true });
+                await loadQuestionsFromFirestore();
+                await renderAdminParts();
+                showNotice('Part Renamed', `Part "${escapeHtml(oldName)}" ka naam "${escapeHtml(cleanName)}" kar diya. ${matching.length} questions update hue.`);
+            } catch (e) { showNotice('Rename failed', e.message); }
+        }
+
+        async function togglePartVisibility(subjectId, name, meta) {
+            try {
+                const id = meta.id || partDocumentId(subjectId, name);
+                const nextActive = meta.active === false;
+                await window.pbSetDoc(window.pbDoc('parts', id), { subjectId, name, active: nextActive, updatedAt: new Date().toISOString() }, { merge: true });
+                await renderAdminParts();
+                showNotice(nextActive ? 'Part Visible' : 'Part Hidden', nextActive ? 'Part students ko dobara dikhai dega.' : 'Part student screen se hide ho gaya. Questions safe hain; delete nahi hue.');
+            } catch (e) { showNotice('Could not update part', e.message); }
+        }
+
+        // Keep Android/WebView Back button in sync with in-app screens.
+        let restoringNavigationFromHistory = false;
+        if (!history.state || !history.state.pbQuizesScreen) {
+            history.replaceState({ pbQuizesScreen: 'home' }, '', '#home');
+        }
+
+        function navigateTo(screenId, addToHistory = true) {
+            if (addToHistory && !restoringNavigationFromHistory) {
+                const currentScreen = history.state?.pbQuizesScreen;
+                if (currentScreen !== screenId) {
+                    history.pushState({ pbQuizesScreen: screenId }, '', '#' + screenId);
+                }
+            }
+
+            document.getElementById('studentInterface').classList.add('hidden');
+            document.getElementById('screen-topics').classList.add('hidden');
+            document.getElementById('screen-quiz').classList.add('hidden');
+            const resultScreen = document.getElementById('screen-result');
+            if (resultScreen) resultScreen.classList.add('hidden');
+            const mindMapsScreen = document.getElementById('screen-mindmaps');
+            if (mindMapsScreen) mindMapsScreen.classList.add('hidden');
+
+            if (screenId === 'home') document.getElementById('studentInterface').classList.remove('hidden');
+            else if (screenId === 'topics') document.getElementById('screen-topics').classList.remove('hidden');
+            else if (screenId === 'quiz') document.getElementById('screen-quiz').classList.remove('hidden');
+            else if (screenId === 'result' && resultScreen) resultScreen.classList.remove('hidden');
+            else if (screenId === 'mindmaps' && mindMapsScreen) mindMapsScreen.classList.remove('hidden');
+        }
+
+        window.addEventListener('popstate', (event) => {
+            const screenId = event.state?.pbQuizesScreen || 'home';
+            restoringNavigationFromHistory = true;
+            navigateTo(screenId, false);
+            restoringNavigationFromHistory = false;
+        });
+        window.navigateTo = navigateTo;
+
+        let activeCategoryKey = '';
+        let topicScreenLoadToken = 0;
+
+        async function openTopicScreen(categoryKey) {
+            const thisLoadToken = ++topicScreenLoadToken;
+            activeCategoryKey = categoryKey;
+            const catData = questionDatabase[categoryKey];
+            if (!catData) return;
+            if (typeof window.loadQuestionsFromCDN === "function") await window.loadQuestionsFromCDN(categoryKey);
+            if (thisLoadToken !== topicScreenLoadToken) return;
+
+            document.getElementById('topicHeaderTitle').textContent = catData.title;
+            document.getElementById('topicHeaderSubtitle').textContent = "Choose a quiz part to begin";
+            const container = document.getElementById('topicListContainer');
+            container.innerHTML = '';
+            const questions = catData.questions || [];
+
+            if (!questions.length) {
+                container.innerHTML = '<div class="bg-white border border-slate-200 rounded-2xl p-5 text-sm text-slate-600">No questions available yet. Please check back soon.</div>';
+                navigateTo('topics');
+                return;
+            }
+
+            const hiddenPartNames = new Set();
+            try {
+                const partsSnap = await window.pbGetDocs(window.pbCollection('parts'));
+                partsSnap.forEach(d => {
+                    const part = d.data() || {};
+                    if (part.subjectId === categoryKey && part.active === false) hiddenPartNames.add(String(part.name || '').trim());
+                });
+            } catch (e) { console.warn('Part visibility metadata unavailable; showing question topics.', e); }
+            if (thisLoadToken !== topicScreenLoadToken) return;
+
+            const topicCounts = new Map();
+            questions.forEach(q => {
+                const topicName = String(q.topic || 'General Practice').trim() || 'General Practice';
+                if (hiddenPartNames.has(topicName)) return;
+                const normalizedTopicKey = topicName.toLocaleLowerCase();
+                const existingTopic = topicCounts.get(normalizedTopicKey);
+                if (existingTopic) existingTopic.count++;
+                else topicCounts.set(normalizedTopicKey, { name: topicName, count: 1 });
+            });
+
+            let partNumber = 0;
+            // Render only once for the most recent navigation request.
+            if (thisLoadToken !== topicScreenLoadToken) return;
+            container.replaceChildren();
+            topicCounts.forEach(({ name: topicName, count }) => {
+                partNumber++;
+                const card = document.createElement('button');
+                card.type = 'button';
+                card.className = 'w-full text-left rounded-2xl overflow-hidden shadow-md border border-slate-200 transition hover:-translate-y-0.5 hover:shadow-lg';
+                const banner = document.createElement('div');
+                banner.className = 'bg-gradient-to-r from-slate-900 via-brand-700 to-brand-500 text-white p-4 flex items-center justify-between gap-3';
+                const left = document.createElement('div');
+                left.className = 'flex items-center gap-3 min-w-0';
+                const icon = document.createElement('div');
+                icon.className = 'w-11 h-11 rounded-xl bg-amber-400 text-slate-900 flex-shrink-0 flex items-center justify-center text-lg';
+                icon.innerHTML = '<i class="fa-solid fa-rectangle-list"></i>';
+                const labels = document.createElement('div');
+                labels.className = 'min-w-0';
+                const kicker = document.createElement('p');
+                kicker.className = 'text-[10px] uppercase tracking-wider text-blue-100 font-bold';
+                kicker.textContent = `QUIZ PART ${partNumber}`;
+                const heading = document.createElement('h3');
+                heading.className = 'font-extrabold text-base truncate';
+                heading.textContent = topicName;
+                labels.append(kicker, heading);
+                left.append(icon, labels);
+                const arrow = document.createElement('span');
+                arrow.className = 'text-white text-lg flex-shrink-0';
+                arrow.innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
+                banner.append(left, arrow);
+                const footer = document.createElement('div');
+                footer.className = 'bg-white px-4 py-3 flex items-center justify-between';
+                const countLabel = document.createElement('span');
+                countLabel.className = 'text-xs text-slate-500 font-semibold';
+                countLabel.textContent = `${count} Questions`;
+                const startLabel = document.createElement('span');
+                startLabel.className = 'text-xs text-brand-700 font-extrabold';
+                startLabel.textContent = 'Start Quiz';
+                footer.append(countLabel, startLabel);
+                card.append(banner, footer);
+                card.addEventListener('click', () => startQuiz(categoryKey, topicName));
+                container.appendChild(card);
+            });
+            navigateTo('topics');
+        }
+        window.openTopicScreen = openTopicScreen;
+
+        let activeQuestions = [];
+        let currentQuizIndex = 0;
+        let userSelectedAnswers = {}; // Stores selected ORIGINAL option indexes per question.
+        let shuffledOptionOrders = {}; // Display order -> original option indexes, stable for this quiz attempt.
+
+        function createShuffledOptionOrder(optionCount) {
+            const order = Array.from({ length: optionCount }, (_, index) => index);
+            // Fisher-Yates shuffle: each option appears exactly once.
+            for (let i = order.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [order[i], order[j]] = [order[j], order[i]];
+            }
+            return order;
+        }
+
+        let activeTopicName = '';
+        let activeQuizLanguage = 'en';
+        function setQuizLanguage(language) {
+            activeQuizLanguage = language === 'pa' ? 'pa' : 'en';
+            const selector = document.getElementById('quizLanguageSelect');
+            if (selector) selector.value = activeQuizLanguage;
+            loadQuizQuestion();
+        }
+        window.setQuizLanguage = setQuizLanguage;
+
+        function questionTextForLanguage(q) {
+            return activeQuizLanguage === 'pa'
+                ? (q.question_pa || q.question_en || q.question || 'ਸਵਾਲ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।')
+                : (q.question_en || q.question || q.question_pa || 'Question text unavailable.');
+        }
+        function optionsForLanguage(q) {
+            const english = q.options_en || q.options || [];
+            return activeQuizLanguage === 'pa' && Array.isArray(q.options_pa) && q.options_pa.length === 4
+                ? q.options_pa : english;
+        }
+        function explanationForLanguage(q) {
+            return activeQuizLanguage === 'pa'
+                ? (q.explanation_pa || q.explanation_en || '')
+                : (q.explanation_en || q.explanation_pa || '');
+        }
+
+        function startQuiz(categoryKey, topicName = '') {
+            activeCategoryKey = categoryKey;
+            activeTopicName = topicName;
+            const allQuestions = questionDatabase[categoryKey]?.questions || [];
+            activeQuestions = topicName
+                ? allQuestions.filter(q => String(q.topic || 'General Practice').trim() === topicName)
+                : allQuestions;
+            if (!activeQuestions.length) {
+                showNotice("Notice", "No questions available yet. Please check back soon.");
+                return;
+            }
+            currentQuizIndex = 0;
+            activeQuizLanguage = 'en';
+            const languageSelect = document.getElementById('quizLanguageSelect');
+            if (languageSelect) languageSelect.value = 'en';
+            userSelectedAnswers = {};
+            shuffledOptionOrders = {};
+            // Shuffle each question once at quiz start. Back/Next keeps the same order.
+            activeQuestions.forEach((question, index) => {
+                const options = question.options_en || question.options || [];
+                shuffledOptionOrders[index] = createShuffledOptionOrder(options.length);
+            });
+            navigateTo('quiz');
+            loadQuizQuestion();
+        }
+        window.startQuiz = startQuiz;
+
+        function currentVoteQuestionKey(q, questionIndex) {
+            // Prefer Firestore document IDs. For bundled/local questions, derive a stable
+            // key from the question text so the same question keeps the same statistics key.
+            const sourceId = q?._docId || q?.id || q?.question_en || q?.question || `local_${questionIndex}`;
+            const raw = `${activeCategoryKey}_${String(sourceId)}`;
+            let hash = 2166136261;
+            for (let i = 0; i < raw.length; i++) {
+                hash ^= raw.charCodeAt(i);
+                hash = Math.imul(hash, 16777619);
+            }
+            return `q_${(hash >>> 0).toString(16)}`;
+        }
+
+        // Statistics are saved/read only after the student submits the complete quiz.
+        async function saveAndLoadQuestionCorrectPercentage(q, questionIndex) {
+            try {
+                const questionKey = currentVoteQuestionKey(q, questionIndex);
+                if (typeof window.pbSaveAndLoadQuestionVotes !== 'function') {
+                    throw new Error('Student voting service is not initialized.');
+                }
+                return await window.pbSaveAndLoadQuestionVotes(
+                    questionKey, userSelectedAnswers[questionIndex], q.answer_index
+                );
+            } catch (error) {
+                console.warn('Question percentage unavailable:', error);
+                return null;
+            }
+        }
+
+        async function loadFinalQuestionPercentages() {
+            const rows = document.querySelectorAll('[data-question-percentage]');
+            const attemptedIndexes = activeQuestions.map((q, idx) => userSelectedAnswers[idx] !== undefined ? idx : -1).filter(idx => idx >= 0);
+            await Promise.all(attemptedIndexes.map(async idx => {
+                const result = await saveAndLoadQuestionCorrectPercentage(activeQuestions[idx], idx);
+                const target = document.querySelector(`[data-question-percentage="${idx}"]`);
+                if (!target) return;
+                if (!result) {
+                    target.textContent = 'Student percentage unavailable';
+                    return;
+                }
+                if (result.validAttempts < 10) {
+                    target.textContent = `Students attempted: ${result.validAttempts} · Not enough data (10 required)`;
+                    return;
+                }
+                target.textContent = `Students who answered correctly: ${result.percentage.toFixed(1)}% (${result.correctAnswers}/${result.validAttempts})`;
+            }));
+        }
+
+        function loadQuizQuestion() {
+            if (activeQuestions.length === 0) return;
+            const q = activeQuestions[currentQuizIndex];
+            
+            // Render exact authentic question text
+            document.getElementById('questionTextEn').textContent = questionTextForLanguage(q);
+            document.getElementById('quizProgressDisplay').textContent = `Question ${currentQuizIndex + 1} of ${activeQuestions.length}`;
+            document.getElementById('quizTitleDisplay').textContent = questionDatabase[activeCategoryKey]?.title || "Quiz Session";
+
+            const optsContainer = document.getElementById('optionsContainer');
+            optsContainer.innerHTML = '';
+            
+            // Reveal feedback immediately after an answer is selected:
+            // correct option = green; selected wrong option = red.
+            const opts = optionsForLanguage(q);
+            const savedAnswer = userSelectedAnswers[currentQuizIndex];
+            const hasAnswered = savedAnswer !== undefined;
+            const correctAnswer = Number(q.answer_index);
+            const optionOrder = shuffledOptionOrders[currentQuizIndex] || opts.map((_, index) => index);
+
+            optionOrder.forEach((originalIndex, displayIndex) => {
+                const optText = opts[originalIndex];
+                const isSelected = (savedAnswer === originalIndex);
+                const isCorrect = Number.isInteger(correctAnswer) && originalIndex === correctAnswer;
+                const isWrongSelection = hasAnswered && isSelected && !isCorrect;
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+                btn.className = 'w-full text-left p-3.5 rounded-xl border text-sm font-medium transition shadow-sm flex items-center justify-between ';
+
+                if (hasAnswered && isCorrect) {
+                    btn.className += 'bg-emerald-50 border-emerald-500 text-emerald-900 font-bold';
+                } else if (isWrongSelection) {
+                    btn.className += 'bg-rose-50 border-rose-500 text-rose-900 font-bold';
+                } else {
+                    btn.className += 'bg-white border-slate-200 text-slate-800';
+                    if (!hasAnswered) btn.className += ' hover:border-brand-500';
+                }
+
+                // Once answered, lock the options so the feedback cannot be changed accidentally.
+                btn.disabled = hasAnswered;
+                btn.style.cursor = hasAnswered ? 'default' : 'pointer';
+                if (!hasAnswered) btn.onclick = () => selectAnswer(originalIndex);
+
+                const left = document.createElement('div');
+                left.className = 'flex items-center space-x-3';
+                const letter = document.createElement('span');
+                letter.className = 'w-6 h-6 rounded-lg flex items-center justify-center text-xs font-bold ' +
+                    (hasAnswered && isCorrect ? 'bg-emerald-600 text-white' :
+                     isWrongSelection ? 'bg-rose-600 text-white' : 'bg-slate-100 text-slate-700');
+                letter.textContent = String.fromCharCode(65 + displayIndex);
+                const label = document.createElement('span');
+                label.textContent = String(optText);
+                left.append(letter, label);
+                btn.appendChild(left);
+
+                if (hasAnswered && isCorrect) {
+                    const mark = document.createElement('span');
+                    mark.className = 'text-emerald-700 font-bold';
+                    mark.textContent = '✓ Correct';
+                    btn.appendChild(mark);
+                } else if (isWrongSelection) {
+                    const mark = document.createElement('span');
+                    mark.className = 'text-rose-700 font-bold';
+                    mark.textContent = '✕ Wrong';
+                    btn.appendChild(mark);
+                }
+                optsContainer.appendChild(btn);
+            });
+
+            let feedback = document.getElementById('answerFeedback');
+            if (!feedback) {
+                feedback = document.createElement('div');
+                feedback.id = 'answerFeedback';
+                feedback.className = 'mt-3 rounded-xl p-3 text-sm font-bold';
+                optsContainer.insertAdjacentElement('afterend', feedback);
+            }
+            if (hasAnswered) {
+                const isAnswerCorrect = Number(savedAnswer) === correctAnswer;
+                feedback.className = 'mt-3 rounded-xl p-3 text-sm font-bold ' +
+                    (isAnswerCorrect ? 'bg-emerald-50 text-emerald-800 border border-emerald-200' : 'bg-rose-50 text-rose-800 border border-rose-200');
+                const correctDisplayIndex = optionOrder.indexOf(correctAnswer);
+                const correctDisplayLetter = String.fromCharCode(65 + (correctDisplayIndex >= 0 ? correctDisplayIndex : correctAnswer));
+                feedback.textContent = isAnswerCorrect
+                    ? (activeQuizLanguage === 'pa' ? '✓ ਬਿਲਕੁਲ ਸਹੀ ਜਵਾਬ! ਬਹੁਤ ਵਧੀਆ।' : '✓ Correct answer! Well done.')
+                    : (activeQuizLanguage === 'pa'
+                        ? `✕ ਗਲਤ ਜਵਾਬ। ਸਹੀ ਉੱਤਰ: ${correctDisplayLetter}. ${opts[correctAnswer] ?? ''}`
+                        : `✕ Incorrect. Correct answer: ${correctDisplayLetter}. ${opts[correctAnswer] ?? ''}`);
+            } else {
+                feedback.textContent = '';
+                feedback.className = 'hidden';
+            }
+
+            // Question-wise statistics are intentionally hidden during the quiz.
+            const voteStats = document.getElementById('voteStats');
+            if (voteStats) { voteStats.className = 'hidden'; voteStats.textContent = ''; }
+
+            const explanationBox = document.getElementById('questionExplanation');
+            const explanationText = explanationForLanguage(q);
+            const explanationHeading = document.getElementById('explanationHeading');
+            const explanationBody = document.getElementById('explanationText');
+            if (explanationBox && explanationBody) {
+                if (hasAnswered && explanationText) {
+                    explanationBox.classList.remove('hidden');
+                    explanationHeading.textContent = activeQuizLanguage === 'pa' ? '💡 ਵਿਆਖਿਆ' : '💡 Explanation';
+                    explanationBody.textContent = explanationText;
+                } else {
+                    explanationBox.classList.add('hidden');
+                    explanationBody.textContent = '';
+                }
+            }
+
+            // Update button states
+            document.getElementById('prevBtn').disabled = currentQuizIndex === 0;
+            document.getElementById('prevBtn').className = currentQuizIndex === 0 
+                ? 'bg-slate-100 text-slate-400 font-semibold text-xs px-4 py-2.5 rounded-xl cursor-not-allowed'
+                : 'bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs px-4 py-2.5 rounded-xl';
+        }
+
+        function selectAnswer(optIdx) {
+            // Save selected answer for current question
+            userSelectedAnswers[currentQuizIndex] = optIdx;
+            // Re-render question to immediately update visual highlight
+            loadQuizQuestion();
+        }
+        window.selectAnswer = selectAnswer;
+
+        function nextQuestion() {
+            if (currentQuizIndex < activeQuestions.length - 1) {
+                currentQuizIndex++;
+                loadQuizQuestion();
+            } else {
+                showNotice("Completed", `You have reviewed all ${activeQuestions.length} questions in this session.`);
+            }
+        }
+        window.nextQuestion = nextQuestion;
+
+        function prevQuestion() {
+            if (currentQuizIndex > 0) {
+                currentQuizIndex--;
+                loadQuizQuestion();
+            }
+        }
+        window.prevQuestion = prevQuestion;
+
+        // Save one question without overwriting existing documents.
+        async function addNewQuestionToFirestore() {
+            try {
+                if (typeof window.pbSetDoc !== 'function' || typeof window.pbDoc !== 'function') {
+                    throw new Error('Firebase is not ready. Please refresh and try again.');
+                }
+                const category = document.getElementById('newQCategory').value;
+                const question = document.getElementById('newQEn').value.trim();
+                const topic = document.getElementById('newQTopic').value.trim() || 'General Practice';
+                const options = [0,1,2,3].map(i => document.getElementById(`newOpt${i}`).value.trim());
+                const questionPa = document.getElementById('newQPa').value.trim();
+                const optionsPa = [0,1,2,3].map(i => document.getElementById(`newOptPa${i}`).value.trim());
+                const explanationEn = document.getElementById('newExplanationEn').value.trim();
+                const explanationPa = document.getElementById('newExplanationPa').value.trim();
+                const answerIndex = Number(document.getElementById('newQCorrect').value);
+                if (!question || options.some(v => !v)) throw new Error('Please enter the question and all four options.');
+                if (!Number.isInteger(answerIndex) || answerIndex < 0 || answerIndex > 3) throw new Error('Correct answer must be between 0 and 3.');
+                const id = `admin_${Date.now()}_${Math.random().toString(36).slice(2,7)}`;
+                await window.pbSetDoc(window.pbDoc('questions', id), {
+                    subject: category,
+                    topic: topic,
+                    question_en: question,
+                    options_en: options,
+                    question_pa: questionPa,
+                    options_pa: optionsPa.every(Boolean) ? optionsPa : [],
+                    explanation_en: explanationEn,
+                    explanation_pa: explanationPa,
+                    answer_index: answerIndex,
+                    createdAt: new Date().toISOString()
+                });
+                [ 'newQTopic', 'newQEn', 'newOpt0', 'newOpt1', 'newOpt2', 'newOpt3', 'newQPa', 'newOptPa0', 'newOptPa1', 'newOptPa2', 'newOptPa3', 'newExplanationEn', 'newExplanationPa' ].forEach(id => document.getElementById(id).value = '');
+                showNotice('Saved', 'Your question has been added to Firestore.');
+                await loadQuestionsFromFirestore();
+                if (typeof fetchAndRenderAdminQuestions === 'function') fetchAndRenderAdminQuestions();
+            } catch (error) {
+                showNotice('Could not save question', error.message);
+            }
+        }
+        window.addNewQuestionToFirestore = addNewQuestionToFirestore;
+
+        // Student progress is stored only on this device; no student account/login is needed.
+        const PB_PROGRESS_KEY = 'pb_quizes_student_progress_v1';
+
+        function saveQuizAttempt(record) {
+            try {
+                const rows = JSON.parse(localStorage.getItem(PB_PROGRESS_KEY) || '[]');
+                rows.unshift({ ...record, createdAt: new Date().toISOString() });
+                localStorage.setItem(PB_PROGRESS_KEY, JSON.stringify(rows.slice(0, 100)));
+                return true;
+            } catch (e) {
+                console.error('Could not save local quiz progress:', e);
+                return false;
+            }
+        }
+
+        function loadMyProgress() {
+            const box = document.getElementById('studentProgressSummary');
+            if (!box) return;
+            try {
+                const rows = JSON.parse(localStorage.getItem(PB_PROGRESS_KEY) || '[]');
+                if (!rows.length) {
+                    box.textContent = 'No quiz attempts yet. Complete a quiz to see your progress.';
+                    return;
+                }
+                const avg = rows.reduce((n, x) => n + Number(x.percentage || 0), 0) / rows.length;
+                box.innerHTML = `<div class="grid grid-cols-2 gap-2 mb-3"><div class="rounded-xl bg-blue-50 p-3"><b class="block text-lg text-blue-800">${rows.length}</b><span class="text-slate-600">Tests attempted</span></div><div class="rounded-xl bg-emerald-50 p-3"><b class="block text-lg text-emerald-800">${avg.toFixed(1)}%</b><span class="text-slate-600">Average score</span></div></div>` +
+                    rows.slice(0, 5).map(x => `<div class="border-t border-slate-100 py-2"><div class="font-bold text-slate-800">${escapeHtml(x.subjectTitle || x.subjectId || 'Quiz')}${x.partName ? ' · ' + escapeHtml(x.partName) : ''}</div><div class="text-slate-500">${Number(x.correct || 0)}/${Number(x.total || 0)} correct · ${Number(x.percentage || 0).toFixed(1)}% · ${escapeHtml(String(x.createdAt || '').slice(0, 10))}</div></div>`).join('');
+            } catch (e) {
+                box.textContent = 'Progress load nahi hua. Please refresh the app.';
+                console.error('Could not load local quiz progress:', e);
+            }
+        }
+        window.loadMyProgress = loadMyProgress;
+        document.addEventListener('DOMContentLoaded', loadMyProgress);
+
+        // Calculate the final score and show a dedicated result screen with answer review.
+        function submitQuiz() {
+            if (!activeQuestions.length) return;
+            const attempted = Object.keys(userSelectedAnswers).length;
+            let correct = 0;
+            activeQuestions.forEach((q, idx) => {
+                const chosen = userSelectedAnswers[idx];
+                if (chosen !== undefined && Number(chosen) === Number(q.answer_index)) correct++;
+            });
+            const wrong = attempted - correct;
+            const unattempted = activeQuestions.length - attempted;
+            const percentage = activeQuestions.length ? ((correct / activeQuestions.length) * 100).toFixed(2) : '0.00';
+
+            document.getElementById('resultQuizTitle').textContent = `${questionDatabase[activeCategoryKey]?.title || 'Quiz'}${activeTopicName ? ' · ' + activeTopicName : ''}`;
+            document.getElementById('resultTotal').textContent = activeQuestions.length;
+            document.getElementById('resultCorrect').textContent = correct;
+            document.getElementById('resultWrong').textContent = wrong;
+            document.getElementById('resultUnattempted').textContent = unattempted;
+            document.getElementById('resultScore').textContent = `${correct} / ${activeQuestions.length}`;
+            document.getElementById('resultPercentage').textContent = `${percentage}%`;
+
+            const review = document.getElementById('resultReviewList');
+            review.innerHTML = '';
+            activeQuestions.forEach((q, idx) => {
+                const chosen = userSelectedAnswers[idx];
+                const opts = optionsForLanguage(q);
+                const answer = Number(q.answer_index);
+                const status = chosen === undefined ? 'Unattempted' : (Number(chosen) === answer ? 'Correct' : 'Wrong');
+                const safe = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+                const row = document.createElement('div');
+                row.className = `border rounded-xl p-3 ${status === 'Correct' ? 'border-emerald-200 bg-emerald-50' : status === 'Wrong' ? 'border-rose-200 bg-rose-50' : 'border-amber-200 bg-amber-50'}`;
+                const statusClass = status === 'Correct' ? 'text-emerald-700' : status === 'Wrong' ? 'text-rose-700' : 'text-amber-700';
+                const explanation = explanationForLanguage(q);
+                const labels = activeQuizLanguage === 'pa'
+                    ? { correct: 'ਸਹੀ', wrong: 'ਗਲਤ', unattempted: 'ਕੋਸ਼ਿਸ਼ ਨਹੀਂ ਕੀਤੀ', your: 'ਤੁਹਾਡਾ ਜਵਾਬ', correctAnswer: 'ਸਹੀ ਜਵਾਬ', explanation: 'ਵਿਆਖਿਆ' }
+                    : { correct: 'Correct', wrong: 'Wrong', unattempted: 'Unattempted', your: 'Your answer', correctAnswer: 'Correct answer', explanation: 'Explanation' };
+                const displayStatus = status === 'Correct' ? labels.correct : status === 'Wrong' ? labels.wrong : labels.unattempted;
+                row.innerHTML = `<p class="text-xs font-bold text-slate-900 mb-1">${idx + 1}. ${safe(questionTextForLanguage(q))}</p><p class="text-[11px] font-extrabold ${statusClass} mb-1">${displayStatus}</p><p class="text-[11px] text-slate-700">${labels.your}: ${chosen === undefined ? labels.unattempted : safe(opts[chosen])}</p><p class="text-[11px] text-emerald-800">${labels.correctAnswer}: ${safe(opts[answer] ?? 'Not provided')}</p>${explanation ? `<p class="text-[11px] text-slate-600 mt-1"><b>${labels.explanation}:</b> ${safe(explanation)}</p>` : ''}`;
+                if (chosen !== undefined) {
+                    const percentageLine = document.createElement('p');
+                    percentageLine.className = 'text-[11px] text-indigo-700 font-semibold mt-2';
+                    percentageLine.dataset.questionPercentage = String(idx);
+                    percentageLine.textContent = 'Loading students’ correct percentage…';
+                    row.appendChild(percentageLine);
+                }
+                review.appendChild(row);
+            });
+            const saved = saveQuizAttempt({
+                subjectId: activeCategoryKey,
+                subjectTitle: questionDatabase[activeCategoryKey]?.title || 'Quiz',
+                partName: activeTopicName || '',
+                total: activeQuestions.length,
+                attempted, correct, wrong, unattempted,
+                percentage: Number(percentage)
+            });
+            if (saved) loadMyProgress();
+            navigateTo('result');
+            // Run independently after the result is visible; failures never interrupt the quiz.
+            loadFinalQuestionPercentages();
+        }
+        window.submitQuiz = submitQuiz;
+
+        // Prevent overlapping Firestore loads. Multiple startup/auth callbacks can
+        // otherwise append the same custom subjects more than once during refresh.
+
+        // PB Quizes CDN test loader: fetch only the selected subject JSON.
+        const PB_QUIZ_CDN_BASE = 'https://ohiharman.github.io/pb-quizes-data/';
+        const cdnLoadedSubjects = new Set();
+        const cdnSubjectTitles = {
+            history: 'Punjab GK & History', computer: 'Computer PYQs', english: 'English PYQs',
+            polity: 'Punjab Polity', mixed: 'Mixed PSSSB Clerk PYQs',
+            current_affairs: 'Current Affairs', static_gk: 'Static GK',
+            highcourt_clerk_practice: 'High Court Clerk Practice', math: 'Mathematics'
+        };
+        async function loadQuestionsFromCDN(subjectId) {
+            if (cdnLoadedSubjects.has(subjectId)) return;
+            const category = questionDatabase[subjectId] || (questionDatabase[subjectId] = {
+                title: cdnSubjectTitles[subjectId] || subjectId.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
+                total: 0, topics: [], questions: []
+            });
+            try {
+                const response = await fetch(`${PB_QUIZ_CDN_BASE}questions/${encodeURIComponent(subjectId)}.json`, { cache: 'force-cache' });
+                if (!response.ok) throw new Error(`CDN returned HTTP ${response.status}`);
+                const payload = await response.json();
+                if (!payload || !Array.isArray(payload.questions)) throw new Error('Invalid question JSON format');
+                const isPlaceholder = q => {
+                    const questionText = String(q.question_en || q.question || '').trim();
+                    if (!questionText) return true;
+                    if (/^(sample question|question\s*#?\d+\s+regarding|.*\bPYQ\s*#\d+\s+covering)/i.test(questionText)) return true;
+                    const options = q.options_en || q.options || [];
+                    if (!Array.isArray(options) || options.length !== 4) return true;
+                    if (options.some(o => /^option\s+[A-D]\s*\d*$/i.test(String(o).trim()))) return true;
+                    if (q.answer_index !== undefined && (!Number.isInteger(Number(q.answer_index)) || Number(q.answer_index) < 0 || Number(q.answer_index) > 3)) return true;
+                    return false;
+                };
+                category.questions = payload.questions
+                    .filter(q => !isPlaceholder(q))
+                    .map((q, i) => ({ ...q, _docId: String(q.id || `${subjectId}_${i}`) }));
+                category.questions.sort((a, b) => String(a._docId).localeCompare(String(b._docId), undefined, { numeric: true }));
+                category.total = category.questions.length;
+                cdnLoadedSubjects.add(subjectId);
+                const total = Object.values(questionDatabase).reduce((sum, c) => sum + (c.questions?.length || 0), 0);
+                const totalBadge = document.getElementById('studentTotalCount');
+                if (totalBadge) totalBadge.textContent = `${total} Questions Loaded`;
+                const homeIds = { history:'homeHistoryCount', computer:'homeComputerCount', english:'homeEnglishCount', polity:'homePolityCount', mixed:'homeMixedCount' };
+                if (homeIds[subjectId]) {
+                    const el = document.getElementById(homeIds[subjectId]);
+                    if (el) el.textContent = `${category.questions.length} Questions`;
+                }
+            } catch (error) {
+                console.error('CDN question loading failed:', subjectId, error);
+                showNotice('Questions Load Failed', 'Internet/CDN se questions load nahi hue. Please check connection and try again.');
+                throw error;
+            }
+        }
+        window.loadQuestionsFromCDN = loadQuestionsFromCDN;
+
+        let questionsLoadPromise = null;
+        async function loadQuestionsFromFirestore() {
+            if (questionsLoadPromise) return questionsLoadPromise;
+            questionsLoadPromise = (async () => {
+                try {
+                    if (typeof window.pbGetDocs !== 'function' || typeof window.pbCollection !== 'function') return;
+
+                    // Build this list locally; do not let concurrent loads mutate the same array.
+                    const loadedCustomSubjects = [];
+                    try {
+                        const subjectSnap = await window.pbGetDocs(window.pbCollection("subjects"));
+                        const seenSubjectIds = new Set();
+                        subjectSnap.forEach(subjectDoc => {
+                            const meta = subjectDoc.data() || {};
+                            if (meta.name && meta.active !== false && !seenSubjectIds.has(subjectDoc.id)) {
+                                seenSubjectIds.add(subjectDoc.id);
+                                loadedCustomSubjects.push({ id: subjectDoc.id, ...meta });
+                            }
+                        });
+                    } catch (subjectError) {
+                        console.warn("Custom subjects could not be loaded; continuing with built-in categories.", subjectError);
+                    }
+                    customSubjects = loadedCustomSubjects;
+
+                    customSubjects.forEach(subject => {
+                        if (!questionDatabase[subject.id]) questionDatabase[subject.id] = { title: subject.name, total: 0, topics: [], questions: [] };
+                        else questionDatabase[subject.id].title = subject.name;
+                    });
+
+                    const snap = await window.pbGetDocs(window.pbCollection("questions"));
+
+                    Object.keys(questionDatabase).forEach(key => {
+                        questionDatabase[key].questions = [];
+                        questionDatabase[key].total = 0;
+                    });
+
+                    const subjectAliases = {
+                        "history": "history", "punjab gk & history": "history", "punjab gk": "history",
+                        "computer": "computer", "computer pyqs": "computer",
+                        "english": "english", "english pyqs": "english",
+                        "polity": "polity", "punjab polity": "polity",
+                        "mixed": "mixed", "mixed psssb clerk pyqs": "mixed"
+                    };
+                    customSubjects.forEach(subject => {
+                        subjectAliases[String(subject.id).toLowerCase()] = subject.id;
+                        subjectAliases[String(subject.name).trim().toLowerCase().replace(/\s+/g, ' ')] = subject.id;
+                    });
+
+                    const isPlaceholder = q => {
+                        const questionText = String(q.question_en || q.question || '').trim();
+                        if (!questionText) return true;
+                        if (/^(sample question|question\s*#?\d+\s+regarding|.*\bPYQ\s*#\d+\s+covering)/i.test(questionText)) return true;
+                        const options = q.options_en || q.options || [];
+                        if (!Array.isArray(options) || options.length !== 4) return true;
+                        if (options.some(o => /^option\s+[A-D]\s*\d*$/i.test(String(o).trim()))) return true;
+                        if (q.answer_index !== undefined && (!Number.isInteger(Number(q.answer_index)) || Number(q.answer_index) < 0 || Number(q.answer_index) > 3)) return true;
+                        return false;
+                    };
+
+                    snap.forEach(docSnap => {
+                        const d = docSnap.data() || {};
+                        const rawSubject = String(d.subject || d.category || '').trim().toLowerCase().replace(/\s+/g, ' ');
+                        const categoryKey = subjectAliases[rawSubject];
+                        if (!categoryKey || isPlaceholder(d)) return;
+                        questionDatabase[categoryKey].questions.push({ ...d, _docId: docSnap.id });
+                    });
+
+                    Object.keys(questionDatabase).forEach(key => {
+                        questionDatabase[key].questions.sort((a, b) =>
+                            String(a._docId || '').localeCompare(String(b._docId || ''), undefined, { numeric: true })
+                        );
+                        questionDatabase[key].total = questionDatabase[key].questions.length;
+                    });
+
+                    const totalLoaded = Object.values(questionDatabase).reduce((sum, cat) => sum + cat.questions.length, 0);
+                    const badge = document.getElementById('studentTotalCount');
+                    if (badge) badge.textContent = `${totalLoaded} Questions Available`;
+
+                    const ids = { homeHistoryCount: 'history', homeComputerCount: 'computer', homeEnglishCount: 'english', homePolityCount: 'polity', homeMixedCount: 'mixed' };
+                    Object.entries(ids).forEach(([id, key]) => {
+                        const el = document.getElementById(id);
+                        if (el) el.textContent = `${questionDatabase[key].questions.length} Questions`;
+                    });
+                    renderCustomSubjectCards();
+                    refreshSubjectSelects();
+                } catch (error) {
+                    console.error("Firestore question loading failed:", error);
+                    showNotice("Loading Error", "Could not load questions from Firestore. Please refresh and try again.");
+                }
+            })();
+            try {
+                return await questionsLoadPromise;
+            } finally {
+                questionsLoadPromise = null;
+            }
+        }
+        window.loadQuestionsFromFirestore = loadQuestionsFromFirestore;
+
+        function handleJsonFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('bulkJsonInput').value = e.target.result;
+                previewJsonValidation();
+            };
+            reader.readAsText(file);
+        }
+        window.handleJsonFileSelect = handleJsonFileSelect;
+
+        function previewJsonValidation() {
+            const input = document.getElementById('bulkJsonInput').value.trim();
+            const box = document.getElementById('jsonValidationResultBox');
+            box.classList.remove('hidden');
+            try {
+                const arr = JSON.parse(input);
+                if (!Array.isArray(arr)) { box.innerHTML = `<span class="text-rose-600 font-bold">Error: Not an array</span>`; return; }
+                let valid = 0, invalid = 0;
+                arr.forEach(i => {
+                    if ((i.question_en || i.question) && (i.options_en || i.options)) valid++; else invalid++;
+                });
+                box.innerHTML = `<div class="text-emerald-600 font-bold">Valid: ${valid}</div><div class="text-rose-600 font-bold">Invalid: ${invalid}</div><div class="text-slate-700">Total: ${arr.length}</div>`;
+            } catch (err) {
+                box.innerHTML = `<span class="text-rose-600 font-bold">Syntax Error: ${err.message}</span>`;
+            }
+        }
+        window.previewJsonValidation = previewJsonValidation;
+
+        async function importJsonQuestions() {
+            const input = document.getElementById('bulkJsonInput').value.trim();
+            if (!input) { showNotice("Error", "No JSON provided."); return; }
+            try {
+                const arr = JSON.parse(input);
+                if (!Array.isArray(arr) || arr.length === 0) throw new Error('Please upload a non-empty JSON array.');
+                if (arr.length > 450) throw new Error('Please import 450 questions or fewer per batch.');
+                const invalid = arr.findIndex(item => !(item.question_en || item.question) || !Array.isArray(item.options_en || item.options) || (item.options_en || item.options).length !== 4 || !Number.isInteger(Number(item.answer_index)) || Number(item.answer_index) < 0 || Number(item.answer_index) > 3);
+                if (invalid !== -1) throw new Error(`Question ${invalid + 1} is missing text, four options, or a valid answer_index (0–3).`);
+                const category = document.getElementById('bulkQCategory').value;
+                const topic = document.getElementById('bulkQTopic').value.trim();
+                if (!topic) throw new Error('Please enter the Part / Quiz Name (for example: Part 1 Quiz).');
+                let batch = window.pbWriteBatch();
+                const importStamp = Date.now();
+                const uploadId = String(importStamp);
+                const selectedFile = document.getElementById('jsonFileInput')?.files?.[0];
+                const fileName = selectedFile?.name || `${topic}.json`;
+                arr.forEach((item, idx) => {
+                    // Each question carries a batch ID so this exact JSON upload can be removed later.
+                    // The selected category and topic remain authoritative, as before.
+                    const uploadItem = { ...item, subject: category, topic: topic, uploadId: uploadId, fileName: fileName, uploadedAt: importStamp };
+                    batch.set(window.pbDoc("questions", `json_q_${importStamp}_${idx}`), uploadItem);
+                });
+                await batch.commit();
+                showNotice("Success", `Imported ${arr.length} questions into ${topic}! You can manage this file in Manage Quiz Files.`);
+                await loadQuestionsFromFirestore();
+            } catch (err) { showNotice("Error", err.message); }
+        }
+        window.importJsonQuestions = importJsonQuestions;
+
+        // Track each JSON import as one deletable batch. Legacy batches are also
+        // recognized from the original json_q_<timestamp>_<index> document IDs.
+        async function loadUploadedQuizFiles() {
+            const container = document.getElementById('uploadedQuizFilesList');
+            if (!container) return;
+            container.innerHTML = '<div class="bg-white p-5 rounded-xl border border-slate-200 text-center text-xs text-slate-500"><i class="fa-solid fa-spinner fa-spin mr-2"></i>Loading uploaded quiz files…</div>';
+            try {
+                if (typeof window.pbGetDocs !== 'function' || typeof window.pbCollection !== 'function') throw new Error('Firestore SDK is not ready.');
+                const user = typeof window.pbCurrentUser === 'function' ? window.pbCurrentUser() : null;
+                if (!user || !user.email || !['abhparminder01@gmail.com', 'pbquizes.review@gmail.com'].includes(user.email.toLowerCase())) throw new Error('Please login with an authorized admin account.');
+
+                const questionSnap = await window.pbGetDocs(window.pbCollection('questions'));
+                const groups = new Map();
+                const legacyPattern = /^json_q_(\d+)_\d+$/;
+                questionSnap.forEach(questionDoc => {
+                    const data = questionDoc.data() || {};
+                    if (data.uploadId) {
+                        const id = String(data.uploadId);
+                        if (!groups.has(id)) groups.set(id, { id, name: data.fileName || 'Tracked JSON upload', category: data.subject || '—', topic: data.topic || '—', uploadedAt: Number(data.uploadedAt || 0), count: 0, legacy: false });
+                        groups.get(id).count++;
+                    } else {
+                        const match = questionDoc.id.match(legacyPattern);
+                        if (match) {
+                            const id = match[1];
+                            if (!groups.has(id)) groups.set(id, { id, name: 'Legacy JSON batch', category: data.subject || '—', topic: data.topic || '—', uploadedAt: Number(id), count: 0, legacy: true });
+                            groups.get(id).count++;
+                        }
+                    }
+                });
+
+                const files = Array.from(groups.values()).filter(file => file.count > 0).sort((a, b) => b.uploadedAt - a.uploadedAt);
+                if (!files.length) {
+                    container.innerHTML = '<div class="bg-white p-5 rounded-xl border border-slate-200 text-center text-xs text-slate-500">No JSON upload batches found. Manually added questions are not listed here.</div>';
+                    return;
+                }
+                container.innerHTML = files.map(file => {
+                    const date = file.uploadedAt ? new Date(file.uploadedAt).toLocaleString() : 'Date unavailable';
+                    const safeId = escapeHtml(file.id);
+                    const safeName = escapeHtml(file.name);
+                    const safeCategory = escapeHtml(file.category);
+                    const safeTopic = escapeHtml(file.topic);
+                    return `<div class="bg-white border border-slate-200 rounded-xl p-4 flex flex-wrap items-center justify-between gap-3">
+                        <div class="min-w-0 flex-1">
+                            <div class="flex items-center flex-wrap gap-2"><p class="text-sm font-bold text-slate-900 break-all">${safeName}</p>${file.legacy ? '<span class="text-[10px] font-bold px-2 py-1 rounded-full bg-amber-50 text-amber-700">Legacy batch</span>' : ''}</div>
+                            <p class="text-[11px] text-slate-500 mt-1">${file.count} questions · ${safeCategory} · ${safeTopic}</p>
+                            <p class="text-[10px] text-slate-400 mt-1">${escapeHtml(date)}</p>
+                        </div>
+                        <button type="button" onclick="deleteUploadedQuiz('${safeId}', ${file.legacy ? 'true' : 'false'})" class="bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-bold px-4 py-2.5 rounded-lg"><i class="fa-solid fa-trash mr-1"></i> Delete File</button>
+                    </div>`;
+                }).join('');
+            } catch (error) {
+                console.error('Could not load uploaded quiz files:', error);
+                container.innerHTML = `<div class="bg-rose-50 border border-rose-200 text-rose-700 p-4 rounded-xl text-xs">${escapeHtml(error.message || 'Unable to load uploaded files.')}</div>`;
+            }
+        }
+        window.loadUploadedQuizFiles = loadUploadedQuizFiles;
+
+        async function deleteUploadedQuiz(uploadId, isLegacy) {
+            const user = typeof window.pbCurrentUser === 'function' ? window.pbCurrentUser() : null;
+            if (!user || !user.email || !['abhparminder01@gmail.com', 'pbquizes.review@gmail.com'].includes(user.email.toLowerCase())) {
+                showNotice('Access denied', 'Please login with an authorized admin account.'); return;
+            }
+            const confirmation = isLegacy
+                ? `Delete this legacy JSON batch? All questions with this batch ID will be permanently deleted. This cannot be undone.`
+                : `Delete this uploaded JSON file and all of its questions? Other uploaded files and manually added questions will remain safe. This cannot be undone.`;
+            if (!window.confirm(confirmation)) return;
+
+            try {
+                const questionSnap = await window.pbGetDocs(window.pbCollection('questions'));
+                const targets = [];
+                questionSnap.forEach(questionDoc => {
+                    const data = questionDoc.data() || {};
+                    if (isLegacy) {
+                        if (questionDoc.id.startsWith(`json_q_${uploadId}_`) && /^json_q_\d+_\d+$/.test(questionDoc.id) && !data.uploadId) targets.push(questionDoc.ref);
+                    } else if (String(data.uploadId || '') === String(uploadId)) {
+                        targets.push(questionDoc.ref);
+                    }
+                });
+                if (!targets.length) throw new Error('No questions were found for this upload. Nothing was deleted.');
+
+                for (let start = 0; start < targets.length; start += 450) {
+                    const batch = window.pbWriteBatch();
+                    targets.slice(start, start + 450).forEach(ref => batch.delete(ref));
+                    await batch.commit();
+                }
+                await loadQuestionsFromFirestore();
+                await loadUploadedQuizFiles();
+                showNotice('Deleted successfully', `${targets.length} questions from this upload were deleted. Other quiz files were not changed.`);
+            } catch (error) {
+                console.error('Uploaded quiz deletion failed:', error);
+                showNotice('Delete failed', error.message || 'Could not delete this upload. Please refresh and check Firestore.');
+            }
+        }
+        window.deleteUploadedQuiz = deleteUploadedQuiz;
+
+        // Cloudinary + Firestore Mind Maps feature.
+        const CLOUDINARY_CLOUD_NAME = 'v2mxwy6k';
+        const CLOUDINARY_UPLOAD_PRESET = 'pbquizes_mindmaps';
+        let allMindMaps = [];
+
+        function getMindMapSubjects() {
+            const items = Object.entries(questionDatabase).map(([id, data]) => ({ id, name: data.title || id }));
+            customSubjects.forEach(subject => { if (!items.some(x => x.id === subject.id)) items.push({ id: subject.id, name: subject.name }); });
+            return items;
+        }
+
+        async function loadMindMapAdminSubjects() {
+            const select = document.getElementById('mindMapSubject');
+            if (!select) return;
+            try { await loadQuestionsFromFirestore(); } catch (_) {}
+            const subjects = getMindMapSubjects();
+            select.innerHTML = subjects.map(x => `<option value="${escapeHtml(x.id)}">${escapeHtml(x.name)}</option>`).join('');
+        }
+
+        async function uploadMindMap() {
+            const btn = document.getElementById('mindMapUploadBtn');
+            const status = document.getElementById('mindMapUploadStatus');
+            try {
+                const user = typeof window.pbCurrentUser === 'function' ? window.pbCurrentUser() : null;
+                if (!user || !user.email || !["abhparminder01@gmail.com", "pbquizes.review@gmail.com"].includes(user.email.toLowerCase())) throw new Error('Pehle authorized Admin account se login karo.');
+                const subjectId = document.getElementById('mindMapSubject').value;
+                const subjectName = getMindMapSubjects().find(x => x.id === subjectId)?.name || subjectId;
+                const topic = document.getElementById('mindMapTopic').value.trim();
+                const title = document.getElementById('mindMapTitle').value.trim();
+                const file = document.getElementById('mindMapFile').files[0];
+                if (!subjectId || !topic || !title || !file) throw new Error('Subject, topic, title aur image sab select/enter karo.');
+                if (!['image/jpeg','image/png','image/webp'].includes(file.type)) throw new Error('Sirf JPG, PNG ya WEBP image upload karo.');
+                if (file.size > 5 * 1024 * 1024) throw new Error('Image 5 MB se chhoti honi chahiye.');
+                btn.disabled = true; btn.textContent = 'Uploading…'; status.textContent = 'Image Cloudinary par upload ho rahi hai…';
+                const form = new FormData(); form.append('file', file); form.append('upload_preset', CLOUDINARY_UPLOAD_PRESET);
+                const response = await fetch(`https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/image/upload`, { method: 'POST', body: form });
+                const uploaded = await response.json();
+                if (!response.ok || !uploaded.secure_url) throw new Error(uploaded.error?.message || 'Cloudinary upload failed.');
+                const docId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : `map_${Date.now()}_${Math.random().toString(36).slice(2,8)}`;
+                await window.pbSetDoc(window.pbDoc('mindMaps', docId), {
+                    subjectId, subjectName, topic, title, imageUrl: uploaded.secure_url,
+                    publicId: uploaded.public_id || '', format: uploaded.format || '', bytes: uploaded.bytes || file.size,
+                    createdAt: new Date().toISOString(), active: true
+                });
+                document.getElementById('mindMapTopic').value = ''; document.getElementById('mindMapTitle').value = ''; document.getElementById('mindMapFile').value = '';
+                status.textContent = 'Mind Map successfully upload aur save ho gaya!';
+                await loadAdminMindMaps();
+                showNotice('Upload Successful', 'Mind Map Cloudinary aur Firestore dono mein save ho gaya.');
+            } catch (e) { status.textContent = e.message; showNotice('Mind Map Upload Failed', escapeHtml(e.message)); }
+            finally { btn.disabled = false; btn.innerHTML = '<i class="fa-solid fa-cloud-arrow-up mr-2"></i>Upload Mind Map'; }
+        }
+        window.uploadMindMap = uploadMindMap;
+
+        async function editMindMap(item) {
+            try {
+                const user = typeof window.pbCurrentUser === 'function' ? window.pbCurrentUser() : null;
+                if (!user || !user.email || !["abhparminder01@gmail.com", "pbquizes.review@gmail.com"].includes(user.email.toLowerCase())) throw new Error('Pehle authorized Admin account se login karo.');
+
+                const subjects = getMindMapSubjects();
+                const subjectMenu = subjects.map((x, i) => `${i + 1}. ${x.name}`).join('\n');
+                const currentSubjectIndex = Math.max(0, subjects.findIndex(x => x.id === item.subjectId));
+                const title = window.prompt('Mind Map title edit karo:', item.title || '');
+                if (title === null) return;
+                const topic = window.prompt('Topic / Part edit karo:', item.topic || '');
+                if (topic === null) return;
+                const subjectChoice = window.prompt(`Subject number enter karo:\n${subjectMenu}`, String(currentSubjectIndex + 1));
+                if (subjectChoice === null) return;
+                const selectedIndex = Number(subjectChoice) - 1;
+                if (!Number.isInteger(selectedIndex) || selectedIndex < 0 || selectedIndex >= subjects.length) {
+                    throw new Error('Valid subject number enter karo.');
+                }
+                const cleanTitle = title.trim();
+                const cleanTopic = topic.trim();
+                if (!cleanTitle || !cleanTopic) throw new Error('Title aur topic khaali nahi ho sakte.');
+                const selectedSubject = subjects[selectedIndex];
+
+                await window.pbUpdateDoc(window.pbDoc('mindMaps', item.id), {
+                    title: cleanTitle,
+                    topic: cleanTopic,
+                    subjectId: selectedSubject.id,
+                    subjectName: selectedSubject.name,
+                    updatedAt: new Date().toISOString()
+                });
+                await loadAdminMindMaps();
+                await loadStudentMindMaps();
+                showNotice('Mind Map Updated', 'Title, subject aur topic successfully update ho gaye. Image same rakhi gayi hai.');
+            } catch (e) {
+                showNotice('Mind Map Edit Failed', escapeHtml(e.message || String(e)));
+            }
+        }
+        window.editMindMap = editMindMap;
+
+        async function deleteMindMap(item) {
+            try {
+                const user = typeof window.pbCurrentUser === 'function' ? window.pbCurrentUser() : null;
+                if (!user || !user.email || !["abhparminder01@gmail.com", "pbquizes.review@gmail.com"].includes(user.email.toLowerCase())) throw new Error('Pehle authorized Admin account se login karo.');
+                const confirmed = window.confirm(`Kya tum sach mein \"${item.title || 'Untitled'}\" Mind Map delete karna chahte ho? Ye action undo nahi hoga.`);
+                if (!confirmed) return;
+                await window.pbDeleteDoc(window.pbDoc('mindMaps', item.id));
+                await loadAdminMindMaps();
+                await loadStudentMindMaps();
+                showNotice('Mind Map Deleted', 'Mind Map Firestore aur student list se delete ho gaya.');
+            } catch (e) {
+                showNotice('Mind Map Delete Failed', escapeHtml(e.message || String(e)));
+            }
+        }
+        window.deleteMindMap = deleteMindMap;
+
+        async function loadAdminMindMaps() {
+            const box = document.getElementById('adminMindMapList'); if (!box) return;
+            box.textContent = 'Loading…';
+            try {
+                const snap = await window.pbGetDocs(window.pbCollection('mindMaps'));
+                const rows = []; snap.forEach(d => rows.push({ id: d.id, ...d.data() }));
+                rows.sort((a,b) => String(b.createdAt || '').localeCompare(String(a.createdAt || '')));
+                box.innerHTML = '';
+                if (!rows.length) { box.textContent = 'Abhi koi Mind Map upload nahi hua.'; return; }
+                rows.forEach(item => {
+                    const row = document.createElement('div'); row.className = 'flex flex-wrap items-center gap-3 border border-slate-200 rounded-xl p-2';
+                    const img = document.createElement('img'); img.src = item.imageUrl || ''; img.alt = item.title || 'Mind Map'; img.className = 'w-16 h-16 object-cover rounded-lg';
+                    const info = document.createElement('div'); info.className = 'min-w-0 flex-1';
+                    const title = document.createElement('p'); title.className = 'font-bold text-slate-800'; title.textContent = item.title || 'Untitled';
+                    const meta = document.createElement('p'); meta.className = 'text-slate-500'; meta.textContent = `${item.subjectName || item.subjectId || ''} · ${item.topic || ''}`;
+                    const actions = document.createElement('div'); actions.className = 'flex gap-2 w-full sm:w-auto';
+                    const editBtn = document.createElement('button'); editBtn.type = 'button'; editBtn.className = 'px-3 py-2 rounded-lg bg-indigo-50 text-indigo-700 font-bold'; editBtn.textContent = 'Edit';
+                    editBtn.addEventListener('click', () => editMindMap(item));
+                    const deleteBtn = document.createElement('button'); deleteBtn.type = 'button'; deleteBtn.className = 'px-3 py-2 rounded-lg bg-rose-50 text-rose-700 font-bold'; deleteBtn.textContent = 'Delete';
+                    deleteBtn.addEventListener('click', () => deleteMindMap(item));
+                    actions.append(editBtn, deleteBtn);
+                    info.append(title, meta); row.append(img, info, actions); box.appendChild(row);
+                });
+            } catch (e) { box.textContent = 'Mind Maps load nahi hue: ' + e.message; }
+        }
+
+        async function openMindMapsScreen() {
+            navigateTo('mindmaps');
+            await loadStudentMindMaps();
+        }
+        window.openMindMapsScreen = openMindMapsScreen;
+
+        async function loadStudentMindMaps() {
+            const grid = document.getElementById('studentMindMapGrid'); if (!grid) return;
+            grid.innerHTML = '<p class="text-sm text-slate-500">Mind Maps load ho rahe hain…</p>';
+            try {
+                const snap = await window.pbGetDocs(window.pbCollection('mindMaps'));
+                allMindMaps = []; snap.forEach(d => { const item = { id: d.id, ...d.data() }; if (item.active !== false && item.imageUrl) allMindMaps.push(item); });
+                allMindMaps.sort((a,b) => String(b.createdAt || '').localeCompare(String(a.createdAt || '')));
+                const subjects = [...new Map(allMindMaps.map(x => [x.subjectId, {id:x.subjectId,name:x.subjectName || x.subjectId}])).values()];
+                const subjectSelect = document.getElementById('studentMindMapSubject');
+                subjectSelect.innerHTML = '<option value="all">All Subjects</option>' + subjects.map(x => `<option value="${escapeHtml(x.id)}">${escapeHtml(x.name)}</option>`).join('');
+                updateMindMapTopicOptions(); renderStudentMindMaps();
+            } catch (e) { grid.innerHTML = `<p class="text-sm text-rose-600">Mind Maps load nahi hue: ${escapeHtml(e.message)}</p>`; }
+        }
+
+        function updateMindMapTopicOptions() {
+            const subjectId = document.getElementById('studentMindMapSubject')?.value || 'all';
+            const topicSelect = document.getElementById('studentMindMapTopic'); if (!topicSelect) return;
+            const topics = [...new Set(allMindMaps.filter(x => subjectId === 'all' || x.subjectId === subjectId).map(x => x.topic).filter(Boolean))].sort();
+            topicSelect.innerHTML = '<option value="all">All Topics</option>' + topics.map(x => `<option value="${escapeHtml(x)}">${escapeHtml(x)}</option>`).join('');
+        }
+
+        function filterMindMaps() { updateMindMapTopicOptions(); renderStudentMindMaps(); }
+        window.filterMindMaps = filterMindMaps;
+
+        function renderStudentMindMaps() {
+            const grid = document.getElementById('studentMindMapGrid'); if (!grid) return;
+            const subjectId = document.getElementById('studentMindMapSubject')?.value || 'all';
+            const topic = document.getElementById('studentMindMapTopic')?.value || 'all';
+            const rows = allMindMaps.filter(x => (subjectId === 'all' || x.subjectId === subjectId) && (topic === 'all' || x.topic === topic));
+            grid.innerHTML = '';
+            if (!rows.length) { grid.innerHTML = '<div class="col-span-full bg-white border border-slate-200 rounded-xl p-5 text-center text-sm text-slate-500">Abhi is category mein Mind Maps available nahi hain.</div>'; return; }
+            rows.forEach(item => {
+                const card = document.createElement('button'); card.type = 'button'; card.className = 'text-left bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm';
+                const img = document.createElement('img'); img.src = item.imageUrl; img.alt = item.title || 'Mind Map'; img.loading = 'lazy'; img.className = 'w-full max-h-80 object-contain bg-slate-100';
+                const info = document.createElement('div'); info.className = 'p-3';
+                const title = document.createElement('p'); title.className = 'font-bold text-sm text-slate-900'; title.textContent = item.title || 'Mind Map';
+                const meta = document.createElement('p'); meta.className = 'text-xs text-slate-500 mt-1'; meta.textContent = `${item.subjectName || ''} · ${item.topic || ''}`;
+                info.append(title, meta); card.append(img, info); card.addEventListener('click', () => openMindMapViewer(item)); grid.appendChild(card);
+            });
+        }
+
+        // Mind Map image zoom and pan controls (works with touch and mouse).
+        let mindMapScale = 1, mindMapX = 0, mindMapY = 0;
+        let mindMapPointers = new Map(), mindMapPinchStart = 0, mindMapPinchScale = 1;
+        let mindMapLastX = 0, mindMapLastY = 0, mindMapLastTap = 0;
+        const mindMapMinScale = 1, mindMapMaxScale = 5;
+
+        function applyMindMapTransform() {
+            const image = document.getElementById('mindMapViewerImage');
+            if (image) image.style.transform = `translate(${mindMapX}px, ${mindMapY}px) scale(${mindMapScale})`;
+        }
+        function resetMindMapZoom() {
+            mindMapScale = 1; mindMapX = 0; mindMapY = 0; applyMindMapTransform();
+        }
+        function changeMindMapZoom(amount) {
+            mindMapScale = Math.min(mindMapMaxScale, Math.max(mindMapMinScale, mindMapScale + amount));
+            if (mindMapScale === 1) { mindMapX = 0; mindMapY = 0; }
+            applyMindMapTransform();
+        }
+        function openMindMapViewer(item) {
+            const image = document.getElementById('mindMapViewerImage');
+            image.src = item.imageUrl;
+            document.getElementById('mindMapViewerTitle').textContent = item.title || 'Mind Map';
+            resetMindMapZoom();
+            const viewer = document.getElementById('mindMapViewer');
+            viewer.classList.remove('hidden'); viewer.classList.add('flex');
+        }
+        function closeMindMapViewer() {
+            const viewer = document.getElementById('mindMapViewer');
+            viewer.classList.add('hidden'); viewer.classList.remove('flex');
+            document.getElementById('mindMapViewerImage').src = '';
+            mindMapPointers.clear(); resetMindMapZoom();
+        }
+        window.closeMindMapViewer = closeMindMapViewer;
+        window.resetMindMapZoom = resetMindMapZoom;
+        window.changeMindMapZoom = changeMindMapZoom;
+
+        const mindMapZoomViewport = document.getElementById('mindMapZoomViewport');
+        if (mindMapZoomViewport) {
+            mindMapZoomViewport.addEventListener('pointerdown', (event) => {
+                event.preventDefault();
+                mindMapZoomViewport.setPointerCapture(event.pointerId);
+                mindMapPointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+                if (mindMapPointers.size === 1) {
+                    const now = Date.now();
+                    if (now - mindMapLastTap < 300) {
+                        mindMapScale = mindMapScale > 1 ? 1 : 2.5;
+                        if (mindMapScale === 1) { mindMapX = 0; mindMapY = 0; }
+                        applyMindMapTransform();
+                    }
+                    mindMapLastTap = now;
+                    mindMapLastX = event.clientX; mindMapLastY = event.clientY;
+                } else if (mindMapPointers.size === 2) {
+                    const pts = [...mindMapPointers.values()];
+                    mindMapPinchStart = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+                    mindMapPinchScale = mindMapScale;
+                }
+            });
+            mindMapZoomViewport.addEventListener('pointermove', (event) => {
+                if (!mindMapPointers.has(event.pointerId)) return;
+                event.preventDefault();
+                const previous = mindMapPointers.get(event.pointerId);
+                mindMapPointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+                if (mindMapPointers.size >= 2) {
+                    const pts = [...mindMapPointers.values()];
+                    const distance = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+                    if (mindMapPinchStart > 0) {
+                        mindMapScale = Math.min(mindMapMaxScale, Math.max(mindMapMinScale,
+                            mindMapPinchScale * distance / mindMapPinchStart));
+                        if (mindMapScale === 1) { mindMapX = 0; mindMapY = 0; }
+                        applyMindMapTransform();
+                    }
+                } else if (mindMapScale > 1) {
+                    mindMapX += event.clientX - previous.x;
+                    mindMapY += event.clientY - previous.y;
+                    applyMindMapTransform();
+                }
+            });
+            const finishMindMapPointer = (event) => {
+                mindMapPointers.delete(event.pointerId);
+                if (mindMapPointers.size < 2) mindMapPinchStart = 0;
+            };
+            mindMapZoomViewport.addEventListener('pointerup', finishMindMapPointer);
+            mindMapZoomViewport.addEventListener('pointercancel', finishMindMapPointer);
+            mindMapZoomViewport.addEventListener('lostpointercapture', finishMindMapPointer);
+        }
+
+        async function checkFirestoreStatus() {
+            try {
+                const snap = await window.pbGetDocs(window.pbCollection("questions"));
+                document.getElementById('firestoreStatusBox').innerHTML = `Live Firestore Count: <b>${snap.size} documents</b>`;
+            } catch (e) { document.getElementById('firestoreStatusBox').textContent = e.message; }
+        }
+        window.checkFirestoreStatus = checkFirestoreStatus;
+
+        function showNotice(title, msg) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalMessage').innerHTML = msg;
+            const modal = document.getElementById('customModal');
+            modal.classList.remove('hidden');
+            setTimeout(() => modal.classList.remove('opacity-0'), 10);
+        }
+        window.showNotice = showNotice;
+
+        function closeModal() {
+            const modal = document.getElementById('customModal');
+            modal.classList.add('opacity-0');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+        window.closeModal = closeModal;
+    </script>
+<div style="position:fixed;bottom:8px;right:8px;z-index:99999;background:#1d4ed8;color:#fff;padding:5px 9px;border-radius:8px;font:600 10px Arial;opacity:.9">CDN TEST BUILD · NOT PLAY STORE</div>
+</body>
+</html>
+
