@@ -1,0 +1,53 @@
+{
+  "app": "PB Quizes",
+  "version": 1,
+  "generatedAt": "2026-11-10T17:17:51.792Z",
+  "totalQuestions": 1991,
+  "subjects": [
+    {
+      "id": "computer",
+      "count": 301,
+      "file": "questions/computer.json"
+    },
+    {
+      "id": "current_affairs",
+      "count": 180,
+      "file": "questions/current_affairs.json"
+    },
+    {
+      "id": "english",
+      "count": 340,
+      "file": "questions/english.json"
+    },
+    {
+      "id": "highcourt_clerk_practice",
+      "count": 70,
+      "file": "questions/highcourt_clerk_practice.json"
+    },
+    {
+      "id": "history",
+      "count": 580,
+      "file": "questions/history.json"
+    },
+    {
+      "id": "math",
+      "count": 25,
+      "file": "questions/math.json"
+    },
+    {
+      "id": "mixed",
+      "count": 135,
+      "file": "questions/mixed.json"
+    },
+    {
+      "id": "polity",
+      "count": 250,
+      "file": "questions/polity.json"
+    },
+    {
+      "id": "static_gk",
+      "count": 110,
+      "file": "questions/static_gk.json"
+    }
+  ]
+}
