@@ -174,6 +174,26 @@
                         <h3 class="font-bold text-slate-900 text-sm">Punjab Polity</h3>
                         <p id="homePolityCount" class="text-xs text-slate-500 mt-1">Loading questions…</p>
                     </div>
+                    <div onclick="openTopicScreen('current_affairs')" class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm cursor-pointer hover:border-brand-500 transition">
+                        <div class="w-10 h-10 rounded-xl bg-rose-600 text-white flex items-center justify-center font-bold mb-2"><i class="fa-solid fa-newspaper"></i></div>
+                        <h3 class="font-bold text-slate-900 text-sm">Current Affairs</h3>
+                        <p id="homeCurrentAffairsCount" class="text-xs text-slate-500 mt-1">Loading questions…</p>
+                    </div>
+                    <div onclick="openTopicScreen('static_gk')" class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm cursor-pointer hover:border-brand-500 transition">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-600 text-white flex items-center justify-center font-bold mb-2"><i class="fa-solid fa-globe"></i></div>
+                        <h3 class="font-bold text-slate-900 text-sm">Static GK</h3>
+                        <p id="homeStaticGkCount" class="text-xs text-slate-500 mt-1">Loading questions…</p>
+                    </div>
+                    <div onclick="openTopicScreen('highcourt_clerk_practice')" class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm cursor-pointer hover:border-brand-500 transition">
+                        <div class="w-10 h-10 rounded-xl bg-teal-600 text-white flex items-center justify-center font-bold mb-2"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <h3 class="font-bold text-slate-900 text-sm">High Court Clerk Practice</h3>
+                        <p id="homeHighCourtCount" class="text-xs text-slate-500 mt-1">Loading questions…</p>
+                    </div>
+                    <div onclick="openTopicScreen('math')" class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm cursor-pointer hover:border-brand-500 transition">
+                        <div class="w-10 h-10 rounded-xl bg-orange-500 text-white flex items-center justify-center font-bold mb-2"><i class="fa-solid fa-calculator"></i></div>
+                        <h3 class="font-bold text-slate-900 text-sm">Mathematics</h3>
+                        <p id="homeMathCount" class="text-xs text-slate-500 mt-1">Loading questions…</p>
+                    </div>
                 </div>
 
                 <button onclick="openMindMapsScreen()" class="w-full text-left bg-gradient-to-r from-indigo-700 to-violet-600 text-white rounded-2xl p-5 shadow-lg">
@@ -424,6 +444,10 @@
                                     <option value="english">English PYQs</option>
                                     <option value="polity">Punjab Polity</option>
                                     <option value="mixed">Mixed PSSSB Clerk PYQs</option>
+                                    <option value="current_affairs">Current Affairs</option>
+                                    <option value="static_gk">Static GK</option>
+                                    <option value="highcourt_clerk_practice">High Court Clerk Practice</option>
+                                    <option value="math">Mathematics</option>
                                 </select>
                             </div>
                             <div>
@@ -476,6 +500,10 @@
                                         <option value="english">English PYQs</option>
                                         <option value="polity">Punjab Polity</option>
                                         <option value="mixed">Mixed PSSSB Clerk PYQs</option>
+                                        <option value="current_affairs">Current Affairs</option>
+                                        <option value="static_gk">Static GK</option>
+                                        <option value="highcourt_clerk_practice">High Court Clerk Practice</option>
+                                        <option value="math">Mathematics</option>
                                     </select>
                                 </div>
                                 <div>
@@ -954,7 +982,11 @@
             computer: { title: "Computer PYQs", total: 0, topics: [], questions: [] },
             english: { title: "English PYQs", total: 0, topics: [], questions: [] },
             polity: { title: "Punjab Polity", total: 0, topics: [], questions: [] },
-            mixed: { title: "Mixed PSSSB Clerk PYQs", total: 0, topics: [], questions: [] }
+            mixed: { title: "Mixed PSSSB Clerk PYQs", total: 0, topics: [], questions: [] },
+            current_affairs: { title: "Current Affairs", total: 0, topics: [], questions: [] },
+            static_gk: { title: "Static GK", total: 0, topics: [], questions: [] },
+            highcourt_clerk_practice: { title: "High Court Clerk Practice", total: 0, topics: [], questions: [] },
+            math: { title: "Mathematics", total: 0, topics: [], questions: [] }
         };
 
         let customSubjects = [];
@@ -994,6 +1026,7 @@
             if (!grid) return;
             grid.querySelectorAll('[data-custom-subject="true"]').forEach(el => el.remove());
             customSubjects.forEach(subject => {
+                if (['history','computer','english','polity','mixed','current_affairs','static_gk','highcourt_clerk_practice','math'].includes(subject.id)) return;
                 const card = document.createElement('div');
                 card.dataset.customSubject = 'true';
                 card.className = 'bg-white border border-slate-200 rounded-2xl p-4 shadow-sm cursor-pointer hover:border-brand-500 transition';
@@ -1027,7 +1060,7 @@
                 const bannerUrl = document.getElementById('newSubjectBanner').value.trim();
                 if (!name) throw new Error('Subject name enter karo.');
                 const id = name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
-                if (!id || ['history','computer','english','polity','mixed'].includes(id)) throw new Error('Is naam se subject key nahi ban sakti ya ye existing category hai.');
+                if (!id || ['history','computer','english','polity','mixed','current_affairs','static_gk','highcourt_clerk_practice','math'].includes(id)) throw new Error('Is naam se subject key nahi ban sakti ya ye existing category hai.');
                 if (typeof window.pbSetDoc !== 'function') throw new Error('Firebase abhi ready nahi hai.');
                 if (customSubjects.some(s => s.id === id)) throw new Error('Ye subject pehle se add hai.');
                 await window.pbSetDoc(window.pbDoc('subjects', id), { name, bannerUrl, active: true, createdAt: new Date().toISOString() });
@@ -1697,6 +1730,7 @@
         // PB Quizes CDN test loader: fetch only the selected subject JSON.
         const PB_QUIZ_CDN_BASE = 'https://ohiharman.github.io/pb-quizes-data/';
         const cdnLoadedSubjects = new Set();
+        const cdnLoadingPromises = new Map();
         const cdnSubjectTitles = {
             history: 'Punjab GK & History', computer: 'Computer PYQs', english: 'English PYQs',
             polity: 'Punjab Polity', mixed: 'Mixed PSSSB Clerk PYQs',
@@ -1705,6 +1739,8 @@
         };
         async function loadQuestionsFromCDN(subjectId) {
             if (cdnLoadedSubjects.has(subjectId)) return;
+            if (cdnLoadingPromises.has(subjectId)) return cdnLoadingPromises.get(subjectId);
+            const loadPromise = (async () => {
             const category = questionDatabase[subjectId] || (questionDatabase[subjectId] = {
                 title: cdnSubjectTitles[subjectId] || subjectId.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
                 total: 0, topics: [], questions: []
@@ -1733,18 +1769,39 @@
                 const total = Object.values(questionDatabase).reduce((sum, c) => sum + (c.questions?.length || 0), 0);
                 const totalBadge = document.getElementById('studentTotalCount');
                 if (totalBadge) totalBadge.textContent = `${total} Questions Loaded`;
-                const homeIds = { history:'homeHistoryCount', computer:'homeComputerCount', english:'homeEnglishCount', polity:'homePolityCount', mixed:'homeMixedCount' };
-                if (homeIds[subjectId]) {
-                    const el = document.getElementById(homeIds[subjectId]);
-                    if (el) el.textContent = `${category.questions.length} Questions`;
-                }
+                const homeIds = {
+                    history:'homeHistoryCount', computer:'homeComputerCount', english:'homeEnglishCount',
+                    polity:'homePolityCount', mixed:'homeMixedCount', current_affairs:'homeCurrentAffairsCount',
+                    static_gk:'homeStaticGkCount', highcourt_clerk_practice:'homeHighCourtCount', math:'homeMathCount'
+                };
+                const el = document.getElementById(homeIds[subjectId]);
+                if (el) el.textContent = `${category.questions.length} Questions`;
             } catch (error) {
                 console.error('CDN question loading failed:', subjectId, error);
-                showNotice('Questions Load Failed', 'Internet/CDN se questions load nahi hue. Please check connection and try again.');
+                const homeIds = {
+                    history:'homeHistoryCount', computer:'homeComputerCount', english:'homeEnglishCount',
+                    polity:'homePolityCount', mixed:'homeMixedCount', current_affairs:'homeCurrentAffairsCount',
+                    static_gk:'homeStaticGkCount', highcourt_clerk_practice:'homeHighCourtCount', math:'homeMathCount'
+                };
+                const el = document.getElementById(homeIds[subjectId]);
+                if (el) el.textContent = 'Tap to retry';
                 throw error;
             }
+            })();
+            cdnLoadingPromises.set(subjectId, loadPromise);
+            try { return await loadPromise; }
+            finally { cdnLoadingPromises.delete(subjectId); }
         }
         window.loadQuestionsFromCDN = loadQuestionsFromCDN;
+
+        // Load subject files in small batches so all tiles show real counts on Home.
+        (async function preloadStudentSubjects() {
+            const subjectIds = ['history','computer','english','polity','mixed','current_affairs','static_gk','highcourt_clerk_practice','math'];
+            for (let i = 0; i < subjectIds.length; i += 3) {
+                await Promise.allSettled(subjectIds.slice(i, i + 3).map(id => loadQuestionsFromCDN(id)));
+            }
+            renderCustomSubjectCards();
+        })();
 
         let questionsLoadPromise = null;
         async function loadQuestionsFromFirestore() {
@@ -1787,7 +1844,11 @@
                         "computer": "computer", "computer pyqs": "computer",
                         "english": "english", "english pyqs": "english",
                         "polity": "polity", "punjab polity": "polity",
-                        "mixed": "mixed", "mixed psssb clerk pyqs": "mixed"
+                        "mixed": "mixed", "mixed psssb clerk pyqs": "mixed",
+                        "current_affairs": "current_affairs", "current affairs": "current_affairs",
+                        "static_gk": "static_gk", "static gk": "static_gk",
+                        "highcourt_clerk_practice": "highcourt_clerk_practice", "high court clerk practice": "highcourt_clerk_practice",
+                        "math": "math", "mathematics": "math"
                     };
                     customSubjects.forEach(subject => {
                         subjectAliases[String(subject.id).toLowerCase()] = subject.id;
