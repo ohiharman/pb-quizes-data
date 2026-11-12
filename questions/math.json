@@ -1,82 +1,87 @@
 {
   "subject": "math",
   "count": 32,
-  "updated_at": "2026-11-12T17:49:56.112Z",
+  "updated_at": "2026-11-12T17:50:46.417Z",
   "questions": [
     {
-      "source": "PSSSB Clerk 2021 paper",
+      "topic": "Part 1 Mix",
       "question_type": "Maths",
-      "question_en": "[PSSSB Clerk 2021 PYQ] In an Engineering Entrance Test, a student scores 4 marks for every correct answer and loses 0.5 marks for every wrong answer. If the student attempts all 100 questions and scores 310 marks, how many questions were answered correctly?",
+      "explanation_en": "Let correct answers = x. Then 4x − 0.5(100 − x) = 310. So 4.5x = 360 and x = 80.",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
+      "question_en": "[PSSSB Clerk 2021 PYQ] In an Engineering Entrance Test, a student scores 4 marks for every correct answer and loses 0.5 marks for every wrong answer. If the student attempts all 100 questions and scores 310 marks, how many questions were answered correctly?",
       "options_en": [
         "80",
         "90",
         "100",
         "70"
       ],
-      "explanation_en": "Let correct answers = x. Then 4x − 0.5(100 − x) = 310. So 4.5x = 360 and x = 80.",
+      "source": "PSSSB Clerk 2021 paper",
       "explanation_pa": "",
-      "topic": "Part 1 Mix",
       "question_pa": "",
-      "answer_index": 0,
       "subject": "math",
+      "answer_index": 0,
       "id": "json_q_1793641209512_0"
     },
     {
-      "topic": "Part 1 Mix",
-      "subject": "math",
-      "question_type": "Maths",
-      "source": "PSSSB-pattern practice / original DI set",
       "question_en": "[PSSSB-pattern practice] A sum is lent at 6% simple interest for 2 years and the same sum is lent separately at 24% simple interest for 6 months. If the total interest from both loans is ₹4,704, find the principal of each loan.",
-      "answer_index": 2,
+      "question_type": "Maths",
+      "explanation_en": "Interest on first loan = 12% of P; interest on second = 12% of P. Total = 24% of P = ₹4,704. Therefore P = 4704 ÷ 0.24 = ₹19,600.",
+      "subject": "math",
+      "explanation_pa": "",
+      "topic": "Part 1 Mix",
+      "question_pa": "",
+      "source": "PSSSB-pattern practice / original DI set",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
       "options_en": [
         "₹16,000",
         "₹18,000",
         "₹19,600",
         "₹20,000"
       ],
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "explanation_pa": "",
-      "question_pa": "",
-      "explanation_en": "Interest on first loan = 12% of P; interest on second = 12% of P. Total = 24% of P = ₹4,704. Therefore P = 4704 ÷ 0.24 = ₹19,600.",
+      "answer_index": 2,
       "id": "json_q_1793641209512_1"
     },
     {
-      "answer_index": 0,
+      "topic": "Part 1 Mix",
       "question_pa": "",
-      "subject": "math",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
       "options_en": [
         "48",
         "50",
         "58",
         "60"
       ],
-      "question_en": "[PSSSB Clerk 2021 PYQ] The HCF and LCM of two numbers are 12 and 144 respectively. If one number is 36, find the other number.",
-      "source": "PSSSB Clerk 2021 paper",
       "explanation_pa": "",
-      "topic": "Part 1 Mix",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
       "question_type": "Maths",
       "explanation_en": "Product of two numbers = HCF × LCM = 12 × 144 = 1728. Other number = 1728 ÷ 36 = 48.",
+      "subject": "math",
+      "question_en": "[PSSSB Clerk 2021 PYQ] The HCF and LCM of two numbers are 12 and 144 respectively. If one number is 36, find the other number.",
+      "answer_index": 0,
+      "source": "PSSSB Clerk 2021 paper",
       "id": "json_q_1793641209512_2"
     },
     {
+      "source": "PSSSB Clerk 2021 paper",
+      "question_pa": "",
+      "answer_index": 3,
+      "explanation_pa": "",
       "subject": "math",
+      "question_en": "[PSSSB Clerk 2021 PYQ] A dishonest shopkeeper uses 10% less weight while selling and obtains 21.5% more quantity while purchasing. Assuming he sells at cost price, what is his approximate profit percentage?",
       "options_pa": [
         "",
         "",
@@ -84,34 +89,30 @@
         ""
       ],
       "explanation_en": "For ₹1 charged, the shopkeeper gives only 0.9 kg but has effectively obtained 1.215 kg per nominal kg through the stated purchase manipulation. Profit factor = 1.215 ÷ 0.9 = 1.35, so profit = 35%. (Check the exact source wording before treating this as a verbatim PYQ.)",
-      "topic": "Part 1 Mix",
-      "explanation_pa": "",
-      "question_pa": "",
-      "answer_index": 3,
-      "question_en": "[PSSSB Clerk 2021 PYQ] A dishonest shopkeeper uses 10% less weight while selling and obtains 21.5% more quantity while purchasing. Assuming he sells at cost price, what is his approximate profit percentage?",
+      "question_type": "Maths",
       "options_en": [
         "20%",
         "25%",
         "30%",
         "35%"
       ],
-      "question_type": "Maths",
-      "source": "PSSSB Clerk 2021 paper",
+      "topic": "Part 1 Mix",
       "id": "json_q_1793641209512_3"
     },
     {
-      "explanation_en": "Replace symbols: 40 − 54 ÷ 27 + 6 × 3 = 40 − 2 + 18 = 56. Correct value is 56.",
-      "source": "PSSSB Clerk 2021 paper",
+      "question_pa": "",
       "answer_index": 2,
+      "explanation_pa": "",
+      "source": "PSSSB Clerk 2021 paper",
+      "question_type": "Maths",
+      "question_en": "[PSSSB Clerk 2021 PYQ] If A means subtraction, B means division, C means addition and D means multiplication, find the value of: 40 A 54 B 27 C 6 D 3.",
       "options_en": [
         "54",
         "55",
         "56",
         "57"
       ],
-      "explanation_pa": "",
-      "question_pa": "",
-      "subject": "math",
+      "explanation_en": "Replace symbols: 40 − 54 ÷ 27 + 6 × 3 = 40 − 2 + 18 = 56. Correct value is 56.",
       "topic": "Part 1 Mix",
       "options_pa": [
         "",
@@ -119,11 +120,20 @@
         "",
         ""
       ],
-      "question_en": "[PSSSB Clerk 2021 PYQ] If A means subtraction, B means division, C means addition and D means multiplication, find the value of: 40 A 54 B 27 C 6 D 3.",
-      "question_type": "Maths",
+      "subject": "math",
       "id": "json_q_1793641209512_4"
     },
     {
+      "answer_index": 2,
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "explanation_pa": "",
+      "subject": "math",
+      "question_en": "[PSSSB Clerk 2021 PYQ] Typist A types one sheet in 6 minutes, B in 12 minutes and C in 8 minutes. What is the average number of sheets typed per hour by the three typists?",
       "question_type": "Maths",
       "options_en": [
         "5.0",
@@ -131,26 +141,20 @@
         "7.5",
         "10.0"
       ],
-      "source": "PSSSB Clerk 2021 paper",
-      "question_en": "[PSSSB Clerk 2021 PYQ] Typist A types one sheet in 6 minutes, B in 12 minutes and C in 8 minutes. What is the average number of sheets typed per hour by the three typists?",
-      "answer_index": 2,
-      "question_pa": "",
+      "topic": "Part 1 Mix",
       "explanation_en": "Rates per hour are 10, 5 and 7.5 sheets. Average = (10 + 5 + 7.5) ÷ 3 = 7.5 sheets per hour.",
-      "explanation_pa": "",
+      "source": "PSSSB Clerk 2021 paper",
+      "question_pa": "",
+      "id": "json_q_1793641209512_5"
+    },
+    {
+      "answer_index": 1,
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "topic": "Part 1 Mix",
-      "subject": "math",
-      "id": "json_q_1793641209512_5"
-    },
-    {
-      "question_en": "[PSSSB Clerk 2021 PYQ] Divide ₹6,000 into two parts so that the simple interest on the first part for 2 years at 6% p.a. equals the simple interest on the second part for 3 years at 8% p.a.",
-      "topic": "Part 1 Mix",
-      "subject": "math",
       "source": "PSSSB Clerk 2021 paper",
       "options_en": [
         "₹3,000 and ₹3,000",
@@ -159,44 +163,69 @@
         "₹5,500 and ₹500"
       ],
       "explanation_pa": "",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "explanation_en": "Let first part be x and second be 6000 − x. 12% of x = 24% of (6000 − x), so x = 4000 and second part = 2000.",
       "question_pa": "",
+      "topic": "Part 1 Mix",
       "question_type": "Maths",
-      "answer_index": 1,
+      "explanation_en": "Let first part be x and second be 6000 − x. 12% of x = 24% of (6000 − x), so x = 4000 and second part = 2000.",
+      "question_en": "[PSSSB Clerk 2021 PYQ] Divide ₹6,000 into two parts so that the simple interest on the first part for 2 years at 6% p.a. equals the simple interest on the second part for 3 years at 8% p.a.",
+      "subject": "math",
       "id": "json_q_1793641209512_6"
     },
     {
-      "explanation_en": "Work ratio = [(x−1)(x+1)] : [(x+2)(x−1)] = 9:10. Cancel (x−1): (x+1)/(x+2)=9/10. Thus 10x+10=9x+18, so x=8.",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "question_type": "Maths",
-      "explanation_pa": "",
-      "question_en": "[PSSSB Clerk 2021 PYQ] The ratio of work done by (x − 1) men in (x + 1) days to the work done by (x + 2) men in (x − 1) days is 9:10. Find x.",
       "topic": "Part 1 Mix",
+      "explanation_pa": "",
+      "question_pa": "",
+      "question_type": "Maths",
       "source": "PSSSB Clerk 2021 paper",
-      "answer_index": 1,
-      "subject": "math",
+      "explanation_en": "Work ratio = [(x−1)(x+1)] : [(x+2)(x−1)] = 9:10. Cancel (x−1): (x+1)/(x+2)=9/10. Thus 10x+10=9x+18, so x=8.",
       "options_en": [
         "7",
         "8",
         "9",
         "10"
       ],
-      "question_pa": "",
+      "subject": "math",
+      "answer_index": 1,
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "question_en": "[PSSSB Clerk 2021 PYQ] The ratio of work done by (x − 1) men in (x + 1) days to the work done by (x + 2) men in (x − 1) days is 9:10. Find x.",
       "id": "json_q_1793641209512_7"
     },
     {
+      "answer_index": 2,
+      "options_en": [
+        "100 m",
+        "110 m",
+        "120 m",
+        "130 m"
+      ],
+      "explanation_pa": "",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "question_pa": "",
+      "question_type": "Maths",
+      "source": "PSSSB Clerk 2021 paper",
+      "subject": "math",
+      "topic": "Part 1 Mix",
       "explanation_en": "Speed = 12,000 m ÷ 600 s = 20 m/s. Length = speed × time = 20 × 6 = 120 m.",
+      "question_en": "[PSSSB Clerk 2021 PYQ] A train covers 12 km in 10 minutes. If it takes 6 seconds to pass a telegraph post, find the length of the train.",
+      "id": "json_q_1793641209512_8"
+    },
+    {
+      "question_en": "[PSSSB Clerk 2021 PYQ] Find the number of divisors of 1080, excluding those divisors which are perfect squares.",
+      "answer_index": 0,
+      "question_type": "Maths",
+      "source": "PSSSB Clerk 2021 paper",
+      "subject": "math",
+      "explanation_pa": "",
       "topic": "Part 1 Mix",
       "options_pa": [
         "",
@@ -204,22 +233,7 @@
         "",
         ""
       ],
-      "answer_index": 2,
       "question_pa": "",
-      "explanation_pa": "",
-      "subject": "math",
-      "question_en": "[PSSSB Clerk 2021 PYQ] A train covers 12 km in 10 minutes. If it takes 6 seconds to pass a telegraph post, find the length of the train.",
-      "source": "PSSSB Clerk 2021 paper",
-      "question_type": "Maths",
-      "options_en": [
-        "100 m",
-        "110 m",
-        "120 m",
-        "130 m"
-      ],
-      "id": "json_q_1793641209512_8"
-    },
-    {
       "options_en": [
         "28",
         "29",
@@ -227,121 +241,105 @@
         "31"
       ],
       "explanation_en": "1080 = 2³ × 3³ × 5¹. Total divisors = 4×4×2 = 32. Perfect-square divisors have even exponents: 2 choices for 2, 2 for 3, and 1 for 5, giving 4. Non-square divisors = 32 − 4 = 28.",
-      "explanation_pa": "",
-      "question_pa": "",
-      "subject": "math",
-      "source": "PSSSB Clerk 2021 paper",
-      "question_type": "Maths",
-      "topic": "Part 1 Mix",
-      "question_en": "[PSSSB Clerk 2021 PYQ] Find the number of divisors of 1080, excluding those divisors which are perfect squares.",
-      "answer_index": 0,
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
       "id": "json_q_1793641209512_9"
     },
     {
+      "explanation_pa": "",
+      "source": "PSSSB Clerk 2021 paper",
+      "topic": "Part 1 Mix",
       "question_pa": "",
       "question_type": "Maths",
-      "explanation_pa": "",
-      "explanation_en": "Winning margin = (56% − 44%) = 12% of votes cast. Votes cast = 144 ÷ 0.12 = 1200. This is 80% of total voters, so total = 1200 ÷ 0.8 = 1500.",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_index": 2,
-      "subject": "math",
       "options_en": [
         "1,300",
         "1,400",
         "1,500",
         "1,600"
       ],
-      "source": "PSSSB Clerk 2021 paper",
-      "question_en": "[PSSSB Clerk 2021 PYQ] In an election, a candidate who received 56% of the votes won by 144 votes. If 80% of the listed voters cast their votes and there were no invalid votes, find the total number of voters on the list.",
-      "topic": "Part 1 Mix",
-      "id": "json_q_1793641209512_10"
-    },
-    {
-      "question_en": "[PSSSB Clerk 2021 PYQ] Two buses cover 350 km. The difference in their travel times is 2 hours 20 minutes and their speed difference is 5 km/h. Find the slower bus's speed.",
+      "explanation_en": "Winning margin = (56% − 44%) = 12% of votes cast. Votes cast = 144 ÷ 0.12 = 1200. This is 80% of total voters, so total = 1200 ÷ 0.8 = 1500.",
       "subject": "math",
-      "answer_index": 1,
-      "explanation_pa": "",
+      "answer_index": 2,
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
+      "question_en": "[PSSSB Clerk 2021 PYQ] In an election, a candidate who received 56% of the votes won by 144 votes. If 80% of the listed voters cast their votes and there were no invalid votes, find the total number of voters on the list.",
+      "id": "json_q_1793641209512_10"
+    },
+    {
+      "source": "PSSSB Clerk 2021 paper",
+      "question_en": "[PSSSB Clerk 2021 PYQ] Two buses cover 350 km. The difference in their travel times is 2 hours 20 minutes and their speed difference is 5 km/h. Find the slower bus's speed.",
       "explanation_en": "Let slower speed be v. Then 350/v − 350/(v+5) = 7/3. Solving gives v = 25 km/h.",
+      "subject": "math",
+      "question_type": "Maths",
+      "answer_index": 1,
+      "topic": "Part 1 Mix",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "explanation_pa": "",
+      "question_pa": "",
       "options_en": [
         "20 km/h",
         "25 km/h",
         "30 km/h",
         "35 km/h"
       ],
-      "source": "PSSSB Clerk 2021 paper",
-      "question_pa": "",
-      "topic": "Part 1 Mix",
-      "question_type": "Maths",
       "id": "json_q_1793641209512_11"
     },
     {
-      "question_type": "Maths",
       "question_en": "[PSSSB Clerk 2021 PYQ] One pipe fills a tank in 6 hours and another pipe empties it in 12 hours. If both are opened together, what part of the tank is filled in one hour?",
+      "question_type": "Maths",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_index": 2,
+      "topic": "Part 1 Mix",
       "options_en": [
         "1/9",
         "1/6",
         "1/12",
         "1/3"
       ],
-      "topic": "Part 1 Mix",
-      "source": "PSSSB Clerk 2021 paper",
-      "answer_index": 2,
       "explanation_en": "Net rate = 1/6 − 1/12 = 1/12 tank per hour. Correct option is 1/12.",
+      "question_pa": "",
+      "subject": "math",
       "explanation_pa": "",
+      "source": "PSSSB Clerk 2021 paper",
+      "id": "json_q_1793641209512_12"
+    },
+    {
+      "answer_index": 2,
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "subject": "math",
-      "question_pa": "",
-      "id": "json_q_1793641209512_12"
-    },
-    {
       "source": "PSSSB Clerk 2021 paper",
-      "question_type": "Maths",
-      "question_en": "[PSSSB Clerk 2021 PYQ] Namita and Anjana together complete a work in 10 days. Namita alone completes it in 12 days. In how many days can Anjana alone complete it?",
-      "subject": "math",
       "options_en": [
         "40 days",
         "50 days",
         "60 days",
         "70 days"
       ],
-      "topic": "Part 1 Mix",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "answer_index": 2,
-      "explanation_en": "Anjana's rate = 1/10 − 1/12 = 1/60. Therefore, Anjana alone takes 60 days.",
-      "explanation_pa": "",
       "question_pa": "",
+      "explanation_pa": "",
+      "topic": "Part 1 Mix",
+      "explanation_en": "Anjana's rate = 1/10 − 1/12 = 1/60. Therefore, Anjana alone takes 60 days.",
+      "question_type": "Maths",
+      "question_en": "[PSSSB Clerk 2021 PYQ] Namita and Anjana together complete a work in 10 days. Namita alone completes it in 12 days. In how many days can Anjana alone complete it?",
+      "subject": "math",
       "id": "json_q_1793641209512_13"
     },
     {
-      "source": "PSSSB-pattern practice / original DI set",
-      "explanation_pa": "",
       "explanation_en": "Total parts = 5 + 7 = 12. B's share = 7/12 × 2400 = ₹1,400.",
       "options_en": [
         "₹1,000",
@@ -349,33 +347,36 @@
         "₹1,400",
         "₹1,600"
       ],
-      "question_en": "A sum of ₹2,400 is divided between A and B in the ratio 5:7. Find B's share.",
-      "question_type": "Maths",
+      "question_pa": "",
+      "topic": "Part 1 Mix",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "topic": "Part 1 Mix",
-      "question_pa": "",
-      "answer_index": 2,
+      "question_type": "Maths",
       "subject": "math",
+      "question_en": "A sum of ₹2,400 is divided between A and B in the ratio 5:7. Find B's share.",
+      "explanation_pa": "",
+      "source": "PSSSB-pattern practice / original DI set",
+      "answer_index": 2,
       "id": "json_q_1793641209512_14"
     },
     {
-      "subject": "math",
       "topic": "Part 1 Mix",
-      "question_type": "Maths",
+      "question_en": "A shopkeeper marks an article 25% above its cost price and gives a discount of 10% on the marked price. Find the profit percentage.",
+      "explanation_en": "Assume CP = ₹100. MP = ₹125. Selling price after 10% discount = ₹112.50. Profit = 12.5%.",
       "options_en": [
         "10%",
         "12.5%",
         "15%",
         "17.5%"
       ],
+      "question_type": "Maths",
+      "subject": "math",
       "question_pa": "",
       "answer_index": 1,
-      "explanation_en": "Assume CP = ₹100. MP = ₹125. Selling price after 10% discount = ₹112.50. Profit = 12.5%.",
       "explanation_pa": "",
       "options_pa": [
         "",
@@ -384,103 +385,102 @@
         ""
       ],
       "source": "PSSSB-pattern practice / original DI set",
-      "question_en": "A shopkeeper marks an article 25% above its cost price and gives a discount of 10% on the marked price. Find the profit percentage.",
       "id": "json_q_1793641209512_15"
     },
     {
-      "question_en": "Find the compound interest on ₹5,000 for 2 years at 10% per annum, compounded annually.",
-      "explanation_en": "Amount = 5000 × 1.1² = ₹6,050. Compound interest = 6050 − 5000 = ₹1,050.",
+      "topic": "Part 1 Mix",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "explanation_pa": "",
-      "topic": "Part 1 Mix",
-      "subject": "math",
-      "question_type": "Maths",
-      "question_pa": "",
+      "explanation_en": "Amount = 5000 × 1.1² = ₹6,050. Compound interest = 6050 − 5000 = ₹1,050.",
       "answer_index": 1,
+      "subject": "math",
+      "question_en": "Find the compound interest on ₹5,000 for 2 years at 10% per annum, compounded annually.",
+      "source": "PSSSB-pattern practice / original DI set",
       "options_en": [
         "₹1,000",
         "₹1,050",
         "₹1,100",
         "₹1,150"
       ],
-      "source": "PSSSB-pattern practice / original DI set",
+      "explanation_pa": "",
+      "question_type": "Maths",
+      "question_pa": "",
       "id": "json_q_1793641209512_16"
     },
     {
-      "topic": "Part 1 Mix",
-      "explanation_en": "Monday + Wednesday = 120 + 180 = 300 books.",
+      "question_en": "[DI Set 1: Questions 18–19] Study the table showing books sold by a shop over four days.\n\n📊 BOOKS SOLD\nMonday   🟦 120\nTuesday  🟩 150\nWednesday 🟨 180\nThursday 🟪 150\n\nQ18. How many books were sold in total on Monday and Wednesday?",
+      "source": "PSSSB-pattern practice / original DI set",
       "explanation_pa": "",
+      "subject": "math",
+      "question_type": "DI",
       "question_pa": "",
+      "topic": "Part 1 Mix",
+      "answer_index": 2,
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "subject": "math",
+      "explanation_en": "Monday + Wednesday = 120 + 180 = 300 books.",
       "options_en": [
         "280",
         "290",
         "300",
         "310"
       ],
-      "question_type": "DI",
-      "source": "PSSSB-pattern practice / original DI set",
-      "question_en": "[DI Set 1: Questions 18–19] Study the table showing books sold by a shop over four days.\n\n📊 BOOKS SOLD\nMonday   🟦 120\nTuesday  🟩 150\nWednesday 🟨 180\nThursday 🟪 150\n\nQ18. How many books were sold in total on Monday and Wednesday?",
-      "answer_index": 2,
       "id": "json_q_1793641209512_17"
     },
     {
-      "subject": "math",
-      "answer_index": 2,
       "options_en": [
         "140",
         "145",
         "150",
         "155"
       ],
+      "subject": "math",
       "question_pa": "",
-      "source": "PSSSB-pattern practice / original DI set",
-      "question_type": "DI",
-      "topic": "Part 1 Mix",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "question_en": "[DI Set 1: Questions 18–19] Study the chart: Monday 120 books, Tuesday 150, Wednesday 180, Thursday 150.\n\n📊 BOOKS SOLD (each block ≈ 30 books)\nMon 🟦🟦🟦🟦 120\nTue 🟩🟩🟩🟩🟩 150\nWed 🟨🟨🟨🟨🟨🟨 180\nThu 🟪🟪🟪🟪🟪 150\n\nQ19. What is the average number of books sold per day?",
+      "topic": "Part 1 Mix",
       "explanation_en": "Total = 120 + 150 + 180 + 150 = 600. Average = 600 ÷ 4 = 150.",
+      "answer_index": 2,
+      "question_en": "[DI Set 1: Questions 18–19] Study the chart: Monday 120 books, Tuesday 150, Wednesday 180, Thursday 150.\n\n📊 BOOKS SOLD (each block ≈ 30 books)\nMon 🟦🟦🟦🟦 120\nTue 🟩🟩🟩🟩🟩 150\nWed 🟨🟨🟨🟨🟨🟨 180\nThu 🟪🟪🟪🟪🟪 150\n\nQ19. What is the average number of books sold per day?",
+      "source": "PSSSB-pattern practice / original DI set",
       "explanation_pa": "",
+      "question_type": "DI",
       "id": "json_q_1793641209512_18"
     },
     {
-      "answer_index": 2,
+      "topic": "Part 1 Mix",
       "question_pa": "",
-      "subject": "math",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
       "options_en": [
         "30",
         "35",
         "40",
         "45"
       ],
-      "source": "PSSSB-pattern practice / original DI set",
-      "question_en": "[DI Set 2: Questions 20–21] The bar chart shows the number of candidates who qualified from five centres.\n\n📊 QUALIFIED CANDIDATES\nA 🟦🟦🟦🟦 40\nB 🟩🟩🟩🟩🟩🟩 60\nC 🟨🟨🟨🟨🟨 50\nD 🟪🟪🟪🟪🟪🟪🟪 70\nE 🟥🟥🟥 30\n(Each block = 10 candidates)\n\nQ20. What is the difference between the highest and lowest number of qualified candidates?",
       "explanation_pa": "",
-      "topic": "Part 1 Mix",
       "question_type": "DI",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
       "explanation_en": "Highest = 70 (Centre D), lowest = 30 (Centre E). Difference = 40.",
+      "subject": "math",
+      "question_en": "[DI Set 2: Questions 20–21] The bar chart shows the number of candidates who qualified from five centres.\n\n📊 QUALIFIED CANDIDATES\nA 🟦🟦🟦🟦 40\nB 🟩🟩🟩🟩🟩🟩 60\nC 🟨🟨🟨🟨🟨 50\nD 🟪🟪🟪🟪🟪🟪🟪 70\nE 🟥🟥🟥 30\n(Each block = 10 candidates)\n\nQ20. What is the difference between the highest and lowest number of qualified candidates?",
+      "answer_index": 2,
+      "source": "PSSSB-pattern practice / original DI set",
       "id": "json_q_1793641209512_19"
     },
     {
@@ -488,172 +488,154 @@
       "subject": "math",
       "topic": "Part 1 Mix",
       "source": "PSSSB-pattern practice / original DI set",
+      "explanation_en": "Total = 40 + 60 + 50 + 70 + 30 = 250. Centre B = 60/250 × 100 = 24%.",
+      "answer_index": 2,
       "options_en": [
         "20%",
         "22%",
         "24%",
         "25%"
       ],
+      "question_pa": "",
       "explanation_pa": "",
+      "question_type": "DI",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "explanation_en": "Total = 40 + 60 + 50 + 70 + 30 = 250. Centre B = 60/250 × 100 = 24%.",
-      "question_type": "DI",
-      "question_pa": "",
-      "answer_index": 2,
       "id": "json_q_1793641209512_20"
     },
     {
-      "answer_index": 1,
+      "subject": "math",
       "question_pa": "",
-      "question_type": "DI",
+      "explanation_en": "Rent = 25% of ₹20,000 = ₹5,000.",
+      "answer_index": 1,
+      "topic": "Part 1 Mix",
+      "question_en": "[DI Set 3: Questions 22–23] A student's monthly expenditure is shown below.\n\n📊 MONTHLY EXPENDITURE = ₹20,000\nFood 🟦 30%\nRent 🟩 25%\nTravel 🟨 15%\nEducation 🟪 20%\nSavings 🟥 10%\n\nQ22. How much does the student spend on rent?",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "topic": "Part 1 Mix",
-      "explanation_en": "Rent = 25% of ₹20,000 = ₹5,000.",
-      "subject": "math",
+      "explanation_pa": "",
+      "source": "PSSSB-pattern practice / original DI set",
       "options_en": [
         "₹4,000",
         "₹5,000",
         "₹6,000",
         "₹7,000"
       ],
-      "explanation_pa": "",
-      "question_en": "[DI Set 3: Questions 22–23] A student's monthly expenditure is shown below.\n\n📊 MONTHLY EXPENDITURE = ₹20,000\nFood 🟦 30%\nRent 🟩 25%\nTravel 🟨 15%\nEducation 🟪 20%\nSavings 🟥 10%\n\nQ22. How much does the student spend on rent?",
-      "source": "PSSSB-pattern practice / original DI set",
+      "question_type": "DI",
       "id": "json_q_1793641209512_21"
     },
     {
-      "explanation_en": "Food + Education = 30% + 20% = 50% of ₹20,000 = ₹10,000.",
-      "question_type": "DI",
       "subject": "math",
-      "explanation_pa": "",
       "question_en": "[DI Set 3: Questions 22–23] Monthly expenditure = ₹20,000: Food 30%, Rent 25%, Travel 15%, Education 20%, Savings 10%.\n\n🟦 Food 30% | 🟩 Rent 25% | 🟨 Travel 15% | 🟪 Education 20% | 🟥 Savings 10%\n\nQ23. What is the combined expenditure on food and education?",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
+      "explanation_pa": "",
+      "question_type": "DI",
+      "topic": "Part 1 Mix",
+      "answer_index": 2,
       "options_en": [
         "₹8,000",
         "₹9,000",
         "₹10,000",
         "₹11,000"
       ],
-      "source": "PSSSB-pattern practice / original DI set",
-      "answer_index": 2,
-      "topic": "Part 1 Mix",
       "question_pa": "",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "source": "PSSSB-pattern practice / original DI set",
+      "explanation_en": "Food + Education = 30% + 20% = 50% of ₹20,000 = ₹10,000.",
       "id": "json_q_1793641209512_22"
     },
     {
-      "question_en": "[DI Set 4: Questions 24–25] The table shows a company's monthly production.\n\n📈 MONTHLY PRODUCTION (units)\nJanuary   400\nFebruary  500\nMarch     450\nApril     600\nMay       650\n\nQ24. What is the percentage increase in production from January to April?",
+      "explanation_pa": "",
       "source": "PSSSB-pattern practice / original DI set",
+      "question_type": "DI",
+      "answer_index": 2,
+      "subject": "math",
+      "question_en": "[DI Set 4: Questions 24–25] The table shows a company's monthly production.\n\n📈 MONTHLY PRODUCTION (units)\nJanuary   400\nFebruary  500\nMarch     450\nApril     600\nMay       650\n\nQ24. What is the percentage increase in production from January to April?",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "explanation_en": "Increase = 600 − 400 = 200. Percentage increase = 200/400 × 100 = 50%.",
+      "topic": "Part 1 Mix",
+      "question_pa": "",
       "options_en": [
         "40%",
         "45%",
         "50%",
         "55%"
       ],
-      "subject": "math",
-      "explanation_en": "Increase = 600 − 400 = 200. Percentage increase = 200/400 × 100 = 50%.",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "question_type": "DI",
-      "question_pa": "",
-      "explanation_pa": "",
-      "answer_index": 2,
-      "topic": "Part 1 Mix",
       "id": "json_q_1793641209512_23"
     },
     {
+      "question_pa": "",
+      "subject": "math",
+      "question_type": "DI",
       "explanation_pa": "",
+      "topic": "Part 1 Mix",
+      "question_en": "[DI Set 4: Questions 24–25] Monthly production: January 400, February 500, March 450, April 600, May 650 units.\n\n📈 PRODUCTION TREND\nJan 🟦 400 → Feb 🟩 500 → Mar 🟨 450 → Apr 🟪 600 → May 🟥 650\n\nQ25. Find the average monthly production over these five months.",
       "options_en": [
         "500",
         "510",
         "520",
         "530"
       ],
-      "topic": "Part 1 Mix",
-      "explanation_en": "Total = 400 + 500 + 450 + 600 + 650 = 2600. Average = 2600 ÷ 5 = 520 units.",
-      "source": "PSSSB-pattern practice / original DI set",
       "answer_index": 2,
-      "question_en": "[DI Set 4: Questions 24–25] Monthly production: January 400, February 500, March 450, April 600, May 650 units.\n\n📈 PRODUCTION TREND\nJan 🟦 400 → Feb 🟩 500 → Mar 🟨 450 → Apr 🟪 600 → May 🟥 650\n\nQ25. Find the average monthly production over these five months.",
-      "question_type": "DI",
-      "question_pa": "",
-      "subject": "math",
+      "source": "PSSSB-pattern practice / original DI set",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
+      "explanation_en": "Total = 400 + 500 + 450 + 600 + 650 = 2600. Average = 2600 ÷ 5 = 520 units.",
       "id": "json_q_1793641209512_24"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/main/images/di/Population%20of%20Seven%20States_%202025%20Data%20Chart.png",
-      "id": "json_q_1794505782705_0",
-      "subject": "math",
-      "topic": "Data Interpretation (DI) - 1",
-      "question_en": "The total number of illiterate people in Assam and Manipur was _____.",
-      "question_pa": "ਅਸਾਮ ਅਤੇ ਮਣੀਪੁਰ ਵਿੱਚ ਅਨਪੜ੍ਹ ਲੋਕਾਂ ਦੀ ਕੁੱਲ ਗਿਣਤੀ ਕਿੰਨੀ ਸੀ?",
       "options_en": [
         "932170",
         "981546",
         "1161160",
         "524160"
       ],
-      "options_pa": [
-        "932170",
-        "981546",
-        "1161160",
-        "524160"
-      ],
-      "answer_index": 2,
-      "explanation_en": "Assam population = 25% of 3,276,000 = 819,000; illiterate = 7/9 = 637,000. Manipur population = 20% = 655,200; illiterate = 4/5 = 524,160. Total = 1,161,160.",
       "explanation_pa": "ਅਸਾਮ ਦੀ ਆਬਾਦੀ 819,000 ਹੈ; ਅਨਪੜ੍ਹ = 7/9 = 637,000। ਮਣੀਪੁਰ ਦੀ ਆਬਾਦੀ 655,200 ਹੈ; ਅਨਪੜ੍ਹ = 4/5 = 524,160। ਕੁੱਲ = 1,161,160।",
-      "chart_group_id": "states_population_2025",
-      "chart_image": "DI_Set_1_States_Chart.png",
       "chart_data": {
-        "type": "pie_and_table",
-        "total_population": 3276000,
         "pie": [
           {
             "label": "Assam",
             "percent": 25
           },
           {
-            "label": "Manipur",
-            "percent": 20
+            "percent": 20,
+            "label": "Manipur"
           },
           {
-            "label": "Haryana",
-            "percent": 8
+            "percent": 8,
+            "label": "Haryana"
           },
           {
-            "label": "Gujarat",
-            "percent": 12
+            "percent": 12,
+            "label": "Gujarat"
           },
           {
-            "label": "Uttar Pradesh",
-            "percent": 11
+            "percent": 11,
+            "label": "Uttar Pradesh"
           },
           {
-            "label": "Punjab",
-            "percent": 15
+            "percent": 15,
+            "label": "Punjab"
           },
           {
             "label": "Tripura",
@@ -672,68 +654,113 @@
             "literate_illiterate": "1:4"
           },
           {
-            "state": "Haryana",
             "male_female": "2:3",
+            "state": "Haryana",
             "literate_illiterate": "2:1"
           },
           {
-            "state": "Gujarat",
+            "literate_illiterate": "3:2",
             "male_female": "3:5",
-            "literate_illiterate": "3:2"
+            "state": "Gujarat"
           },
           {
-            "state": "Uttar Pradesh",
             "male_female": "3:4",
+            "state": "Uttar Pradesh",
             "literate_illiterate": "5:1"
           },
           {
+            "literate_illiterate": "7:2",
             "state": "Punjab",
-            "male_female": "3:2",
-            "literate_illiterate": "7:2"
+            "male_female": "3:2"
           },
           {
-            "state": "Tripura",
             "male_female": "3:4",
+            "state": "Tripura",
             "literate_illiterate": "9:4"
           }
-        ]
-      }
+        ],
+        "total_population": 3276000,
+        "type": "pie_and_table"
+      },
+      "chart_group_id": "states_population_2025",
+      "topic": "Data Interpretation (DI) - 1",
+      "id": "json_q_1794505782705_0",
+      "explanation_en": "Assam population = 25% of 3,276,000 = 819,000; illiterate = 7/9 = 637,000. Manipur population = 20% = 655,200; illiterate = 4/5 = 524,160. Total = 1,161,160.",
+      "question_en": "The total number of illiterate people in Assam and Manipur was _____.",
+      "answer_index": 2,
+      "chart_image": "DI_Set_1_States_Chart.png",
+      "options_pa": [
+        "932170",
+        "981546",
+        "1161160",
+        "524160"
+      ],
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/main/images/di/Population%20of%20Seven%20States_%202025%20Data%20Chart.png",
+      "question_pa": "ਅਸਾਮ ਅਤੇ ਮਣੀਪੁਰ ਵਿੱਚ ਅਨਪੜ੍ਹ ਲੋਕਾਂ ਦੀ ਕੁੱਲ ਗਿਣਤੀ ਕਿੰਨੀ ਸੀ?",
+      "subject": "math"
     },
     {
       "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/main/images/di/Population%20of%20Seven%20States_%202025%20Data%20Chart.png",
       "id": "json_q_1794505782705_1",
-      "subject": "math",
-      "topic": "Data Interpretation (DI) - 1",
-      "question_en": "Find the ratio of the number of females in Tripura to the number of females in Haryana.",
-      "question_pa": "ਤ੍ਰਿਪੁਰਾ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਦਾ ਅਨੁਪਾਤ ਪਤਾ ਕਰੋ।",
-      "options_en": [
-        "14:15",
-        "15:14",
-        "4:7",
-        "20:21"
-      ],
       "options_pa": [
         "14:15",
         "15:14",
         "4:7",
         "20:21"
       ],
-      "answer_index": 1,
-      "explanation_en": "Tripura population = 9% of 3,276,000 = 294,840; females = 4/7 = 168,480. Haryana population = 8% = 262,080; females = 3/5 = 157,248. Ratio = 15:14.",
-      "explanation_pa": "ਤ੍ਰਿਪੁਰਾ ਵਿੱਚ ਔਰਤਾਂ 168,480 ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ 157,248 ਹਨ। ਅਨੁਪਾਤ = 168,480:157,248 = 15:14।",
-      "chart_group_id": "states_population_2025",
       "chart_image": "DI_Set_1_States_Chart.png",
+      "topic": "Data Interpretation (DI) - 1",
+      "question_pa": "ਤ੍ਰਿਪੁਰਾ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਦਾ ਅਨੁਪਾਤ ਪਤਾ ਕਰੋ।",
+      "answer_index": 1,
+      "chart_group_id": "states_population_2025",
       "chart_data": {
         "type": "pie_and_table",
         "total_population": 3276000,
+        "table": [
+          {
+            "state": "Assam",
+            "literate_illiterate": "2:7",
+            "male_female": "5:3"
+          },
+          {
+            "state": "Manipur",
+            "literate_illiterate": "1:4",
+            "male_female": "3:1"
+          },
+          {
+            "state": "Haryana",
+            "literate_illiterate": "2:1",
+            "male_female": "2:3"
+          },
+          {
+            "male_female": "3:5",
+            "literate_illiterate": "3:2",
+            "state": "Gujarat"
+          },
+          {
+            "state": "Uttar Pradesh",
+            "male_female": "3:4",
+            "literate_illiterate": "5:1"
+          },
+          {
+            "state": "Punjab",
+            "literate_illiterate": "7:2",
+            "male_female": "3:2"
+          },
+          {
+            "state": "Tripura",
+            "male_female": "3:4",
+            "literate_illiterate": "9:4"
+          }
+        ],
         "pie": [
           {
             "label": "Assam",
             "percent": 25
           },
           {
-            "label": "Manipur",
-            "percent": 20
+            "percent": 20,
+            "label": "Manipur"
           },
           {
             "label": "Haryana",
@@ -744,63 +771,106 @@
             "percent": 12
           },
           {
-            "label": "Uttar Pradesh",
-            "percent": 11
+            "percent": 11,
+            "label": "Uttar Pradesh"
+          },
+          {
+            "percent": 15,
+            "label": "Punjab"
+          },
+          {
+            "percent": 9,
+            "label": "Tripura"
+          }
+        ]
+      },
+      "question_en": "Find the ratio of the number of females in Tripura to the number of females in Haryana.",
+      "options_en": [
+        "14:15",
+        "15:14",
+        "4:7",
+        "20:21"
+      ],
+      "explanation_en": "Tripura population = 9% of 3,276,000 = 294,840; females = 4/7 = 168,480. Haryana population = 8% = 262,080; females = 3/5 = 157,248. Ratio = 15:14.",
+      "subject": "math",
+      "explanation_pa": "ਤ੍ਰਿਪੁਰਾ ਵਿੱਚ ਔਰਤਾਂ 168,480 ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ 157,248 ਹਨ। ਅਨੁਪਾਤ = 168,480:157,248 = 15:14।"
+    },
+    {
+      "chart_image": "DI_Set_1_States_Chart.png",
+      "chart_data": {
+        "total_population": 3276000,
+        "table": [
+          {
+            "male_female": "5:3",
+            "literate_illiterate": "2:7",
+            "state": "Assam"
+          },
+          {
+            "male_female": "3:1",
+            "literate_illiterate": "1:4",
+            "state": "Manipur"
+          },
+          {
+            "male_female": "2:3",
+            "state": "Haryana",
+            "literate_illiterate": "2:1"
+          },
+          {
+            "state": "Gujarat",
+            "literate_illiterate": "3:2",
+            "male_female": "3:5"
+          },
+          {
+            "state": "Uttar Pradesh",
+            "literate_illiterate": "5:1",
+            "male_female": "3:4"
+          },
+          {
+            "male_female": "3:2",
+            "state": "Punjab",
+            "literate_illiterate": "7:2"
+          },
+          {
+            "literate_illiterate": "9:4",
+            "state": "Tripura",
+            "male_female": "3:4"
+          }
+        ],
+        "type": "pie_and_table",
+        "pie": [
+          {
+            "label": "Assam",
+            "percent": 25
+          },
+          {
+            "label": "Manipur",
+            "percent": 20
+          },
+          {
+            "percent": 8,
+            "label": "Haryana"
+          },
+          {
+            "label": "Gujarat",
+            "percent": 12
+          },
+          {
+            "percent": 11,
+            "label": "Uttar Pradesh"
           },
           {
             "label": "Punjab",
             "percent": 15
           },
           {
-            "label": "Tripura",
-            "percent": 9
-          }
-        ],
-        "table": [
-          {
-            "state": "Assam",
-            "male_female": "5:3",
-            "literate_illiterate": "2:7"
-          },
-          {
-            "state": "Manipur",
-            "male_female": "3:1",
-            "literate_illiterate": "1:4"
-          },
-          {
-            "state": "Haryana",
-            "male_female": "2:3",
-            "literate_illiterate": "2:1"
-          },
-          {
-            "state": "Gujarat",
-            "male_female": "3:5",
-            "literate_illiterate": "3:2"
-          },
-          {
-            "state": "Uttar Pradesh",
-            "male_female": "3:4",
-            "literate_illiterate": "5:1"
-          },
-          {
-            "state": "Punjab",
-            "male_female": "3:2",
-            "literate_illiterate": "7:2"
-          },
-          {
-            "state": "Tripura",
-            "male_female": "3:4",
-            "literate_illiterate": "9:4"
+            "percent": 9,
+            "label": "Tripura"
           }
         ]
-      }
-    },
-    {
-      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
+      },
+      "chart_group_id": "states_population_2025",
+      "explanation_en": "Punjab population = 15% of 3,276,000 = 491,400; females = 2/5 = 196,560. Haryana females = 157,248. Difference = 39,312.",
       "id": "json_q_1794505782705_2",
-      "subject": "math",
-      "topic": "Data Interpretation (DI) - 1",
-      "question_en": "Find the difference between the number of females in Punjab and the number of females in Haryana.",
       "question_pa": "ਪੰਜਾਬ ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਦਾ ਅੰਤਰ ਪਤਾ ਕਰੋ।",
       "options_en": [
         "39046",
@@ -808,6 +878,9 @@
         "20348",
         "43532"
       ],
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
+      "subject": "math",
+      "explanation_pa": "ਪੰਜਾਬ ਵਿੱਚ ਔਰਤਾਂ 196,560 ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ 157,248 ਹਨ। ਅੰਤਰ = 39,312।",
       "options_pa": [
         "39046",
         "39312",
@@ -815,121 +888,40 @@
         "43532"
       ],
       "answer_index": 1,
-      "explanation_en": "Punjab population = 15% of 3,276,000 = 491,400; females = 2/5 = 196,560. Haryana females = 157,248. Difference = 39,312.",
-      "explanation_pa": "ਪੰਜਾਬ ਵਿੱਚ ਔਰਤਾਂ 196,560 ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ 157,248 ਹਨ। ਅੰਤਰ = 39,312।",
-      "chart_group_id": "states_population_2025",
-      "chart_image": "DI_Set_1_States_Chart.png",
-      "chart_data": {
-        "type": "pie_and_table",
-        "total_population": 3276000,
-        "pie": [
-          {
-            "label": "Assam",
-            "percent": 25
-          },
-          {
-            "label": "Manipur",
-            "percent": 20
-          },
-          {
-            "label": "Haryana",
-            "percent": 8
-          },
-          {
-            "label": "Gujarat",
-            "percent": 12
-          },
-          {
-            "label": "Uttar Pradesh",
-            "percent": 11
-          },
-          {
-            "label": "Punjab",
-            "percent": 15
-          },
-          {
-            "label": "Tripura",
-            "percent": 9
-          }
-        ],
-        "table": [
-          {
-            "state": "Assam",
-            "male_female": "5:3",
-            "literate_illiterate": "2:7"
-          },
-          {
-            "state": "Manipur",
-            "male_female": "3:1",
-            "literate_illiterate": "1:4"
-          },
-          {
-            "state": "Haryana",
-            "male_female": "2:3",
-            "literate_illiterate": "2:1"
-          },
-          {
-            "state": "Gujarat",
-            "male_female": "3:5",
-            "literate_illiterate": "3:2"
-          },
-          {
-            "state": "Uttar Pradesh",
-            "male_female": "3:4",
-            "literate_illiterate": "5:1"
-          },
-          {
-            "state": "Punjab",
-            "male_female": "3:2",
-            "literate_illiterate": "7:2"
-          },
-          {
-            "state": "Tripura",
-            "male_female": "3:4",
-            "literate_illiterate": "9:4"
-          }
-        ]
-      }
+      "topic": "Data Interpretation (DI) - 1",
+      "question_en": "Find the difference between the number of females in Punjab and the number of females in Haryana."
     },
     {
+      "explanation_pa": "ਪੰਜਾਬ ਵਿੱਚ ਪੁਰਸ਼ 294,840, ਮਣੀਪੁਰ ਵਿੱਚ 491,400 ਅਤੇ ਗੁਜਰਾਤ ਵਿੱਚ 147,420 ਹਨ। ਕੁੱਲ 933,660। ਪ੍ਰਤੀਸ਼ਤ = 933,660 ÷ 3,276,000 × 100 = 28.5%。",
+      "chart_image": "DI_Set_1_States_Chart.png",
+      "topic": "Data Interpretation (DI) - 1",
+      "chart_group_id": "states_population_2025",
+      "options_pa": [
+        "25.5%",
+        "27.5%",
+        "28.5%",
+        "32.5%"
+      ],
+      "question_pa": "ਪੰਜਾਬ, ਮਣੀਪੁਰ ਅਤੇ ਗੁਜਰਾਤ ਵਿੱਚ ਪੁਰਸ਼ਾਂ ਦੀ ਕੁੱਲ ਗਿਣਤੀ ਦਾ ਸੱਤਾਂ ਰਾਜਾਂ ਦੀ ਕੁੱਲ ਆਬਾਦੀ ਨਾਲ ਪ੍ਰਤੀਸ਼ਤ ਪਤਾ ਕਰੋ।",
+      "explanation_en": "Punjab males = 491,400 × 3/5 = 294,840; Manipur males = 655,200 × 3/4 = 491,400; Gujarat males = 393,120 × 3/8 = 147,420. Total = 933,660. 933,660 ÷ 3,276,000 × 100 = 28.5%.",
+      "subject": "math",
+      "answer_index": 2,
+      "question_en": "Find the percentage of the total number of males in Punjab, Manipur and Gujarat together to the total population of all seven states.",
       "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
       "id": "json_q_1794505782705_3",
-      "subject": "math",
-      "topic": "Data Interpretation (DI) - 1",
-      "question_en": "Find the percentage of the total number of males in Punjab, Manipur and Gujarat together to the total population of all seven states.",
-      "question_pa": "ਪੰਜਾਬ, ਮਣੀਪੁਰ ਅਤੇ ਗੁਜਰਾਤ ਵਿੱਚ ਪੁਰਸ਼ਾਂ ਦੀ ਕੁੱਲ ਗਿਣਤੀ ਦਾ ਸੱਤਾਂ ਰਾਜਾਂ ਦੀ ਕੁੱਲ ਆਬਾਦੀ ਨਾਲ ਪ੍ਰਤੀਸ਼ਤ ਪਤਾ ਕਰੋ।",
-      "options_en": [
-        "25.5%",
-        "27.5%",
-        "28.5%",
-        "32.5%"
-      ],
-      "options_pa": [
-        "25.5%",
-        "27.5%",
-        "28.5%",
-        "32.5%"
-      ],
-      "answer_index": 2,
-      "explanation_en": "Punjab males = 491,400 × 3/5 = 294,840; Manipur males = 655,200 × 3/4 = 491,400; Gujarat males = 393,120 × 3/8 = 147,420. Total = 933,660. 933,660 ÷ 3,276,000 × 100 = 28.5%.",
-      "explanation_pa": "ਪੰਜਾਬ ਵਿੱਚ ਪੁਰਸ਼ 294,840, ਮਣੀਪੁਰ ਵਿੱਚ 491,400 ਅਤੇ ਗੁਜਰਾਤ ਵਿੱਚ 147,420 ਹਨ। ਕੁੱਲ 933,660। ਪ੍ਰਤੀਸ਼ਤ = 933,660 ÷ 3,276,000 × 100 = 28.5%。",
-      "chart_group_id": "states_population_2025",
-      "chart_image": "DI_Set_1_States_Chart.png",
       "chart_data": {
-        "type": "pie_and_table",
-        "total_population": 3276000,
         "pie": [
           {
-            "label": "Assam",
-            "percent": 25
+            "percent": 25,
+            "label": "Assam"
           },
           {
             "label": "Manipur",
             "percent": 20
           },
           {
-            "label": "Haryana",
-            "percent": 8
+            "percent": 8,
+            "label": "Haryana"
           },
           {
             "label": "Gujarat",
@@ -948,16 +940,17 @@
             "percent": 9
           }
         ],
+        "type": "pie_and_table",
         "table": [
           {
-            "state": "Assam",
+            "literate_illiterate": "2:7",
             "male_female": "5:3",
-            "literate_illiterate": "2:7"
+            "state": "Assam"
           },
           {
-            "state": "Manipur",
+            "literate_illiterate": "1:4",
             "male_female": "3:1",
-            "literate_illiterate": "1:4"
+            "state": "Manipur"
           },
           {
             "state": "Haryana",
@@ -965,75 +958,65 @@
             "literate_illiterate": "2:1"
           },
           {
-            "state": "Gujarat",
             "male_female": "3:5",
-            "literate_illiterate": "3:2"
+            "literate_illiterate": "3:2",
+            "state": "Gujarat"
           },
           {
-            "state": "Uttar Pradesh",
             "male_female": "3:4",
-            "literate_illiterate": "5:1"
+            "literate_illiterate": "5:1",
+            "state": "Uttar Pradesh"
           },
           {
-            "state": "Punjab",
+            "literate_illiterate": "7:2",
             "male_female": "3:2",
-            "literate_illiterate": "7:2"
+            "state": "Punjab"
           },
           {
-            "state": "Tripura",
+            "literate_illiterate": "9:4",
             "male_female": "3:4",
-            "literate_illiterate": "9:4"
+            "state": "Tripura"
           }
-        ]
-      }
+        ],
+        "total_population": 3276000
+      },
+      "options_en": [
+        "25.5%",
+        "27.5%",
+        "28.5%",
+        "32.5%"
+      ]
     },
     {
-      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
-      "id": "json_q_1794505782705_4",
-      "subject": "math",
-      "topic": "Data Interpretation (DI) - 1",
-      "question_en": "What is the number of men working in the Marketing Department?",
-      "question_pa": "ਮਾਰਕੀਟਿੰਗ ਵਿਭਾਗ ਵਿੱਚ ਕੰਮ ਕਰਨ ਵਾਲੇ ਪੁਰਸ਼ਾਂ ਦੀ ਗਿਣਤੀ ਕਿੰਨੀ ਹੈ?",
       "options_en": [
         "132",
         "174",
         "189",
         "126"
       ],
-      "options_pa": [
-        "132",
-        "174",
-        "189",
-        "126"
-      ],
-      "answer_index": 2,
-      "explanation_en": "Marketing employees = 18% of 1,800 = 324. Men:women = 7:5, so men = 7/12 × 324 = 189.",
       "explanation_pa": "ਮਾਰਕੀਟਿੰਗ ਵਿਭਾਗ ਦੇ ਕਰਮਚਾਰੀ = 1,800 ਦਾ 18% = 324। ਪੁਰਸ਼:ਔਰਤਾਂ = 7:5, ਇਸ ਲਈ ਪੁਰਸ਼ = 7/12 × 324 = 189।",
-      "chart_group_id": "department_employees_1800",
-      "chart_image": "DI_Set_2_Employees_Chart.png",
       "chart_data": {
         "type": "pie_and_table",
-        "total_employees": 1800,
         "pie": [
           {
-            "label": "Marketing",
-            "percent": 18
+            "percent": 18,
+            "label": "Marketing"
           },
           {
-            "label": "Accounts",
-            "percent": 17
+            "percent": 17,
+            "label": "Accounts"
           },
           {
             "label": "Production",
             "percent": 28
           },
           {
-            "label": "HR",
-            "percent": 14
+            "percent": 14,
+            "label": "HR"
           },
           {
-            "label": "IT",
-            "percent": 23
+            "percent": 23,
+            "label": "IT"
           }
         ],
         "table": [
@@ -1042,37 +1025,104 @@
             "men_women": "2:7"
           },
           {
-            "department": "Production",
-            "men_women": "11:1"
+            "men_women": "11:1",
+            "department": "Production"
           },
           {
-            "department": "HR",
-            "men_women": "1:3"
+            "men_women": "1:3",
+            "department": "HR"
           },
           {
             "department": "IT",
             "men_women": "5:4"
           },
           {
+            "men_women": "7:5",
+            "department": "Marketing"
+          }
+        ],
+        "total_employees": 1800
+      },
+      "chart_group_id": "department_employees_1800",
+      "answer_index": 2,
+      "subject": "math",
+      "explanation_en": "Marketing employees = 18% of 1,800 = 324. Men:women = 7:5, so men = 7/12 × 324 = 189.",
+      "question_en": "What is the number of men working in the Marketing Department?",
+      "chart_image": "DI_Set_2_Employees_Chart.png",
+      "question_pa": "ਮਾਰਕੀਟਿੰਗ ਵਿਭਾਗ ਵਿੱਚ ਕੰਮ ਕਰਨ ਵਾਲੇ ਪੁਰਸ਼ਾਂ ਦੀ ਗਿਣਤੀ ਕਿੰਨੀ ਹੈ?",
+      "options_pa": [
+        "132",
+        "174",
+        "189",
+        "126"
+      ],
+      "topic": "Data Interpretation (DI) - 1",
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
+      "id": "json_q_1794505782705_4"
+    },
+    {
+      "chart_image": "DI_Set_2_Employees_Chart.png",
+      "chart_data": {
+        "table": [
+          {
+            "men_women": "2:7",
+            "department": "Accounts"
+          },
+          {
+            "department": "Production",
+            "men_women": "11:1"
+          },
+          {
+            "men_women": "1:3",
+            "department": "HR"
+          },
+          {
+            "men_women": "5:4",
+            "department": "IT"
+          },
+          {
             "department": "Marketing",
             "men_women": "7:5"
           }
+        ],
+        "total_employees": 1800,
+        "type": "pie_and_table",
+        "pie": [
+          {
+            "label": "Marketing",
+            "percent": 18
+          },
+          {
+            "percent": 17,
+            "label": "Accounts"
+          },
+          {
+            "percent": 28,
+            "label": "Production"
+          },
+          {
+            "percent": 14,
+            "label": "HR"
+          },
+          {
+            "label": "IT",
+            "percent": 23
+          }
         ]
-      }
-    },
-    {
-      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
-      "id": "json_q_1794505782705_5",
-      "subject": "math",
-      "topic": "Data Interpretation (DI) - 1",
-      "question_en": "The number of women working in the IT Department is what per cent of the total number of employees in the organization?",
+      },
+      "chart_group_id": "department_employees_1800",
+      "explanation_en": "IT employees = 23% of 1,800 = 414. Men:women = 5:4, so women = 4/9 × 414 = 184. 184/1,800 × 100 = 10.22%, approximately 10% (closest listed option).",
       "question_pa": "ਆਈ.ਟੀ. ਵਿਭਾਗ ਵਿੱਚ ਕੰਮ ਕਰਨ ਵਾਲੀਆਂ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਸੰਸਥਾ ਦੇ ਕੁੱਲ ਕਰਮਚਾਰੀਆਂ ਦਾ ਕਿੰਨਾ ਪ੍ਰਤੀਸ਼ਤ ਹੈ?",
+      "id": "json_q_1794505782705_5",
       "options_en": [
         "10%",
         "7%",
         "5%",
         "15%"
       ],
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
+      "explanation_pa": "ਆਈ.ਟੀ. ਕਰਮਚਾਰੀ = 1,800 ਦਾ 23% = 414। ਪੁਰਸ਼:ਔਰਤਾਂ = 5:4, ਇਸ ਲਈ ਔਰਤਾਂ = 184। 184/1,800 × 100 = 10.22%, ਲਗਭਗ 10%।",
+      "subject": "math",
       "options_pa": [
         "10%",
         "7%",
@@ -1080,98 +1130,32 @@
         "15%"
       ],
       "answer_index": 0,
-      "explanation_en": "IT employees = 23% of 1,800 = 414. Men:women = 5:4, so women = 4/9 × 414 = 184. 184/1,800 × 100 = 10.22%, approximately 10% (closest listed option).",
-      "explanation_pa": "ਆਈ.ਟੀ. ਕਰਮਚਾਰੀ = 1,800 ਦਾ 23% = 414। ਪੁਰਸ਼:ਔਰਤਾਂ = 5:4, ਇਸ ਲਈ ਔਰਤਾਂ = 184। 184/1,800 × 100 = 10.22%, ਲਗਭਗ 10%।",
-      "chart_group_id": "department_employees_1800",
-      "chart_image": "DI_Set_2_Employees_Chart.png",
-      "chart_data": {
-        "type": "pie_and_table",
-        "total_employees": 1800,
-        "pie": [
-          {
-            "label": "Marketing",
-            "percent": 18
-          },
-          {
-            "label": "Accounts",
-            "percent": 17
-          },
-          {
-            "label": "Production",
-            "percent": 28
-          },
-          {
-            "label": "HR",
-            "percent": 14
-          },
-          {
-            "label": "IT",
-            "percent": 23
-          }
-        ],
-        "table": [
-          {
-            "department": "Accounts",
-            "men_women": "2:7"
-          },
-          {
-            "department": "Production",
-            "men_women": "11:1"
-          },
-          {
-            "department": "HR",
-            "men_women": "1:3"
-          },
-          {
-            "department": "IT",
-            "men_women": "5:4"
-          },
-          {
-            "department": "Marketing",
-            "men_women": "7:5"
-          }
-        ]
-      }
+      "topic": "Data Interpretation (DI) - 1",
+      "question_en": "The number of women working in the IT Department is what per cent of the total number of employees in the organization?"
     },
     {
-      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
-      "id": "json_q_1794505782705_6",
-      "subject": "math",
-      "topic": "Data Interpretation (DI) - 1",
-      "question_en": "What is the ratio of the number of women in the HR Department to the total number of employees in the HR Department?",
-      "question_pa": "ਐਚ.ਆਰ. ਵਿਭਾਗ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਅਤੇ ਇਸ ਵਿਭਾਗ ਦੇ ਕੁੱਲ ਕਰਮਚਾਰੀਆਂ ਦੀ ਗਿਣਤੀ ਦਾ ਅਨੁਪਾਤ ਕੀ ਹੈ?",
       "options_en": [
         "3:7",
         "2:5",
         "2:9",
         "3:4"
       ],
-      "options_pa": [
-        "3:7",
-        "2:5",
-        "2:9",
-        "3:4"
-      ],
-      "answer_index": 3,
-      "explanation_en": "HR employees = 14% of 1,800 = 252. Men:women = 1:3, so women = 3/4 × 252 = 189. Ratio = 189:252 = 3:4.",
       "explanation_pa": "ਐਚ.ਆਰ. ਵਿਭਾਗ ਦੇ ਕੁੱਲ ਕਰਮਚਾਰੀ 252 ਹਨ। ਪੁਰਸ਼:ਔਰਤਾਂ = 1:3, ਇਸ ਲਈ ਔਰਤਾਂ 189 ਹਨ। ਅਨੁਪਾਤ = 189:252 = 3:4।",
-      "chart_group_id": "department_employees_1800",
-      "chart_image": "DI_Set_2_Employees_Chart.png",
       "chart_data": {
-        "type": "pie_and_table",
         "total_employees": 1800,
+        "type": "pie_and_table",
         "pie": [
           {
-            "label": "Marketing",
-            "percent": 18
+            "percent": 18,
+            "label": "Marketing"
           },
           {
             "label": "Accounts",
             "percent": 17
           },
           {
-            "label": "Production",
-            "percent": 28
+            "percent": 28,
+            "label": "Production"
           },
           {
             "label": "HR",
@@ -1184,12 +1168,12 @@
         ],
         "table": [
           {
-            "department": "Accounts",
-            "men_women": "2:7"
+            "men_women": "2:7",
+            "department": "Accounts"
           },
           {
-            "department": "Production",
-            "men_women": "11:1"
+            "men_women": "11:1",
+            "department": "Production"
           },
           {
             "department": "HR",
@@ -1200,11 +1184,27 @@
             "men_women": "5:4"
           },
           {
-            "department": "Marketing",
-            "men_women": "7:5"
+            "men_women": "7:5",
+            "department": "Marketing"
           }
         ]
-      }
+      },
+      "chart_group_id": "department_employees_1800",
+      "answer_index": 3,
+      "subject": "math",
+      "explanation_en": "HR employees = 14% of 1,800 = 252. Men:women = 1:3, so women = 3/4 × 252 = 189. Ratio = 189:252 = 3:4.",
+      "question_en": "What is the ratio of the number of women in the HR Department to the total number of employees in the HR Department?",
+      "chart_image": "DI_Set_2_Employees_Chart.png",
+      "options_pa": [
+        "3:7",
+        "2:5",
+        "2:9",
+        "3:4"
+      ],
+      "question_pa": "ਐਚ.ਆਰ. ਵਿਭਾਗ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਅਤੇ ਇਸ ਵਿਭਾਗ ਦੇ ਕੁੱਲ ਕਰਮਚਾਰੀਆਂ ਦੀ ਗਿਣਤੀ ਦਾ ਅਨੁਪਾਤ ਕੀ ਹੈ?",
+      "topic": "Data Interpretation (DI) - 1",
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
+      "id": "json_q_1794505782705_6"
     }
   ]
 }
