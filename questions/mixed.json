@@ -1,150 +1,153 @@
 {
   "subject": "mixed",
-  "count": 185,
-  "updated_at": "2026-11-13T06:20:24.262Z",
+  "count": 285,
+  "updated_at": "2026-11-13T06:20:50.132Z",
   "questions": [
     {
+      "answer_index": 2,
       "id": "json_q_1794550819114_0",
-      "part": "A",
       "options": [
         "ਅਸੀਸ-ਵਾਚਕ ਵਿਸਮਿਕ",
         "ਸੰਬੋਧਨੀ ਵਿਸਮਿਕ",
         "ਸੂਚਨਾ-ਵਾਚਕ ਵਿਸਮਿਕ",
         "ਹੈਰਾਨੀ ਵਾਚਕ-ਵਿਸਮਿਕ"
       ],
-      "answer_index": 2,
-      "question": "‘ਖ਼ਬਰਦਾਰ! ਅੱਗੇ ਪਹਾੜਾਂ ਤੋਂ ਪੱਥਰ ਡਿੱਗਦੇ ਹਨ' ਵਾਕ ਵਿੱਚ 'ਖ਼ਬਰਦਾਰ' ਸ਼ਬਦ ਵਿਸਮਿਕ ਦੀ ਕਿਹੜੀ ਕਿਸਮ ਦਾ ਸ਼ਬਦ ਹੈ?",
       "subject": "mixed",
+      "question": "‘ਖ਼ਬਰਦਾਰ! ਅੱਗੇ ਪਹਾੜਾਂ ਤੋਂ ਪੱਥਰ ਡਿੱਗਦੇ ਹਨ' ਵਾਕ ਵਿੱਚ 'ਖ਼ਬਰਦਾਰ' ਸ਼ਬਦ ਵਿਸਮਿਕ ਦੀ ਕਿਹੜੀ ਕਿਸਮ ਦਾ ਸ਼ਬਦ ਹੈ?",
+      "part": "A",
       "topic": "Patwari Part A"
     },
     {
-      "id": "json_q_1794550819114_1",
-      "part": "A",
+      "topic": "Patwari Part A",
+      "subject": "mixed",
       "options": [
         "ਫੀਲਖਾਨਾ",
         "ਫ਼ੀਲਖ਼ਾਨਾ",
         "ਫੀਲਖ਼ਾਨਾ",
         "ਫ਼ੀਲਖਾਨਾ"
       ],
+      "part": "A",
+      "id": "json_q_1794550819114_1",
       "answer_index": 1,
-      "question": "‘ਹਾਥੀਆਂ ਦੇ ਰੱਖਣ ਦੀ ਜਗ੍ਹਾ' ਲਈ ਵਰਤੇ ਜਾਂਦੇ ਸ਼ਬਦ ਦਾ ਸ਼ੁੱਧ ਰੂਪ ਚੁਣੋ :",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "question": "‘ਹਾਥੀਆਂ ਦੇ ਰੱਖਣ ਦੀ ਜਗ੍ਹਾ' ਲਈ ਵਰਤੇ ਜਾਂਦੇ ਸ਼ਬਦ ਦਾ ਸ਼ੁੱਧ ਰੂਪ ਚੁਣੋ :"
     },
     {
       "id": "json_q_1794550819114_2",
       "part": "A",
+      "subject": "mixed",
       "options": [
         "ਕੁੜੀਆਂ ਪੀਂਘਾਂ ਝੂਟ ਰਹੀਆਂ ਹਨ",
         "ਪੀਂਘਾਂ ਝੂਟ ਰਹੀਆਂ ਕੁੜੀਆਂ ਹਨ",
         "ਪੀਂਘਾਂ ਰਹੀਆਂ ਕੁੜੀਆਂ ਹਨ ਝੂਟ",
         "ਰਹੀਆਂ ਹਨ ਝੂਟ ਕੁੜੀਆਂ ਪੀਂਘਾਂ"
       ],
+      "topic": "Patwari Part A",
       "answer_index": 0,
-      "question": "ਸ਼ੁੱਧ ਵਾਕ ਚੁਣੋ :",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "question": "ਸ਼ੁੱਧ ਵਾਕ ਚੁਣੋ :"
     },
     {
       "id": "json_q_1794550819114_3",
-      "part": "A",
+      "answer_index": 3,
+      "question": "ਸਹੀ ਸ਼ਬਦ-ਜੋੜ ਚੁਣੋ :",
       "options": [
         "ਉੱਪਲਬਧ",
         "ਉਪਲਬੱਧ",
         "ਉਪਲੱਬਧ",
         "ਉਪਲਬਧ"
       ],
-      "answer_index": 3,
-      "question": "ਸਹੀ ਸ਼ਬਦ-ਜੋੜ ਚੁਣੋ :",
       "subject": "mixed",
+      "part": "A",
       "topic": "Patwari Part A"
     },
     {
-      "id": "json_q_1794550819114_4",
-      "part": "A",
+      "subject": "mixed",
       "options": [
         "ਅਮਲਾ-ਅਫ਼ਸਰ",
         "ਮਿਲਖ ਅਫ਼ਸਰ",
         "ਭੌਂ-ਪ੍ਰਾਪਤੀ ਅਫ਼ਸਰ",
         "ਭੌਂ-ਸੁਧਾਰ ਅਫ਼ਸਰ"
       ],
-      "answer_index": 1,
+      "part": "A",
       "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਪੰਜਾਬੀ ਸ਼ਬਦ 'Estate Officer' ਦੇ ਅਰਥਾਂ ਨੂੰ ਪ੍ਰਗਟਾਉਂਦਾ ਹੈ ?",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "topic": "Patwari Part A",
+      "answer_index": 1,
+      "id": "json_q_1794550819114_4"
     },
     {
+      "answer_index": 3,
+      "question": "'ਨਜ਼ਰਸਾਨੀ' ਜਾਂ 'ਸਮੀਖਿਆ' ਲਈ ਅੰਗਰੇਜ਼ੀ ਦਾ ਕਿਹੜਾ ਸ਼ਬਦ ਢੁਕਵਾਂ ਹੈ?",
       "id": "json_q_1794550819114_5",
-      "part": "A",
+      "topic": "Patwari Part A",
       "options": [
         "Sediment",
         "Realistic",
         "Sabotage",
         "Review"
       ],
-      "answer_index": 3,
-      "question": "'ਨਜ਼ਰਸਾਨੀ' ਜਾਂ 'ਸਮੀਖਿਆ' ਲਈ ਅੰਗਰੇਜ਼ੀ ਦਾ ਕਿਹੜਾ ਸ਼ਬਦ ਢੁਕਵਾਂ ਹੈ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "part": "A"
     },
     {
       "id": "json_q_1794550819114_6",
-      "part": "A",
+      "answer_index": 0,
       "options": [
         "ਕੋਸ਼ਕਾਰ",
         "ਰੇਖਿਕ",
         "ਫੋਟੋਗ੍ਰਾਫਰ",
         "ਰਾਏ-ਸ਼ੁਮਾਰੀ"
       ],
-      "answer_index": 0,
-      "question": "'Lexicographer' ਲਈ ਪੰਜਾਬੀ ਵਿੱਚ ਕਿਹੜਾ ਸ਼ਬਦ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "part": "A",
+      "topic": "Patwari Part A",
+      "question": "'Lexicographer' ਲਈ ਪੰਜਾਬੀ ਵਿੱਚ ਕਿਹੜਾ ਸ਼ਬਦ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ ?"
     },
     {
-      "id": "json_q_1794550819114_7",
-      "part": "A",
+      "answer_index": 2,
+      "question": "ਅੰਗਰੇਜ਼ੀ ਦੇ ਸ਼ਬਦ 'District' ਲਈ ਸ਼ੁੱਧ ਪੰਜਾਬੀ ਰੂਪ ਚੁਣੋ :",
       "options": [
         "ਜਿਲਾ",
         "ਜ਼ਿਲਾ",
         "ਜ਼ਿਲ੍ਹਾ",
         "ਜ਼ਿੱਲ੍ਹਾ"
       ],
-      "answer_index": 2,
-      "question": "ਅੰਗਰੇਜ਼ੀ ਦੇ ਸ਼ਬਦ 'District' ਲਈ ਸ਼ੁੱਧ ਪੰਜਾਬੀ ਰੂਪ ਚੁਣੋ :",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "topic": "Patwari Part A",
+      "part": "A",
+      "id": "json_q_1794550819114_7"
     },
     {
-      "id": "json_q_1794550819114_8",
-      "part": "A",
       "options": [
         "ਸ਼ੁਕਰਵਾਰ",
         "ਸ਼ੁੱਕਰਵਾਰ",
         "ਸ਼ੁੱਕਰਬਾਰ",
         "ਸ਼ੁੱਕਰਵਰ"
       ],
-      "answer_index": 1,
-      "question": "ਹਫ਼ਤੇ ਦੇ ਦਿਨ ਦੇ ਨਾਂ ਲਈ ਸ਼ੁੱਧ ਪੰਜਾਬੀ ਰੂਪ ਚੁਣੋ :",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "answer_index": 1,
+      "id": "json_q_1794550819114_8",
+      "topic": "Patwari Part A",
+      "question": "ਹਫ਼ਤੇ ਦੇ ਦਿਨ ਦੇ ਨਾਂ ਲਈ ਸ਼ੁੱਧ ਪੰਜਾਬੀ ਰੂਪ ਚੁਣੋ :",
+      "part": "A"
     },
     {
-      "id": "json_q_1794550819114_9",
+      "question": "ਅੰਗਰੇਜ਼ੀ ਮਹੀਨੇ 'September' ਨੂੰ ਪੰਜਾਬੀ ਵਿੱਚ ਸ਼ੁੱਧ ਰੂਪ ਵਿੱਚ ਕਿਸ ਤਰ੍ਹਾਂ ਲਿਖਿਆ ਜਾਵੇਗਾ ?",
       "part": "A",
+      "answer_index": 2,
+      "topic": "Patwari Part A",
+      "id": "json_q_1794550819114_9",
+      "subject": "mixed",
       "options": [
         "ਸੀਤੰਬਰ",
         "ਸਤਿੰਬਰ",
         "ਸਤੰਬਰ",
         "ਸਤਾਂਬਰ"
-      ],
-      "answer_index": 2,
-      "question": "ਅੰਗਰੇਜ਼ੀ ਮਹੀਨੇ 'September' ਨੂੰ ਪੰਜਾਬੀ ਵਿੱਚ ਸ਼ੁੱਧ ਰੂਪ ਵਿੱਚ ਕਿਸ ਤਰ੍ਹਾਂ ਲਿਖਿਆ ਜਾਵੇਗਾ ?",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      ]
     },
     {
       "id": "json_q_1794550819114_10",
+      "topic": "Patwari Part A",
+      "answer_index": 3,
+      "question": "ਗੁਰਮੁਖੀ ਗਿਣਤੀ ਵਿੱਚ ਲਿਖੇ 'ਸਵਾ ਤਿੰਨ' ਨੂੰ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਕਿਸ ਤਰ੍ਹਾਂ ਲਿਖਿਆ ਜਾਵੇਗਾ?",
       "part": "A",
       "options": [
         "Three and a half",
@@ -152,27 +155,26 @@
         "Less than three",
         "Three and a quarter"
       ],
-      "answer_index": 3,
-      "question": "ਗੁਰਮੁਖੀ ਗਿਣਤੀ ਵਿੱਚ ਲਿਖੇ 'ਸਵਾ ਤਿੰਨ' ਨੂੰ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਕਿਸ ਤਰ੍ਹਾਂ ਲਿਖਿਆ ਜਾਵੇਗਾ?",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "subject": "mixed"
     },
     {
-      "id": "json_q_1794550819114_11",
-      "part": "A",
       "options": [
         "ਪੌਣੇ ਛੇ",
         "ਪੌਣੇ ਪੰਜ",
         "ਸਵਾ ਪੰਜ",
         "ਸਾਢੇ ਪੰਜ"
       ],
-      "answer_index": 0,
       "question": "ਅੰਕ 5¾ ਨੂੰ ਗੁਰਮੁਖੀ ਗਿਣਤੀ ਵਿੱਚ ਕਿਸ ਤਰ੍ਹਾਂ ਲਿਖਿਆ ਜਾਵੇਗਾ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "part": "A",
+      "answer_index": 0,
+      "topic": "Patwari Part A",
+      "id": "json_q_1794550819114_11"
     },
     {
       "id": "json_q_1794550819114_12",
+      "answer_index": 1,
+      "question": "‘ਉਣਾਸੀ' ਨੂੰ ਅੰਕਾਂ ਵਿੱਚ ਕਿਵੇਂ ਲਿਖਿਆ ਜਾਵੇਗਾ?",
       "part": "A",
       "options": [
         "59",
@@ -180,13 +182,13 @@
         "69",
         "89"
       ],
-      "answer_index": 1,
-      "question": "‘ਉਣਾਸੀ' ਨੂੰ ਅੰਕਾਂ ਵਿੱਚ ਕਿਵੇਂ ਲਿਖਿਆ ਜਾਵੇਗਾ?",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "topic": "Patwari Part A",
+      "subject": "mixed"
     },
     {
       "id": "json_q_1794550819114_13",
+      "question": "ਗੁਰਮੁਖੀ ਲਿਪੀ ਕਿਹੜੇ ਲਿਪੀ ਪਰਿਵਾਰ ਵਿੱਚੋਂ ਜਨਮੀ ਹੈ?",
+      "answer_index": 3,
       "part": "A",
       "options": [
         "ਫ਼ਾਰਸੀ",
@@ -194,126 +196,125 @@
         "ਸ਼ਾਹਮੁਖੀ",
         "ਬ੍ਰਹਮੀ"
       ],
-      "answer_index": 3,
-      "question": "ਗੁਰਮੁਖੀ ਲਿਪੀ ਕਿਹੜੇ ਲਿਪੀ ਪਰਿਵਾਰ ਵਿੱਚੋਂ ਜਨਮੀ ਹੈ?",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "topic": "Patwari Part A",
+      "subject": "mixed"
     },
     {
       "id": "json_q_1794550819114_14",
-      "part": "A",
+      "answer_index": 0,
       "options": [
         "ਅਸੀਂ",
         "ਆ",
         "ਗਏ",
         "ਹਾਂ"
       ],
-      "answer_index": 0,
-      "question": "‘ਅਸੀਂ ਆ ਗਏ ਹਾਂ' ਵਾਕ ਵਿੱਚ ਕਿਹੜਾ ਸ਼ਬਦ ‘ਉਦੇਸ਼’ ਹੈ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "topic": "Patwari Part A",
+      "part": "A",
+      "question": "‘ਅਸੀਂ ਆ ਗਏ ਹਾਂ' ਵਾਕ ਵਿੱਚ ਕਿਹੜਾ ਸ਼ਬਦ ‘ਉਦੇਸ਼’ ਹੈ?"
     },
     {
       "id": "json_q_1794550819114_15",
+      "answer_index": 2,
       "part": "A",
+      "topic": "Patwari Part A",
       "options": [
         "ਸ਼ਬਦ",
         "ਵਿਆਕਰਨ",
         "ਭਾਵਾਂਸ਼",
         "ਲਿਪੀ"
       ],
-      "answer_index": 2,
       "question": "ਨਵੇਂ ਭਾਸ਼ਾ ਵਿਗਿਆਨੀਆਂ ਅਨੁਸਾਰ ਭਾਸ਼ਾ ਦੀ ਛੋਟੀ-ਤੋਂ-ਛੋਟੀ ਸਾਰਥਕ ਇਕਾਈ ਕਿਸ ਨੂੰ ਕਿਹਾ ਜਾਂਦਾ ਹੈ ?",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "subject": "mixed"
     },
     {
+      "question": "ਆਪਣੀ ਸਰਕਾਰ ਨੂੰ 'ਸਰਕਾਰ-ਏ-ਖ਼ਾਲਸਾ’ ਤੇ ਦਰਬਾਰ ਨੂੰ ‘ਦਰਬਾਰ-ਏ-ਖ਼ਾਲਸਾ' ਨਾਂ ਕਿਸ ਨੇ ਦਿੱਤਾ?",
       "id": "json_q_1794550819114_16",
       "part": "A",
+      "answer_index": 1,
+      "topic": "Patwari Part A",
       "options": [
         "ਸ੍ਰੀ ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਸਾਹਿਬ ਜੀ",
         "ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ",
         "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
         "ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ"
       ],
-      "answer_index": 1,
-      "question": "ਆਪਣੀ ਸਰਕਾਰ ਨੂੰ 'ਸਰਕਾਰ-ਏ-ਖ਼ਾਲਸਾ’ ਤੇ ਦਰਬਾਰ ਨੂੰ ‘ਦਰਬਾਰ-ਏ-ਖ਼ਾਲਸਾ' ਨਾਂ ਕਿਸ ਨੇ ਦਿੱਤਾ?",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "subject": "mixed"
     },
     {
-      "id": "json_q_1794550819114_17",
-      "part": "A",
       "options": [
         "ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ ਅਤੇ ਮੁਗਲਾਂ ਵਿਚਕਾਰ",
         "ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ਅਤੇ ਮੁਗਲਾਂ ਵਿਚਕਾਰ",
         "ਸਿੱਖ-ਰਾਜ ਅਤੇ ਅੰਗਰੇਜ਼ਾਂ ਵਿਚਕਾਰ",
         "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ ਅਤੇ ਮੁਗਲਾਂ ਵਿਚਕਾਰ"
       ],
-      "answer_index": 2,
       "question": "ਪਹਿਲਾ ਐਂਗਲੋ ਸਿੱਖ ਯੁੱਧ ਕਿਸ-ਕਿਸ ਦਰਮਿਆਨ ਹੋਇਆ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "topic": "Patwari Part A",
+      "id": "json_q_1794550819114_17",
+      "part": "A",
+      "answer_index": 2
     },
     {
-      "id": "json_q_1794550819114_18",
-      "part": "A",
+      "answer_index": 3,
+      "question": "ਪੰਜਾਬੀ ਕੁੜੀਆਂ ਦੀ ਹਰਮਨ-ਪਿਆਰੀ ਲੋਕ-ਖੇਡ ਕਿਹੜੀ ਹੈ?",
+      "topic": "Patwari Part A",
       "options": [
         "ਕੌਲੀ",
         "ਗਲਾਸ",
         "ਬਾਲ਼ਟੀ",
         "ਥਾਲ"
       ],
-      "answer_index": 3,
-      "question": "ਪੰਜਾਬੀ ਕੁੜੀਆਂ ਦੀ ਹਰਮਨ-ਪਿਆਰੀ ਲੋਕ-ਖੇਡ ਕਿਹੜੀ ਹੈ?",
+      "part": "A",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "id": "json_q_1794550819114_18"
     },
     {
+      "answer_index": 0,
       "id": "json_q_1794550819114_19",
-      "part": "A",
       "options": [
         "ਘੋੜੀਆਂ",
         "ਸੁਹਾਗ",
         "ਲੋਰੀਆਂ",
         "ਅਲਾਹੁਣੀਆਂ"
       ],
-      "answer_index": 0,
-      "question": "ਲੜਕੇ ਦੇ ਵਿਆਹ ਸਮੇਂ, ਲੜਕੇ ਵਾਲਿਆਂ ਦੇ ਘਰ ਕਿਹੜੇ ਗੀਤ ਗਾਏ ਜਾਂਦੇ ਹਨ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "question": "ਲੜਕੇ ਦੇ ਵਿਆਹ ਸਮੇਂ, ਲੜਕੇ ਵਾਲਿਆਂ ਦੇ ਘਰ ਕਿਹੜੇ ਗੀਤ ਗਾਏ ਜਾਂਦੇ ਹਨ?",
+      "topic": "Patwari Part A",
+      "part": "A"
     },
     {
-      "id": "json_q_1794550819114_20",
-      "part": "A",
       "options": [
         "ਢੋਲਾ",
         "ਸਿੱਠਣੀਆਂ",
         "ਮਾਹੀਆ",
         "ਲੋਰੀਆਂ"
       ],
-      "answer_index": 1,
-      "question": "ਵਿਆਹ ਵੇਲੇ ਧੀ ਵਾਲ਼ੀ ਧਿਰ ਵੱਲੋਂ ਪੁੱਤ ਵਾਲ਼ੀ ਧਿਰ ਨੂੰ ਸਿੱਧੇ ਸੰਬੰਧਿਤ ਕਾਟਵੇਂ ਵਿਅੰਗ ਅਤੇ ਮਸ਼ਕਰੀ ਭਰੇ ਪ੍ਰਕਾਰਜ ਗੀਤਾਂ ਦਾ ਨਾਂ ______ ਹੈ। ਢੁਕਵਾਂ ਵਿਕਲਪ ਚੁਣ ਕੇ ਖਾਲੀ ਸਥਾਨ ਭਰੋ।",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "question": "ਵਿਆਹ ਵੇਲੇ ਧੀ ਵਾਲ਼ੀ ਧਿਰ ਵੱਲੋਂ ਪੁੱਤ ਵਾਲ਼ੀ ਧਿਰ ਨੂੰ ਸਿੱਧੇ ਸੰਬੰਧਿਤ ਕਾਟਵੇਂ ਵਿਅੰਗ ਅਤੇ ਮਸ਼ਕਰੀ ਭਰੇ ਪ੍ਰਕਾਰਜ ਗੀਤਾਂ ਦਾ ਨਾਂ ______ ਹੈ। ਢੁਕਵਾਂ ਵਿਕਲਪ ਚੁਣ ਕੇ ਖਾਲੀ ਸਥਾਨ ਭਰੋ।",
+      "topic": "Patwari Part A",
+      "id": "json_q_1794550819114_20",
+      "part": "A",
+      "answer_index": 1
     },
     {
+      "question": "ਹੇਠ ਲਿਖੀਆਂ ਖੇਡਾਂ ਵਿੱਚੋਂ ਕਿਹੜੀ ਪੰਜਾਬ ਦੀ ਪੁਰਾਤਨ ਲੋਕ-ਖੇਡ ਹੈ ?",
+      "answer_index": 3,
       "id": "json_q_1794550819114_21",
-      "part": "A",
+      "topic": "Patwari Part A",
       "options": [
         "ਕ੍ਰਿਕਟ",
         "ਬਾਕਸਿੰਗ",
         "ਬੈੱਡਮਿੰਟਨ",
         "ਕਬੱਡੀ"
       ],
-      "answer_index": 3,
-      "question": "ਹੇਠ ਲਿਖੀਆਂ ਖੇਡਾਂ ਵਿੱਚੋਂ ਕਿਹੜੀ ਪੰਜਾਬ ਦੀ ਪੁਰਾਤਨ ਲੋਕ-ਖੇਡ ਹੈ ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "part": "A"
     },
     {
+      "question": "‘ਗੁਰੂ ਲਾਧੋ ਰੇ’ ਸਾਖੀ ਦਾ ਸੰਬੰਧ ਕਿਸ ਗੁਰੂ ਸਾਹਿਬਾਨ ਨਾਲ ਹੈ?",
+      "topic": "Patwari Part A",
       "id": "json_q_1794550819114_22",
-      "part": "A",
       "options": [
         "ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ਼ ਬਹਾਦਰ ਜੀ",
         "ਸ੍ਰੀ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ",
@@ -321,138 +322,137 @@
         "ਸ੍ਰੀ ਗੁਰੂ ਅਮਰਦਾਸ ਜੀ"
       ],
       "answer_index": 0,
-      "question": "‘ਗੁਰੂ ਲਾਧੋ ਰੇ’ ਸਾਖੀ ਦਾ ਸੰਬੰਧ ਕਿਸ ਗੁਰੂ ਸਾਹਿਬਾਨ ਨਾਲ ਹੈ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "part": "A"
     },
     {
-      "id": "json_q_1794550819114_23",
       "part": "A",
+      "question": "'ਸ੍ਰੀ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ' ਨੇ ਕਿੰਨੇ ਰਾਗਾਂ ਵਿੱਚ ਬਾਣੀ ਰਚੀ ਹੈ?",
+      "id": "json_q_1794550819114_23",
+      "topic": "Patwari Part A",
+      "answer_index": 2,
+      "subject": "mixed",
       "options": [
         "19 ਰਾਗਾਂ ਵਿੱਚ",
         "17 ਰਾਗਾਂ ਵਿੱਚ",
         "30 ਰਾਗਾਂ ਵਿੱਚ",
         "15 ਰਾਗਾਂ ਵਿੱਚ"
-      ],
-      "answer_index": 2,
-      "question": "'ਸ੍ਰੀ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ' ਨੇ ਕਿੰਨੇ ਰਾਗਾਂ ਵਿੱਚ ਬਾਣੀ ਰਚੀ ਹੈ?",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      ]
     },
     {
+      "question": "‘ਬਾਬਰਵਾਣੀ' ਦੀ ਰਚਨਾ ਕਿਸ ਗੁਰੂ ਸਾਹਿਬਾਨ ਨੇ ਕੀਤੀ?",
+      "topic": "Patwari Part A",
       "id": "json_q_1794550819114_24",
-      "part": "A",
+      "answer_index": 1,
       "options": [
         "ਸ੍ਰੀ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
         "ਸ੍ਰੀ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ",
         "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
         "ਸ੍ਰੀ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ"
       ],
-      "answer_index": 1,
-      "question": "‘ਬਾਬਰਵਾਣੀ' ਦੀ ਰਚਨਾ ਕਿਸ ਗੁਰੂ ਸਾਹਿਬਾਨ ਨੇ ਕੀਤੀ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "part": "A"
     },
     {
-      "id": "json_q_1794550819114_25",
+      "topic": "Patwari Part A",
       "part": "A",
+      "id": "json_q_1794550819114_25",
+      "answer_index": 2,
+      "subject": "mixed",
+      "question": "‘ਸ੍ਰੀ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ' ਸਿੱਖਾਂ ਦੇ ਕਿੰਨ੍ਹਵੇਂ ਗੁਰੂ ਸਾਹਿਬਾਨ ਹਨ?",
       "options": [
         "ਤੀਜੇ",
         "ਚੌਥੇ",
         "ਦੂਜੇ",
         "ਪੰਜਵੇਂ"
-      ],
-      "answer_index": 2,
-      "question": "‘ਸ੍ਰੀ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ' ਸਿੱਖਾਂ ਦੇ ਕਿੰਨ੍ਹਵੇਂ ਗੁਰੂ ਸਾਹਿਬਾਨ ਹਨ?",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      ]
     },
     {
       "id": "json_q_1794550819114_26",
-      "part": "A",
+      "subject": "mixed",
       "options": [
         "ਸ੍ਰੀ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ",
         "ਸ੍ਰੀ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
         "ਸ੍ਰੀ ਗੁਰੂ ਅਮਰਦਾਸ ਜੀ",
         "ਸ੍ਰੀ ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ"
       ],
-      "answer_index": 3,
       "question": "'ਸ੍ਰੀ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ' ਕਿਸ ਗੁਰੂ ਸਾਹਿਬਾਨ ਦੇ ਸਪੁੱਤਰ ਸਨ?",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "part": "A",
+      "topic": "Patwari Part A",
+      "answer_index": 3
     },
     {
       "id": "json_q_1794550819114_27",
-      "part": "A",
       "options": [
         "ਚਾਂਦਨੀ ਚੌਕ ਦਿੱਲੀ ਵਿਖੇ",
         "ਲਾਹੌਰ ਵਿਖੇ",
         "ਆਗਰਾ ਵਿਖੇ",
         "ਗਵਾਲੀਅਰ ਵਿਖੇ"
       ],
+      "subject": "mixed",
+      "topic": "Patwari Part A",
       "answer_index": 0,
       "question": "‘ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ਼ ਬਹਾਦਰ ਜੀ' ਨੂੰ ਕਿਸ ਸਥਾਨ 'ਤੇ ਸ਼ਹੀਦ ਕੀਤਾ ਗਿਆ ?",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "part": "A"
     },
     {
       "id": "json_q_1794550819114_28",
-      "part": "A",
       "options": [
         "ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ਼ ਬਹਾਦਰ ਜੀ",
         "ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
         "ਸ੍ਰੀ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ",
         "ਸ੍ਰੀ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ"
       ],
-      "answer_index": 1,
-      "question": "'ਜ਼ਫ਼ਰਨਾਮਾ' ਦੀ ਰਚਨਾ ਕਿਸ ਗੁਰੂ ਸਾਹਿਬਾਨ ਨੇ ਕੀਤੀ ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "topic": "Patwari Part A",
+      "answer_index": 1,
+      "part": "A",
+      "question": "'ਜ਼ਫ਼ਰਨਾਮਾ' ਦੀ ਰਚਨਾ ਕਿਸ ਗੁਰੂ ਸਾਹਿਬਾਨ ਨੇ ਕੀਤੀ ?"
     },
     {
+      "answer_index": 3,
       "id": "json_q_1794550819114_29",
-      "part": "A",
+      "topic": "Patwari Part A",
       "options": [
         "ਸ੍ਰੀ ਅਨੰਦਪੁਰ ਸਾਹਿਬ",
         "ਖਿਦਰਾਣੇ ਦੀ ਢਾਬ",
         "ਚਮਕੌਰ ਸਾਹਿਬ",
         "ਸਾਬੋ ਕੀ ਤਲਵੰਡੀ (ਤਲਵੰਡੀ ਸਾਬੋ)"
       ],
-      "answer_index": 3,
-      "question": "‘ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ' ਨੇ ਭਾਈ ਮਨੀ ਸਿੰਘ ਪਾਸੋਂ ‘ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ' ਦਾ ਨਵਾਂ ਉਤਾਰਾ ਕਿਸ ਅਸਥਾਨ 'ਤੇ ਕਰਵਾਇਆ ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "question": "‘ਸ੍ਰੀ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ' ਨੇ ਭਾਈ ਮਨੀ ਸਿੰਘ ਪਾਸੋਂ ‘ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ' ਦਾ ਨਵਾਂ ਉਤਾਰਾ ਕਿਸ ਅਸਥਾਨ 'ਤੇ ਕਰਵਾਇਆ ?",
+      "part": "A"
     },
     {
-      "id": "json_q_1794550819114_30",
       "part": "A",
+      "id": "json_q_1794550819114_30",
+      "topic": "Patwari Part A",
+      "answer_index": 0,
+      "subject": "mixed",
+      "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਸ਼ਬਦ ‘ਵੱਡੀ ਤੱਕੜੀ' ਦਾ ਸਮਾਨਾਰਥਕ ਸ਼ਬਦ ਹੈ :",
       "options": [
         "ਕੰਡਾ",
         "ਸੂਈ",
         "ਸੂਆ",
         "ਸੂਲ"
-      ],
-      "answer_index": 0,
-      "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਸ਼ਬਦ ‘ਵੱਡੀ ਤੱਕੜੀ' ਦਾ ਸਮਾਨਾਰਥਕ ਸ਼ਬਦ ਹੈ :",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      ]
     },
     {
-      "id": "json_q_1794550819114_31",
       "part": "A",
+      "id": "json_q_1794550819114_31",
+      "topic": "Patwari Part A",
+      "answer_index": 2,
+      "subject": "mixed",
+      "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਸਹੀ ਵਿਰੋਧੀ ਸ਼ਬਦ ਜੋੜਾ ਚੁਣੋ :",
       "options": [
         "ਦੂਰ/ਪਰੇ",
         "ਰਾਤ/ਹਨੇਰਾ",
         "ਵੱਸਣਾ/ਉੱਜੜਨਾ",
         "ਸੂਰਜ/ਧੁੱਪ"
-      ],
-      "answer_index": 2,
-      "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਸਹੀ ਵਿਰੋਧੀ ਸ਼ਬਦ ਜੋੜਾ ਚੁਣੋ :",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      ]
     },
     {
-      "id": "json_q_1794550819114_32",
+      "answer_index": 1,
       "part": "A",
       "options": [
         "ਜੌਹਰ",
@@ -460,111 +460,113 @@
         "ਜ਼ਾਹਦ",
         "ਜਾਹਲ"
       ],
-      "answer_index": 1,
-      "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਸ਼ਬਦ ‘ਪ੍ਰਤੱਖ/ਪ੍ਰਗਟ' ਦਾ ਸਮਾਨਾਰਥਕ ਹੈ ?",
+      "id": "json_q_1794550819114_32",
       "subject": "mixed",
+      "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਸ਼ਬਦ ‘ਪ੍ਰਤੱਖ/ਪ੍ਰਗਟ' ਦਾ ਸਮਾਨਾਰਥਕ ਹੈ ?",
       "topic": "Patwari Part A"
     },
     {
+      "answer_index": 2,
+      "topic": "Patwari Part A",
       "id": "json_q_1794550819114_33",
       "part": "A",
+      "question": "ਹੇਠ ਦਿੱਤੇ ਵਿਕਲਪਾਂ ਵਿੱਚੋਂ ਮੁਹਾਵਰਾ ‘ਹੱਦ ਮੁਕਾ ਦੇਣਾ’ ਲਈ ਢੁਕਵਾਂ ਅਰਥ ਚੁਣੋ :",
+      "subject": "mixed",
       "options": [
         "ਬਹੁਤ ਵੱਧ ਖ਼ਰਚ ਹੋਣਾ",
         "ਜ਼ੁਲਮ ਹੋ ਜਾਣਾ",
         "ਕਮਾਲ ਕਰ ਦੇਣਾ",
         "ਹੋਸ਼ ਗੁੰਮ ਹੋਣੇ"
-      ],
-      "answer_index": 2,
-      "question": "ਹੇਠ ਦਿੱਤੇ ਵਿਕਲਪਾਂ ਵਿੱਚੋਂ ਮੁਹਾਵਰਾ ‘ਹੱਦ ਮੁਕਾ ਦੇਣਾ’ ਲਈ ਢੁਕਵਾਂ ਅਰਥ ਚੁਣੋ :",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      ]
     },
     {
       "id": "json_q_1794550819114_34",
-      "part": "A",
+      "answer_index": 3,
       "options": [
         "ਨਾਸਾਂ ਵਿੱਚ ਧੂੰ ਦੇਣਾ",
         "ਨੱਕ ਰੱਖਣਾ",
         "ਨੱਕ ਰਗੜਨਾ",
         "ਨਾਸਾਂ/ਨੱਕ ਚਾੜ੍ਹਨਾ"
       ],
-      "answer_index": 3,
-      "question": "'ਨਖ਼ਰਾ ਕਰਨਾ ਜਾਂ ਘ੍ਰਿਣਾ ਕਰਨਾ' ਅਰਥਾਂ ਨੂੰ ਸਪਸ਼ਟ ਕਰਨ ਲਈ ਹੇਠ ਦਿੱਤਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਮੁਹਾਵਰਾ ਵਰਤਿਆ ਜਾਵੇਗਾ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "topic": "Patwari Part A",
+      "part": "A",
+      "question": "'ਨਖ਼ਰਾ ਕਰਨਾ ਜਾਂ ਘ੍ਰਿਣਾ ਕਰਨਾ' ਅਰਥਾਂ ਨੂੰ ਸਪਸ਼ਟ ਕਰਨ ਲਈ ਹੇਠ ਦਿੱਤਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਮੁਹਾਵਰਾ ਵਰਤਿਆ ਜਾਵੇਗਾ?"
     },
     {
-      "id": "json_q_1794550819114_35",
-      "part": "A",
       "options": [
         "ਹਿੱਲਣ ਦਾ ਨਾਂ ਨਾ ਲੈਣਾ",
         "ਤੀਰ ਨਿਸ਼ਾਨੇ 'ਤੇ ਬੈਠਣਾ",
         "ਕੁੱਟ-ਕੁਟਾਪਾ ਕਰਨਾ",
         "(a) ਅਤੇ (c) ਦੋਵੇਂ"
       ],
-      "answer_index": 0,
-      "question": "ਹੇਠ ਦਿੱਤੇ ਵਿਕਲਪਾਂ ਵਿੱਚੋਂ ਮੁਹਾਵਰਾ ‘ਥੱਪਾ ਮਾਰ ਕੇ ਬੈਠਣਾ’ ਲਈ ਕਿਹੜਾ/ਕਿਹੜੇ ਅਰਥ ਸਹੀ ਹੋਵੇਗਾ/ਹੋਣਗੇ ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "id": "json_q_1794550819114_35",
+      "part": "A",
+      "topic": "Patwari Part A",
+      "question": "ਹੇਠ ਦਿੱਤੇ ਵਿਕਲਪਾਂ ਵਿੱਚੋਂ ਮੁਹਾਵਰਾ ‘ਥੱਪਾ ਮਾਰ ਕੇ ਬੈਠਣਾ’ ਲਈ ਕਿਹੜਾ/ਕਿਹੜੇ ਅਰਥ ਸਹੀ ਹੋਵੇਗਾ/ਹੋਣਗੇ ?",
+      "answer_index": 0
     },
     {
-      "id": "json_q_1794550819114_36",
-      "part": "A",
       "options": [
         "ਉਦੋਂ ਜਦੋਂ ਕੋਈ ਫੋਕੀ ਸ਼ਾਨ ਤੇ ਸਫ਼ੈਦ ਪੋਸ਼ੀ ਕਰ-ਕਰ ਦੱਸੇ",
         "ਉਦੋਂ ਜਦੋਂ ਇੱਕ ਸਿਆਣੇ ਆਦਮੀ ਦੇ ਕਰਨ ਵਾਲ਼ੇ ਕੰਮ 'ਤੇ ਦੋ (ਅਨਾੜੀ) ਬੰਦੇ ਲਾ ਦਿੱਤੇ ਜਾਣ ਤੇ ਕੰਮ ਚੌੜ ਹੋ ਜਾਏ",
         "ਉਦੋਂ ਜਦੋਂ ਇਹ ਦੱਸਣਾ ਹੋਵੇ ਕਿ ਗ਼ਰਜ਼ਮੰਦ ਹਰ ਮਾਮਲੇ ਨੂੰ ਆਪਣੀ ਗ਼ਰਜ਼ ਦੀ ਐਨਕ ਵਿੱਚੋਂ ਵੇਖਦਾ ਹੈ",
         "ਉਦੋਂ ਜਦੋਂ ਕਿਸੇ ਮਨੁੱਖ ਨੂੰ ਢੱਡ ਨਾ ਵਜਾਉਣੀ ਆਉਂਦੀ ਹੋਵੇ"
       ],
-      "answer_index": 1,
-      "question": "ਅਖਾਣ ‘ਦੋਹੀਂ ਡੂਮੀ ਢੱਡ ਨਹੀਂ ਵੱਜਦੀ’ ਕਿਹੜੇ ਮੌਕੇ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
       "subject": "mixed",
+      "part": "A",
+      "id": "json_q_1794550819114_36",
+      "question": "ਅਖਾਣ ‘ਦੋਹੀਂ ਡੂਮੀ ਢੱਡ ਨਹੀਂ ਵੱਜਦੀ’ ਕਿਹੜੇ ਮੌਕੇ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+      "answer_index": 1,
       "topic": "Patwari Part A"
     },
     {
-      "id": "json_q_1794550819114_37",
-      "part": "A",
+      "subject": "mixed",
       "options": [
         "ਲੱਗ ਲੜਾਈਏ, ਧੇਲੇ ਦਾ ਗੁੜ ਖਾਈਏ",
         "ਮਨੁੱਖ ਪਰਖੀਏ ਵੱਸ ਪਿਆ, ਸੋਨਾ ਪਰਖੀਏ ਕੱਸ ਪਿਆ",
         "ਬੂਹਾ ਤਾਕ ਭਲਾ, ਲੇਖਾ ਪਾਕ ਭਲਾ",
         "ਬੱਤੀ ਦਿਨ ਤੇ ਤੇਤੀ ਮੇਲੇ, ਤੱਤਾ ਜਾਵੇ ਕਿਹੜੇ ਵੇਲੇ"
       ],
-      "answer_index": 3,
       "question": "“ਜਦੋਂ ਕੋਈ ਬੰਦਾ ਆਪਣੇ ਕਾਰਾਂ-ਵਿਹਾਰਾਂ ਦੇ ਧੰਦਿਆਂ ਵਿੱਚ ਏਨਾ ਰੁੱਝਿਆ ਹੋਵੇ ਕਿ ਕਿਤੇ ਮੌਜ-ਮੇਲੇ ਜਾਂ ਯਾਰਾਂ ਦੋਸਤਾਂ ਨਾਲ਼ ਸਮਾਂ ਗੁਜ਼ਾਰਨ ਲਈ ਨਾ ਜਾ ਸਕੇ” ਉਦੋਂ ਉਸ ਲਈ ਕਿਹੜਾ ਅਖਾਣ ਵਰਤਿਆ ਜਾਵੇਗਾ?",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "id": "json_q_1794550819114_37",
+      "part": "A",
+      "topic": "Patwari Part A",
+      "answer_index": 3
     },
     {
-      "id": "json_q_1794550819114_38",
-      "part": "A",
+      "subject": "mixed",
       "options": [
         "ਤੇਲ ਖਾਣਾ ਤੇ ਗੁਲਗੁਲਿਆਂ ਤੋਂ ਪਰਹੇਜ਼",
         "ਗੁੜ ਘੀ ਮੈਦਾ ਤੇਰਾ, ਜਲ ਫੂਕ ਬਸੰਤਰ ਮੇਰਾ",
         "ਗੁੜ ਦਿੱਤਿਆਂ ਜੇ ਦੁਸ਼ਮਣ ਮਾਰੇ ਤਾਂ ਮਹੁਰਾ ਕਿਉਂ ਦਈਏ",
         "ਇਹਨਾਂ ਵਿੱਚੋਂ ਕੋਈ ਵੀ ਨਹੀਂ"
       ],
-      "answer_index": 0,
       "question": "ਜਿਸ ਮੌਕੇ ਅਖਾਣ ‘ਗੁੜ ਖਾਣਾ ਤੇ ਗੁਲਗੁਲਿਆਂ ਤੋਂ ਪਰਹੇਜ਼’ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ, ਉਸੇ ਮੌਕੇ ਹੋਰ ਕਿਹੜਾ ਅਖਾਣ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ? ਦਿੱਤੇ ਗਏ ਵਿਕਲਪਾਂ ਵਿੱਚੋਂ ਚੁਣੋ :",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "id": "json_q_1794550819114_38",
+      "part": "A",
+      "topic": "Patwari Part A",
+      "answer_index": 0
     },
     {
       "id": "json_q_1794550819114_39",
-      "part": "A",
+      "answer_index": 2,
       "options": [
         "ਬਾ",
         "ਸ",
         "ਬੇ",
         "ਉਪ"
       ],
-      "answer_index": 2,
-      "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਅਗੇਤਰ ਲੱਗਣ ਨਾਲ਼ ਜ਼ਿਆਦਾਤਰ ਸ਼ਬਦਾਂ ਦੇ ਅਰਥ ਉਲਟੇ ਹੋ ਜਾਂਦੇ ਹਨ :",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "part": "A",
+      "topic": "Patwari Part A",
+      "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਅਗੇਤਰ ਲੱਗਣ ਨਾਲ਼ ਜ਼ਿਆਦਾਤਰ ਸ਼ਬਦਾਂ ਦੇ ਅਰਥ ਉਲਟੇ ਹੋ ਜਾਂਦੇ ਹਨ :"
     },
     {
       "id": "json_q_1794550819114_40",
+      "topic": "Patwari Part A",
+      "question": "'ਆਵਲੀ' ਪਿਛੇਤਰ ਲੱਗ ਕੇ ਬਣਨ ਵਾਲ਼ਾ ਸਹੀ ਸ਼ਬਦ ਚੁਣੋ :",
       "part": "A",
       "options": [
         "ਸਾਲ਼ੀ",
@@ -573,40 +575,38 @@
         "ਚਾਲੀ"
       ],
       "answer_index": 1,
-      "question": "'ਆਵਲੀ' ਪਿਛੇਤਰ ਲੱਗ ਕੇ ਬਣਨ ਵਾਲ਼ਾ ਸਹੀ ਸ਼ਬਦ ਚੁਣੋ :",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "subject": "mixed"
     },
     {
-      "id": "json_q_1794550819114_41",
-      "part": "A",
       "options": [
         "ਸਬਕ",
         "ਸਬਜ਼",
         "ਸਬਕਮੇਟੀ",
         "ਸਬਰ"
       ],
-      "answer_index": 2,
-      "question": "'ਸਬ' ਅਗੇਤਰ ਲੱਗ ਕੇ ਬਣਨ ਵਾਲ਼ਾ ਸਹੀ ਸ਼ਬਦ ਚੁਣੋ :",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "answer_index": 2,
+      "id": "json_q_1794550819114_41",
+      "part": "A",
+      "topic": "Patwari Part A",
+      "question": "'ਸਬ' ਅਗੇਤਰ ਲੱਗ ਕੇ ਬਣਨ ਵਾਲ਼ਾ ਸਹੀ ਸ਼ਬਦ ਚੁਣੋ :"
     },
     {
-      "id": "json_q_1794550819114_42",
-      "part": "A",
+      "answer_index": 3,
       "options": [
         "ਲਾਹਣ",
         "ਲਾਹੌਰ",
         "ਲਾਈਨ",
         "ਲਾਇਲਾਜ"
       ],
-      "answer_index": 3,
-      "question": "'ਲਾ' ਅਗੇਤਰ ਲੱਗ ਕੇ ਬਣਨ ਵਾਲ਼ਾ ਸਹੀ ਸ਼ਬਦ ਚੁਣੋ :",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "question": "'ਲਾ' ਅਗੇਤਰ ਲੱਗ ਕੇ ਬਣਨ ਵਾਲ਼ਾ ਸਹੀ ਸ਼ਬਦ ਚੁਣੋ :",
+      "id": "json_q_1794550819114_42",
+      "topic": "Patwari Part A",
+      "part": "A"
     },
     {
-      "id": "json_q_1794550819114_43",
+      "answer_index": 0,
       "part": "A",
       "options": [
         "ਅੱਠ",
@@ -614,14 +614,14 @@
         "ਦਸ",
         "ਬਾਰਾਂ"
       ],
-      "answer_index": 0,
-      "question": "ਵਿਆਕਰਨ ਅਨੁਸਾਰ ਸਾਰਥਕ ਸ਼ਬਦ ਕਿੰਨੀ ਕਿਸਮ ਦੇ ਹੁੰਦੇ ਹਨ?",
+      "id": "json_q_1794550819114_43",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "topic": "Patwari Part A",
+      "question": "ਵਿਆਕਰਨ ਅਨੁਸਾਰ ਸਾਰਥਕ ਸ਼ਬਦ ਕਿੰਨੀ ਕਿਸਮ ਦੇ ਹੁੰਦੇ ਹਨ?"
     },
     {
-      "id": "json_q_1794550819114_44",
       "part": "A",
+      "subject": "mixed",
       "options": [
         "ਉਰਦੂ",
         "ਉਪਰੋਕਤ ਸਾਰੀਆਂ ਹੀ",
@@ -629,79 +629,1479 @@
         "ਹਿੰਦੀ ਅਤੇ ਸੰਸਕ੍ਰਿਤ"
       ],
       "answer_index": 1,
-      "question": "ਗੁਰਮੁਖੀ ਵਰਨਮਾਲਾ ਵਿੱਚ 'ਸ਼' ਚਿੰਨ੍ਹ/ਅੱਖਰ ਕਿਹੜੀ ਭਾਸ਼ਾ/ਕਿਹੜੀਆਂ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚੋਂ ਲਏ ਸ਼ਬਦਾਂ ਦੇ ਉਚਾਰਨ ਨੂੰ ਸਹੀ ਰੂਪ ਵਿੱਚ ਪ੍ਰਗਟਾਉਣ ਲਈ 'ਨਵੀਨ ਵਰਗ' ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ? ਸਹੀ ਵਿਕਲਪ ਚੁਣੋ।",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "id": "json_q_1794550819114_44",
+      "topic": "Patwari Part A",
+      "question": "ਗੁਰਮੁਖੀ ਵਰਨਮਾਲਾ ਵਿੱਚ 'ਸ਼' ਚਿੰਨ੍ਹ/ਅੱਖਰ ਕਿਹੜੀ ਭਾਸ਼ਾ/ਕਿਹੜੀਆਂ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚੋਂ ਲਏ ਸ਼ਬਦਾਂ ਦੇ ਉਚਾਰਨ ਨੂੰ ਸਹੀ ਰੂਪ ਵਿੱਚ ਪ੍ਰਗਟਾਉਣ ਲਈ 'ਨਵੀਨ ਵਰਗ' ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ? ਸਹੀ ਵਿਕਲਪ ਚੁਣੋ।"
     },
     {
-      "id": "json_q_1794550819114_45",
-      "part": "A",
       "options": [
         "ਸ਼",
         "ਖ਼",
         "ਜ਼",
         "ਲ਼"
       ],
-      "answer_index": 3,
-      "question": "ਗੁਰਮੁਖੀ ਵਰਨਮਾਲਾ ਦੀ ‘ਨਵੀਨ ਟੋਲੀ/ਵਰਗ’ ਦਾ ਕਿਹੜਾ ਅੱਖਰ ਸਭ ਤੋਂ ਅੰਤ ਵਿੱਚ ਵਰਨਮਾਲਾ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "id": "json_q_1794550819114_45",
+      "question": "ਗੁਰਮੁਖੀ ਵਰਨਮਾਲਾ ਦੀ ‘ਨਵੀਨ ਟੋਲੀ/ਵਰਗ’ ਦਾ ਕਿਹੜਾ ਅੱਖਰ ਸਭ ਤੋਂ ਅੰਤ ਵਿੱਚ ਵਰਨਮਾਲਾ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ ?",
+      "answer_index": 3,
+      "topic": "Patwari Part A",
+      "part": "A"
     },
     {
       "id": "json_q_1794550819114_46",
-      "part": "A",
+      "question": "'ਮਾਲਕ ਨੇ ਨੌਕਰਾਣੀ ਨੂੰ ਨੌਕਰੀ ਤੋਂ ਕੱਢ ਦਿੱਤਾ’ ਵਾਕ ਦਾ ਲਿੰਗ ਬਦਲ ਕੇ ਬਣਨ ਵਾਲ਼ਾ ਸਹੀ ਵਾਕ ਚੁਣੋ :",
+      "topic": "Patwari Part A",
+      "subject": "mixed",
       "options": [
         "ਮਾਲਕਣ ਨੇ ਨੌਕਰ ਨੂੰ ਨੌਕਰੀ ਤੋਂ ਕੱਢ ਦਿੱਤਾ",
         "ਮਾਲਕਣ ਨੇ ਨੌਕਰਾਣੀ ਨੂੰ ਨੌਕਰੀ ਤੋਂ ਕੱਢ ਦਿੱਤਾ",
         "ਮਾਲਕ ਨੇ ਨੌਕਰ ਨੂੰ ਨੌਕਰੀ ਤੋਂ ਕੱਢ ਦਿੱਤਾ",
         "ਇਹਨਾਂ ਵਿੱਚੋਂ ਕੋਈ ਵੀ ਨਹੀਂ"
       ],
-      "answer_index": 0,
-      "question": "'ਮਾਲਕ ਨੇ ਨੌਕਰਾਣੀ ਨੂੰ ਨੌਕਰੀ ਤੋਂ ਕੱਢ ਦਿੱਤਾ’ ਵਾਕ ਦਾ ਲਿੰਗ ਬਦਲ ਕੇ ਬਣਨ ਵਾਲ਼ਾ ਸਹੀ ਵਾਕ ਚੁਣੋ :",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "part": "A",
+      "answer_index": 0
     },
     {
+      "answer_index": 2,
+      "topic": "Patwari Part A",
       "id": "json_q_1794550819114_47",
       "part": "A",
+      "question": "'ਮਾਮਾ ਜੀ ਤੇ ਭੂਆ ਜੀ ਕੱਲ੍ਹ ਆਉਣਗੇ’ ਵਾਕ ਦਾ ਲਿੰਗ ਬਦਲ ਕੇ ਬਣਨ ਵਾਲ਼ਾ ਸਹੀ ਵਾਕ ਚੁਣੋ :",
+      "subject": "mixed",
       "options": [
         "ਮਾਮਾ ਜੀ ਤੇ ਮਾਮੀ ਜੀ ਕੱਲ੍ਹ ਆਉਣਗੇ",
         "ਮਾਮਾ ਜੀ ਤੇ ਫੁੱਫੜ ਜੀ ਕੱਲ੍ਹ ਆਉਣਗੇ",
         "ਮਾਮੀ ਜੀ ਤੇ ਫੁੱਫੜ ਜੀ ਕੱਲ੍ਹ ਆਉਣਗੇ",
         "ਇਹਨਾਂ ਵਿੱਚੋਂ ਕੋਈ ਵੀ ਨਹੀਂ"
-      ],
-      "answer_index": 2,
-      "question": "'ਮਾਮਾ ਜੀ ਤੇ ਭੂਆ ਜੀ ਕੱਲ੍ਹ ਆਉਣਗੇ’ ਵਾਕ ਦਾ ਲਿੰਗ ਬਦਲ ਕੇ ਬਣਨ ਵਾਲ਼ਾ ਸਹੀ ਵਾਕ ਚੁਣੋ :",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      ]
     },
     {
-      "id": "json_q_1794550819114_48",
-      "part": "A",
+      "subject": "mixed",
       "options": [
         "ਸ਼ਹਿਨਸ਼ਾਹਾ",
         "ਸ਼ਹਿਨਸ਼ਾਹਾਂ",
         "ਸ਼ਹਿਨਸ਼ਾਹੀ",
         "ਸ਼ਹਿਨਸ਼ਾਹਤ"
       ],
-      "answer_index": 1,
+      "topic": "Patwari Part A",
       "question": "‘ਸ਼ਹਿਨਸ਼ਾਹ' ਸ਼ਬਦ ਦਾ ਬਹੁ-ਵਚਨ ਕੀ ਹੈ?",
-      "subject": "mixed",
-      "topic": "Patwari Part A"
+      "part": "A",
+      "answer_index": 1,
+      "id": "json_q_1794550819114_48"
     },
     {
-      "id": "json_q_1794550819114_49",
-      "part": "A",
       "options": [
         "ਬਰੈਕਟ",
         "ਡੈਸ਼",
         "ਦੁਬਿੰਦੀ",
         "ਛੁੱਟ ਮਰੋੜੀ"
       ],
-      "answer_index": 3,
-      "question": "ਪੰਜਾਬੀ ਭਾਸ਼ਾ ਦੇ ਕੁਝ ਸ਼ਬਦਾਂ ਜਿਵੇਂ: ਵਿੱਚ, ਉੱਤੇ ਆਦਿ ਨੂੰ ਲਿਖਤ ਰੂਪ ਦਿੰਦੇ ਸਮੇਂ, ਦਾ ਜਦੋਂ ਪਹਿਲਾ ਅੱਖਰ ਛੱਡ ਕੇ ਲਿਖਿਆ ਜਾਵੇ ਤਾਂ ਉਸ ਅੱਖਰ ਦੀ ਥਾਂ ਕਿਹੜਾ ਵਿਸਰਾਮ ਚਿੰਨ੍ਹ ਪਾਇਆ ਜਾਂਦਾ ਹੈ ?",
       "subject": "mixed",
-      "topic": "Patwari Part A"
+      "topic": "Patwari Part A",
+      "part": "A",
+      "question": "ਪੰਜਾਬੀ ਭਾਸ਼ਾ ਦੇ ਕੁਝ ਸ਼ਬਦਾਂ ਜਿਵੇਂ: ਵਿੱਚ, ਉੱਤੇ ਆਦਿ ਨੂੰ ਲਿਖਤ ਰੂਪ ਦਿੰਦੇ ਸਮੇਂ, ਦਾ ਜਦੋਂ ਪਹਿਲਾ ਅੱਖਰ ਛੱਡ ਕੇ ਲਿਖਿਆ ਜਾਵੇ ਤਾਂ ਉਸ ਅੱਖਰ ਦੀ ਥਾਂ ਕਿਹੜਾ ਵਿਸਰਾਮ ਚਿੰਨ੍ਹ ਪਾਇਆ ਜਾਂਦਾ ਹੈ ?",
+      "id": "json_q_1794550819114_49",
+      "answer_index": 3
+    },
+    {
+      "id": "json_q_1794550838752_0",
+      "part": "B",
+      "options": [
+        "South Africa / ਦੱਖਣੀ ਅਫ਼ਰੀਕਾ",
+        "India / ਭਾਰਤ",
+        "South America / ਦੱਖਣੀ ਅਮਰੀਕਾ",
+        "England / ਇੰਗਲੈਂਡ"
+      ],
+      "answer_index": 0,
+      "question": "Where did Gandhiji use Satyagraha for the first time? / ਗਾਂਧੀ ਜੀ ਨੇ ਪਹਿਲੀ ਵਾਰ ਸੱਤਿਆਗ੍ਰਹਿ ਕਿੱਥੇ ਕੀਤਾ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_1",
+      "part": "B",
+      "options": [
+        "Lala Lajpat Rai / ਲਾਲਾ ਲਾਜਪਤ ਰਾਏ",
+        "Bipin Chandra Pal / ਬਿਪਿਨ ਚੰਦਰ ਪਾਲ",
+        "Gopal Krishna Gokhale / ਗੋਪਾਲ ਕ੍ਰਿਸ਼ਨ ਗੋਖਲੇ",
+        "Bal Gangadhar Tilak / ਬਾਲ ਗੰਗਾਧਰ ਤਿਲਕ"
+      ],
+      "answer_index": 2,
+      "question": "______ was the moderate leader of Congress. / ______ ਕਾਂਗਰਸ ਦਾ ਨਰਮ ਖ਼ਿਆਲੀ ਨੇਤਾ ਸੀ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_2",
+      "part": "B",
+      "options": [
+        "21%",
+        "78%",
+        "84%",
+        "87%"
+      ],
+      "answer_index": 1,
+      "question": "What is the percentage of nitrogen in the atmosphere? / ਵਾਯੂ-ਮੰਡਲ ਵਿੱਚ ਨਾਈਟ੍ਰੋਜਨ ਦੀ ਪ੍ਰਤੀਸ਼ਤਤਾ ਕਿੰਨੀ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_3",
+      "part": "B",
+      "options": [
+        "Mustard oil / ਸਰ੍ਹੋਂ ਦਾ ਤੇਲ",
+        "Coconut oil / ਨਾਰੀਅਲ ਦਾ ਤੇਲ",
+        "Petrol / ਪੈਟਰੋਲ",
+        "Crude oil / ਕੱਚਾ ਤੇਲ"
+      ],
+      "answer_index": 3,
+      "question": "Petroleum is also famous as ______ / ਪੈਟਰੋਲੀਅਮ, ______ ਵਜੋਂ ਵੀ ਮਸ਼ਹੂਰ ਹੈ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_4",
+      "part": "B",
+      "options": [
+        "Iodine deficiency / ਆਇਓਡੀਨ ਦੀ ਕਮੀ",
+        "Vitamin D deficiency / ਵਿਟਾਮਿਨ ਡੀ ਦੀ ਕਮੀ",
+        "Calcium deficiency / ਕੈਲਸ਼ੀਅਮ ਦੀ ਕਮੀ",
+        "Iron deficiency / ਆਇਰਨ ਦੀ ਕਮੀ"
+      ],
+      "answer_index": 0,
+      "question": "Which of the following is the most common cause of goiter? / ਗਿੱਲ੍ਹੜ ਦੀ ਬਿਮਾਰੀ ਦਾ ਸਭ ਤੋਂ ਆਮ ਕਾਰਨ ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_5",
+      "part": "B",
+      "options": [
+        "Goods and Sharing Tax / ਵਸਤੂ ਅਤੇ ਸ਼ੇਅਰਿੰਗ ਟੈਕਸ",
+        "Good and Silent Tax / ਚੰਗਾ ਅਤੇ ਅਪ੍ਰਤੱਖ ਟੈਕਸ",
+        "Goods and Services Tax / ਵਸਤੂਆਂ ਅਤੇ ਸੇਵਾਵਾਂ ਟੈਕਸ",
+        "Grand Services Tax / ਗ੍ਰੈਂਡ ਸਰਵਿਸਿਜ਼ ਟੈਕਸ"
+      ],
+      "answer_index": 2,
+      "question": "What does GST stand for? / ਜੀਐਸਟੀ ਦਾ ਵਿਸਤ੍ਰਿਤ ਨਾਂ ਕੀ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_6",
+      "part": "B",
+      "options": [
+        "The State Bank of India / ਸਟੇਟ ਬੈਂਕ ਆਫ਼ ਇੰਡੀਆ",
+        "The Reserve Bank of India / ਭਾਰਤੀ ਰਿਜ਼ਰਵ ਬੈਂਕ",
+        "The Ministry of Home Affairs / ਗ੍ਰਹਿ ਮੰਤਰਾਲਾ",
+        "NITI Aayog / ਨੀਤੀ ਆਯੋਗ"
+      ],
+      "answer_index": 1,
+      "question": "Which Government authority issues the currency notes in India? / ਕਿਹੜੀ ਸਰਕਾਰੀ ਅਥਾਰਟੀ ਭਾਰਤ ਵਿੱਚ ਕਰੰਸੀ ਨੋਟ ਜਾਰੀ ਕਰਦੀ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_7",
+      "part": "B",
+      "options": [
+        "Google / ਗੂਗਲ",
+        "Wipro / ਵਿਪਰੋ",
+        "Apple / ਐਪਲ",
+        "OpenAI / ਓਪਨਏਆਈ"
+      ],
+      "answer_index": 3,
+      "question": "ChatGPT is an artificial intelligence (AI) chatbot developed by ______ / ChatGPT ਇੱਕ ਨਕਲੀ ਬੁੱਧੀ (AI) ਚੈਟਬੋਟ ਹੈ ਜੋ ______ ਦੁਆਰਾ ਵਿਕਸਿਤ ਕੀਤਾ ਗਿਆ ਹੈ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_8",
+      "part": "B",
+      "options": [
+        "S. S. Wanjara Bedi / ਸ. ਸ. ਵਣਜਾਰਾ ਬੇਦੀ",
+        "Bawa Balwant / ਬਾਵਾ ਬਲਵੰਤ",
+        "Prof. Puran Singh / ਪ੍ਰੋ. ਪੂਰਨ ਸਿੰਘ",
+        "Balwant Gargi / ਬਲਵੰਤ ਗਾਰਗੀ"
+      ],
+      "answer_index": 0,
+      "question": "Name the author of Mere Rahan De Rang. / 'ਮੇਰੇ ਰਾਹਾਂ ਦੇ ਰੰਗ' ਪੁਸਤਕ ਦੇ ਲੇਖਕ ਦਾ ਨਾਮ ਦੱਸੋ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_9",
+      "part": "B",
+      "options": [
+        "19th June / 19 ਜੂਨ",
+        "20th June / 20 ਜੂਨ",
+        "21st June / 21 ਜੂਨ",
+        "21st July / 21 ਜੁਲਾਈ"
+      ],
+      "answer_index": 2,
+      "question": "The International Day of Yoga is celebrated across the world annually on ______ / ਅੰਤਰਰਾਸ਼ਟਰੀ ਯੋਗ ਦਿਵਸ ਹਰ ਸਾਲ ______ ਨੂੰ ਵਿਸ਼ਵ ਭਰ ਵਿੱਚ ਮਨਾਇਆ ਜਾਂਦਾ ਹੈ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_10",
+      "part": "B",
+      "options": [
+        "5th May / 5 ਮਈ",
+        "5th June / 5 ਜੂਨ",
+        "6th May / 6 ਮਈ",
+        "6th June / 6 ਜੂਨ"
+      ],
+      "answer_index": 1,
+      "question": "World Environment Day is celebrated on ______ every year. / ਵਿਸ਼ਵ ਵਾਤਾਵਰਨ ਦਿਵਸ ਹਰ ਸਾਲ ______ ਨੂੰ ਮਨਾਇਆ ਜਾਂਦਾ ਹੈ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_11",
+      "part": "B",
+      "options": [
+        "Indra Nooyi / ਇੰਦਰਾ ਨੂਈ",
+        "Raghuram Rajan / ਰਘੂਰਾਮ ਰਾਜਨ",
+        "Satya Nadella / ਸੱਤਿਆ ਨਡੇਲਾ",
+        "Ajay Banga / ਅਜੇ ਬੰਗਾ"
+      ],
+      "answer_index": 3,
+      "question": "Which Indian has been nominated by the US President Joe Biden to lead the World Bank? / ਅਮਰੀਕਾ ਦੇ ਰਾਸ਼ਟਰਪਤੀ ਜੋ ਬਾਈਡੇਨ ਦੁਆਰਾ ਵਿਸ਼ਵ ਬੈਂਕ ਦੀ ਅਗਵਾਈ ਕਰਨ ਲਈ ਕਿਸ ਭਾਰਤੀ ਨੂੰ ਨਾਮਜ਼ਦ ਕੀਤਾ ਗਿਆ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_12",
+      "part": "B",
+      "options": [
+        "Paris / ਪੈਰਿਸ",
+        "India / ਭਾਰਤ",
+        "England / ਇੰਗਲੈਂਡ",
+        "Russia / ਰੂਸ"
+      ],
+      "answer_index": 0,
+      "question": "Where will the next Olympics games (2024) be held? / ਅਗਲੀਆਂ ਓਲੰਪਿਕ ਖੇਡਾਂ (2024) ਕਿੱਥੇ ਹੋਣਗੀਆਂ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_13",
+      "part": "B",
+      "options": [
+        "Cricket / ਕ੍ਰਿਕਟ",
+        "Hockey / ਹਾਕੀ",
+        "Football / ਫੁਟਬਾਲ",
+        "Kabaddi / ਕਬੱਡੀ"
+      ],
+      "answer_index": 2,
+      "question": "Sunil Chhetri is associated with which game/sports? / ਸੁਨੀਲ ਛੇਤਰੀ ਕਿਸ ਖੇਡ ਨਾਲ਼ ਸੰਬੰਧਿਤ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_14",
+      "part": "B",
+      "options": [
+        "Dance / ਡਾਂਸ",
+        "Music / ਸੰਗੀਤ",
+        "Business / ਵਪਾਰ",
+        "Education / ਸਿੱਖਿਆ"
+      ],
+      "answer_index": 1,
+      "question": "The famous Puranchand Wadali is associated with ______ field. / ਮਸ਼ਹੂਰ ਪੂਰਨਚੰਦ ਵਡਾਲੀ ______ ਖੇਤਰ ਨਾਲ਼ ਸੰਬੰਧਿਤ ਹਨ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_15",
+      "part": "B",
+      "options": [
+        "Bathinda / ਬਠਿੰਡਾ",
+        "Patiala / ਪਟਿਆਲਾ",
+        "Pathankot / ਪਠਾਨਕੋਟ",
+        "Amritsar / ਅੰਮ੍ਰਿਤਸਰ"
+      ],
+      "answer_index": 3,
+      "question": "Name the city which was host to the (G-20) 2nd Education Working Group (EdWG) meeting from 15-17th March 2023. / ਉਸ ਸ਼ਹਿਰ ਦਾ ਨਾਮ ਦੱਸੋ, ਜਿਸ ਨੇ 15-17 ਮਾਰਚ 2023 ਨੂੰ (G-20) ਦੂਜੀ ਐਜੂਕੇਸ਼ਨ ਵਰਕਿੰਗ ਗਰੁੱਪ (EdWG) ਮੀਟਿੰਗ ਦੀ ਮੇਜ਼ਬਾਨੀ ਕੀਤੀ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_16",
+      "part": "B",
+      "options": [
+        "Best Original Song / ਬੈਸਟ ਮੂਲ ਗੀਤ",
+        "Best Screenplay / ਬੈਸਟ ਸਕ੍ਰੀਨ ਪਲੇ",
+        "Best Sound Mixing / ਬੈਸਟ ਸਾਊਂਡ ਮਿਕਸਿੰਗ",
+        "Best Picture / ਬੈਸਟ ਤਸਵੀਰ"
+      ],
+      "answer_index": 0,
+      "question": "In which category, the movie 'RRR' won the Oscar Award? / ਫਿਲਮ 'RRR’ ਨੇ ਕਿਸ ਸ਼੍ਰੇਣੀ ਵਿੱਚ ਆਸਕਰ ਅਵਾਰਡ ਜਿੱਤਿਆ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_17",
+      "part": "B",
+      "options": [
+        "Cyrus Mistry / ਸਾਇਰਸ ਮਿਸਤਰੀ",
+        "Bappi Lahiri / ਬੱਪੀ ਲਹਿਰੀ",
+        "Rakesh Radheshyam Jhunjhunwala / ਰਾਕੇਸ਼ ਰਾਧੇਸ਼ਿਆਮ ਝੁਨਝੁਨਵਾਲਾ",
+        "Rahul Bajaj / ਰਾਹੁਲ ਬਜਾਜ"
+      ],
+      "answer_index": 2,
+      "question": "Name the person who was posthumously conferred the Padma Shri award for his contributions in the field of trade and industry for 2023. / ਉਸ ਵਿਅਕਤੀ ਦਾ ਨਾਮ ਦੱਸੋ, ਜਿਸ ਨੂੰ 2023 ਲਈ, ਵਪਾਰ ਅਤੇ ਉਦਯੋਗ ਦੇ ਖੇਤਰ ਵਿੱਚ ਉਸ ਦੇ ਯੋਗਦਾਨ ਲਈ ਮਰਨ ਉਪਰੰਤ ਪਦਮ ਸ਼੍ਰੀ ਪੁਰਸਕਾਰ ਦਿੱਤਾ ਗਿਆ ਸੀ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_18",
+      "part": "B",
+      "options": [
+        "Gurdaspur / ਗੁਰਦਾਸਪੁਰ",
+        "Mahilpur / ਮਾਹਿਲਪੁਰ",
+        "Mukerian / ਮੁਕੇਰੀਆਂ",
+        "Fazilka / ਫ਼ਾਜ਼ਿਲਕਾ"
+      ],
+      "answer_index": 1,
+      "question": "Which of the following towns is known as nursery of football? / ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਸ਼ਹਿਰ ਫ਼ੁਟਬਾਲ ਦੀ ਨਰਸਰੀ ਵਜੋਂ ਜਾਣਿਆ ਜਾਂਦਾ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_19",
+      "part": "B",
+      "options": [
+        "Ahluwalia / ਆਹਲੂਵਾਲੀਆ",
+        "Kanhaiya / ਕਨੱਈਆ",
+        "Ramgarhia / ਰਾਮਗੜ੍ਹੀਆ",
+        "Shukerchakkya / ਸ਼ੁੱਕਰਚੱਕੀਆ"
+      ],
+      "answer_index": 3,
+      "question": "Maharaja Ranjit Singh belonged to ______ Misl. / ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ ______ ਮਿਸਲ ਨਾਲ਼ ਸੰਬੰਧ ਰੱਖਦੇ ਸਨ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_20",
+      "part": "B",
+      "options": [
+        "50,362 square kilometers / 50,362 ਵਰਗ ਕਿਲੋਮੀਟਰ",
+        "48,362 square kilometers / 48,362 ਵਰਗ ਕਿਲੋਮੀਟਰ",
+        "49,362 square kilometers / 49,362 ਵਰਗ ਕਿਲੋਮੀਟਰ",
+        "51,362 square kilometers / 51,362 ਵਰਗ ਕਿਲੋਮੀਟਰ"
+      ],
+      "answer_index": 0,
+      "question": "The total area of the State of Punjab is ______. / ਪੰਜਾਬ ਰਾਜ ਦਾ ਕੁੱਲ ਖੇਤਰਫਲ਼ ______।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_21",
+      "part": "B",
+      "options": [
+        "Egyptian Civilisation / ਮਿਸਰ ਦੀ ਸਭਿਅਤਾ",
+        "Vedic Civilisation / ਵੈਦਿਕ ਸਭਿਅਤਾ",
+        "Indus Valley Civilisation / ਸਿੰਧੂ ਘਾਟੀ ਦੀ ਸਭਿਅਤਾ",
+        "Mesopotamian Civilisation / ਮੈਸੋਪੋਟਾਮੀਆ ਦੀ ਸਭਿਅਤਾ"
+      ],
+      "answer_index": 2,
+      "question": "Which of the following is the other name of Harappan Civilisation? / ਇਹਨਾਂ ਵਿੱਚੋਂ ਹੜੱਪਾ ਸਭਿਅਤਾ ਦਾ ਦੂਜਾ ਨਾਮ ਕਿਹੜਾ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_22",
+      "part": "B",
+      "options": [
+        "Nanda rulers / ਨੰਦ ਸ਼ਾਸਕ",
+        "Chandragupta Maurya / ਚੰਦਰਗੁਪਤ ਮੌਰਿਆ",
+        "Samudragupta / ਸਮੁੰਦਰਗੁਪਤ",
+        "Ashoka / ਅਸ਼ੋਕ"
+      ],
+      "answer_index": 1,
+      "question": "Who founded the Mauryan Empire? / ਮੌਰੀਆ ਸਾਮਰਾਜ ਦੀ ਸਥਾਪਨਾ ਕਿਸ ਨੇ ਕੀਤੀ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_23",
+      "part": "B",
+      "options": [
+        "Near Jammu / ਜੰਮੂ ਦੇ ਨੇੜੇ",
+        "Near Chennai / ਚੇਨੱਈ ਦੇ ਨੇੜੇ",
+        "Near Jaipur / ਜੈਪੁਰ ਦੇ ਨੇੜੇ",
+        "Near Bhopal / ਭੋਪਾਲ ਦੇ ਨੇੜੇ"
+      ],
+      "answer_index": 3,
+      "question": "Where is Sanchi Stupa situated at? / ਸਾਂਚੀ ਸਤੂਪ ਕਿੱਥੇ ਸਥਿਤ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_24",
+      "part": "B",
+      "options": [
+        "Meerut / ਮੇਰਠ",
+        "Delhi / ਦਿੱਲੀ",
+        "Ambala / ਅੰਬਾਲਾ",
+        "Firozpur / ਫਿਰੋਜ਼ਪੁਰ"
+      ],
+      "answer_index": 0,
+      "question": "Where did the Revolt of 1857 start? / 1857 ਈਸਵੀ ਦਾ ਵਿਦਰੋਹ ਕਿੱਥੋਂ ਸ਼ੁਰੂ ਹੋਇਆ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_25",
+      "part": "B",
+      "options": [
+        "Cheap thing",
+        "Fruit",
+        "Valuable thing",
+        "Eye flu"
+      ],
+      "answer_index": 2,
+      "question": "Choose the one which best expresses the meaning of the idiom: \"Apple of one's eye\"",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_26",
+      "part": "B",
+      "options": [
+        "Hollow",
+        "Shallow",
+        "Profound",
+        "Willow"
+      ],
+      "answer_index": 1,
+      "question": "Out of the given alternatives, choose the word which is opposite in meaning to the given word: DEEP",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_27",
+      "part": "B",
+      "options": [
+        "Full",
+        "Vacation",
+        "Decorative",
+        "Empty"
+      ],
+      "answer_index": 3,
+      "question": "Out of the given alternatives, choose the word which is same in meaning or nearest in meaning to the given word: VACANT",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_28",
+      "part": "B",
+      "options": [
+        "Alphabate",
+        "Furniture",
+        "Dozen",
+        "Office"
+      ],
+      "answer_index": 0,
+      "question": "Find the mis-spelt word from the following:",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_29",
+      "part": "B",
+      "options": [
+        "Index",
+        "Content list",
+        "Catalogue",
+        "Itinerary"
+      ],
+      "answer_index": 2,
+      "question": "Give one word substitution for the following: A list of name of books",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_30",
+      "part": "B",
+      "options": [
+        "These cattles are mine",
+        "These cattle are mine",
+        "These cattles is mine",
+        "These cattles was mine"
+      ],
+      "answer_index": 1,
+      "question": "Which one of the following is correct?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_31",
+      "part": "B",
+      "options": [
+        "Was",
+        "Will",
+        "Shall",
+        "Is"
+      ],
+      "answer_index": 3,
+      "question": "All that glitters ______ not gold.",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_32",
+      "part": "B",
+      "options": [
+        "Will",
+        "Was",
+        "Should",
+        "Is"
+      ],
+      "answer_index": 0,
+      "question": "If she wins the match, she ______ get a lot of money.",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_33",
+      "part": "B",
+      "options": [
+        "They do not listen to me",
+        "I am not listening to them",
+        "I was not listened to by them",
+        "They are not listened by me"
+      ],
+      "answer_index": 2,
+      "question": "Change the voice: They did not listen to me.",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_34",
+      "part": "B",
+      "options": [
+        "Radha said that she will going home then",
+        "Radha said that she was going home then",
+        "Radha said that she is going home then",
+        "Radha said that she was going home now"
+      ],
+      "answer_index": 1,
+      "question": "Change the narration: Radha said, \"I am going home now.\"",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_35",
+      "part": "B",
+      "options": [
+        "Had known",
+        "Were known",
+        "Have been knowing",
+        "Have known"
+      ],
+      "answer_index": 3,
+      "question": "Rewrite the following by using the Present Perfect Tense: We ______ each other for past ten years. (know)",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_36",
+      "part": "B",
+      "options": [
+        "Break",
+        "Brake",
+        "Broke",
+        "Bleak"
+      ],
+      "answer_index": 0,
+      "question": "Fill in the blank with the suitable word from the given options: Can you ______ this stick?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_37",
+      "part": "B",
+      "options": [
+        "ਹੁੱਜਾਂ ਬਾਂਦਰਾਂ ਟੱਕਰ ਕਲੰਦਰਾਂ",
+        "ਖੋਤੇ ਚੜ੍ਹੀ ਪਰ ਕੁੜਮਾਂ ਦੇ ਮਹੱਲੇ ਨਹੀਂ ਗਈ",
+        "ਖੋਤੇ ਦੀ ਮੌਜ ਟੀਟਣੇ",
+        "ਕਦੇ ਤੈਂਢੀਆਂ ਕਦੇ ਮੈਂਢੀਆਂ"
+      ],
+      "answer_index": 2,
+      "question": "“ਜਦੋਂ ਕੋਈ ਮੂਰਖ ਜਾਂ ਸ਼ਰਾਬੀ ਬੰਦਾ ਮੌਜ ਵਿੱਚ ਆਇਆ, ਯਭਲ਼ੀਆਂ ਮਾਰ-ਮਾਰ ਕੇ ਖ਼ੁਸ਼ ਹੁੰਦਾ ਹੋਵੇ” ਉਦੋਂ ਉਸ ਲਈ ਕਿਹੜਾ ਅਖਾਣ ਵਰਤਿਆ ਜਾਵੇਗਾ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_38",
+      "part": "B",
+      "options": [
+        "ਬਾਈ",
+        "ਬਾਇੱਜ਼ਤ",
+        "ਬਾਹਰ",
+        "ਬਾਹੀ"
+      ],
+      "answer_index": 1,
+      "question": "'ਬਾ' ਅਗੇਤਰ ਲੱਗ ਕੇ ਬਣਨ ਵਾਲ਼ਾ ਸਹੀ ਸ਼ਬਦ ਚੁਣੋ :",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_39",
+      "part": "B",
+      "options": [
+        "ਚਿੜ",
+        "ਪੁੜ",
+        "ਝੜ",
+        "ਵਿਹਲੜ"
+      ],
+      "answer_index": 3,
+      "question": "'ੜ' ਪਿਛੇਤਰ ਲੱਗ ਕੇ ਬਣਨ ਵਾਲ਼ਾ ਸਹੀ ਸ਼ਬਦ ਚੁਣੋ :",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_40",
+      "part": "B",
+      "options": [
+        "ਮੁੰਡਿਆਂ",
+        "ਨੂੰ",
+        "ਖੇਡਣਾ",
+        "ਚਾਹੀਦਾ"
+      ],
+      "answer_index": 0,
+      "question": "'ਮੁੰਡਿਆਂ ਨੂੰ ਖੇਡਣਾ ਚਾਹੀਦਾ ਹੈ' ਵਾਕ ਵਿੱਚੋਂ ਨਾਂਵ ਸ਼ਬਦ ਕਿਹੜਾ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_41",
+      "part": "B",
+      "options": [
+        "ਹਵਾਹਾਰਾ",
+        "ਹਵਾਬਾਜ਼ਾਂ",
+        "ਹਵਾਵਾਂ",
+        "ਹਵਾਈ"
+      ],
+      "answer_index": 2,
+      "question": "'ਹਵਾ' ਸ਼ਬਦ ਦਾ ਬਹੁ-ਵਚਨ ਕੀ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_42",
+      "part": "B",
+      "options": [
+        "ਲੜਕੇ ਸਾਰਾ ਪਾਣੀ ਪੀ ਗਏ",
+        "ਲੜਕੀ ਸਾਰਾ ਪਾਣੀ ਪੀ ਗਈ",
+        "ਲੜਕਿਆਂ ਨੇ ਸਾਰਾ ਪਾਣੀ ਪੀ ਲਿਆ",
+        "ਲੜਕੀਆਂ ਸਾਰਾ ਪਾਣੀ ਪੀ ਗਈਆਂ"
+      ],
+      "answer_index": 1,
+      "question": "‘ਲੜਕਾ ਸਾਰਾ ਪਾਣੀ ਪੀ ਗਿਆ’ ਵਾਕ ਦਾ ਲਿੰਗ ਬਦਲ ਕੇ ਬਣਨ ਵਾਲ਼ਾ ਸਹੀ ਵਾਕ ਚੁਣੋ :",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_43",
+      "part": "B",
+      "options": [
+        "ਕੱਚਾ ਰਸਤਾ",
+        "ਟਹਿਣੀ",
+        "ਡੰਗ",
+        "ਪੂਰਨ ਵਿਰਾਮ"
+      ],
+      "answer_index": 3,
+      "question": "ਕਿਹੜਾ ਸ਼ਬਦ ‘ਡੰਡੀ' ਸ਼ਬਦ ਦਾ ਸਮਾਨਅਰਥਕ ਸ਼ਬਦ ਨਹੀਂ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_44",
+      "part": "B",
+      "options": [
+        "ਢੁਕਵਾਂ",
+        "ਢੁੱਕਮਾਂ",
+        "ਢੁਕਮਾਂ",
+        "ਢੁਕਬਾਂ"
+      ],
+      "answer_index": 0,
+      "question": "ਸਹੀ ਸ਼ਬਦ-ਜੋੜ ਚੁਣੋ :",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_45",
+      "part": "B",
+      "options": [
+        "ਦੀਪਕ",
+        "ਸਵੇਰੇ",
+        "ਜਾਵੇਗਾ",
+        "ਦਿੱਲੀ"
+      ],
+      "answer_index": 2,
+      "question": "ਹੇਠ ਲਿਖੇ ਵਾਕ ਵਿੱਚੋਂ ਕਿਰਿਆ ਸ਼ਬਦ ਚੁਣੋ : ਦੀਪਕ ਸਵੇਰੇ ਦਿੱਲੀ ਜਾਵੇਗਾ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_46",
+      "part": "B",
+      "options": [
+        "ਪ੍ਰਸੰਸਾ",
+        "ਨਿੰਦਿਆ",
+        "ਸਿਫ਼ਤ",
+        "ਵਡਿਆਈ"
+      ],
+      "answer_index": 1,
+      "question": "‘ਉਸਤਤ’ ਸ਼ਬਦ ਦਾ ਵਿਰੋਧਾਰਥਕ ਸ਼ਬਦ ਕਿਹੜਾ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_47",
+      "part": "B",
+      "options": [
+        "ਲੋਕ/ਜਨਤਾ",
+        "ਲੋਕ-ਖੇਡਾਂ",
+        "ਲੋਕ-ਗੀਤ",
+        "ਲੋਕ-ਧਾਰਾ"
+      ],
+      "answer_index": 3,
+      "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਪੰਜਾਬੀ ਸ਼ਬਦ 'Folklore' ਦੇ ਅਰਥਾਂ ਨੂੰ ਪ੍ਰਗਟਾਉਂਦਾ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_48",
+      "part": "B",
+      "options": [
+        "ਆਗਿਆਕਾਰੀ",
+        "ਹੁਕਮ",
+        "ਫ਼ਰਮਾਨ",
+        "ਆਦੇਸ਼"
+      ],
+      "answer_index": 0,
+      "question": "'ਆਗਿਆ ਦਾ ਪਾਲਣ ਕਰਨ ਵਾਲ਼ਾ' ਲਈ ਇੱਕ ਸ਼ਬਦ ਚੁਣੋ :",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_49",
+      "part": "B",
+      "options": [
+        "ਹਵਾ ਵਿੱਚ ਕਿਲ੍ਹੇ ਦਾ ਨਿਰਮਾਣ ਕਰਨਾ",
+        "ਬਹੁਤ ਉੱਚਾ ਕਿਲ੍ਹਾ",
+        "ਫ਼ਰਜ਼ੀ ਆਸਾਂ ਬਣਾ ਲੈਣੀਆਂ",
+        "ਕਿਸੇ ਦਾ ਬਿਲਕੁਲ ਭੇਦ ਨਾ ਲੱਗਣਾ"
+      ],
+      "answer_index": 2,
+      "question": "ਮੁਹਾਵਰਾ ‘ਹਵਾਈ ਕਿਲ੍ਹੇ ਉਸਾਰਨਾ’ ਲਈ ਢੁਕਵਾਂ ਅਰਥ ਚੁਣੋ :",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_50",
+      "part": "B",
+      "options": [
+        "Vijayender Pal Singh Badnore / ਵਿਜੇਂਦਰ ਪਾਲ ਸਿੰਘ ਬਦਨੋਰ",
+        "Banwarilal Purohit / ਬਨਵਾਰੀ ਲਾਲ ਪੁਰੋਹਿਤ",
+        "Charanjit Singh Channi / ਚਰਨਜੀਤ ਸਿੰਘ ਚੰਨੀ",
+        "Harjot Singh Bains / ਹਰਜੋਤ ਸਿੰਘ ਬੈਂਸ"
+      ],
+      "answer_index": 1,
+      "question": "Who is the present Governor of Punjab State? (As per exam paper) / ਪੰਜਾਬ ਰਾਜ ਦੇ ਮੌਜੂਦਾ ਰਾਜਪਾਲ ਕੌਣ ਹਨ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_51",
+      "part": "B",
+      "options": [
+        "Chinkara / ਚਿੰਕਾਰਾ",
+        "Wild Buffalo / ਜੰਗਲ਼ੀ ਮੱਝ",
+        "Elephant / ਹਾਥੀ",
+        "Blackbuck / ਕਾਲ਼ਾ ਹਿਰਨ"
+      ],
+      "answer_index": 3,
+      "question": "Which of the following is the State animal of Punjab? / ਇਹਨਾਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਪੰਜਾਬ ਦਾ ਰਾਜ ਜਾਨਵਰ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_52",
+      "part": "B",
+      "options": [
+        "65",
+        "67",
+        "60",
+        "68"
+      ],
+      "answer_index": 0,
+      "question": "The average weight of A, B and C is 65 kg. If the average weight of C and B is 61.5 kg and the average weight of A and C is 68.5 kg, then the weight of C (in kg) is / A, B ਅਤੇ C ਦਾ ਔਸਤ ਭਾਰ 65 ਕਿੱਲੋ ਹੈ। ਜੇਕਰ C ਅਤੇ B ਦਾ ਔਸਤ ਭਾਰ 61.5 ਕਿੱਲੋ ਹੈ, ਅਤੇ A ਅਤੇ C ਦਾ ਔਸਤ ਭਾਰ 68.5 ਕਿੱਲੋ ਹੈ, ਤਾਂ C ਦਾ ਭਾਰ (ਕਿੱਲੋ ਵਿੱਚ) ਕੀ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_53",
+      "part": "B",
+      "options": [
+        "14",
+        "10",
+        "11",
+        "12"
+      ],
+      "answer_index": 2,
+      "question": "A motorboat goes 24 km in 2 hours along the stream and 10 km in 1 hour against the stream. The speed of the motorboat in kilometers per hour is / ਇੱਕ ਮੋਟਰਬੋਟ ਧਾਰਾ ਦੇ ਨਾਲ 2 ਘੰਟੇ ਵਿੱਚ 24 ਕਿਮੀ ਅਤੇ ਧਾਰਾ ਦੇ ਵਿਪਰੀਤ 1 ਘੰਟੇ ਵਿੱਚ 10 ਕਿਮੀ ਚੱਲਦੀ ਹੈ। ਮੋਟਰਬੋਟ ਦੀ ਰਫ਼ਤਾਰ ਕਿਲੋਮੀਟਰ ਪ੍ਰਤੀ ਘੰਟਾ ਵਿੱਚ ਕੀ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_54",
+      "part": "B",
+      "options": [
+        "8",
+        "4",
+        "2",
+        "6"
+      ],
+      "answer_index": 1,
+      "question": "Ravi, Mohan and Govind can complete a task in 12 days, 10 days and 15 days respectively. In how many days can Ravi, Mohan and Govind together complete the same task? / ਰਵੀ, ਮੋਹਨ ਅਤੇ ਗੋਵਿੰਦ ਇੱਕ ਕਾਰਜ ਨੂੰ ਕ੍ਰਮਵਾਰ 12 ਦਿਨ, 10 ਦਿਨ ਅਤੇ 15 ਦਿਨ ਵਿੱਚ ਪੂਰਾ ਕਰ ਸਕਦੇ ਹਨ। ਰਵੀ, ਮੋਹਨ ਅਤੇ ਗੋਵਿੰਦ ਮਿਲ਼ ਕੇ ਓਸੇ ਕਾਰਜ ਨੂੰ ਕਿੰਨੇ ਦਿਨਾਂ ਵਿੱਚ ਪੂਰਾ ਕਰ ਸਕਦੇ ਹਨ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_55",
+      "part": "B",
+      "options": [
+        "7.5",
+        "3",
+        "4.5",
+        "5"
+      ],
+      "answer_index": 3,
+      "question": "A, B and C started a business. Twice the investment of A is equal to thrice the investment of B and also five times the investment of C. If the total profit after a year is ₹ 15.5 lakhs, then the share of B in the profit (in lakhs) is / A, B ਅਤੇ C ਨੇ ਇੱਕ ਕੰਮ ਸ਼ੁਰੂ ਕੀਤਾ। A ਦਾ ਦੁੱਗਣਾ ਨਿਵੇਸ਼ B ਦੇ ਨਿਵੇਸ਼ ਦੇ ਤਿੰਨ ਗੁਣਾ ਦੇ ਬਰਾਬਰ ਹੈ ਅਤੇ C ਦੇ ਨਿਵੇਸ਼ ਦੇ ਪੰਜ ਗੁਣੇ ਦੇ ਬਰਾਬਰ ਹੈ। ਜੇਕਰ ਇੱਕ ਸਾਲ ਦੇ ਬਾਅਦ ਕੁੱਲ ਰਾਸ਼ੀ ₹ 15.5 ਲੱਖ ਰੁਪਏ ਹੈ, ਤਾਂ ਮੁਨਾਫ਼ੇ ਵਿੱਚ B ਦਾ ਹਿੱਸਾ (ਲੱਖ ਰੁਪਏ ਵਿੱਚ) ਕਿੰਨਾ ਹੋਵੇਗਾ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_56",
+      "part": "B",
+      "options": [
+        "9",
+        "1",
+        "-9",
+        "-1"
+      ],
+      "answer_index": 0,
+      "question": "If 3x + 2y = 7 and 4x - y = 24, then x - y = ? / ਜੇਕਰ 3x + 2y = 7 ਅਤੇ 4x - y = 24 ਹੈ, ਤਾਂ x - y = ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_57",
+      "part": "B",
+      "options": [
+        "₹ 25,000",
+        "₹ 19,000",
+        "₹ 16,000",
+        "None of the above / ਉੱਪਰ ਦਿੱਤੇ ਵਿਚੋਂ ਕੋਈ ਵੀ ਨਹੀਂ"
+      ],
+      "answer_index": 2,
+      "question": "If the difference between compound interest and simple interest on a certain sum of money for 3 years at 5% p.a. is ₹ 122, then the sum is / ਜੇਕਰ 5% ਪ੍ਰਤੀ ਸਾਲ 'ਤੇ 3 ਸਾਲਾਂ ਲਈ ਇੱਕ ਨਿਸ਼ਚਿਤ ਰਕਮ 'ਤੇ ਮਿਸ਼ਰਿਤ ਵਿਆਜ ਅਤੇ ਸਰਲ ਵਿਆਜ ਵਿੱਚ ਅੰਤਰ ₹ 122 ਰੁਪਏ ਹੈ, ਤਾਂ ਫਿਰ ਰਕਮ ਕਿੰਨੀ ਹੋਵੇਗੀ :",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_58",
+      "part": "B",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ],
+      "answer_index": 1,
+      "question": "The value of x for which the expressions 12 - 6x and 4x + 2 become equal is / x ਦਾ ਮਾਨ ਕੀ ਹੈ ਜਿਸਦੇ ਲਈ ਸਮੀਕਰਣ 12 - 6x ਅਤੇ 4x + 2 ਬਰਾਬਰ ਹੋ ਜਾਂਦੇ ਹਨ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_59",
+      "part": "B",
+      "options": [
+        "77",
+        "80",
+        "36",
+        "105"
+      ],
+      "answer_index": 3,
+      "question": "If (6/7)th of (8/5)th of a number is 192, then (3/4)th of the number is / ਜੇਕਰ ਕਿਸੇ ਗਿਣਤੀ ਦੇ 8/5 ਵੇਂ ਹਿੱਸੇ ਦਾ 6/7 ਵਾਂ ਹਿੱਸਾ 192 ਹੈ, ਤਾਂ ਗਿਣਤੀ ਦਾ 3/4 ਹਿੱਸਾ ਕੀ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_60",
+      "part": "B",
+      "options": [
+        "64",
+        "10",
+        "5",
+        "63"
+      ],
+      "answer_index": 0,
+      "question": "Evaluate [7 + 7 * (7 + 7 / 7)] + 7 / 7 / ਮੁਲਾਂਕਣ ਕਰੋ : [7 + 7 * (7 + 7 / 7)] + 7 / 7",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_61",
+      "part": "B",
+      "options": [
+        "5",
+        "20",
+        "0",
+        "10"
+      ],
+      "answer_index": 2,
+      "question": "The value of 8 - [8 - (5 + 8) - {8 - (8 - 5 + 8)} + 10] is / 8 - [8 - (5 + 8) - {8 - (8 - 5 + 8)} + 10] ਦਾ ਮਾਨ ਕੀ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_62",
+      "part": "B",
+      "options": [
+        "15 : 11",
+        "11 : 15",
+        "15 : 14",
+        "17 : 16"
+      ],
+      "answer_index": 1,
+      "question": "If 22% of x = 30% of y, then y : x is equal to / ਜੇਕਰ x ਦਾ 22% = y ਦਾ 30% ਹੈ, ਤਾਂ y : x ਦੇ ਬਰਾਬਰ ਕੀ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_63",
+      "part": "B",
+      "options": [
+        "95",
+        "72",
+        "88",
+        "108"
+      ],
+      "answer_index": 3,
+      "question": "A train of length 350 m crosses a bridge of length 250 m in 20 seconds. What is the speed of the train (in km/h)? / 350 ਮੀਟਰ ਲੰਮੀ ਇੱਕ ਟ੍ਰੇਨ 250 ਮੀਟਰ ਲੰਬੇ ਪੁਲ਼ ਨੂੰ 20 ਸੈਕਿੰਡ ਵਿੱਚ ਪਾਰ ਕਰਦੀ ਹੈ। ਟ੍ਰੇਨ ਦੀ ਰਫ਼ਤਾਰ (ਕਿਮੀ/ਘੰਟਾ ਵਿੱਚ) ਕੀ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_64",
+      "part": "B",
+      "options": [
+        "2 : 1",
+        "1 : 5",
+        "3 : 5",
+        "5 : 3"
+      ],
+      "answer_index": 0,
+      "question": "A bus covers a 60 km distance in 1 hour 30 minutes, whereas the same distance is covered by a car in 45 minutes. What is the ratio of the speed of the car to the speed of the bus? / ਇੱਕ ਬੱਸ 1 ਘੰਟੇ 30 ਮਿੰਟ ਵਿੱਚ 60 ਕਿਮੀ ਦੀ ਦੂਰੀ ਤੈਅ ਕਰਦੀ ਹੈ, ਜਦੋਂ ਕਿ ਏਨੀ ਹੀ ਦੂਰੀ ਇੱਕ ਕਾਰ ਦੁਆਰਾ 45 ਮਿੰਟ ਵਿੱਚ ਤੈਅ ਕੀਤੀ ਜਾਂਦੀ ਹੈ। ਕਾਰ ਦੀ ਰਫ਼ਤਾਰ ਅਤੇ ਬੱਸ ਦੀ ਰਫ਼ਤਾਰ ਦਾ ਅਨੁਪਾਤ ਕੀ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_65",
+      "part": "B",
+      "options": [
+        "3",
+        "14.5",
+        "12",
+        "13.3"
+      ],
+      "answer_index": 2,
+      "question": "If the average of 7, 11, 15, x, 14, 21, 25 is 15, then the value of x is / ਜੇਕਰ 7, 11, 15, x, 14, 21, 25 ਦਾ ਔਸਤ 15 ਹੈ, ਤਾਂ x ਦਾ ਮਾਨ ਕੀ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_66",
+      "part": "B",
+      "options": [
+        "100",
+        "96",
+        "84",
+        "121"
+      ],
+      "answer_index": 1,
+      "question": "The perimeter of a square is equal to the perimeter of a rectangle. The perimeter of the square is 40 m. If the breadth of the rectangle is two-third of its length, then what is the area (in m²) of the rectangle? / ਇੱਕ ਵਰਗ ਦਾ ਪਰਿਮਾਪ ਇੱਕ ਆਇਤ ਦੇ ਪਰਿਮਾਪ ਦੇ ਬਰਾਬਰ ਹੈ। ਵਰਗ ਦਾ ਪਰਿਮਾਪ 40 m ਹੈ। ਜੇਕਰ ਆਇਤ ਦੀ ਚੌੜਾਈ ਇਸ ਦੀ ਲੰਬਾਈ ਦਾ ਦੋ-ਤਿਹਾਈ ਹੈ, ਤਾਂ ਆਇਤ ਦਾ ਖੇਤਰਫਲ਼ (m² ਵਿੱਚ) ਕੀ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_67",
+      "part": "B",
+      "options": [
+        "19",
+        "23",
+        "83",
+        "45"
+      ],
+      "answer_index": 3,
+      "question": "Four numbers have been given, out of which three are alike in some manner and the fourth one is different. Choose the odd one out. / ਚਾਰ ਨੰਬਰ ਦਿੱਤੇ ਗਏ ਹਨ, ਜਿਨ੍ਹਾਂ ਵਿੱਚੋਂ ਤਿੰਨ ਕਿਸੇ ਨਾ ਕਿਸੇ ਰੂਪ ਵਿੱਚ ਇੱਕੋ ਜਿਹੇ ਹਨ ਅਤੇ ਚੌਥਾ ਇੱਕ ਵੱਖਰਾ ਹੈ। ਵੱਖਰੇ ਨੂੰ ਚੁਣੋ :",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_68",
+      "part": "B",
+      "options": [
+        "Protect",
+        "Pragmatic",
+        "Pastel",
+        "Peacock"
+      ],
+      "answer_index": 0,
+      "question": "From the given four words, which word will come in the last in an English dictionary? / ਦਿੱਤੇ ਗਏ ਚਾਰ ਸ਼ਬਦਾਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਇੱਕ ਅੰਗਰੇਜ਼ੀ ਡਿਕਸ਼ਨਰੀ ਵਿੱਚ ਅਖੀਰ ਵਿੱਚ ਆਵੇਗਾ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_69",
+      "part": "B",
+      "options": [
+        "Asia / ਏਸ਼ੀਆ",
+        "Europe / ਯੂਰਪ",
+        "Arctic / ਆਰਕਟਿਕ",
+        "Australia / ਆਸਟ੍ਰੇਲੀਆ"
+      ],
+      "answer_index": 2,
+      "question": "Choose the odd one out from the given alternatives. / ਦਿੱਤੇ ਗਏ ਵਿਕਲਪਾਂ ਵਿੱਚੋਂ ਵੱਖਰੇ ਨੂੰ ਚੁਣੋ :",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_70",
+      "part": "B",
+      "options": [
+        "11",
+        "10",
+        "12",
+        "13"
+      ],
+      "answer_index": 1,
+      "question": "If K denotes '×', T denotes '÷', V denotes '+' and R denotes '-', then 16 V 24 T 8 R 6 T 2 K 3 = ? / ਜੇਕਰ K '×' ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ, T '÷' ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ, V '+' ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ ਅਤੇ R '-' ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ, ਤਾਂ 16 V 24 T 8 R 6 T 2 K 3 = ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_71",
+      "part": "B",
+      "options": [
+        "F",
+        "M",
+        "X",
+        "P"
+      ],
+      "answer_index": 3,
+      "question": "P is the brother of D. X is the sister of P. A is the brother of F. F is the daughter of D. M is the father of X. Who is the uncle of A? / P, D ਦਾ ਭਰਾ ਹੈ। X, P ਦੀ ਭੈਣ ਹੈ। A, F ਦਾ ਭਰਾ ਹੈ। F, D ਦੀ ਧੀ ਹੈ। M, X ਦਾ ਪਿਤਾ ਹੈ। A ਦਾ ਚਾਚਾ ਕੌਣ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_72",
+      "part": "B",
+      "options": [
+        "R",
+        "S",
+        "U",
+        "Q"
+      ],
+      "answer_index": 0,
+      "question": "Find the missing alphabet in the given sequence: Z, X, V, T, ?, P, N / ਦਿੱਤੇ ਕ੍ਰਮ ਵਿੱਚ ਗੁੰਮ ਹੋਏ ਵਰਨਮਾਲਾ ਦੇ ਅੱਖਰ ਨੂੰ ਲੱਭੋ : Z, X, V, T, ?, P, N",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_73",
+      "part": "B",
+      "options": [
+        "DFH",
+        "JLN",
+        "QRS",
+        "UWY"
+      ],
+      "answer_index": 2,
+      "question": "Select the one which is different from the other responses. / ਉਹ ਇੱਕ ਚੁਣੋ ਜੋ ਦੂਜੇ ਜਵਾਬਾਂ ਤੋਂ ਵੱਖਰਾ ਹੈ :",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_74",
+      "part": "B",
+      "options": [
+        "EDCHBHMM",
+        "LDCHBHMD",
+        "EDCJDHMM",
+        "EFEJDJOM"
+      ],
+      "answer_index": 1,
+      "question": "In a certain code language COMPUTER is written as RNLOTSDC. How will MEDICINE be written in that code language? / ਇੱਕ ਖਾਸ ਕੋਡ ਭਾਸ਼ਾ ਵਿੱਚ COMPUTER ਨੂੰ RNLOTSDC ਲਿਖਿਆ ਜਾਂਦਾ ਹੈ। MEDICINE ਨੂੰ ਉਸ ਕੋਡ ਭਾਸ਼ਾ ਵਿੱਚ ਕਿਵੇਂ ਲਿਖਿਆ ਜਾਵੇਗਾ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_75",
+      "part": "B",
+      "options": [
+        "36",
+        "34",
+        "Cannot be determined / ਨਿਰਧਾਰਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ",
+        "35"
+      ],
+      "answer_index": 3,
+      "question": "In a row of 60 persons, Ganesh is 26th from the left end. Find out his position from the right end. / 60 ਵਿਅਕਤੀਆਂ ਦੀ ਕਤਾਰ ਵਿੱਚ, ਗਣੇਸ਼ ਖੱਬੇ ਸਿਰੇ ਤੋਂ 26 ਵੇਂ ਸਥਾਨ 'ਤੇ ਹੈ। ਸੱਜੇ ਸਿਰੇ ਤੋਂ ਉਸਦੀ ਸਥਿਤੀ ਦਾ ਪਤਾ ਲਗਾਓ :",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_76",
+      "part": "B",
+      "options": [
+        "=",
+        "$",
+        "@",
+        "#"
+      ],
+      "answer_index": 0,
+      "question": "Which symbol is used in MS-Excel to begin a formula or function? / ਇੱਕ ਫਾਰਮੂਲਾ ਜਾਂ ਫੰਕਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨ ਲਈ MS-Excel ਵਿੱਚ ਕਿਹੜਾ ਚਿੰਨ੍ਹ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_77",
+      "part": "B",
+      "options": [
+        "Main memory is slower than the secondary memory",
+        "Main memory is very inexpensive memory",
+        "Data gets lost from the main memory when power is switched off",
+        "All of the above / ਉੱਪਰ ਦਿੱਤੇ ਸਾਰੇ"
+      ],
+      "answer_index": 2,
+      "question": "Which of the following statements is/are correct about the main memory of a computer? / ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਖ ਮੈਮੋਰੀ ਬਾਰੇ ਹੇਠਾਂ ਦਿੱਤੇ ਕਥਨਾਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਸਹੀ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_78",
+      "part": "B",
+      "options": [
+        "ESC",
+        "Shift",
+        "Return",
+        "Alt"
+      ],
+      "answer_index": 1,
+      "question": "Which key of keyboard is used to change the case of characters from lower to upper? / ਅੱਖਰਾਂ ਦੇ ਕੇਸ ਨੂੰ ਹੇਠਲੇ ਤੋਂ ਉੱਪਰ ਵੱਲ ਬਦਲਣ ਲਈ ਕੀਬੋਰਡ ਦੀ ਕਿਹੜੀ ਕੁੰਜੀ ਵਰਤੀ ਜਾਂਦੀ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_79",
+      "part": "B",
+      "options": [
+        "Ctrl + A",
+        "Ctrl + H",
+        "Ctrl + S",
+        "Ctrl + F"
+      ],
+      "answer_index": 3,
+      "question": "Which of the following shortcuts is used to search some text in a Word document? / ਵਰਡ ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਕੁਝ ਟੈਕਸਟ ਖੋਜਣ ਲਈ ਹੇਠਾਂ ਦਿੱਤੇ ਸ਼ਾਰਟਕੱਟਾਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_80",
+      "part": "B",
+      "options": [
+        "Web browser",
+        "Graphics software",
+        "Remote server",
+        "System software"
+      ],
+      "answer_index": 0,
+      "question": "Which of the following will you use to view webpages on your computer? / ਤੁਸੀਂ ਆਪਣੇ ਕੰਪਿਊਟਰ 'ਤੇ ਵੈੱਬ ਪੇਜਾਂ ਨੂੰ ਦੇਖਣ ਲਈ ਹੇਠਾਂ ਦਿੱਤੇ ਵਿੱਚੋਂ ਕਿਸ ਦੀ ਵਰਤੋਂ ਕਰੋਗੇ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_81",
+      "part": "B",
+      "options": [
+        "Android",
+        "Linux",
+        "MS-Office",
+        "Microsoft Windows"
+      ],
+      "answer_index": 2,
+      "question": "Which of the following is not an example of operating system? / ਹੇਠਾਂ ਦਿੱਤੇ ਵਿੱਚੋਂ ਕਿਹੜਾ ਓਪਰੇਟਿੰਗ ਸਿਸਟਮ ਦੀ ਉਦਾਹਰਨ ਨਹੀਂ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_82",
+      "part": "B",
+      "options": [
+        "Page size",
+        "Page orientation",
+        "Page margins",
+        "Page layout"
+      ],
+      "answer_index": 1,
+      "question": "Portrait and Landscape are the examples of ______ / ਪੋਰਟਰੇਟ ਅਤੇ ਲੈਂਡਸਕੇਪ ______ ਦੀਆਂ ਉਦਾਹਰਣਾਂ ਹਨ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_83",
+      "part": "B",
+      "options": [
+        "Copy and Paste",
+        "Paste and Delete",
+        "Paste and Cut",
+        "Cut and Paste"
+      ],
+      "answer_index": 3,
+      "question": "Which of the following operations will you perform if you need to move some text in a Word document? / ਜੇਕਰ ਤੁਹਾਨੂੰ ਵਰਡ ਡੌਕੂਮੈਂਟ ਵਿੱਚ ਕਿਸੇ ਟੈਕਸਟ ਨੂੰ ਮੂਵ ਕਰਨ ਦੀ ਲੋੜ ਹੈ ਤਾਂ ਤੁਸੀਂ ਹੇਠਾਂ ਦਿੱਤੇ ਵਿੱਚੋਂ ਕਿਹੜਾ ਕਾਰਜ ਕਰੋਗੇ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_84",
+      "part": "B",
+      "options": [
+        "Cell",
+        "Table",
+        "Box",
+        "Column"
+      ],
+      "answer_index": 0,
+      "question": "The basic unit of a worksheet into which you enter data in MS-Excel is called ______ / ਵਰਕਸ਼ੀਟ ਦੀ ਮੁੱਢਲੀ ਇਕਾਈ ਜਿਸ ਵਿੱਚ ਤੁਸੀਂ MS-Excel ਵਿੱਚ ਡੇਟਾ ਦਾਖਲ ਕਰਦੇ ਹੋ ਉਸਨੂੰ ______ ਕਿਹਾ ਜਾਂਦਾ ਹੈ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_85",
+      "part": "B",
+      "options": [
+        "sample@gmail@com",
+        "www.sample.com",
+        "sample@gmail.com",
+        "http.sample.com"
+      ],
+      "answer_index": 2,
+      "question": "Which of the following is correct format of Email address? / ਹੇਠਾਂ ਦਿੱਤੇ ਵਿੱਚੋਂ ਕਿਹੜਾ ਈਮੇਲ ਪਤੇ ਦਾ ਸਹੀ ਫਾਰਮੈਟ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_86",
+      "part": "B",
+      "options": [
+        "Majha / ਮਾਝਾ",
+        "Awadh / ਅਵਧ",
+        "Doaba / ਦੋਆਬਾ",
+        "Puadh / ਪੁਆਧ"
+      ],
+      "answer_index": 1,
+      "question": "Which of the following is not a region in Punjab? / ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਪੰਜਾਬ ਦਾ ਖੇਤਰ ਨਹੀਂ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_87",
+      "part": "B",
+      "options": [
+        "73.55° West to 76.50° West / 73.55° ਪੱਛਮ ਤੋਂ 76.50° ਪੱਛਮ",
+        "70.55° East to 76.50° East / 70.55° ਪੂਰਬ ਤੋਂ 76.50° ਪੂਰਬ",
+        "70.55° West to 76.50° West / 70.55° ਪੱਛਮ ਤੋਂ 76.50° ਪੱਛਮ",
+        "73.55° East to 76.50° East / 73.55° ਪੂਰਬ ਤੋਂ 76.50° ਪੂਰਬ"
+      ],
+      "answer_index": 3,
+      "question": "What is the longitudinal extent of Punjab? / ਪੰਜਾਬ ਦੇ ਦਿਸ਼ਾਂਤਰੀ ਵਿਸਤਾਰ ਦੀ ਸੀਮਾ ਕਿੰਨੀ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_88",
+      "part": "B",
+      "options": [
+        "Sheikh Farid / ਸ਼ੇਖ ਫ਼ਰੀਦ",
+        "Sheikh Salim Chisti / ਸ਼ੇਖ ਸਲੀਮ ਚਿਸਤੀ",
+        "Sheikh Moinuddin Chisti / ਸ਼ੇਖ ਮੁਈਨੁਦੀਨ ਚਿਸਤੀ",
+        "Sheikh Nizamuddin Auliya / ਸ਼ੇਖ ਨਿਜ਼ਾਮੁਦੀਨ ਔਲੀਆ"
+      ],
+      "answer_index": 0,
+      "question": "Who among the following Sufi Saints is considered as the first poet of Punjabi? / ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਸ ਸੂਫ਼ੀ ਸੰਤ ਨੂੰ ਪੰਜਾਬੀ ਦਾ ਪਹਿਲਾ ਕਵੀ ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_89",
+      "part": "B",
+      "options": [
+        "Humayun-nama / ਹੁਮਾਂਯੂ-ਨਾਮਾ",
+        "Babur Nama / ਬਾਬਰ ਨਾਮਾ",
+        "Ain-e-Akbari / ਆਈਨ-ਏ-ਅਕਬਰੀ",
+        "Badshah Nama / ਬਾਦਸ਼ਾਹ ਨਾਮਾ"
+      ],
+      "answer_index": 2,
+      "question": "Which of the following Mughal chronicles mentions Punjab as the territory that can be divided into provinces of Lahore and Multan? / ਹੇਠ ਲਿਖੀ ਮੁਗਲ ਇਤਿਹਾਸਕ ਰਚਨਾਵਾਂ ਵਿੱਚੋਂ ਕਿਸ ਵਿੱਚ ਪੰਜਾਬ ਦਾ ਉਸ ਖੇਤਰ ਵਜੋਂ ਜ਼ਿਕਰ ਕੀਤਾ ਗਿਆ ਹੈ ਜਿਸ ਨੂੰ ਲਾਹੌਰ ਅਤੇ ਮੁਲਤਾਨ ਪ੍ਰਾਂਤਾਂ ਵਿੱਚ ਵੰਡਿਆ ਜਾ ਸਕਦਾ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_90",
+      "part": "B",
+      "options": [
+        "Panchsheel / ਪੰਚਸ਼ੀਲ",
+        "Pancha-nada / ਪੰਚ-ਨਦ",
+        "Panchmukh / ਪੰਚਮੁਖ",
+        "Panchmark / ਪੰਚਮਾਰਕ"
+      ],
+      "answer_index": 1,
+      "question": "In the Mahabharata, Punjab is described as ______ / ਮਹਾਭਾਰਤ ਵਿੱਚ ਪੰਜਾਬ ਦਾ ਵਰਨਣ ______ ਵਜੋਂ ਕੀਤਾ ਗਿਆ ਹੈ।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_91",
+      "part": "B",
+      "options": [
+        "Maharaja Ranjit Singh / ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ",
+        "Jassa Singh Ahluwalia / ਜੱਸਾ ਸਿੰਘ ਆਹਲੂਵਾਲੀਆ",
+        "Hari Singh / ਹਰੀ ਸਿੰਘ",
+        "Maharaja Dalip Singh / ਮਹਾਰਾਜਾ ਦਲੀਪ ਸਿੰਘ"
+      ],
+      "answer_index": 3,
+      "question": "Who was the last Sikh ruler? / ਆਖਰੀ ਸਿੱਖ ਸ਼ਾਸਕ ਕੌਣ ਸੀ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_92",
+      "part": "B",
+      "options": [
+        "Phulkari / ਫੁਲਕਾਰੀ",
+        "Basohli Art / ਬਸੋਹਲੀ ਕਲਾ",
+        "Pochampally / ਪੋਚਮਪੱਲੀ",
+        "Madhubani / ਮਧੂਬਨੀ"
+      ],
+      "answer_index": 0,
+      "question": "Which of the following is a folk embroidery art of Punjab? / ਇਹਨਾਂ ਵਿੱਚੋਂ ਕਿਹੜੀ ਪੰਜਾਬ ਦੀ ਲੋਕ ਕਢਾਈ ਕਲਾ ਹੈ ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_93",
+      "part": "B",
+      "options": [
+        "Vipasa / ਵਿਪਾਸਾ",
+        "Askini / ਅਸਕਿਨੀ",
+        "Purushni / ਪੁਰੁਸ਼ਨੀ",
+        "Sarsuti / ਸੁਰਸੂਤੀ"
+      ],
+      "answer_index": 2,
+      "question": "The ancient name of river Ravi is ______ / ਰਾਵੀ ਨਦੀ ਦਾ ਪ੍ਰਾਚੀਨ ਨਾਮ ______।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_94",
+      "part": "B",
+      "options": [
+        "Patiala and East Punjab Students Union / ਪਟਿਆਲਾ ਅਤੇ ਈਸਟ ਪੰਜਾਬ ਸਟੂਡੈਂਟਸ ਯੂਨੀਅਨ",
+        "Patiala and East Punjab States Union / ਪਟਿਆਲਾ ਅਤੇ ਈਸਟ ਪੰਜਾਬ ਸਟੇਟਸ ਯੂਨੀਅਨ",
+        "Patiala and Early Punjab States Union / ਪਟਿਆਲਾ ਅਤੇ ਅਰਲੀ ਪੰਜਾਬ ਸਟੇਟਸ ਯੂਨੀਅਨ",
+        "Pathankot and East Punjab States Union / ਪਠਾਨਕੋਟ ਅਤੇ ਈਸਟ ਪੰਜਾਬ ਸਟੇਟਸ ਯੂਨੀਅਨ"
+      ],
+      "answer_index": 1,
+      "question": "In 1948, the Princely States of Punjab which included Patiala, Nabha, Malerkotla, Jind, Kapurthala, Faridkot, Nalagarh and Kalsia were combined and a new State of PEPSU was formed. What does PEPSU stand for? / 1948 ਵਿੱਚ, ਪੰਜਾਬ ਦੀ ਰਿਆਸਤ ਜਿਸ ਵਿੱਚ ਪਟਿਆਲਾ, ਨਾਭਾ, ਮਲੇਰਕੋਟਲਾ, ਜੀਂਦ, ਕਪੂਰਥਲਾ, ਫਰੀਦਕੋਟ, ਨਾਲਾਗੜ੍ਹ ਅਤੇ ਕਲਸੀਆ ਸ਼ਾਮਲ ਸਨ, ਨੂੰ ਮਿਲਾ ਕੇ ਇੱਕ ਨਵਾਂ ਰਾਜ ‘ਪੈਪਸੂ’ ਬਣਾਇਆ ਗਿਆ ਸੀ। ਪੈਪਸੂ ਦਾ ਕੀ ਅਰਥ ਹੈ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_95",
+      "part": "B",
+      "options": [
+        "20",
+        "25",
+        "28",
+        "23"
+      ],
+      "answer_index": 3,
+      "question": "How many districts are there in Punjab State? / ਪੰਜਾਬ ਰਾਜ ਵਿੱਚ ਕਿੰਨੇ ਜ਼ਿਲ੍ਹੇ ਹਨ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_96",
+      "part": "B",
+      "options": [
+        "Tropical dry deciduous vegetation / ਊਸ਼ਣ ਖੁਸ਼ਕ ਪਤਝੜ ਬਨਸਪਤੀ",
+        "Tropical thorny vegetation / ਊਸ਼ਣ ਕੰਡੇਦਾਰ ਬਨਸਪਤੀ",
+        "Subtropical pine vegetation / ਉਪ-ਉਸ਼ਣ ਚੀਲ ਬਨਸਪਤੀ",
+        "Subtropical hill scrub vegetation / ਉਪ-ਉਸ਼ਣ ਝਾੜੀਦਾਰ ਪਹਾੜੀ ਬਨਸਪਤੀ"
+      ],
+      "answer_index": 0,
+      "question": "\"The undulating plains and Kandi area of Punjab are home of this type of vegetation.\" In this statement, the vegetation mentioned is ______ / \"ਪੰਜਾਬ ਦੇ ਉੱਚੇ ਨੀਂਵੇ ਮੈਦਾਨੀ ਖੇਤਰ ਅਤੇ ਕੰਡੀ ਇਲਾਕੇ ਇਸ ਕਿਸਮ ਦੀ ਬਨਸਪਤੀ ਦੇ ਘਰ ਹਨ।” ਇਸ ਕਥਨ ਵਿੱਚ, ਜ਼ਿਕਰ ਕੀਤੀ ਗਈ ਬਨਸਪਤੀ ______।",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_97",
+      "part": "B",
+      "options": [
+        "Guru Angad Dev ji / ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
+        "Guru Ram Das ji / ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ",
+        "Guru Amar Das ji / ਗੁਰੂ ਅਮਰਦਾਸ ਜੀ",
+        "Guru Arjan Dev ji / ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ"
+      ],
+      "answer_index": 2,
+      "question": "Who among the following Gurus established the 'Manji-system'? / ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਸ ਗੁਰੂ ਸਾਹਿਬਾਨ ਨੇ 'ਮੰਜੀ-ਪ੍ਰਥਾ' ਦੀ ਸਥਾਪਨਾ ਕੀਤੀ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_98",
+      "part": "B",
+      "options": [
+        "Amritsar / ਅੰਮ੍ਰਿਤਸਰ",
+        "Tarn Taran / ਤਰਨਤਾਰਨ",
+        "Batala / ਬਟਾਲਾ",
+        "Moga / ਮੋਗਾ"
+      ],
+      "answer_index": 1,
+      "question": "\"In 1590, foundation of a new city was laid between the rivers Ravi and Beas by Guru Arjan Dev ji.\" What was the name of that city? / 1590 ਵਿੱਚ, ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ ਦੁਆਰਾ ਰਾਵੀ ਅਤੇ ਬਿਆਸ ਦਰਿਆ ਦੇ ਵਿਚਕਾਰ ਇੱਕ ਨਵੇਂ ਸ਼ਹਿਰ ਦੀ ਨੀਂਹ ਰੱਖੀ ਗਈ ਸੀ। ਉਸ ਸ਼ਹਿਰ ਦਾ ਨਾਮ ਕੀ ਸੀ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
+    },
+    {
+      "id": "json_q_1794550838752_99",
+      "part": "B",
+      "options": [
+        "9th March, 1844 / 9 ਮਾਰਚ, 1844",
+        "9th March, 1845 / 9 ਮਾਰਚ, 1845",
+        "9th March, 1847 / 9 ਮਾਰਚ, 1847",
+        "9th March, 1846 / 9 ਮਾਰਚ, 1846"
+      ],
+      "answer_index": 3,
+      "question": "When was the first Treaty of Lahore signed? / ਲਾਹੌਰ ਦੀ ਪਹਿਲੀ ਸੰਧੀ 'ਤੇ ਕਦੋਂ ਦਸਖ਼ਤ ਕੀਤੇ ਗਏ?",
+      "subject": "mixed",
+      "topic": "Patwari Part B"
     },
     {
       "options_en": [
