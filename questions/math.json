@@ -1,129 +1,133 @@
 {
   "subject": "math",
-  "count": 32,
-  "updated_at": "2026-11-12T17:50:46.417Z",
+  "count": 124,
+  "updated_at": "2026-11-14T11:12:49.955Z",
   "questions": [
     {
-      "topic": "Part 1 Mix",
-      "question_type": "Maths",
-      "explanation_en": "Let correct answers = x. Then 4x − 0.5(100 − x) = 310. So 4.5x = 360 and x = 80.",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
+      "source": "PSSSB Clerk 2021 paper",
+      "question_type": "Maths",
+      "question_pa": "",
       "question_en": "[PSSSB Clerk 2021 PYQ] In an Engineering Entrance Test, a student scores 4 marks for every correct answer and loses 0.5 marks for every wrong answer. If the student attempts all 100 questions and scores 310 marks, how many questions were answered correctly?",
+      "answer_index": 0,
+      "explanation_pa": "",
+      "explanation_en": "Let correct answers = x. Then 4x − 0.5(100 − x) = 310. So 4.5x = 360 and x = 80.",
+      "subject": "math",
       "options_en": [
         "80",
         "90",
         "100",
         "70"
       ],
-      "source": "PSSSB Clerk 2021 paper",
-      "explanation_pa": "",
-      "question_pa": "",
-      "subject": "math",
-      "answer_index": 0,
+      "topic": "Part 1 Mix",
       "id": "json_q_1793641209512_0"
     },
     {
-      "question_en": "[PSSSB-pattern practice] A sum is lent at 6% simple interest for 2 years and the same sum is lent separately at 24% simple interest for 6 months. If the total interest from both loans is ₹4,704, find the principal of each loan.",
-      "question_type": "Maths",
-      "explanation_en": "Interest on first loan = 12% of P; interest on second = 12% of P. Total = 24% of P = ₹4,704. Therefore P = 4704 ÷ 0.24 = ₹19,600.",
-      "subject": "math",
-      "explanation_pa": "",
-      "topic": "Part 1 Mix",
       "question_pa": "",
-      "source": "PSSSB-pattern practice / original DI set",
+      "question_en": "[PSSSB-pattern practice] A sum is lent at 6% simple interest for 2 years and the same sum is lent separately at 24% simple interest for 6 months. If the total interest from both loans is ₹4,704, find the principal of each loan.",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
+      "explanation_pa": "",
+      "explanation_en": "Interest on first loan = 12% of P; interest on second = 12% of P. Total = 24% of P = ₹4,704. Therefore P = 4704 ÷ 0.24 = ₹19,600.",
+      "answer_index": 2,
+      "source": "PSSSB-pattern practice / original DI set",
+      "topic": "Part 1 Mix",
       "options_en": [
         "₹16,000",
         "₹18,000",
         "₹19,600",
         "₹20,000"
       ],
-      "answer_index": 2,
+      "subject": "math",
+      "question_type": "Maths",
       "id": "json_q_1793641209512_1"
     },
     {
+      "subject": "math",
       "topic": "Part 1 Mix",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
       "question_pa": "",
+      "question_en": "[PSSSB Clerk 2021 PYQ] The HCF and LCM of two numbers are 12 and 144 respectively. If one number is 36, find the other number.",
+      "source": "PSSSB Clerk 2021 paper",
+      "explanation_pa": "",
+      "explanation_en": "Product of two numbers = HCF × LCM = 12 × 144 = 1728. Other number = 1728 ÷ 36 = 48.",
+      "answer_index": 0,
+      "question_type": "Maths",
       "options_en": [
         "48",
         "50",
         "58",
         "60"
       ],
-      "explanation_pa": "",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "question_type": "Maths",
-      "explanation_en": "Product of two numbers = HCF × LCM = 12 × 144 = 1728. Other number = 1728 ÷ 36 = 48.",
-      "subject": "math",
-      "question_en": "[PSSSB Clerk 2021 PYQ] The HCF and LCM of two numbers are 12 and 144 respectively. If one number is 36, find the other number.",
-      "answer_index": 0,
-      "source": "PSSSB Clerk 2021 paper",
       "id": "json_q_1793641209512_2"
     },
     {
-      "source": "PSSSB Clerk 2021 paper",
-      "question_pa": "",
-      "answer_index": 3,
-      "explanation_pa": "",
-      "subject": "math",
-      "question_en": "[PSSSB Clerk 2021 PYQ] A dishonest shopkeeper uses 10% less weight while selling and obtains 21.5% more quantity while purchasing. Assuming he sells at cost price, what is his approximate profit percentage?",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
       "explanation_en": "For ₹1 charged, the shopkeeper gives only 0.9 kg but has effectively obtained 1.215 kg per nominal kg through the stated purchase manipulation. Profit factor = 1.215 ÷ 0.9 = 1.35, so profit = 35%. (Check the exact source wording before treating this as a verbatim PYQ.)",
-      "question_type": "Maths",
+      "answer_index": 3,
       "options_en": [
         "20%",
         "25%",
         "30%",
         "35%"
       ],
+      "explanation_pa": "",
+      "question_type": "Maths",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "source": "PSSSB Clerk 2021 paper",
       "topic": "Part 1 Mix",
+      "subject": "math",
+      "question_en": "[PSSSB Clerk 2021 PYQ] A dishonest shopkeeper uses 10% less weight while selling and obtains 21.5% more quantity while purchasing. Assuming he sells at cost price, what is his approximate profit percentage?",
+      "question_pa": "",
       "id": "json_q_1793641209512_3"
     },
     {
-      "question_pa": "",
-      "answer_index": 2,
-      "explanation_pa": "",
-      "source": "PSSSB Clerk 2021 paper",
       "question_type": "Maths",
-      "question_en": "[PSSSB Clerk 2021 PYQ] If A means subtraction, B means division, C means addition and D means multiplication, find the value of: 40 A 54 B 27 C 6 D 3.",
+      "explanation_en": "Replace symbols: 40 − 54 ÷ 27 + 6 × 3 = 40 − 2 + 18 = 56. Correct value is 56.",
+      "subject": "math",
+      "topic": "Part 1 Mix",
+      "explanation_pa": "",
       "options_en": [
         "54",
         "55",
         "56",
         "57"
       ],
-      "explanation_en": "Replace symbols: 40 − 54 ÷ 27 + 6 × 3 = 40 − 2 + 18 = 56. Correct value is 56.",
-      "topic": "Part 1 Mix",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "subject": "math",
+      "answer_index": 2,
+      "source": "PSSSB Clerk 2021 paper",
+      "question_pa": "",
+      "question_en": "[PSSSB Clerk 2021 PYQ] If A means subtraction, B means division, C means addition and D means multiplication, find the value of: 40 A 54 B 27 C 6 D 3.",
       "id": "json_q_1793641209512_4"
     },
     {
+      "explanation_pa": "",
+      "explanation_en": "Rates per hour are 10, 5 and 7.5 sheets. Average = (10 + 5 + 7.5) ÷ 3 = 7.5 sheets per hour.",
+      "topic": "Part 1 Mix",
+      "question_type": "Maths",
       "answer_index": 2,
       "options_pa": [
         "",
@@ -131,23 +135,21 @@
         "",
         ""
       ],
-      "explanation_pa": "",
-      "subject": "math",
-      "question_en": "[PSSSB Clerk 2021 PYQ] Typist A types one sheet in 6 minutes, B in 12 minutes and C in 8 minutes. What is the average number of sheets typed per hour by the three typists?",
-      "question_type": "Maths",
       "options_en": [
         "5.0",
         "6.5",
         "7.5",
         "10.0"
       ],
-      "topic": "Part 1 Mix",
-      "explanation_en": "Rates per hour are 10, 5 and 7.5 sheets. Average = (10 + 5 + 7.5) ÷ 3 = 7.5 sheets per hour.",
-      "source": "PSSSB Clerk 2021 paper",
+      "question_en": "[PSSSB Clerk 2021 PYQ] Typist A types one sheet in 6 minutes, B in 12 minutes and C in 8 minutes. What is the average number of sheets typed per hour by the three typists?",
       "question_pa": "",
+      "subject": "math",
+      "source": "PSSSB Clerk 2021 paper",
       "id": "json_q_1793641209512_5"
     },
     {
+      "source": "PSSSB Clerk 2021 paper",
+      "explanation_en": "Let first part be x and second be 6000 − x. 12% of x = 24% of (6000 − x), so x = 4000 and second part = 2000.",
       "answer_index": 1,
       "options_pa": [
         "",
@@ -155,47 +157,58 @@
         "",
         ""
       ],
-      "source": "PSSSB Clerk 2021 paper",
+      "question_pa": "",
+      "question_en": "[PSSSB Clerk 2021 PYQ] Divide ₹6,000 into two parts so that the simple interest on the first part for 2 years at 6% p.a. equals the simple interest on the second part for 3 years at 8% p.a.",
+      "question_type": "Maths",
+      "explanation_pa": "",
+      "topic": "Part 1 Mix",
+      "subject": "math",
       "options_en": [
         "₹3,000 and ₹3,000",
         "₹4,000 and ₹2,000",
         "₹5,000 and ₹1,000",
         "₹5,500 and ₹500"
       ],
-      "explanation_pa": "",
-      "question_pa": "",
-      "topic": "Part 1 Mix",
-      "question_type": "Maths",
-      "explanation_en": "Let first part be x and second be 6000 − x. 12% of x = 24% of (6000 − x), so x = 4000 and second part = 2000.",
-      "question_en": "[PSSSB Clerk 2021 PYQ] Divide ₹6,000 into two parts so that the simple interest on the first part for 2 years at 6% p.a. equals the simple interest on the second part for 3 years at 8% p.a.",
-      "subject": "math",
       "id": "json_q_1793641209512_6"
     },
     {
-      "topic": "Part 1 Mix",
-      "explanation_pa": "",
-      "question_pa": "",
       "question_type": "Maths",
-      "source": "PSSSB Clerk 2021 paper",
       "explanation_en": "Work ratio = [(x−1)(x+1)] : [(x+2)(x−1)] = 9:10. Cancel (x−1): (x+1)/(x+2)=9/10. Thus 10x+10=9x+18, so x=8.",
+      "topic": "Part 1 Mix",
+      "subject": "math",
+      "explanation_pa": "",
       "options_en": [
         "7",
         "8",
         "9",
         "10"
       ],
-      "subject": "math",
-      "answer_index": 1,
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
+      "question_pa": "",
       "question_en": "[PSSSB Clerk 2021 PYQ] The ratio of work done by (x − 1) men in (x + 1) days to the work done by (x + 2) men in (x − 1) days is 9:10. Find x.",
+      "answer_index": 1,
+      "source": "PSSSB Clerk 2021 paper",
       "id": "json_q_1793641209512_7"
     },
     {
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "question_type": "Maths",
+      "question_pa": "",
+      "question_en": "[PSSSB Clerk 2021 PYQ] A train covers 12 km in 10 minutes. If it takes 6 seconds to pass a telegraph post, find the length of the train.",
+      "subject": "math",
+      "topic": "Part 1 Mix",
+      "explanation_en": "Speed = 12,000 m ÷ 600 s = 20 m/s. Length = speed × time = 20 × 6 = 120 m.",
+      "explanation_pa": "",
       "answer_index": 2,
       "options_en": [
         "100 m",
@@ -203,37 +216,10 @@
         "120 m",
         "130 m"
       ],
-      "explanation_pa": "",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "question_pa": "",
-      "question_type": "Maths",
       "source": "PSSSB Clerk 2021 paper",
-      "subject": "math",
-      "topic": "Part 1 Mix",
-      "explanation_en": "Speed = 12,000 m ÷ 600 s = 20 m/s. Length = speed × time = 20 × 6 = 120 m.",
-      "question_en": "[PSSSB Clerk 2021 PYQ] A train covers 12 km in 10 minutes. If it takes 6 seconds to pass a telegraph post, find the length of the train.",
       "id": "json_q_1793641209512_8"
     },
     {
-      "question_en": "[PSSSB Clerk 2021 PYQ] Find the number of divisors of 1080, excluding those divisors which are perfect squares.",
-      "answer_index": 0,
-      "question_type": "Maths",
-      "source": "PSSSB Clerk 2021 paper",
-      "subject": "math",
-      "explanation_pa": "",
-      "topic": "Part 1 Mix",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "question_pa": "",
       "options_en": [
         "28",
         "29",
@@ -241,81 +227,81 @@
         "31"
       ],
       "explanation_en": "1080 = 2³ × 3³ × 5¹. Total divisors = 4×4×2 = 32. Perfect-square divisors have even exponents: 2 choices for 2, 2 for 3, and 1 for 5, giving 4. Non-square divisors = 32 − 4 = 28.",
+      "explanation_pa": "",
+      "answer_index": 0,
+      "question_en": "[PSSSB Clerk 2021 PYQ] Find the number of divisors of 1080, excluding those divisors which are perfect squares.",
+      "question_pa": "",
+      "source": "PSSSB Clerk 2021 paper",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "question_type": "Maths",
+      "topic": "Part 1 Mix",
+      "subject": "math",
       "id": "json_q_1793641209512_9"
     },
     {
-      "explanation_pa": "",
+      "answer_index": 2,
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "subject": "math",
       "source": "PSSSB Clerk 2021 paper",
-      "topic": "Part 1 Mix",
       "question_pa": "",
-      "question_type": "Maths",
+      "question_en": "[PSSSB Clerk 2021 PYQ] In an election, a candidate who received 56% of the votes won by 144 votes. If 80% of the listed voters cast their votes and there were no invalid votes, find the total number of voters on the list.",
+      "topic": "Part 1 Mix",
       "options_en": [
         "1,300",
         "1,400",
         "1,500",
         "1,600"
       ],
+      "question_type": "Maths",
       "explanation_en": "Winning margin = (56% − 44%) = 12% of votes cast. Votes cast = 144 ÷ 0.12 = 1200. This is 80% of total voters, so total = 1200 ÷ 0.8 = 1500.",
-      "subject": "math",
-      "answer_index": 2,
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "question_en": "[PSSSB Clerk 2021 PYQ] In an election, a candidate who received 56% of the votes won by 144 votes. If 80% of the listed voters cast their votes and there were no invalid votes, find the total number of voters on the list.",
+      "explanation_pa": "",
       "id": "json_q_1793641209512_10"
     },
     {
-      "source": "PSSSB Clerk 2021 paper",
-      "question_en": "[PSSSB Clerk 2021 PYQ] Two buses cover 350 km. The difference in their travel times is 2 hours 20 minutes and their speed difference is 5 km/h. Find the slower bus's speed.",
-      "explanation_en": "Let slower speed be v. Then 350/v − 350/(v+5) = 7/3. Solving gives v = 25 km/h.",
-      "subject": "math",
-      "question_type": "Maths",
-      "answer_index": 1,
-      "topic": "Part 1 Mix",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "explanation_pa": "",
-      "question_pa": "",
       "options_en": [
         "20 km/h",
         "25 km/h",
         "30 km/h",
         "35 km/h"
       ],
-      "id": "json_q_1793641209512_11"
-    },
-    {
-      "question_en": "[PSSSB Clerk 2021 PYQ] One pipe fills a tank in 6 hours and another pipe empties it in 12 hours. If both are opened together, what part of the tank is filled in one hour?",
+      "explanation_en": "Let slower speed be v. Then 350/v − 350/(v+5) = 7/3. Solving gives v = 25 km/h.",
+      "subject": "math",
+      "topic": "Part 1 Mix",
+      "explanation_pa": "",
+      "answer_index": 1,
       "question_type": "Maths",
+      "question_en": "[PSSSB Clerk 2021 PYQ] Two buses cover 350 km. The difference in their travel times is 2 hours 20 minutes and their speed difference is 5 km/h. Find the slower bus's speed.",
+      "question_pa": "",
+      "source": "PSSSB Clerk 2021 paper",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "answer_index": 2,
-      "topic": "Part 1 Mix",
+      "id": "json_q_1793641209512_11"
+    },
+    {
       "options_en": [
         "1/9",
         "1/6",
         "1/12",
         "1/3"
       ],
-      "explanation_en": "Net rate = 1/6 − 1/12 = 1/12 tank per hour. Correct option is 1/12.",
-      "question_pa": "",
-      "subject": "math",
-      "explanation_pa": "",
+      "question_type": "Maths",
+      "topic": "Part 1 Mix",
       "source": "PSSSB Clerk 2021 paper",
-      "id": "json_q_1793641209512_12"
-    },
-    {
+      "subject": "math",
       "answer_index": 2,
       "options_pa": [
         "",
@@ -323,49 +309,71 @@
         "",
         ""
       ],
+      "question_en": "[PSSSB Clerk 2021 PYQ] One pipe fills a tank in 6 hours and another pipe empties it in 12 hours. If both are opened together, what part of the tank is filled in one hour?",
+      "question_pa": "",
+      "explanation_en": "Net rate = 1/6 − 1/12 = 1/12 tank per hour. Correct option is 1/12.",
+      "explanation_pa": "",
+      "id": "json_q_1793641209512_12"
+    },
+    {
+      "topic": "Part 1 Mix",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer_index": 2,
       "source": "PSSSB Clerk 2021 paper",
+      "question_type": "Maths",
       "options_en": [
         "40 days",
         "50 days",
         "60 days",
         "70 days"
       ],
+      "subject": "math",
+      "explanation_en": "Anjana's rate = 1/10 − 1/12 = 1/60. Therefore, Anjana alone takes 60 days.",
+      "question_en": "[PSSSB Clerk 2021 PYQ] Namita and Anjana together complete a work in 10 days. Namita alone completes it in 12 days. In how many days can Anjana alone complete it?",
       "question_pa": "",
       "explanation_pa": "",
-      "topic": "Part 1 Mix",
-      "explanation_en": "Anjana's rate = 1/10 − 1/12 = 1/60. Therefore, Anjana alone takes 60 days.",
-      "question_type": "Maths",
-      "question_en": "[PSSSB Clerk 2021 PYQ] Namita and Anjana together complete a work in 10 days. Namita alone completes it in 12 days. In how many days can Anjana alone complete it?",
-      "subject": "math",
       "id": "json_q_1793641209512_13"
     },
     {
-      "explanation_en": "Total parts = 5 + 7 = 12. B's share = 7/12 × 2400 = ₹1,400.",
-      "options_en": [
-        "₹1,000",
-        "₹1,200",
-        "₹1,400",
-        "₹1,600"
-      ],
-      "question_pa": "",
-      "topic": "Part 1 Mix",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "question_type": "Maths",
-      "subject": "math",
       "question_en": "A sum of ₹2,400 is divided between A and B in the ratio 5:7. Find B's share.",
+      "question_pa": "",
+      "subject": "math",
+      "answer_index": 2,
       "explanation_pa": "",
       "source": "PSSSB-pattern practice / original DI set",
-      "answer_index": 2,
+      "explanation_en": "Total parts = 5 + 7 = 12. B's share = 7/12 × 2400 = ₹1,400.",
+      "topic": "Part 1 Mix",
+      "question_type": "Maths",
+      "options_en": [
+        "₹1,000",
+        "₹1,200",
+        "₹1,400",
+        "₹1,600"
+      ],
       "id": "json_q_1793641209512_14"
     },
     {
-      "topic": "Part 1 Mix",
+      "subject": "math",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "question_pa": "",
       "question_en": "A shopkeeper marks an article 25% above its cost price and gives a discount of 10% on the marked price. Find the profit percentage.",
+      "explanation_pa": "",
       "explanation_en": "Assume CP = ₹100. MP = ₹125. Selling price after 10% discount = ₹112.50. Profit = 12.5%.",
       "options_en": [
         "10%",
@@ -373,170 +381,157 @@
         "15%",
         "17.5%"
       ],
-      "question_type": "Maths",
-      "subject": "math",
-      "question_pa": "",
-      "answer_index": 1,
-      "explanation_pa": "",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
       "source": "PSSSB-pattern practice / original DI set",
+      "question_type": "Maths",
+      "topic": "Part 1 Mix",
+      "answer_index": 1,
       "id": "json_q_1793641209512_15"
     },
     {
-      "topic": "Part 1 Mix",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "explanation_en": "Amount = 5000 × 1.1² = ₹6,050. Compound interest = 6050 − 5000 = ₹1,050.",
       "answer_index": 1,
-      "subject": "math",
       "question_en": "Find the compound interest on ₹5,000 for 2 years at 10% per annum, compounded annually.",
+      "question_pa": "",
+      "explanation_en": "Amount = 5000 × 1.1² = ₹6,050. Compound interest = 6050 − 5000 = ₹1,050.",
+      "explanation_pa": "",
       "source": "PSSSB-pattern practice / original DI set",
+      "question_type": "Maths",
+      "topic": "Part 1 Mix",
       "options_en": [
         "₹1,000",
         "₹1,050",
         "₹1,100",
         "₹1,150"
       ],
-      "explanation_pa": "",
-      "question_type": "Maths",
-      "question_pa": "",
+      "subject": "math",
       "id": "json_q_1793641209512_16"
     },
     {
-      "question_en": "[DI Set 1: Questions 18–19] Study the table showing books sold by a shop over four days.\n\n📊 BOOKS SOLD\nMonday   🟦 120\nTuesday  🟩 150\nWednesday 🟨 180\nThursday 🟪 150\n\nQ18. How many books were sold in total on Monday and Wednesday?",
-      "source": "PSSSB-pattern practice / original DI set",
-      "explanation_pa": "",
-      "subject": "math",
-      "question_type": "DI",
-      "question_pa": "",
       "topic": "Part 1 Mix",
-      "answer_index": 2,
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "explanation_en": "Monday + Wednesday = 120 + 180 = 300 books.",
       "options_en": [
         "280",
         "290",
         "300",
         "310"
       ],
+      "explanation_pa": "",
+      "subject": "math",
+      "question_pa": "",
+      "question_en": "[DI Set 1: Questions 18–19] Study the table showing books sold by a shop over four days.\n\n📊 BOOKS SOLD\nMonday   🟦 120\nTuesday  🟩 150\nWednesday 🟨 180\nThursday 🟪 150\n\nQ18. How many books were sold in total on Monday and Wednesday?",
+      "explanation_en": "Monday + Wednesday = 120 + 180 = 300 books.",
+      "question_type": "DI",
+      "answer_index": 2,
+      "source": "PSSSB-pattern practice / original DI set",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
       "id": "json_q_1793641209512_17"
     },
     {
+      "subject": "math",
+      "topic": "Part 1 Mix",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "question_en": "[DI Set 1: Questions 18–19] Study the chart: Monday 120 books, Tuesday 150, Wednesday 180, Thursday 150.\n\n📊 BOOKS SOLD (each block ≈ 30 books)\nMon 🟦🟦🟦🟦 120\nTue 🟩🟩🟩🟩🟩 150\nWed 🟨🟨🟨🟨🟨🟨 180\nThu 🟪🟪🟪🟪🟪 150\n\nQ19. What is the average number of books sold per day?",
+      "question_pa": "",
+      "source": "PSSSB-pattern practice / original DI set",
+      "explanation_pa": "",
+      "explanation_en": "Total = 120 + 150 + 180 + 150 = 600. Average = 600 ÷ 4 = 150.",
+      "answer_index": 2,
+      "question_type": "DI",
       "options_en": [
         "140",
         "145",
         "150",
         "155"
       ],
-      "subject": "math",
-      "question_pa": "",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "topic": "Part 1 Mix",
-      "explanation_en": "Total = 120 + 150 + 180 + 150 = 600. Average = 600 ÷ 4 = 150.",
-      "answer_index": 2,
-      "question_en": "[DI Set 1: Questions 18–19] Study the chart: Monday 120 books, Tuesday 150, Wednesday 180, Thursday 150.\n\n📊 BOOKS SOLD (each block ≈ 30 books)\nMon 🟦🟦🟦🟦 120\nTue 🟩🟩🟩🟩🟩 150\nWed 🟨🟨🟨🟨🟨🟨 180\nThu 🟪🟪🟪🟪🟪 150\n\nQ19. What is the average number of books sold per day?",
-      "source": "PSSSB-pattern practice / original DI set",
-      "explanation_pa": "",
-      "question_type": "DI",
       "id": "json_q_1793641209512_18"
     },
     {
-      "topic": "Part 1 Mix",
-      "question_pa": "",
       "options_en": [
         "30",
         "35",
         "40",
         "45"
       ],
-      "explanation_pa": "",
+      "source": "PSSSB-pattern practice / original DI set",
+      "question_pa": "",
+      "question_en": "[DI Set 2: Questions 20–21] The bar chart shows the number of candidates who qualified from five centres.\n\n📊 QUALIFIED CANDIDATES\nA 🟦🟦🟦🟦 40\nB 🟩🟩🟩🟩🟩🟩 60\nC 🟨🟨🟨🟨🟨 50\nD 🟪🟪🟪🟪🟪🟪🟪 70\nE 🟥🟥🟥 30\n(Each block = 10 candidates)\n\nQ20. What is the difference between the highest and lowest number of qualified candidates?",
       "question_type": "DI",
+      "subject": "math",
+      "explanation_en": "Highest = 70 (Centre D), lowest = 30 (Centre E). Difference = 40.",
+      "topic": "Part 1 Mix",
+      "explanation_pa": "",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "explanation_en": "Highest = 70 (Centre D), lowest = 30 (Centre E). Difference = 40.",
-      "subject": "math",
-      "question_en": "[DI Set 2: Questions 20–21] The bar chart shows the number of candidates who qualified from five centres.\n\n📊 QUALIFIED CANDIDATES\nA 🟦🟦🟦🟦 40\nB 🟩🟩🟩🟩🟩🟩 60\nC 🟨🟨🟨🟨🟨 50\nD 🟪🟪🟪🟪🟪🟪🟪 70\nE 🟥🟥🟥 30\n(Each block = 10 candidates)\n\nQ20. What is the difference between the highest and lowest number of qualified candidates?",
       "answer_index": 2,
-      "source": "PSSSB-pattern practice / original DI set",
       "id": "json_q_1793641209512_19"
     },
     {
-      "question_en": "[DI Set 2: Questions 20–21] Qualified candidates: A=40, B=60, C=50, D=70, E=30.\n\n📊 CENTRE-WISE QUALIFIED\nA 🟦🟦🟦🟦 40\nB 🟩🟩🟩🟩🟩🟩 60\nC 🟨🟨🟨🟨🟨 50\nD 🟪🟪🟪🟪🟪🟪🟪 70\nE 🟥🟥🟥 30\n\nQ21. Centre B's qualified candidates are what percentage of the total qualified candidates?",
-      "subject": "math",
-      "topic": "Part 1 Mix",
       "source": "PSSSB-pattern practice / original DI set",
       "explanation_en": "Total = 40 + 60 + 50 + 70 + 30 = 250. Centre B = 60/250 × 100 = 24%.",
+      "question_en": "[DI Set 2: Questions 20–21] Qualified candidates: A=40, B=60, C=50, D=70, E=30.\n\n📊 CENTRE-WISE QUALIFIED\nA 🟦🟦🟦🟦 40\nB 🟩🟩🟩🟩🟩🟩 60\nC 🟨🟨🟨🟨🟨 50\nD 🟪🟪🟪🟪🟪🟪🟪 70\nE 🟥🟥🟥 30\n\nQ21. Centre B's qualified candidates are what percentage of the total qualified candidates?",
+      "question_pa": "",
       "answer_index": 2,
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "question_type": "DI",
+      "explanation_pa": "",
+      "topic": "Part 1 Mix",
+      "subject": "math",
       "options_en": [
         "20%",
         "22%",
         "24%",
         "25%"
       ],
-      "question_pa": "",
-      "explanation_pa": "",
-      "question_type": "DI",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
       "id": "json_q_1793641209512_20"
     },
     {
-      "subject": "math",
-      "question_pa": "",
-      "explanation_en": "Rent = 25% of ₹20,000 = ₹5,000.",
-      "answer_index": 1,
-      "topic": "Part 1 Mix",
-      "question_en": "[DI Set 3: Questions 22–23] A student's monthly expenditure is shown below.\n\n📊 MONTHLY EXPENDITURE = ₹20,000\nFood 🟦 30%\nRent 🟩 25%\nTravel 🟨 15%\nEducation 🟪 20%\nSavings 🟥 10%\n\nQ22. How much does the student spend on rent?",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
-      "explanation_pa": "",
-      "source": "PSSSB-pattern practice / original DI set",
       "options_en": [
         "₹4,000",
         "₹5,000",
         "₹6,000",
         "₹7,000"
       ],
+      "explanation_en": "Rent = 25% of ₹20,000 = ₹5,000.",
+      "answer_index": 1,
+      "subject": "math",
+      "explanation_pa": "",
+      "source": "PSSSB-pattern practice / original DI set",
+      "topic": "Part 1 Mix",
+      "question_en": "[DI Set 3: Questions 22–23] A student's monthly expenditure is shown below.\n\n📊 MONTHLY EXPENDITURE = ₹20,000\nFood 🟦 30%\nRent 🟩 25%\nTravel 🟨 15%\nEducation 🟪 20%\nSavings 🟥 10%\n\nQ22. How much does the student spend on rent?",
+      "question_pa": "",
       "question_type": "DI",
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
       "id": "json_q_1793641209512_21"
     },
     {
-      "subject": "math",
-      "question_en": "[DI Set 3: Questions 22–23] Monthly expenditure = ₹20,000: Food 30%, Rent 25%, Travel 15%, Education 20%, Savings 10%.\n\n🟦 Food 30% | 🟩 Rent 25% | 🟨 Travel 15% | 🟪 Education 20% | 🟥 Savings 10%\n\nQ23. What is the combined expenditure on food and education?",
-      "explanation_pa": "",
-      "question_type": "DI",
-      "topic": "Part 1 Mix",
       "answer_index": 2,
       "options_en": [
         "₹8,000",
@@ -544,82 +539,140 @@
         "₹10,000",
         "₹11,000"
       ],
-      "question_pa": "",
+      "source": "PSSSB-pattern practice / original DI set",
+      "topic": "Part 1 Mix",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
-      "source": "PSSSB-pattern practice / original DI set",
       "explanation_en": "Food + Education = 30% + 20% = 50% of ₹20,000 = ₹10,000.",
+      "subject": "math",
+      "question_en": "[DI Set 3: Questions 22–23] Monthly expenditure = ₹20,000: Food 30%, Rent 25%, Travel 15%, Education 20%, Savings 10%.\n\n🟦 Food 30% | 🟩 Rent 25% | 🟨 Travel 15% | 🟪 Education 20% | 🟥 Savings 10%\n\nQ23. What is the combined expenditure on food and education?",
+      "question_pa": "",
+      "question_type": "DI",
+      "explanation_pa": "",
       "id": "json_q_1793641209512_22"
     },
     {
-      "explanation_pa": "",
-      "source": "PSSSB-pattern practice / original DI set",
       "question_type": "DI",
-      "answer_index": 2,
-      "subject": "math",
-      "question_en": "[DI Set 4: Questions 24–25] The table shows a company's monthly production.\n\n📈 MONTHLY PRODUCTION (units)\nJanuary   400\nFebruary  500\nMarch     450\nApril     600\nMay       650\n\nQ24. What is the percentage increase in production from January to April?",
-      "options_pa": [
-        "",
-        "",
-        "",
-        ""
-      ],
       "explanation_en": "Increase = 600 − 400 = 200. Percentage increase = 200/400 × 100 = 50%.",
+      "subject": "math",
       "topic": "Part 1 Mix",
-      "question_pa": "",
+      "explanation_pa": "",
       "options_en": [
         "40%",
         "45%",
         "50%",
         "55%"
       ],
-      "id": "json_q_1793641209512_23"
-    },
-    {
-      "question_pa": "",
-      "subject": "math",
-      "question_type": "DI",
-      "explanation_pa": "",
-      "topic": "Part 1 Mix",
-      "question_en": "[DI Set 4: Questions 24–25] Monthly production: January 400, February 500, March 450, April 600, May 650 units.\n\n📈 PRODUCTION TREND\nJan 🟦 400 → Feb 🟩 500 → Mar 🟨 450 → Apr 🟪 600 → May 🟥 650\n\nQ25. Find the average monthly production over these five months.",
-      "options_en": [
-        "500",
-        "510",
-        "520",
-        "530"
-      ],
-      "answer_index": 2,
-      "source": "PSSSB-pattern practice / original DI set",
       "options_pa": [
         "",
         "",
         "",
         ""
       ],
+      "answer_index": 2,
+      "source": "PSSSB-pattern practice / original DI set",
+      "question_en": "[DI Set 4: Questions 24–25] The table shows a company's monthly production.\n\n📈 MONTHLY PRODUCTION (units)\nJanuary   400\nFebruary  500\nMarch     450\nApril     600\nMay       650\n\nQ24. What is the percentage increase in production from January to April?",
+      "question_pa": "",
+      "id": "json_q_1793641209512_23"
+    },
+    {
+      "subject": "math",
+      "question_type": "DI",
+      "options_en": [
+        "500",
+        "510",
+        "520",
+        "530"
+      ],
+      "topic": "Part 1 Mix",
+      "question_en": "[DI Set 4: Questions 24–25] Monthly production: January 400, February 500, March 450, April 600, May 650 units.\n\n📈 PRODUCTION TREND\nJan 🟦 400 → Feb 🟩 500 → Mar 🟨 450 → Apr 🟪 600 → May 🟥 650\n\nQ25. Find the average monthly production over these five months.",
+      "question_pa": "",
       "explanation_en": "Total = 400 + 500 + 450 + 600 + 650 = 2600. Average = 2600 ÷ 5 = 520 units.",
+      "source": "PSSSB-pattern practice / original DI set",
+      "explanation_pa": "",
+      "answer_index": 2,
+      "options_pa": [
+        "",
+        "",
+        "",
+        ""
+      ],
       "id": "json_q_1793641209512_24"
     },
     {
+      "explanation_en": "Assam population = 25% of 3,276,000 = 819,000; illiterate = 7/9 = 637,000. Manipur population = 20% = 655,200; illiterate = 4/5 = 524,160. Total = 1,161,160.",
+      "explanation_pa": "ਅਸਾਮ ਦੀ ਆਬਾਦੀ 819,000 ਹੈ; ਅਨਪੜ੍ਹ = 7/9 = 637,000। ਮਣੀਪੁਰ ਦੀ ਆਬਾਦੀ 655,200 ਹੈ; ਅਨਪੜ੍ਹ = 4/5 = 524,160। ਕੁੱਲ = 1,161,160।",
+      "question_en": "The total number of illiterate people in Assam and Manipur was _____.",
+      "id": "json_q_1794505782705_0",
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/main/images/di/Population%20of%20Seven%20States_%202025%20Data%20Chart.png",
+      "subject": "math",
+      "chart_image": "DI_Set_1_States_Chart.png",
+      "options_pa": [
+        "932170",
+        "981546",
+        "1161160",
+        "524160"
+      ],
+      "question_pa": "ਅਸਾਮ ਅਤੇ ਮਣੀਪੁਰ ਵਿੱਚ ਅਨਪੜ੍ਹ ਲੋਕਾਂ ਦੀ ਕੁੱਲ ਗਿਣਤੀ ਕਿੰਨੀ ਸੀ?",
+      "topic": "Data Interpretation (DI) - 1",
       "options_en": [
         "932170",
         "981546",
         "1161160",
         "524160"
       ],
-      "explanation_pa": "ਅਸਾਮ ਦੀ ਆਬਾਦੀ 819,000 ਹੈ; ਅਨਪੜ੍ਹ = 7/9 = 637,000। ਮਣੀਪੁਰ ਦੀ ਆਬਾਦੀ 655,200 ਹੈ; ਅਨਪੜ੍ਹ = 4/5 = 524,160। ਕੁੱਲ = 1,161,160।",
       "chart_data": {
+        "type": "pie_and_table",
+        "table": [
+          {
+            "male_female": "5:3",
+            "literate_illiterate": "2:7",
+            "state": "Assam"
+          },
+          {
+            "literate_illiterate": "1:4",
+            "male_female": "3:1",
+            "state": "Manipur"
+          },
+          {
+            "male_female": "2:3",
+            "state": "Haryana",
+            "literate_illiterate": "2:1"
+          },
+          {
+            "state": "Gujarat",
+            "literate_illiterate": "3:2",
+            "male_female": "3:5"
+          },
+          {
+            "state": "Uttar Pradesh",
+            "literate_illiterate": "5:1",
+            "male_female": "3:4"
+          },
+          {
+            "literate_illiterate": "7:2",
+            "male_female": "3:2",
+            "state": "Punjab"
+          },
+          {
+            "male_female": "3:4",
+            "literate_illiterate": "9:4",
+            "state": "Tripura"
+          }
+        ],
+        "total_population": 3276000,
         "pie": [
           {
             "label": "Assam",
             "percent": 25
           },
           {
-            "percent": 20,
-            "label": "Manipur"
+            "label": "Manipur",
+            "percent": 20
           },
           {
             "percent": 8,
@@ -641,86 +694,59 @@
             "label": "Tripura",
             "percent": 9
           }
-        ],
-        "table": [
+        ]
+      },
+      "answer_index": 2,
+      "chart_group_id": "states_population_2025"
+    },
+    {
+      "chart_image": "DI_Set_1_States_Chart.png",
+      "chart_group_id": "states_population_2025",
+      "topic": "Data Interpretation (DI) - 1",
+      "subject": "math",
+      "question_pa": "ਤ੍ਰਿਪੁਰਾ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਦਾ ਅਨੁਪਾਤ ਪਤਾ ਕਰੋ।",
+      "id": "json_q_1794505782705_1",
+      "answer_index": 1,
+      "explanation_en": "Tripura population = 9% of 3,276,000 = 294,840; females = 4/7 = 168,480. Haryana population = 8% = 262,080; females = 3/5 = 157,248. Ratio = 15:14.",
+      "explanation_pa": "ਤ੍ਰਿਪੁਰਾ ਵਿੱਚ ਔਰਤਾਂ 168,480 ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ 157,248 ਹਨ। ਅਨੁਪਾਤ = 168,480:157,248 = 15:14।",
+      "chart_data": {
+        "type": "pie_and_table",
+        "pie": [
           {
-            "state": "Assam",
-            "male_female": "5:3",
-            "literate_illiterate": "2:7"
+            "label": "Assam",
+            "percent": 25
           },
           {
-            "state": "Manipur",
-            "male_female": "3:1",
-            "literate_illiterate": "1:4"
+            "label": "Manipur",
+            "percent": 20
           },
           {
-            "male_female": "2:3",
-            "state": "Haryana",
-            "literate_illiterate": "2:1"
+            "label": "Haryana",
+            "percent": 8
           },
           {
-            "literate_illiterate": "3:2",
-            "male_female": "3:5",
-            "state": "Gujarat"
+            "percent": 12,
+            "label": "Gujarat"
           },
           {
-            "male_female": "3:4",
-            "state": "Uttar Pradesh",
-            "literate_illiterate": "5:1"
+            "label": "Uttar Pradesh",
+            "percent": 11
           },
           {
-            "literate_illiterate": "7:2",
-            "state": "Punjab",
-            "male_female": "3:2"
+            "percent": 15,
+            "label": "Punjab"
           },
           {
-            "male_female": "3:4",
-            "state": "Tripura",
-            "literate_illiterate": "9:4"
+            "percent": 9,
+            "label": "Tripura"
           }
         ],
         "total_population": 3276000,
-        "type": "pie_and_table"
-      },
-      "chart_group_id": "states_population_2025",
-      "topic": "Data Interpretation (DI) - 1",
-      "id": "json_q_1794505782705_0",
-      "explanation_en": "Assam population = 25% of 3,276,000 = 819,000; illiterate = 7/9 = 637,000. Manipur population = 20% = 655,200; illiterate = 4/5 = 524,160. Total = 1,161,160.",
-      "question_en": "The total number of illiterate people in Assam and Manipur was _____.",
-      "answer_index": 2,
-      "chart_image": "DI_Set_1_States_Chart.png",
-      "options_pa": [
-        "932170",
-        "981546",
-        "1161160",
-        "524160"
-      ],
-      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/main/images/di/Population%20of%20Seven%20States_%202025%20Data%20Chart.png",
-      "question_pa": "ਅਸਾਮ ਅਤੇ ਮਣੀਪੁਰ ਵਿੱਚ ਅਨਪੜ੍ਹ ਲੋਕਾਂ ਦੀ ਕੁੱਲ ਗਿਣਤੀ ਕਿੰਨੀ ਸੀ?",
-      "subject": "math"
-    },
-    {
-      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/main/images/di/Population%20of%20Seven%20States_%202025%20Data%20Chart.png",
-      "id": "json_q_1794505782705_1",
-      "options_pa": [
-        "14:15",
-        "15:14",
-        "4:7",
-        "20:21"
-      ],
-      "chart_image": "DI_Set_1_States_Chart.png",
-      "topic": "Data Interpretation (DI) - 1",
-      "question_pa": "ਤ੍ਰਿਪੁਰਾ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਦਾ ਅਨੁਪਾਤ ਪਤਾ ਕਰੋ।",
-      "answer_index": 1,
-      "chart_group_id": "states_population_2025",
-      "chart_data": {
-        "type": "pie_and_table",
-        "total_population": 3276000,
         "table": [
           {
+            "male_female": "5:3",
             "state": "Assam",
-            "literate_illiterate": "2:7",
-            "male_female": "5:3"
+            "literate_illiterate": "2:7"
           },
           {
             "state": "Manipur",
@@ -738,9 +764,9 @@
             "state": "Gujarat"
           },
           {
-            "state": "Uttar Pradesh",
+            "literate_illiterate": "5:1",
             "male_female": "3:4",
-            "literate_illiterate": "5:1"
+            "state": "Uttar Pradesh"
           },
           {
             "state": "Punjab",
@@ -748,167 +774,28 @@
             "male_female": "3:2"
           },
           {
-            "state": "Tripura",
             "male_female": "3:4",
+            "state": "Tripura",
             "literate_illiterate": "9:4"
-          }
-        ],
-        "pie": [
-          {
-            "label": "Assam",
-            "percent": 25
-          },
-          {
-            "percent": 20,
-            "label": "Manipur"
-          },
-          {
-            "label": "Haryana",
-            "percent": 8
-          },
-          {
-            "label": "Gujarat",
-            "percent": 12
-          },
-          {
-            "percent": 11,
-            "label": "Uttar Pradesh"
-          },
-          {
-            "percent": 15,
-            "label": "Punjab"
-          },
-          {
-            "percent": 9,
-            "label": "Tripura"
           }
         ]
       },
-      "question_en": "Find the ratio of the number of females in Tripura to the number of females in Haryana.",
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/main/images/di/Population%20of%20Seven%20States_%202025%20Data%20Chart.png",
       "options_en": [
         "14:15",
         "15:14",
         "4:7",
         "20:21"
       ],
-      "explanation_en": "Tripura population = 9% of 3,276,000 = 294,840; females = 4/7 = 168,480. Haryana population = 8% = 262,080; females = 3/5 = 157,248. Ratio = 15:14.",
-      "subject": "math",
-      "explanation_pa": "ਤ੍ਰਿਪੁਰਾ ਵਿੱਚ ਔਰਤਾਂ 168,480 ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ 157,248 ਹਨ। ਅਨੁਪਾਤ = 168,480:157,248 = 15:14।"
+      "options_pa": [
+        "14:15",
+        "15:14",
+        "4:7",
+        "20:21"
+      ],
+      "question_en": "Find the ratio of the number of females in Tripura to the number of females in Haryana."
     },
     {
-      "chart_image": "DI_Set_1_States_Chart.png",
-      "chart_data": {
-        "total_population": 3276000,
-        "table": [
-          {
-            "male_female": "5:3",
-            "literate_illiterate": "2:7",
-            "state": "Assam"
-          },
-          {
-            "male_female": "3:1",
-            "literate_illiterate": "1:4",
-            "state": "Manipur"
-          },
-          {
-            "male_female": "2:3",
-            "state": "Haryana",
-            "literate_illiterate": "2:1"
-          },
-          {
-            "state": "Gujarat",
-            "literate_illiterate": "3:2",
-            "male_female": "3:5"
-          },
-          {
-            "state": "Uttar Pradesh",
-            "literate_illiterate": "5:1",
-            "male_female": "3:4"
-          },
-          {
-            "male_female": "3:2",
-            "state": "Punjab",
-            "literate_illiterate": "7:2"
-          },
-          {
-            "literate_illiterate": "9:4",
-            "state": "Tripura",
-            "male_female": "3:4"
-          }
-        ],
-        "type": "pie_and_table",
-        "pie": [
-          {
-            "label": "Assam",
-            "percent": 25
-          },
-          {
-            "label": "Manipur",
-            "percent": 20
-          },
-          {
-            "percent": 8,
-            "label": "Haryana"
-          },
-          {
-            "label": "Gujarat",
-            "percent": 12
-          },
-          {
-            "percent": 11,
-            "label": "Uttar Pradesh"
-          },
-          {
-            "label": "Punjab",
-            "percent": 15
-          },
-          {
-            "percent": 9,
-            "label": "Tripura"
-          }
-        ]
-      },
-      "chart_group_id": "states_population_2025",
-      "explanation_en": "Punjab population = 15% of 3,276,000 = 491,400; females = 2/5 = 196,560. Haryana females = 157,248. Difference = 39,312.",
-      "id": "json_q_1794505782705_2",
-      "question_pa": "ਪੰਜਾਬ ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਦਾ ਅੰਤਰ ਪਤਾ ਕਰੋ।",
-      "options_en": [
-        "39046",
-        "39312",
-        "20348",
-        "43532"
-      ],
-      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
-      "subject": "math",
-      "explanation_pa": "ਪੰਜਾਬ ਵਿੱਚ ਔਰਤਾਂ 196,560 ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ 157,248 ਹਨ। ਅੰਤਰ = 39,312।",
-      "options_pa": [
-        "39046",
-        "39312",
-        "20348",
-        "43532"
-      ],
-      "answer_index": 1,
-      "topic": "Data Interpretation (DI) - 1",
-      "question_en": "Find the difference between the number of females in Punjab and the number of females in Haryana."
-    },
-    {
-      "explanation_pa": "ਪੰਜਾਬ ਵਿੱਚ ਪੁਰਸ਼ 294,840, ਮਣੀਪੁਰ ਵਿੱਚ 491,400 ਅਤੇ ਗੁਜਰਾਤ ਵਿੱਚ 147,420 ਹਨ। ਕੁੱਲ 933,660। ਪ੍ਰਤੀਸ਼ਤ = 933,660 ÷ 3,276,000 × 100 = 28.5%。",
-      "chart_image": "DI_Set_1_States_Chart.png",
-      "topic": "Data Interpretation (DI) - 1",
-      "chart_group_id": "states_population_2025",
-      "options_pa": [
-        "25.5%",
-        "27.5%",
-        "28.5%",
-        "32.5%"
-      ],
-      "question_pa": "ਪੰਜਾਬ, ਮਣੀਪੁਰ ਅਤੇ ਗੁਜਰਾਤ ਵਿੱਚ ਪੁਰਸ਼ਾਂ ਦੀ ਕੁੱਲ ਗਿਣਤੀ ਦਾ ਸੱਤਾਂ ਰਾਜਾਂ ਦੀ ਕੁੱਲ ਆਬਾਦੀ ਨਾਲ ਪ੍ਰਤੀਸ਼ਤ ਪਤਾ ਕਰੋ।",
-      "explanation_en": "Punjab males = 491,400 × 3/5 = 294,840; Manipur males = 655,200 × 3/4 = 491,400; Gujarat males = 393,120 × 3/8 = 147,420. Total = 933,660. 933,660 ÷ 3,276,000 × 100 = 28.5%.",
-      "subject": "math",
-      "answer_index": 2,
-      "question_en": "Find the percentage of the total number of males in Punjab, Manipur and Gujarat together to the total population of all seven states.",
-      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
-      "id": "json_q_1794505782705_3",
       "chart_data": {
         "pie": [
           {
@@ -924,8 +811,8 @@
             "label": "Haryana"
           },
           {
-            "label": "Gujarat",
-            "percent": 12
+            "percent": 12,
+            "label": "Gujarat"
           },
           {
             "label": "Uttar Pradesh",
@@ -940,7 +827,7 @@
             "percent": 9
           }
         ],
-        "type": "pie_and_table",
+        "total_population": 3276000,
         "table": [
           {
             "literate_illiterate": "2:7",
@@ -948,14 +835,14 @@
             "state": "Assam"
           },
           {
-            "literate_illiterate": "1:4",
+            "state": "Manipur",
             "male_female": "3:1",
-            "state": "Manipur"
+            "literate_illiterate": "1:4"
           },
           {
-            "state": "Haryana",
             "male_female": "2:3",
-            "literate_illiterate": "2:1"
+            "literate_illiterate": "2:1",
+            "state": "Haryana"
           },
           {
             "male_female": "3:5",
@@ -964,109 +851,166 @@
           },
           {
             "male_female": "3:4",
-            "literate_illiterate": "5:1",
-            "state": "Uttar Pradesh"
+            "state": "Uttar Pradesh",
+            "literate_illiterate": "5:1"
           },
           {
             "literate_illiterate": "7:2",
-            "male_female": "3:2",
-            "state": "Punjab"
+            "state": "Punjab",
+            "male_female": "3:2"
           },
           {
             "literate_illiterate": "9:4",
-            "male_female": "3:4",
-            "state": "Tripura"
+            "state": "Tripura",
+            "male_female": "3:4"
           }
         ],
-        "total_population": 3276000
+        "type": "pie_and_table"
       },
+      "options_en": [
+        "39046",
+        "39312",
+        "20348",
+        "43532"
+      ],
+      "topic": "Data Interpretation (DI) - 1",
+      "chart_group_id": "states_population_2025",
+      "question_en": "Find the difference between the number of females in Punjab and the number of females in Haryana.",
+      "options_pa": [
+        "39046",
+        "39312",
+        "20348",
+        "43532"
+      ],
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
+      "explanation_pa": "ਪੰਜਾਬ ਵਿੱਚ ਔਰਤਾਂ 196,560 ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ 157,248 ਹਨ। ਅੰਤਰ = 39,312।",
+      "explanation_en": "Punjab population = 15% of 3,276,000 = 491,400; females = 2/5 = 196,560. Haryana females = 157,248. Difference = 39,312.",
+      "chart_image": "DI_Set_1_States_Chart.png",
+      "subject": "math",
+      "id": "json_q_1794505782705_2",
+      "answer_index": 1,
+      "question_pa": "ਪੰਜਾਬ ਅਤੇ ਹਰਿਆਣਾ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਦਾ ਅੰਤਰ ਪਤਾ ਕਰੋ।"
+    },
+    {
+      "answer_index": 2,
+      "subject": "math",
+      "topic": "Data Interpretation (DI) - 1",
+      "question_pa": "ਪੰਜਾਬ, ਮਣੀਪੁਰ ਅਤੇ ਗੁਜਰਾਤ ਵਿੱਚ ਪੁਰਸ਼ਾਂ ਦੀ ਕੁੱਲ ਗਿਣਤੀ ਦਾ ਸੱਤਾਂ ਰਾਜਾਂ ਦੀ ਕੁੱਲ ਆਬਾਦੀ ਨਾਲ ਪ੍ਰਤੀਸ਼ਤ ਪਤਾ ਕਰੋ।",
+      "chart_image": "DI_Set_1_States_Chart.png",
+      "chart_group_id": "states_population_2025",
+      "chart_data": {
+        "pie": [
+          {
+            "percent": 25,
+            "label": "Assam"
+          },
+          {
+            "label": "Manipur",
+            "percent": 20
+          },
+          {
+            "label": "Haryana",
+            "percent": 8
+          },
+          {
+            "percent": 12,
+            "label": "Gujarat"
+          },
+          {
+            "percent": 11,
+            "label": "Uttar Pradesh"
+          },
+          {
+            "label": "Punjab",
+            "percent": 15
+          },
+          {
+            "label": "Tripura",
+            "percent": 9
+          }
+        ],
+        "type": "pie_and_table",
+        "total_population": 3276000,
+        "table": [
+          {
+            "male_female": "5:3",
+            "state": "Assam",
+            "literate_illiterate": "2:7"
+          },
+          {
+            "male_female": "3:1",
+            "state": "Manipur",
+            "literate_illiterate": "1:4"
+          },
+          {
+            "literate_illiterate": "2:1",
+            "state": "Haryana",
+            "male_female": "2:3"
+          },
+          {
+            "literate_illiterate": "3:2",
+            "male_female": "3:5",
+            "state": "Gujarat"
+          },
+          {
+            "literate_illiterate": "5:1",
+            "male_female": "3:4",
+            "state": "Uttar Pradesh"
+          },
+          {
+            "state": "Punjab",
+            "literate_illiterate": "7:2",
+            "male_female": "3:2"
+          },
+          {
+            "male_female": "3:4",
+            "literate_illiterate": "9:4",
+            "state": "Tripura"
+          }
+        ]
+      },
+      "id": "json_q_1794505782705_3",
+      "explanation_pa": "ਪੰਜਾਬ ਵਿੱਚ ਪੁਰਸ਼ 294,840, ਮਣੀਪੁਰ ਵਿੱਚ 491,400 ਅਤੇ ਗੁਜਰਾਤ ਵਿੱਚ 147,420 ਹਨ। ਕੁੱਲ 933,660। ਪ੍ਰਤੀਸ਼ਤ = 933,660 ÷ 3,276,000 × 100 = 28.5%。",
       "options_en": [
         "25.5%",
         "27.5%",
         "28.5%",
         "32.5%"
-      ]
+      ],
+      "explanation_en": "Punjab males = 491,400 × 3/5 = 294,840; Manipur males = 655,200 × 3/4 = 491,400; Gujarat males = 393,120 × 3/8 = 147,420. Total = 933,660. 933,660 ÷ 3,276,000 × 100 = 28.5%.",
+      "question_en": "Find the percentage of the total number of males in Punjab, Manipur and Gujarat together to the total population of all seven states.",
+      "options_pa": [
+        "25.5%",
+        "27.5%",
+        "28.5%",
+        "32.5%"
+      ],
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png"
     },
     {
-      "options_en": [
-        "132",
-        "174",
-        "189",
-        "126"
-      ],
-      "explanation_pa": "ਮਾਰਕੀਟਿੰਗ ਵਿਭਾਗ ਦੇ ਕਰਮਚਾਰੀ = 1,800 ਦਾ 18% = 324। ਪੁਰਸ਼:ਔਰਤਾਂ = 7:5, ਇਸ ਲਈ ਪੁਰਸ਼ = 7/12 × 324 = 189।",
-      "chart_data": {
-        "type": "pie_and_table",
-        "pie": [
-          {
-            "percent": 18,
-            "label": "Marketing"
-          },
-          {
-            "percent": 17,
-            "label": "Accounts"
-          },
-          {
-            "label": "Production",
-            "percent": 28
-          },
-          {
-            "percent": 14,
-            "label": "HR"
-          },
-          {
-            "percent": 23,
-            "label": "IT"
-          }
-        ],
-        "table": [
-          {
-            "department": "Accounts",
-            "men_women": "2:7"
-          },
-          {
-            "men_women": "11:1",
-            "department": "Production"
-          },
-          {
-            "men_women": "1:3",
-            "department": "HR"
-          },
-          {
-            "department": "IT",
-            "men_women": "5:4"
-          },
-          {
-            "men_women": "7:5",
-            "department": "Marketing"
-          }
-        ],
-        "total_employees": 1800
-      },
-      "chart_group_id": "department_employees_1800",
-      "answer_index": 2,
+      "topic": "Data Interpretation (DI) - 1",
       "subject": "math",
-      "explanation_en": "Marketing employees = 18% of 1,800 = 324. Men:women = 7:5, so men = 7/12 × 324 = 189.",
-      "question_en": "What is the number of men working in the Marketing Department?",
-      "chart_image": "DI_Set_2_Employees_Chart.png",
-      "question_pa": "ਮਾਰਕੀਟਿੰਗ ਵਿਭਾਗ ਵਿੱਚ ਕੰਮ ਕਰਨ ਵਾਲੇ ਪੁਰਸ਼ਾਂ ਦੀ ਗਿਣਤੀ ਕਿੰਨੀ ਹੈ?",
       "options_pa": [
         "132",
         "174",
         "189",
         "126"
       ],
-      "topic": "Data Interpretation (DI) - 1",
-      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
-      "id": "json_q_1794505782705_4"
-    },
-    {
-      "chart_image": "DI_Set_2_Employees_Chart.png",
+      "explanation_pa": "ਮਾਰਕੀਟਿੰਗ ਵਿਭਾਗ ਦੇ ਕਰਮਚਾਰੀ = 1,800 ਦਾ 18% = 324। ਪੁਰਸ਼:ਔਰਤਾਂ = 7:5, ਇਸ ਲਈ ਪੁਰਸ਼ = 7/12 × 324 = 189।",
+      "explanation_en": "Marketing employees = 18% of 1,800 = 324. Men:women = 7:5, so men = 7/12 × 324 = 189.",
+      "answer_index": 2,
+      "options_en": [
+        "132",
+        "174",
+        "189",
+        "126"
+      ],
       "chart_data": {
+        "type": "pie_and_table",
         "table": [
           {
-            "men_women": "2:7",
-            "department": "Accounts"
+            "department": "Accounts",
+            "men_women": "2:7"
           },
           {
             "department": "Production",
@@ -1085,8 +1029,6 @@
             "men_women": "7:5"
           }
         ],
-        "total_employees": 1800,
-        "type": "pie_and_table",
         "pie": [
           {
             "label": "Marketing",
@@ -1108,42 +1050,99 @@
             "label": "IT",
             "percent": 23
           }
-        ]
+        ],
+        "total_employees": 1800
       },
+      "question_en": "What is the number of men working in the Marketing Department?",
+      "id": "json_q_1794505782705_4",
       "chart_group_id": "department_employees_1800",
-      "explanation_en": "IT employees = 23% of 1,800 = 414. Men:women = 5:4, so women = 4/9 × 414 = 184. 184/1,800 × 100 = 10.22%, approximately 10% (closest listed option).",
-      "question_pa": "ਆਈ.ਟੀ. ਵਿਭਾਗ ਵਿੱਚ ਕੰਮ ਕਰਨ ਵਾਲੀਆਂ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਸੰਸਥਾ ਦੇ ਕੁੱਲ ਕਰਮਚਾਰੀਆਂ ਦਾ ਕਿੰਨਾ ਪ੍ਰਤੀਸ਼ਤ ਹੈ?",
-      "id": "json_q_1794505782705_5",
-      "options_en": [
-        "10%",
-        "7%",
-        "5%",
-        "15%"
-      ],
       "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
-      "explanation_pa": "ਆਈ.ਟੀ. ਕਰਮਚਾਰੀ = 1,800 ਦਾ 23% = 414। ਪੁਰਸ਼:ਔਰਤਾਂ = 5:4, ਇਸ ਲਈ ਔਰਤਾਂ = 184। 184/1,800 × 100 = 10.22%, ਲਗਭਗ 10%।",
-      "subject": "math",
+      "question_pa": "ਮਾਰਕੀਟਿੰਗ ਵਿਭਾਗ ਵਿੱਚ ਕੰਮ ਕਰਨ ਵਾਲੇ ਪੁਰਸ਼ਾਂ ਦੀ ਗਿਣਤੀ ਕਿੰਨੀ ਹੈ?",
+      "chart_image": "DI_Set_2_Employees_Chart.png"
+    },
+    {
+      "topic": "Data Interpretation (DI) - 1",
       "options_pa": [
         "10%",
         "7%",
         "5%",
         "15%"
       ],
+      "explanation_pa": "ਆਈ.ਟੀ. ਕਰਮਚਾਰੀ = 1,800 ਦਾ 23% = 414। ਪੁਰਸ਼:ਔਰਤਾਂ = 5:4, ਇਸ ਲਈ ਔਰਤਾਂ = 184। 184/1,800 × 100 = 10.22%, ਲਗਭਗ 10%।",
+      "subject": "math",
+      "explanation_en": "IT employees = 23% of 1,800 = 414. Men:women = 5:4, so women = 4/9 × 414 = 184. 184/1,800 × 100 = 10.22%, approximately 10% (closest listed option).",
       "answer_index": 0,
-      "topic": "Data Interpretation (DI) - 1",
-      "question_en": "The number of women working in the IT Department is what per cent of the total number of employees in the organization?"
-    },
-    {
       "options_en": [
-        "3:7",
-        "2:5",
-        "2:9",
-        "3:4"
+        "10%",
+        "7%",
+        "5%",
+        "15%"
       ],
-      "explanation_pa": "ਐਚ.ਆਰ. ਵਿਭਾਗ ਦੇ ਕੁੱਲ ਕਰਮਚਾਰੀ 252 ਹਨ। ਪੁਰਸ਼:ਔਰਤਾਂ = 1:3, ਇਸ ਲਈ ਔਰਤਾਂ 189 ਹਨ। ਅਨੁਪਾਤ = 189:252 = 3:4।",
+      "question_en": "The number of women working in the IT Department is what per cent of the total number of employees in the organization?",
       "chart_data": {
         "total_employees": 1800,
-        "type": "pie_and_table",
+        "pie": [
+          {
+            "label": "Marketing",
+            "percent": 18
+          },
+          {
+            "label": "Accounts",
+            "percent": 17
+          },
+          {
+            "label": "Production",
+            "percent": 28
+          },
+          {
+            "percent": 14,
+            "label": "HR"
+          },
+          {
+            "label": "IT",
+            "percent": 23
+          }
+        ],
+        "table": [
+          {
+            "department": "Accounts",
+            "men_women": "2:7"
+          },
+          {
+            "department": "Production",
+            "men_women": "11:1"
+          },
+          {
+            "department": "HR",
+            "men_women": "1:3"
+          },
+          {
+            "men_women": "5:4",
+            "department": "IT"
+          },
+          {
+            "men_women": "7:5",
+            "department": "Marketing"
+          }
+        ],
+        "type": "pie_and_table"
+      },
+      "id": "json_q_1794505782705_5",
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
+      "chart_group_id": "department_employees_1800",
+      "question_pa": "ਆਈ.ਟੀ. ਵਿਭਾਗ ਵਿੱਚ ਕੰਮ ਕਰਨ ਵਾਲੀਆਂ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਸੰਸਥਾ ਦੇ ਕੁੱਲ ਕਰਮਚਾਰੀਆਂ ਦਾ ਕਿੰਨਾ ਪ੍ਰਤੀਸ਼ਤ ਹੈ?",
+      "chart_image": "DI_Set_2_Employees_Chart.png"
+    },
+    {
+      "chart_image": "DI_Set_2_Employees_Chart.png",
+      "question_pa": "ਐਚ.ਆਰ. ਵਿਭਾਗ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਅਤੇ ਇਸ ਵਿਭਾਗ ਦੇ ਕੁੱਲ ਕਰਮਚਾਰੀਆਂ ਦੀ ਗਿਣਤੀ ਦਾ ਅਨੁਪਾਤ ਕੀ ਹੈ?",
+      "explanation_en": "HR employees = 14% of 1,800 = 252. Men:women = 1:3, so women = 3/4 × 252 = 189. Ratio = 189:252 = 3:4.",
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
+      "answer_index": 3,
+      "explanation_pa": "ਐਚ.ਆਰ. ਵਿਭਾਗ ਦੇ ਕੁੱਲ ਕਰਮਚਾਰੀ 252 ਹਨ। ਪੁਰਸ਼:ਔਰਤਾਂ = 1:3, ਇਸ ਲਈ ਔਰਤਾਂ 189 ਹਨ। ਅਨੁਪਾਤ = 189:252 = 3:4।",
+      "topic": "Data Interpretation (DI) - 1",
+      "subject": "math",
+      "chart_data": {
         "pie": [
           {
             "percent": 18,
@@ -1158,8 +1157,8 @@
             "label": "Production"
           },
           {
-            "label": "HR",
-            "percent": 14
+            "percent": 14,
+            "label": "HR"
           },
           {
             "label": "IT",
@@ -1180,31 +1179,1596 @@
             "men_women": "1:3"
           },
           {
-            "department": "IT",
-            "men_women": "5:4"
+            "men_women": "5:4",
+            "department": "IT"
           },
           {
             "men_women": "7:5",
             "department": "Marketing"
           }
-        ]
+        ],
+        "type": "pie_and_table",
+        "total_employees": 1800
       },
-      "chart_group_id": "department_employees_1800",
-      "answer_index": 3,
-      "subject": "math",
-      "explanation_en": "HR employees = 14% of 1,800 = 252. Men:women = 1:3, so women = 3/4 × 252 = 189. Ratio = 189:252 = 3:4.",
-      "question_en": "What is the ratio of the number of women in the HR Department to the total number of employees in the HR Department?",
-      "chart_image": "DI_Set_2_Employees_Chart.png",
-      "options_pa": [
+      "options_en": [
         "3:7",
         "2:5",
         "2:9",
         "3:4"
       ],
-      "question_pa": "ਐਚ.ਆਰ. ਵਿਭਾਗ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਗਿਣਤੀ ਅਤੇ ਇਸ ਵਿਭਾਗ ਦੇ ਕੁੱਲ ਕਰਮਚਾਰੀਆਂ ਦੀ ਗਿਣਤੀ ਦਾ ਅਨੁਪਾਤ ਕੀ ਹੈ?",
-      "topic": "Data Interpretation (DI) - 1",
-      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/refs/heads/main/images/di/Employees%20and%20State%20Population%20Data%20Infographic.png",
-      "id": "json_q_1794505782705_6"
+      "id": "json_q_1794505782705_6",
+      "question_en": "What is the ratio of the number of women in the HR Department to the total number of employees in the HR Department?",
+      "chart_group_id": "department_employees_1800",
+      "options_pa": [
+        "3:7",
+        "2:5",
+        "2:9",
+        "3:4"
+      ]
+    },
+    {
+      "id": "json_q_1794654761278_0",
+      "exam": "PSSSB Patwari 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "18",
+        "16",
+        "24",
+        "12"
+      ],
+      "explanation": "BODMAS niyam ke anusar:<br>Step 1 (Inner bracket): $(9 - 5) = 4$<br>Step 2 (Curly bracket): $\\{12 - 4\\} = 8$<br>Step 3 (Square bracket): $[16 - 8] = 8$<br>Step 4 (Division): $144 \\div 8 = 18$.",
+      "text": "Simplification karein: $$144 \\div [16 - \\{ 12 - (9 - 5) \\}]$$",
+      "answer_index": 0,
+      "question": "Simplification karein: $$144 \\div [16 - \\{ 12 - (9 - 5) \\}]$$",
+      "correct": 0,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_1",
+      "exam": "PSSSB Clerk 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "536",
+        "544",
+        "540",
+        "548"
+      ],
+      "explanation": "LCM of (12, 15, 20, 54):<br>$12 = 2^2 \\times 3$<br>$15 = 3 \\times 5$<br>$20 = 2^2 \\times 5$<br>$54 = 2 \\times 3^3$<br>LCM $= 2^2 \\times 3^3 \\times 5 = 4 \\times 27 \\times 5 = 540$.<br>Required number $= 540 + 4 = 544$.",
+      "text": "Woh sabse chhota number kaunsa hai jise 12, 15, 20 aur 54 se divide karne par har baar remainder 4 bache?",
+      "answer_index": 1,
+      "question": "Woh sabse chhota number kaunsa hai jise 12, 15, 20 aur 54 se divide karne par har baar remainder 4 bache?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_2",
+      "exam": "PSSSB Excise Inspector 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "25%",
+        "20%",
+        "16.66%",
+        "33.33%"
+      ],
+      "explanation": "Formula: $\\frac{R}{100 + R} \\times 100 = \\frac{25}{125} \\times 100 = \\frac{1}{5} \\times 100 = 20\\%$.",
+      "text": "Agar kisi commodity ka price 25% badh jata hai, to ek parivar ko apni consumption kitne percent kam karni hogi taaki total kharch unchanged rahe?",
+      "answer_index": 1,
+      "question": "Agar kisi commodity ka price 25% badh jata hai, to ek parivar ko apni consumption kitne percent kam karni hogi taaki total kharch unchanged rahe?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_3",
+      "exam": "PSSSB Senior Assistant 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "16.66%",
+        "25%",
+        "20%",
+        "14.28%"
+      ],
+      "explanation": "Maan lijiye 1 article ka SP = Rs 1.<br>12 articles ka SP = Rs 12. Profit = Rs 2.<br>CP = SP - Profit = $12 - 2 =$ Rs 10.<br>Profit % $= (2 / 10) \\times 100 = 20\\%$.",
+      "text": "Ek shopkeeper 12 articles bechne par 2 articles ke selling price ke barabar profit kamata hai. Uska profit percentage kitna hai?",
+      "answer_index": 2,
+      "question": "Ek shopkeeper 12 articles bechne par 2 articles ke selling price ke barabar profit kamata hai. Uska profit percentage kitna hai?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_4",
+      "exam": "PSSSB VDO (Gram Sevak) 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "10 saal",
+        "12 saal",
+        "20 saal",
+        "15 saal"
+      ],
+      "explanation": "5 saal me SI $= 1P$. Rate $R = \\frac{100}{5} = 20\\%$.<br>4 guna hone ke liye SI $= 3P$.<br>Time $T = \\frac{3P \\times 100}{P \\times 20} = 15$ saal.",
+      "text": "Koi rashi (sum) Simple Interest par 5 saal me double (2 guna) ho jaati hai. Wahi rashi kitne saal me 4 guna (4 times) ho jayegi?",
+      "answer_index": 3,
+      "question": "Koi rashi (sum) Simple Interest par 5 saal me double (2 guna) ho jaati hai. Wahi rashi kitne saal me 4 guna (4 times) ho jayegi?",
+      "correct": 3,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_5",
+      "exam": "PSSSB Patwari 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 15",
+        "Rs 20",
+        "Rs 25",
+        "Rs 30"
+      ],
+      "explanation": "Difference for 2 years $= P \\times \\left(\\frac{R}{100}\\right)^2 = 8000 \\times \\left(\\frac{5}{100}\\right)^2 = 8000 \\times \\frac{1}{400} = \\text{Rs } 20$.",
+      "text": "Rs 8,000 par 5% annual rate se 2 saal ke CI aur SI ka antar (difference) kitna hoga?",
+      "answer_index": 1,
+      "question": "Rs 8,000 par 5% annual rate se 2 saal ke CI aur SI ka antar (difference) kitna hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_6",
+      "exam": "PSSSB Clerk IT 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "8:12:15",
+        "6:9:15",
+        "8:10:15",
+        "2:4:5"
+      ],
+      "explanation": "$A : B = 2 : 3 = 8 : 12$<br>$B : C = 4 : 5 = 12 : 15$<br>So, $A : B : C = 8 : 12 : 15$.",
+      "text": "Agar $A:B = 2:3$ aur $B:C = 4:5$ ho, to $A:B:C$ ka anupaat (ratio) kya hoga?",
+      "answer_index": 0,
+      "question": "Agar $A:B = 2:3$ aur $B:C = 4:5$ ho, to $A:B:C$ ka anupaat (ratio) kya hoga?",
+      "correct": 0,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_7",
+      "exam": "PSSSB Junior Draftsman 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "35",
+        "45",
+        "40",
+        "50"
+      ],
+      "explanation": "Property: Agar har observation me koi constant 'k' add kiya jaye to naya average bhi $(Original + k)$ ho jata hai. Isliye $35 + 5 = 40$.",
+      "text": "10 numbers ka average 35 hai. Agar har number me 5 jod diya jaye (add kar diya jaye), to naya average kya hoga?",
+      "answer_index": 2,
+      "question": "10 numbers ka average 35 hai. Agar har number me 5 jod diya jaye (add kar diya jaye), to naya average kya hoga?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_8",
+      "exam": "PSSSB Forest Guard 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "6 din",
+        "7.2 din",
+        "8 din",
+        "7.5 din"
+      ],
+      "explanation": "Together time $= \\frac{A \\times B}{A + B} = \\frac{12 \\times 18}{12 + 18} = \\frac{216}{30} = 7.2$ din (ya $7\\frac{1}{5}$ din).",
+      "text": "A kisi kaam ko 12 din me aur B usi kaam ko 18 din me pura kar sakta hai. Dono milkar usi kaam ko kitne din me pura karenge?",
+      "answer_index": 1,
+      "question": "A kisi kaam ko 12 din me aur B usi kaam ko 18 din me pura kar sakta hai. Dono milkar usi kaam ko kitne din me pura karenge?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_9",
+      "exam": "PSSSB School Librarian 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "25 ghante",
+        "20 ghante",
+        "30 ghante",
+        "15 ghante"
+      ],
+      "explanation": "Net filling per hour $= \\frac{1}{10} - \\frac{1}{15} = \\frac{3 - 2}{30} = \\frac{1}{30}$.<br>Puri tanki 30 ghante me bharegi.",
+      "text": "Pipe A ek tanki ko 10 ghante me bhar sakta hai aur Pipe B use 15 ghante me khali kar sakta hai. Agar dono ek sath khol diye jayein to tanki kitne ghante me bharegi?",
+      "answer_index": 2,
+      "question": "Pipe A ek tanki ko 10 ghante me bhar sakta hai aur Pipe B use 15 ghante me khali kar sakta hai. Agar dono ek sath khol diye jayein to tanki kitne ghante me bharegi?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_10",
+      "exam": "PSSSB Patwari 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "120 m",
+        "100 m",
+        "150 m",
+        "80 m"
+      ],
+      "explanation": "Speed in m/s $= 72 \\times \\frac{5}{18} = 20\\text{ m/s}$.<br>Total Distance $= \\text{Speed} \\times \\text{Time} = 20 \\times 15 = 300\\text{ m}$.<br>Train length $+ 200 = 300 \\implies \\text{Train Length} = 100\\text{ m}$.",
+      "text": "Ek train 72 km/h ki speed se chal rahi hai. Ek 200 meter lambe platform ko 15 second me cross karne ke liye train ki lambai (length) kitni honi chahiye?",
+      "answer_index": 1,
+      "question": "Ek train 72 km/h ki speed se chal rahi hai. Ek 200 meter lambe platform ko 15 second me cross karne ke liye train ki lambai (length) kitni honi chahiye?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_11",
+      "exam": "PSSSB Clerk 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "4 ghante",
+        "2.5 ghante",
+        "3 ghante",
+        "3.5 ghante"
+      ],
+      "explanation": "Downstream Speed $= 10 + 2 = 12\\text{ km/h}$.<br>Time $= \\frac{\\text{Distance}}{\\text{Speed}} = \\frac{36}{12} = 3\\text{ ghante}$.",
+      "text": "Ek boat ki still water me speed 10 km/h hai aur stream (dhara) ki speed 2 km/h hai. Downstream 36 km jaane me boat ko kitna samay lagega?",
+      "answer_index": 2,
+      "question": "Ek boat ki still water me speed 10 km/h hai aur stream (dhara) ki speed 2 km/h hai. Downstream 36 km jaane me boat ko kitna samay lagega?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_12",
+      "exam": "PSSSB Excise Inspector 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "45 saal",
+        "40 saal",
+        "50 saal",
+        "35 saal"
+      ],
+      "explanation": "Maan lijiye aayu $3x$ aur $x$ hai.<br>$\\frac{3x + 5}{x + 5} = \\frac{5}{2} \\implies 6x + 10 = 5x + 25 \\implies x = 15$.<br>Father ki vartaman aayu $= 3 \\times 15 = 45$ saal.",
+      "text": "Father aur Son ki vartaman aayu ka anupaat 3:1 hai. 5 saal baad unki aayu ka anupaat 5:2 ho jayega. Father ki vartaman aayu (present age) kya hai?",
+      "answer_index": 0,
+      "question": "Father aur Son ki vartaman aayu ka anupaat 3:1 hai. 5 saal baad unki aayu ka anupaat 5:2 ho jayega. Father ki vartaman aayu (present age) kya hai?",
+      "correct": 0,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_13",
+      "exam": "PSSSB Senior Assistant 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "240 sq cm",
+        "216 sq cm",
+        "180 sq cm",
+        "225 sq cm"
+      ],
+      "explanation": "$2(l + b) = 60 \\implies l + b = 30$.<br>Diya hai $l - b = 6$.<br>Adding: $2l = 36 \\implies l = 18\\text{ cm}, b = 12\\text{ cm}$.<br>Area $= 18 \\times 12 = 216\\text{ sq cm}$.",
+      "text": "Ek rectangle ka perimeter 60 cm hai aur iski length breadth se 6 cm adhik hai. Is rectangle ka area kya hoga?",
+      "answer_index": 1,
+      "question": "Ek rectangle ka perimeter 60 cm hai aur iski length breadth se 6 cm adhik hai. Is rectangle ka area kya hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_14",
+      "exam": "PSSSB Patwari 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "616 sq cm",
+        "528 sq cm",
+        "748 sq cm",
+        "440 sq cm"
+      ],
+      "explanation": "$\\text{TSA} = 2\\pi r(r + h) = 2 \\times \\frac{22}{7} \\times 7 \\times (7 + 10) = 44 \\times 17 = 748\\text{ sq cm}$.",
+      "text": "Ek solid cylinder ka radius 7 cm aur height 10 cm hai. Uska Total Surface Area (TSA) kitna hoga? (Take $\\pi = 22/7$)",
+      "answer_index": 2,
+      "question": "Ek solid cylinder ka radius 7 cm aur height 10 cm hai. Uska Total Surface Area (TSA) kitna hoga? (Take $\\pi = 22/7$)",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_15",
+      "exam": "PSSSB Clerk 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 6,000",
+        "Rs 7,500",
+        "Rs 9,000",
+        "Rs 10,000"
+      ],
+      "explanation": "Ratio of investment $= 20000 : 30000 = 2 : 3$.<br>B's share $= \\frac{3}{5} \\times 15000 = \\text{Rs } 9,000$.",
+      "text": "A aur B ne kramashah Rs 20,000 aur Rs 30,000 invest karke ek business shuru kiya. 1 saal baad total profit Rs 15,000 hua. B ka hissa (share) kya hoga?",
+      "answer_index": 2,
+      "question": "A aur B ne kramashah Rs 20,000 aur Rs 30,000 invest karke ek business shuru kiya. 1 saal baad total profit Rs 15,000 hua. B ka hissa (share) kya hoga?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_16",
+      "exam": "PSSSB Veterinary Inspector 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "1 : 2",
+        "2 : 1",
+        "3 : 2",
+        "2 : 3"
+      ],
+      "explanation": "By Alligation:<br>Left: 60, Right: 75, Center: 65.<br>Ratio $= (75 - 65) : (65 - 60) = 10 : 5 = 2 : 1$.",
+      "text": "Rs 60 per kg wali chai ko Rs 75 per kg wali chai ke sath kis anupaat me milaya jaye taaki mixture ki cost Rs 65 per kg ho jaye?",
+      "answer_index": 1,
+      "question": "Rs 60 per kg wali chai ko Rs 75 per kg wali chai ke sath kis anupaat me milaya jaye taaki mixture ki cost Rs 65 per kg ho jaye?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_17",
+      "exam": "PSSSB Clerk 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "300",
+        "350",
+        "325",
+        "375"
+      ],
+      "explanation": "Formula: $\\frac{n(n+1)}{2} = \\frac{25 \\times 26}{2} = 25 \\times 13 = 325$.",
+      "text": "Pehli 25 natural numbers ka sum (yog) kitna hoga?",
+      "answer_index": 2,
+      "question": "Pehli 25 natural numbers ka sum (yog) kitna hoga?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_18",
+      "exam": "PSSSB Excise Inspector 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "500",
+        "450",
+        "600",
+        "400"
+      ],
+      "explanation": "Passing marks required $= 125 + 40 = 165$.<br>$33\\%$ of Total $= 165 \\implies \\text{Total} = \\frac{165}{33} \\times 100 = 500$.",
+      "text": "Ek student ko pass hone ke liye 33% marks chahiye. Use 125 marks mile aur woh 40 marks se fail ho gaya. Maximum marks kitne the?",
+      "answer_index": 0,
+      "question": "Ek student ko pass hone ke liye 33% marks chahiye. Use 125 marks mile aur woh 40 marks se fail ho gaya. Maximum marks kitne the?",
+      "correct": 0,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_19",
+      "exam": "PSSSB Patwari 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 540",
+        "Rs 600",
+        "Rs 580",
+        "Rs 620"
+      ],
+      "explanation": "$90\\% = 450 \\implies 1\\% = 5$.<br>$\\text{CP} = 100\\% = 500$.<br>Selling Price for 20% profit $= 500 \\times 1.20 = \\text{Rs } 600$.",
+      "text": "Agar kisi article ko Rs 450 me bechne par 10% loss hota hai, to 20% profit kamane ke liye use kitne me bechna chahiye?",
+      "answer_index": 1,
+      "question": "Agar kisi article ko Rs 450 me bechne par 10% loss hota hai, to 20% profit kamane ke liye use kitne me bechna chahiye?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_20",
+      "exam": "PSSSB Senior Assistant 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "8 din",
+        "5 din",
+        "6 din",
+        "7.5 din"
+      ],
+      "explanation": "$M_1 D_1 = M_2 D_2 \\implies 15 \\times 10 = 25 \\times D_2 \\implies D_2 = \\frac{150}{25} = 6$ din.",
+      "text": "15 purush (men) ek kaam ko 10 din me kar sakte hain. Wahi kaam 25 purush kitne din me pura karenge?",
+      "answer_index": 2,
+      "question": "15 purush (men) ek kaam ko 10 din me kar sakte hain. Wahi kaam 25 purush kitne din me pura karenge?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_21",
+      "exam": "PSSSB VDO 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "8.4 km/h",
+        "7.2 km/h",
+        "6.8 km/h",
+        "7.5 km/h"
+      ],
+      "explanation": "Time $= 5 \\times 60 = 300\\text{ sec}$.<br>Speed in m/s $= 600 / 300 = 2\\text{ m/s}$.<br>In km/h $= 2 \\times \\frac{18}{5} = 7.2\\text{ km/h}$.",
+      "text": "Ek vyakti 600 meter lambi sadak ko 5 minute me cross karta hai. Uski speed km/h me kya hai?",
+      "answer_index": 1,
+      "question": "Ek vyakti 600 meter lambi sadak ko 5 minute me cross karta hai. Uski speed km/h me kya hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_22",
+      "exam": "PSSSB Clerk 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "54",
+        "58",
+        "56",
+        "60"
+      ],
+      "explanation": "Middle number (3rd) = 52.<br>Series: 48, 50, 52, 54, 56.<br>Largest number = 56.",
+      "text": "5 consecutive even numbers ka average 52 hai. Inme se sabse bada (largest) number kaunsa hai?",
+      "answer_index": 2,
+      "question": "5 consecutive even numbers ka average 52 hai. Inme se sabse bada (largest) number kaunsa hai?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_23",
+      "exam": "PSSSB Junior Draftsman 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "explanation": "$\\sqrt{169} = 13 \\implies 108 + 13 = 121$.<br>$\\sqrt{121} = 11 \\implies 25 + 11 = 36$.<br>$\\sqrt{36} = 6 \\implies 10 + 6 = 16$.<br>$\\sqrt{16} = 4$.",
+      "text": "Evaluate: $$\\sqrt{10 + \\sqrt{25 + \\sqrt{108 + \\sqrt{169}}}}$$",
+      "answer_index": 1,
+      "question": "Evaluate: $$\\sqrt{10 + \\sqrt{25 + \\sqrt{108 + \\sqrt{169}}}}$$",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_24",
+      "exam": "PSSSB Patwari 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "150",
+        "120",
+        "90",
+        "240"
+      ],
+      "explanation": "Numbers are $3 \\times 8 = 24$ and $5 \\times 8 = 40$.<br>$\\text{LCM} = 8 \\times 3 \\times 5 = 120$.",
+      "text": "Do numbers ka ratio 3:5 hai aur unka HCF 8 hai. Unka LCM kya hoga?",
+      "answer_index": 1,
+      "question": "Do numbers ka ratio 3:5 hai aur unka HCF 8 hai. Unka LCM kya hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_25",
+      "exam": "PSSSB Clerk 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "30%",
+        "28%",
+        "25%",
+        "26%"
+      ],
+      "explanation": "Formula: $D_1 + D_2 - \\frac{D_1 \\times D_2}{100} = 20 + 10 - \\frac{200}{100} = 30 - 2 = 28\\%$.",
+      "text": "20% aur 10% ke do successive discounts ka ek single equivalent discount kitna hoga?",
+      "answer_index": 1,
+      "question": "20% aur 10% ke do successive discounts ka ek single equivalent discount kitna hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_26",
+      "exam": "PSSSB Forest Guard 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "4 saal",
+        "2.5 saal",
+        "3 saal",
+        "3.5 saal"
+      ],
+      "explanation": "$\\text{SI} = 1860 - 1500 = \\text{Rs } 360$.<br>$T = \\frac{\\text{SI} \\times 100}{P \\times R} = \\frac{360 \\times 100}{1500 \\times 8} = \\frac{36000}{12000} = 3\\text{ saal}$.",
+      "text": "Kitne saal me Rs 1,500 ki rashi 8% p.a. ki dar se Rs 1,860 ho jayegi?",
+      "answer_index": 2,
+      "question": "Kitne saal me Rs 1,500 ki rashi 8% p.a. ki dar se Rs 1,860 ho jayegi?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_27",
+      "exam": "PSSSB Excise Inspector 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 6,000",
+        "Rs 6,050",
+        "Rs 5,850",
+        "Rs 6,100"
+      ],
+      "explanation": "$A = P(1 + R/100)^2 = 5000 \\times (1.10)^2 = 5000 \\times 1.21 = \\text{Rs } 6,050$.",
+      "text": "Rs 5,000 par 10% per annum compound interest ki dar se 2 saal ka Total Amount kitna hoga?",
+      "answer_index": 1,
+      "question": "Rs 5,000 par 10% per annum compound interest ki dar se 2 saal ka Total Amount kitna hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_28",
+      "exam": "PSSSB Senior Assistant 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "35 ghante",
+        "40 ghante",
+        "30 ghante",
+        "45 ghante"
+      ],
+      "explanation": "Leak rate $= \\frac{1}{8} - \\frac{1}{10} = \\frac{5 - 4}{40} = \\frac{1}{40}$.<br>Isliye 40 ghante me khali karega.",
+      "text": "Ek leak ki wajah se ek tanki jo aamtaur par 8 ghante me bharti thi, ab 10 ghante me bharti hai. Akela leak bhari hui tanki ko kitne ghante me khali karega?",
+      "answer_index": 1,
+      "question": "Ek leak ki wajah se ek tanki jo aamtaur par 8 ghante me bharti thi, ab 10 ghante me bharti hai. Akela leak bhari hui tanki ko kitne ghante me khali karega?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_29",
+      "exam": "PSSSB Patwari 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "8 seconds",
+        "5 seconds",
+        "6 seconds",
+        "10 seconds"
+      ],
+      "explanation": "Speed $= 90 \\times \\frac{5}{18} = 25\\text{ m/s}$.<br>Time $= \\frac{150}{25} = 6\\text{ seconds}$.",
+      "text": "150 meter lambi ek train 90 km/h ki speed se chalte hue ek pole ko kitne second me cross karegi?",
+      "answer_index": 2,
+      "question": "150 meter lambi ek train 90 km/h ki speed se chalte hue ek pole ko kitne second me cross karegi?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_30",
+      "exam": "PSSSB Clerk 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "528 sq cm",
+        "616 sq cm",
+        "640 sq cm",
+        "576 sq cm"
+      ],
+      "explanation": "$2\\pi r = 88 \\implies 2 \\times \\frac{22}{7} \\times r = 88 \\implies r = 14\\text{ cm}$.<br>Area $= \\pi r^2 = \\frac{22}{7} \\times 14 \\times 14 = 616\\text{ sq cm}$.",
+      "text": "Ek circle ka circumference 88 cm hai. Us circle ka area kya hoga? (Take $\\pi = 22/7$)",
+      "answer_index": 1,
+      "question": "Ek circle ka circumference 88 cm hai. Us circle ka area kya hoga? (Take $\\pi = 22/7$)",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_31",
+      "exam": "PSSSB School Librarian 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "28160",
+        "28371",
+        "28182",
+        "28171"
+      ],
+      "explanation": "Divisibility rule of 11: Sum of odd pos digits - Sum of even pos digits.<br>For 28182: $(2 + 1 + 2) - (8 + 8) = 5 - 16 = -11$ (11 se vibhajit).",
+      "text": "Neeche diye gaye numbers me se kaunsa number 11 se completely divisible hai?",
+      "answer_index": 2,
+      "question": "Neeche diye gaye numbers me se kaunsa number 11 se completely divisible hai?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_32",
+      "exam": "PSSSB Clerk IT 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "20%",
+        "25%",
+        "16.66%",
+        "30%"
+      ],
+      "explanation": "Formula: $\\frac{R}{100 - R} \\times 100 = \\frac{20}{80} \\times 100 = \\frac{1}{4} \\times 100 = 25\\%$.",
+      "text": "Agar A ki income B se 20% kam hai, to B ki income A se kitne percent adhik hai?",
+      "answer_index": 1,
+      "question": "Agar A ki income B se 20% kam hai, to B ki income A se kitne percent adhik hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_33",
+      "exam": "PSSSB Patwari 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 240",
+        "Rs 360",
+        "Rs 600",
+        "Rs 400"
+      ],
+      "explanation": "Total parts $= 2 + 3 + 5 = 10$.<br>Q's share $= \\frac{3}{10} \\times 1200 = \\text{Rs } 360$.",
+      "text": "Rs 1,200 ko P, Q aur R ke beech 2 : 3 : 5 ke anupaat me baanta jata hai. Q ko kitna rupya milega?",
+      "answer_index": 1,
+      "question": "Rs 1,200 ko P, Q aur R ke beech 2 : 3 : 5 ke anupaat me baanta jata hai. Q ko kitna rupya milega?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_34",
+      "exam": "PSSSB Excise Inspector 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "10%",
+        "12.5%",
+        "11.11%",
+        "9.09%"
+      ],
+      "explanation": "Profit % $= \\frac{\\text{Error}}{\\text{True Value} - \\text{Error}} \\times 100 = \\frac{100}{900} \\times 100 = \\frac{1}{9} \\times 100 = 11.11\\%$.",
+      "text": "Ek dishonest dealer apne samaan ko cost price par bechne ka daawa karta hai lekin 1 kg ke badle 900 gm ka weight use karta hai. Uska actual profit % kya hai?",
+      "answer_index": 2,
+      "question": "Ek dishonest dealer apne samaan ko cost price par bechne ka daawa karta hai lekin 1 kg ke badle 900 gm ka weight use karta hai. Uska actual profit % kya hai?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_35",
+      "exam": "PSSSB Senior Assistant 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "12 din",
+        "10 din",
+        "9 din",
+        "7.5 din"
+      ],
+      "explanation": "Efficiency of $A : B = 150 : 100 = 3 : 2$.<br>Ratio of time $= 2 : 3$.<br>$3 \\text{ units} = 15 \\text{ din} \\implies 1 \\text{ unit} = 5 \\implies 2 \\text{ units} = 10$ din.",
+      "text": "A, B se 50% adhik efficient (kushal) hai. Agar B kisi kaam ko 15 din me karta hai, to A akela wahi kaam kitne din me karega?",
+      "answer_index": 1,
+      "question": "A, B se 50% adhik efficient (kushal) hai. Agar B kisi kaam ko 15 din me karta hai, to A akela wahi kaam kitne din me karega?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_36",
+      "exam": "PSSSB VDO 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "25 km/h",
+        "22.5 km/h",
+        "24 km/h",
+        "26 km/h"
+      ],
+      "explanation": "Average Speed for equal distances $= \\frac{2xy}{x+y} = \\frac{2 \\times 30 \\times 20}{30 + 20} = \\frac{1200}{50} = 24\\text{ km/h}$.",
+      "text": "Ek car pehle 60 km ki distance 30 km/h ki speed se aur agle 60 km ki distance 20 km/h ki speed se cover karti hai. Puri journey ke dauran car ki Average Speed kya hai?",
+      "answer_index": 2,
+      "question": "Ek car pehle 60 km ki distance 30 km/h ki speed se aur agle 60 km ki distance 20 km/h ki speed se cover karti hai. Puri journey ke dauran car ki Average Speed kya hai?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_37",
+      "exam": "PSSSB Clerk 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "24 saal",
+        "28 saal",
+        "30 saal",
+        "32 saal"
+      ],
+      "explanation": "4 saal pehle sum $= 48 - (4+4) = 40$.<br>A's age 4 yrs ago $= \\frac{3}{5} \\times 40 = 24$.<br>A's present age $= 24 + 4 = 28$ saal.",
+      "text": "A aur B ki vartaman aayu ka yog 48 saal hai. 4 saal pehle unki aayu ka anupaat 3:2 tha. A ki vartaman aayu kya hai?",
+      "answer_index": 1,
+      "question": "A aur B ki vartaman aayu ka yog 48 saal hai. 4 saal pehle unki aayu ka anupaat 3:2 tha. A ki vartaman aayu kya hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_38",
+      "exam": "PSSSB Patwari 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "200 sq cm",
+        "100 sq cm",
+        "50 sq cm",
+        "150 sq cm"
+      ],
+      "explanation": "Diagonal $= a\\sqrt{2} = 10\\sqrt{2} \\implies a = 10\\text{ cm}$.<br>Area $= a^2 = 10^2 = 100\\text{ sq cm}$.",
+      "text": "Ek square ka diagonal $10\\sqrt{2}$ cm hai. Uska area kitna hoga?",
+      "answer_index": 1,
+      "question": "Ek square ka diagonal $10\\sqrt{2}$ cm hai. Uska area kitna hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_39",
+      "exam": "PSSSB Junior Draftsman 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "0.02",
+        "0.08",
+        "0.06",
+        "0.04"
+      ],
+      "explanation": "Using algebraic identity: $\\frac{a^2 - b^2}{a - b} = a + b$.<br>$0.04 + 0.02 = 0.06$.",
+      "text": "$$\\frac{0.04 \\times 0.04 - 0.02 \\times 0.02}{0.04 - 0.02}$$ ki value kya hogi?",
+      "answer_index": 2,
+      "question": "$$\\frac{0.04 \\times 0.04 - 0.02 \\times 0.02}{0.04 - 0.02}$$ ki value kya hogi?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_40",
+      "exam": "PSSSB Forest Guard 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "58 runs",
+        "62 runs",
+        "60 runs",
+        "55 runs"
+      ],
+      "explanation": "Runs in 11th inning $= (11 \\times 40) - (10 \\times 38) = 440 - 380 = 60$ runs.",
+      "text": "Ek cricketer ki 10 innings ka average 38 runs tha. Agli 11th inning me use kitne runs banane honge taaki uska average badhkar 40 ho jaye?",
+      "answer_index": 2,
+      "question": "Ek cricketer ki 10 innings ka average 38 runs tha. Agli 11th inning me use kitne runs banane honge taaki uska average badhkar 40 ho jaye?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_41",
+      "exam": "PSSSB Excise Inspector 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 700",
+        "Rs 698",
+        "Rs 690",
+        "Rs 712"
+      ],
+      "explanation": "1 saal ka SI $= 854 - 815 = \\text{Rs } 39$.<br>3 saal ka SI $= 39 \\times 3 = \\text{Rs } 117$.<br>Principal $= 815 - 117 = \\text{Rs } 698$.",
+      "text": "Koi sum 3 saal me Rs 815 aur 4 saal me Rs 854 ho jata hai. Woh sum (principal) kya hai?",
+      "answer_index": 1,
+      "question": "Koi sum 3 saal me Rs 815 aur 4 saal me Rs 854 ho jata hai. Woh sum (principal) kya hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_42",
+      "exam": "PSSSB Senior Assistant 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "4 liters",
+        "5 liters",
+        "6.5 liters",
+        "8 liters"
+      ],
+      "explanation": "Initial: Milk $= 30\\text{ L}$, Water $= 10\\text{ L}$.<br>Maan lijiye $x$ liters water add kiya:<br>$\\frac{30}{10 + x} = \\frac{2}{1} \\implies 20 + 2x = 30 \\implies 2x = 10 \\implies x = 5$ liters.",
+      "text": "40 liters ke mixture me milk aur water ka ratio 3:1 hai. Isme kitna paani (water) aur milaya jaye taaki naya ratio 2:1 ho jaye?",
+      "answer_index": 1,
+      "question": "40 liters ke mixture me milk aur water ka ratio 3:1 hai. Isme kitna paani (water) aur milaya jaye taaki naya ratio 2:1 ho jaye?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_43",
+      "exam": "PSSSB Patwari 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "256 sq cm",
+        "512 sq cm",
+        "384 sq cm",
+        "400 sq cm"
+      ],
+      "explanation": "$a^3 = 512 \\implies a = 8\\text{ cm}$.<br>TSA $= 6a^2 = 6 \\times (8)^2 = 6 \\times 64 = 384\\text{ sq cm}$.",
+      "text": "Ek cube ka volume $512\\text{ cm}^3$ hai. Uska total surface area kya hoga?",
+      "answer_index": 2,
+      "question": "Ek cube ka volume $512\\text{ cm}^3$ hai. Uska total surface area kya hoga?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_44",
+      "exam": "PSSSB Clerk 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "12 km/h",
+        "10 km/h",
+        "8 km/h",
+        "9 km/h"
+      ],
+      "explanation": "Downstream Speed $v_d = 24 / 2 = 12\\text{ km/h}$.<br>Upstream Speed $v_u = 16 / 2 = 8\\text{ km/h}$.<br>Speed in still water $= \\frac{v_d + v_u}{2} = \\frac{12 + 8}{2} = 10\\text{ km/h}$.",
+      "text": "Ek swimmer downstream 24 km 2 ghante me aur upstream 16 km 2 ghante me cover karta hai. Still water me swimmer ki speed kya hai?",
+      "answer_index": 1,
+      "question": "Ek swimmer downstream 24 km 2 ghante me aur upstream 16 km 2 ghante me cover karta hai. Still water me swimmer ki speed kya hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_45",
+      "exam": "PSSSB Veterinary Inspector 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "1/10",
+        "9/10",
+        "1",
+        "10/9"
+      ],
+      "explanation": "Telescoping series: $(1 - 1/2) + (1/2 - 1/3) + \\dots + (1/9 - 1/10) = 1 - 1/10 = 9/10$.",
+      "text": "$$\\frac{1}{1 \\times 2} + \\frac{1}{2 \\times 3} + \\frac{1}{3 \\times 4} + \\dots + \\frac{1}{9 \\times 10}$$ ka maan kya hoga?",
+      "answer_index": 1,
+      "question": "$$\\frac{1}{1 \\times 2} + \\frac{1}{2 \\times 3} + \\frac{1}{3 \\times 4} + \\dots + \\frac{1}{9 \\times 10}$$ ka maan kya hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_46",
+      "exam": "PSSSB Jail Warder 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "0.01",
+        "0.09",
+        "0.9",
+        "0.009"
+      ],
+      "explanation": "Identity use karein: $\\frac{a^3 + b^3}{a^2 - ab + b^2} = a + b$.<br>Yahan $a = 0.05, b = 0.04$.<br>Isliye maan $= 0.05 + 0.04 = 0.09$.",
+      "text": "Maan gyat karein: $$\\frac{0.05 \\times 0.05 \\times 0.05 + 0.04 \\times 0.04 \\times 0.04}{0.05 \\times 0.05 - 0.05 \\times 0.04 + 0.04 \\times 0.04}$$",
+      "answer_index": 1,
+      "question": "Maan gyat karein: $$\\frac{0.05 \\times 0.05 \\times 0.05 + 0.04 \\times 0.04 \\times 0.04}{0.05 \\times 0.05 - 0.05 \\times 0.04 + 0.04 \\times 0.04}$$",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_47",
+      "exam": "PSSSB Clerk Accounts 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "6",
+        "4",
+        "7",
+        "0"
+      ],
+      "explanation": "7 ki cyclicity 4 hoti hai: $95 \\div 4$ remainder $3 \\implies 7^3 = 343$ (unit digit 3).<br>3 ki cyclicity 4 hoti hai: $58 \\div 4$ remainder $2 \\implies 3^2 = 9$.<br>Subtracting with carry: $13 - 9 = 4$.",
+      "text": "$$7^{95} - 3^{58}$$ ka unit digit (ikayi ka ank) kya hoga?",
+      "answer_index": 1,
+      "question": "$$7^{95} - 3^{58}$$ ka unit digit (ikayi ka ank) kya hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_48",
+      "exam": "PSSSB Patwari Mains 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "3 jode",
+        "4 jode",
+        "2 jode",
+        "1 joda"
+      ],
+      "explanation": "Maan lijiye sankhyayein $27a$ aur $27b$ hain jahan $\\gcd(a, b) = 1$.<br>$27(a + b) = 216 \\implies a + b = 8$.<br>Co-prime pairs: $(1, 7)$ aur $(3, 5)$. Kul 2 pairs sambhav hain.",
+      "text": "Do sankhyaon (numbers) ka yog 216 hai aur unka HCF 27 hai. Aise numbers ke kitne jode (pairs) sambhav hain?",
+      "answer_index": 2,
+      "question": "Do sankhyaon (numbers) ka yog 216 hai aur unka HCF 27 hai. Aise numbers ke kitne jode (pairs) sambhav hain?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_49",
+      "exam": "PSSSB Excise Inspector 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "1,55,000",
+        "1,60,000",
+        "1,65,000",
+        "1,50,000"
+      ],
+      "explanation": "Maan lijiye 2 saal pehle jansankhya $P$ thi.<br>$P \\times \\left(1 + \\frac{5}{100}\\right)^2 = 1,76,400 \\implies P \\times \\left(\\frac{21}{20}\\right)^2 = 1,76,400$.<br>$P \\times \\frac{441}{400} = 176400 \\implies P = 400 \\times 400 = 1,60,000$.",
+      "text": "Ek shahar ki jansankhya 1,76,400 hai. Agar yeh prati varsh 5% ki dar se badhti hai, to 2 saal pehle iski jansankhya kitni thi?",
+      "answer_index": 1,
+      "question": "Ek shahar ki jansankhya 1,76,400 hai. Agar yeh prati varsh 5% ki dar se badhti hai, to 2 saal pehle iski jansankhya kitni thi?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_50",
+      "exam": "PSSSB Senior Assistant 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "12%",
+        "18%",
+        "15%",
+        "20%"
+      ],
+      "explanation": "Pehli chhoot 10%: $800 - 80 = \\text{Rs } 720$.<br>Dusri chhoot ke baad SP = Rs 612.<br>Discount amount $= 720 - 612 = 108$.<br>$x\\% = \\frac{108}{720} \\times 100 = 15\\%$.",
+      "text": "Ek vastu ka Marked Price Rs 800 hai. Ek dukandar do kramik chhoot (successive discounts) 10% aur x% dene ke baad use Rs 612 me bechta hai. 'x' ka maan kya hai?",
+      "answer_index": 2,
+      "question": "Ek vastu ka Marked Price Rs 800 hai. Ek dukandar do kramik chhoot (successive discounts) 10% aur x% dene ke baad use Rs 612 me bechta hai. 'x' ka maan kya hai?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_51",
+      "exam": "PSSSB Clerk 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "105",
+        "126",
+        "168",
+        "140"
+      ],
+      "explanation": "Value ratio $= 5(1) + 6(0.50) + 8(0.25) = 5 + 3 + 2 = 10$ units.<br>$10 \\text{ units} = 210 \\implies 1 \\text{ unit} = 21$.<br>50 paise ke sikkon ki sankhya $= 6 \\times 21 = 126$.",
+      "text": "Ek thele (bag) me Rs 1, 50 paise aur 25 paise ke sikke 5 : 6 : 8 ke anupaat me hain. Agar thele me kul rashi Rs 210 ho, to 50 paise ke kitne sikke hain?",
+      "answer_index": 1,
+      "question": "Ek thele (bag) me Rs 1, 50 paise aur 25 paise ke sikke 5 : 6 : 8 ke anupaat me hain. Agar thele me kul rashi Rs 210 ho, to 50 paise ke kitne sikke hain?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_52",
+      "exam": "PSSSB Assistant Superintendent of Jail 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "1 : 2",
+        "2 : 1",
+        "3 : 2",
+        "4 : 3"
+      ],
+      "explanation": "$P_1 \\times 3 \\times 12 = P_2 \\times 4.5 \\times 16 \\implies 36 P_1 = 72 P_2 \\implies \\frac{P_1}{P_2} = \\frac{72}{36} = 2 : 1$.",
+      "text": "Rs 12,000 ki rashi ko do bhagon me is tarah baanta jata hai ki pehle bhag par 3 saal ke 12% SI aur dusre bhag par $4\\frac{1}{2}$ saal ke 16% SI barabar hain. Dono bhagon ka anupaat kya hai?",
+      "answer_index": 1,
+      "question": "Rs 12,000 ki rashi ko do bhagon me is tarah baanta jata hai ki pehle bhag par 3 saal ke 12% SI aur dusre bhag par $4\\frac{1}{2}$ saal ke 16% SI barabar hain. Dono bhagon ka anupaat kya hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_53",
+      "exam": "PSSSB Patwari 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 300",
+        "Rs 310",
+        "Rs 320",
+        "Rs 290"
+      ],
+      "explanation": "3 saal ka antar $= P \\left(\\frac{R}{100}\\right)^2 \\left(3 + \\frac{R}{100}\\right) = 10000 \\times \\left(\\frac{1}{10}\\right)^2 \\times (3 + 0.1) = 100 \\times 3.1 = \\text{Rs } 310$.",
+      "text": "Rs 10,000 par 10% varshik dar se 3 saal ke CI aur SI ka antar (difference) kya hoga?",
+      "answer_index": 1,
+      "question": "Rs 10,000 par 10% varshik dar se 3 saal ke CI aur SI ka antar (difference) kya hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_54",
+      "exam": "PSSSB Clerk IT 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "14 din",
+        "16 din",
+        "15 din",
+        "18 din"
+      ],
+      "explanation": "Total work = 60 units. Efficiency: $A = 3, B = 2$.<br>Aakhiri 5 din akela B kaam karta hai: $5 \\times 2 = 10$ units.<br>Shesh kaam $= 60 - 10 = 50$ units.<br>Dono ne milkar kaam kiya $= 50 / (3 + 2) = 10$ din.<br>Kul samay $= 10 + 5 = 15$ din.",
+      "text": "A kisi kaam ko 20 din me aur B 30 din me kar sakta hai. Dono ne ek sath kaam shuru kiya, lekin kaam pura hone se 5 din pehle A ne kaam chhod diya. Kul kaam kitne din me samapt hua?",
+      "answer_index": 2,
+      "question": "A kisi kaam ko 20 din me aur B 30 din me kar sakta hai. Dono ne ek sath kaam shuru kiya, lekin kaam pura hone se 5 din pehle A ne kaam chhod diya. Kul kaam kitne din me samapt hua?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_55",
+      "exam": "PSSSB VDO 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "7 ghante",
+        "6 ghante 45 min",
+        "6 ghante 30 min",
+        "7 ghante 15 min"
+      ],
+      "explanation": "Total capacity = 24 units. $A = 4$ units/hr, $B = 3$ units/hr.<br>2 ghante me $= 4 + 3 = 7$ units.<br>6 ghante me $= 3 \\times 7 = 21$ units.<br>Bacha kaam $= 24 - 21 = 3$ units. A karega: $3/4$ ghanta (45 min).<br>Kul samay $= 6$ ghante 45 minute.",
+      "text": "Pipe A ek tanki ko 6 ghante me aur Pipe B 8 ghante me bhar sakta hai. Dono ko bari-bari (alternately) 1-1 ghante khola jaye aur shuruat A se ho, to tanki kitne samay me bharegi?",
+      "answer_index": 1,
+      "question": "Pipe A ek tanki ko 6 ghante me aur Pipe B 8 ghante me bhar sakta hai. Dono ko bari-bari (alternately) 1-1 ghante khola jaye aur shuruat A se ho, to tanki kitne samay me bharegi?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_56",
+      "exam": "PSSSB Forest Guard 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "12 seconds",
+        "10 seconds",
+        "9 seconds",
+        "15 seconds"
+      ],
+      "explanation": "Total doori $= 140 + 160 = 300$ m.<br>Sapeksh chaal $= 60 + 48 = 108\\text{ km/h} = 108 \\times \\frac{5}{18} = 30\\text{ m/s}$.<br>Samay $= \\frac{300}{30} = 10\\text{ seconds}$.",
+      "text": "Do trains jinki lambai kramashah 140 m aur 160 m hai, viparit dishaon (opposite directions) me 60 km/h aur 48 km/h ki chaal se chal rahi hain. Ek dusre ko paar karne me kitna samay lagega?",
+      "answer_index": 1,
+      "question": "Do trains jinki lambai kramashah 140 m aur 160 m hai, viparit dishaon (opposite directions) me 60 km/h aur 48 km/h ki chaal se chal rahi hain. Ek dusre ko paar karne me kitna samay lagega?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_57",
+      "exam": "PSSSB Senior Assistant 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "4 km/h",
+        "3 km/h",
+        "2.5 km/h",
+        "5 km/h"
+      ],
+      "explanation": "Stream speed $= \\frac{\\text{Downstream} - \\text{Upstream}}{2} = \\frac{14 - 8}{2} = \\frac{6}{2} = 3\\text{ km/h}$.",
+      "text": "Ek vyakti dhara ke viparit (upstream) 8 km/h ki gati se aur dhara ki disha me (downstream) 14 km/h ki gati se tair sakta hai. Dhara ki chaal (speed of stream) kya hai?",
+      "answer_index": 1,
+      "question": "Ek vyakti dhara ke viparit (upstream) 8 km/h ki gati se aur dhara ki disha me (downstream) 14 km/h ki gati se tair sakta hai. Dhara ki chaal (speed of stream) kya hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_58",
+      "exam": "PSSSB Excise Inspector 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "56.40 liters",
+        "58.32 liters",
+        "60.00 liters",
+        "54.28 liters"
+      ],
+      "explanation": "Formula: $\\text{Shesh Doodh} = \\text{Kul} \\times \\left(1 - \\frac{x}{V}\\right)^n = 80 \\times \\left(1 - \\frac{8}{80}\\right)^3 = 80 \\times (0.9)^3 = 80 \\times 0.729 = 58.32\\text{ liters}$.",
+      "text": "Ek bartan me 80 liters shuddh doodh hai. Isme se 8 liters doodh nikal kar utna hi paani milaya gaya. Yeh prakriya 2 baar aur dohrayi gayi. Ab bartan me kitna doodh bacha hai?",
+      "answer_index": 1,
+      "question": "Ek bartan me 80 liters shuddh doodh hai. Isme se 8 liters doodh nikal kar utna hi paani milaya gaya. Yeh prakriya 2 baar aur dohrayi gayi. Ab bartan me kitna doodh bacha hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_59",
+      "exam": "PSSSB Clerk 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "32 saal",
+        "28 saal",
+        "30 saal",
+        "26 saal"
+      ],
+      "explanation": "Yog me vriddhi $= 8 \\times 2 = 16$ saal.<br>Hataye gaye vyaktiyon ka yog $= 20 + 24 = 44$ saal.<br>Dono naye vyaktiyon ka kul yog $= 44 + 16 = 60$ saal.<br>Ausat $= 60 / 2 = 30$ saal.",
+      "text": "8 vyaktiyon ki ausat aayu 2 saal badh jaati hai jab 20 saal aur 24 saal ke do vyaktiyon ke sthan par do naye vyakti shaamil hote hain. Naye vyaktiyon ki ausat aayu kya hai?",
+      "answer_index": 2,
+      "question": "8 vyaktiyon ki ausat aayu 2 saal badh jaati hai jab 20 saal aur 24 saal ke do vyaktiyon ke sthan par do naye vyakti shaamil hote hain. Naye vyaktiyon ki ausat aayu kya hai?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_60",
+      "exam": "PSSSB Patwari 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "48 cm",
+        "40 cm",
+        "36 cm",
+        "52 cm"
+      ],
+      "explanation": "Bhuja $a = \\sqrt{\\left(\\frac{d_1}{2}\\right)^2 + \\left(\\frac{d_2}{2}\\right)^2} = \\sqrt{8^2 + 6^2} = \\sqrt{100} = 10\\text{ cm}$.<br>Parimap $= 4a = 4 \\times 10 = 40\\text{ cm}$.",
+      "text": "Ek samchaturbhuj (rhombus) ke vikarn (diagonals) 16 cm aur 12 cm hain. Is rhombus ka parimap (perimeter) kitna hoga?",
+      "answer_index": 1,
+      "question": "Ek samchaturbhuj (rhombus) ke vikarn (diagonals) 16 cm aur 12 cm hain. Is rhombus ka parimap (perimeter) kitna hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_61",
+      "exam": "PSSSB Junior Draftsman 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "500 sq cm",
+        "550 sq cm",
+        "616 sq cm",
+        "450 sq cm"
+      ],
+      "explanation": "$\\text{CSA} = \\pi r l = \\frac{22}{7} \\times 7 \\times 25 = 22 \\times 25 = 550\\text{ sq cm}$.",
+      "text": "Ek cone ka base radius 7 cm aur tirchi unchayi (slant height) 25 cm hai. Iska Curved Surface Area (CSA) kitna hoga? (Take $\\pi = 22/7$)",
+      "answer_index": 1,
+      "question": "Ek cone ka base radius 7 cm aur tirchi unchayi (slant height) 25 cm hai. Iska Curved Surface Area (CSA) kitna hoga? (Take $\\pi = 22/7$)",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_62",
+      "exam": "PSSSB Sub Inspector 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 15,000",
+        "Rs 17,500",
+        "Rs 20,000",
+        "Rs 18,000"
+      ],
+      "explanation": "Profit ratio $= (40000 \\times 12) : (60000 \\times 8) = 480000 : 480000 = 1 : 1$.<br>B ka hissa $= 35000 / 2 = \\text{Rs } 17,500$.",
+      "text": "A ne Rs 40,000 lagakar business shuru kiya. 4 mahine baad B ne Rs 60,000 lagaye. Saal ke ant me Rs 35,000 ke kul labh me se B ka hissa kitna hoga?",
+      "answer_index": 1,
+      "question": "A ne Rs 40,000 lagakar business shuru kiya. 4 mahine baad B ne Rs 60,000 lagaye. Saal ke ant me Rs 35,000 ke kul labh me se B ka hissa kitna hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_63",
+      "exam": "PSSSB Labor Inspector 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "18 saal",
+        "14 saal",
+        "16 saal",
+        "20 saal"
+      ],
+      "explanation": "Samay antar $= 6 + 4 = 10$ saal.<br>$\\frac{6x + 10}{5x + 10} = \\frac{11}{10} \\implies 60x + 100 = 55x + 110 \\implies 5x = 10 \\implies x = 2$.<br>6 saal pehle B ki aayu $= 5 \\times 2 = 10$ saal.<br>Vartaman aayu $= 10 + 6 = 16$ saal.",
+      "text": "6 saal pehle A aur B ki aayu ka anupaat 6:5 tha aur 4 saal baad unki aayu ka anupaat 11:10 ho jayega. B ki vartaman aayu (present age) kya hai?",
+      "answer_index": 2,
+      "question": "6 saal pehle A aur B ki aayu ka anupaat 6:5 tha aur 4 saal baad unki aayu ka anupaat 11:10 ho jayega. B ki vartaman aayu (present age) kya hai?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_64",
+      "exam": "PSSSB Clerk Accounts 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "3"
+      ],
+      "explanation": "Chunki 899, 29 se purnatah vibhajit hota hai ($29 \\times 31 = 899$), isliye abhist sheshphal $= 63 \\div 29$ ka remainder $= 63 - 58 = 5$.",
+      "text": "Kisi sankhya ko 899 se bhag dene par sheshphal (remainder) 63 bachta hai. Usi sankhya ko 29 se bhag dene par sheshphal kya bachega?",
+      "answer_index": 1,
+      "question": "Kisi sankhya ko 899 se bhag dene par sheshphal (remainder) 63 bachta hai. Usi sankhya ko 29 se bhag dene par sheshphal kya bachega?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_65",
+      "exam": "PSSSB Excise Inspector 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "250",
+        "240",
+        "200",
+        "300"
+      ],
+      "explanation": "Fail: English = 30%, Math = 20%, Dono = 10%.<br>Kam se kam ek me fail $= 30 + 20 - 10 = 40\\%$.<br>Dono me pass $= 100 - 40 = 60\\%$.<br>$60\\% = 144 \\implies \\text{Kul} = \\frac{144}{60} \\times 100 = 240$.",
+      "text": "Ek pariksha me 70% candidates English me pass hue, 80% Math me pass hue aur 10% dono subjects me fail hue. Agar 144 candidates dono me pass hue hon, to kul candidates kitne the?",
+      "answer_index": 1,
+      "question": "Ek pariksha me 70% candidates English me pass hue, 80% Math me pass hue aur 10% dono subjects me fail hue. Agar 144 candidates dono me pass hue hon, to kul candidates kitne the?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_66",
+      "exam": "PSSSB Patwari 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "40%",
+        "50%",
+        "44%",
+        "60%"
+      ],
+      "explanation": "$\\text{CP} \\times (100 + P) = \\text{MP} \\times (100 - D) \\implies \\text{CP} \\times 120 = \\text{MP} \\times 80$.<br>$\\frac{\\text{MP}}{\\text{CP}} = \\frac{120}{80} = 1.5$.<br>Markup percentage $= 50\\%$.",
+      "text": "Ek dukandar 20% discount deta hai aur fir bhi 20% ka profit kamata hai. Uska Marked Price Cost Price se kitne percent adhik ankit kiya gaya hai?",
+      "answer_index": 1,
+      "question": "Ek dukandar 20% discount deta hai aur fir bhi 20% ka profit kamata hai. Uska Marked Price Cost Price se kitne percent adhik ankit kiya gaya hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_67",
+      "exam": "PSSSB VDO 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "1/n",
+        "2/n",
+        "2(n-1)/n",
+        "2/n(n-1)"
+      ],
+      "explanation": "$= \\frac{2}{3} \\times \\frac{3}{4} \\times \\frac{4}{5} \\dots \\times \\frac{n-1}{n}$.<br>Sabhi terms cancel hone ke baad $= \\frac{2}{n}$.",
+      "text": "$$\\left(1 - \\frac{1}{3}\\right)\\left(1 - \\frac{1}{4}\\right)\\left(1 - \\frac{1}{5}\\right) \\dots \\left(1 - \\frac{1}{n}\\right)$$ ka saralikrit maan kya hoga?",
+      "answer_index": 1,
+      "question": "$$\\left(1 - \\frac{1}{3}\\right)\\left(1 - \\frac{1}{4}\\right)\\left(1 - \\frac{1}{5}\\right) \\dots \\left(1 - \\frac{1}{n}\\right)$$ ka saralikrit maan kya hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_68",
+      "exam": "PSSSB Jail Warder 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "8 din",
+        "6 din",
+        "5 din",
+        "7 din"
+      ],
+      "explanation": "$4M = 6W \\implies 1M = 1.5W$.<br>Kul kaam $= 6W \\times 20 = 120$ women-days.<br>$6M + 11W = 6(1.5W) + 11W = 9W + 11W = 20W$.<br>Din $= 120 / 20 = 6$ din.",
+      "text": "4 purush ya 6 mahilayein ek kaam ko 20 din me pura kar sakte hain. 6 purush aur 11 mahilayein milkar wahi kaam kitne din me pura karenge?",
+      "answer_index": 1,
+      "question": "4 purush ya 6 mahilayein ek kaam ko 20 din me pura kar sakte hain. 6 purush aur 11 mahilayein milkar wahi kaam kitne din me pura karenge?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_69",
+      "exam": "PSSSB Clerk 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "12 minute",
+        "10 minute",
+        "8 minute",
+        "9 minute"
+      ],
+      "explanation": "Formula: $\\frac{\\text{Chaal me kami}}{\\text{Bina ruke chaal}} \\times 60 = \\frac{54 - 45}{54} \\times 60 = \\frac{9}{54} \\times 60 = 10$ minute.",
+      "text": "Ek bus ki chaal bina ruke 54 km/h hai aur thehrav (stoppages) ke sath 45 km/h hai. Bus prati ghanta kitne minute ke liye rukti hai?",
+      "answer_index": 1,
+      "question": "Ek bus ki chaal bina ruke 54 km/h hai aur thehrav (stoppages) ke sath 45 km/h hai. Bus prati ghanta kitne minute ke liye rukti hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_70",
+      "exam": "PSSSB Junior Draftsman 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "20 saal",
+        "12 saal",
+        "16 saal",
+        "18 saal"
+      ],
+      "explanation": "Formula: $\\frac{N_1 - 1}{T_1} = \\frac{N_2 - 1}{T_2} \\implies \\frac{3 - 1}{8} = \\frac{5 - 1}{T_2} \\implies \\frac{2}{8} = \\frac{4}{T_2} \\implies T_2 = 16$ saal.",
+      "text": "Koi rashi Simple Interest par 8 saal me 3 guna ho jaati hai. Wahi rashi usi dar se 5 guna kitne saal me hogi?",
+      "answer_index": 2,
+      "question": "Koi rashi Simple Interest par 8 saal me 3 guna ho jaati hai. Wahi rashi usi dar se 5 guna kitne saal me hogi?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_71",
+      "exam": "PSSSB Senior Assistant 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 2,400",
+        "Rs 2,522",
+        "Rs 2,640",
+        "Rs 2,500"
+      ],
+      "explanation": "Dar $= 20\\% / 4 = 5\\%$ prati quarter. Samay $= 9$ mahine $= 3$ quarters.<br>$A = 16000 \\times (1.05)^3 = 16000 \\times \\frac{9261}{8000} = 2 \\times 9261 = \\text{Rs } 18,522$.<br>$\\text{CI} = 18522 - 16000 = \\text{Rs } 2,522$.",
+      "text": "Rs 16,000 par 20% varshik dar se 9 mahine ka CI kitna hoga agar byaaj traimasik (quarterly) sanyojit hota ho?",
+      "answer_index": 1,
+      "question": "Rs 16,000 par 20% varshik dar se 9 mahine ka CI kitna hoga agar byaaj traimasik (quarterly) sanyojit hota ho?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_72",
+      "exam": "PSSSB Patwari 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "240 sq cm",
+        "288 sq cm",
+        "300 sq cm",
+        "312 sq cm"
+      ],
+      "explanation": "Area $= \\frac{1}{2} (a + b) h = \\frac{1}{2} (20 + 28) \\times 12 = 48 \\times 6 = 288\\text{ sq cm}$.",
+      "text": "Ek samlamb chaturbhuj (trapezium) ki do samantar bhujayein 20 cm aur 28 cm hain aur unke beech ki lambvat doori 12 cm hai. Iska kshetraphal kya hoga?",
+      "answer_index": 1,
+      "question": "Ek samlamb chaturbhuj (trapezium) ki do samantar bhujayein 20 cm aur 28 cm hain aur unke beech ki lambvat doori 12 cm hai. Iska kshetraphal kya hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_73",
+      "exam": "PSSSB Excise Inspector 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 3,200",
+        "Rs 4,000",
+        "Rs 4,500",
+        "Rs 3,600"
+      ],
+      "explanation": "$\\frac{5x - 1600}{4x - 1600} = \\frac{3}{2} \\implies 10x - 3200 = 12x - 4800 \\implies 2x = 1600 \\implies x = 800$.<br>A ki aay $= 5 \\times 800 = \\text{Rs } 4,000$.",
+      "text": "A aur B ki aay (income) ka anupaat 5:4 hai aur unke vyay (expenditure) ka anupaat 3:2 hai. Agar dono mahine ke ant me Rs 1,600 bachaate hain, to A ki aay kya hai?",
+      "answer_index": 1,
+      "question": "A aur B ki aay (income) ka anupaat 5:4 hai aur unke vyay (expenditure) ka anupaat 3:2 hai. Agar dono mahine ke ant me Rs 1,600 bachaate hain, to A ki aay kya hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_74",
+      "exam": "PSSSB Forest Guard 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "38°C",
+        "40°C",
+        "39°C",
+        "41°C"
+      ],
+      "explanation": "$M + T + W = 120$.<br>$T + W + Th = 123$.<br>Ghatane par: $Th - M = 3 \\implies 42 - M = 3 \\implies M = 39^\\circ\\text{C}$.",
+      "text": "Mon, Tue aur Wed ka ausat taapman 40°C tha. Tue, Wed aur Thu ka ausat taapman 41°C tha. Agar Thursday ka taapman 42°C tha, to Monday ka taapman kya tha?",
+      "answer_index": 2,
+      "question": "Mon, Tue aur Wed ka ausat taapman 40°C tha. Tue, Wed aur Thu ka ausat taapman 41°C tha. Agar Thursday ka taapman 42°C tha, to Monday ka taapman kya tha?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_75",
+      "exam": "PSSSB Patwari 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "36",
+        "216",
+        "144",
+        "108"
+      ],
+      "explanation": "Number of spheres $= \\frac{\\frac{4}{3}\\pi R^3}{\\frac{4}{3}\\pi r^3} = \\left(\\frac{R}{r}\\right)^3 = \\left(\\frac{6}{1}\\right)^3 = 216$.",
+      "text": "6 cm trijya (radius) wale shishe ke ek thos gole (sphere) ko pighla kar 1 cm trijya wale kitne chote gole banaye ja sakte hain?",
+      "answer_index": 1,
+      "question": "6 cm trijya (radius) wale shishe ke ek thos gole (sphere) ko pighla kar 1 cm trijya wale kitne chote gole banaye ja sakte hain?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_76",
+      "exam": "PSSSB Senior Assistant 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "12",
+        "10",
+        "9",
+        "8"
+      ],
+      "explanation": "72 se vibhajit matlab 8 aur 9 dono se.<br>Aakhiri 3 ank $78y$, 8 se vibhajit honge jab $y = 4$.<br>Ankon ka yog $= 7 + 8 + 5 + x + 3 + 6 + 7 + 8 + 4 = 48 + x$.<br>9 se vibhajit hone ke liye $x = 6$.<br>Abhist maan $= x + y = 6 + 4 = 10$.",
+      "text": "Agar 9-ankon ki sankhya $785x3678y$, 72 se purnatah vibhajit ho, to $(x + y)$ ka maan kya hoga?",
+      "answer_index": 1,
+      "question": "Agar 9-ankon ki sankhya $785x3678y$, 72 se purnatah vibhajit ho, to $(x + y)$ ka maan kya hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_77",
+      "exam": "PSSSB Clerk 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "10:30 AM",
+        "11:00 AM",
+        "11:30 AM",
+        "12:00 PM"
+      ],
+      "explanation": "Subah 8:00 baje tak Train A dwara tay doori $= 50$ km.<br>Bachi doori $= 380 - 50 = 330$ km.<br>Sapeksh chaal $= 50 + 60 = 110$ km/h.<br>Milne me laga samay $= 330 / 110 = 3$ ghante baad (8:00 AM + 3 hrs = 11:00 AM).",
+      "text": "Train A subah 7:00 AM par Station X se 50 km/h ki gati se nikalti hai. Train B subah 8:00 AM par Station Y se 60 km/h ki gati se X ki taraf aati hai. Dono stations ke beech 380 km doori hai. Dono kab milengi?",
+      "answer_index": 1,
+      "question": "Train A subah 7:00 AM par Station X se 50 km/h ki gati se nikalti hai. Train B subah 8:00 AM par Station Y se 60 km/h ki gati se X ki taraf aati hai. Dono stations ke beech 380 km doori hai. Dono kab milengi?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_78",
+      "exam": "PSSSB Labor Inspector 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "12,000",
+        "10,000",
+        "8,000",
+        "9,500"
+      ],
+      "explanation": "Winner $= 58\\%$, Loser $= 42\\%$.<br>Antar $= 58 - 42 = 16\\%$.<br>$16\\% = 1600 \\implies 100\\% = 10,000$ votes.",
+      "text": "Do ummedwaron ke chunaav me vijeta ko 58% mat mile aur woh 1,600 maton se jeet gaya. Kul dale gaye maton (votes) ki sankhya kya thi?",
+      "answer_index": 1,
+      "question": "Do ummedwaron ke chunaav me vijeta ko 58% mat mile aur woh 1,600 maton se jeet gaya. Kul dale gaye maton (votes) ki sankhya kya thi?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_79",
+      "exam": "PSSSB Clerk Accounts 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 900",
+        "Rs 600",
+        "Rs 750",
+        "Rs 800"
+      ],
+      "explanation": "$12\\% \\text{ of } CP_1 = 8\\% \\text{ of } CP_2 \\implies \\frac{CP_1}{CP_2} = \\frac{8}{12} = \\frac{2}{3}$.<br>Kul 5 hisse $= 1500 \\implies 1 \\text{ hissa} = 300$.<br>$CP_1 = 2 \\times 300 = \\text{Rs } 600$.",
+      "text": "Ek vyakti do ghadiyan Rs 1,500 me kharidta hai. Ek ko 12% labh par aur dusri ko 8% haani par bechta hai. Pure saude me na labh hua na haani. Labh par bechi gayi ghadi ka CP kya tha?",
+      "answer_index": 1,
+      "question": "Ek vyakti do ghadiyan Rs 1,500 me kharidta hai. Ek ko 12% labh par aur dusri ko 8% haani par bechta hai. Pure saude me na labh hua na haani. Labh par bechi gayi ghadi ka CP kya tha?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_80",
+      "exam": "PSSSB Patwari 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "24 din",
+        "18 din",
+        "36 din",
+        "30 din"
+      ],
+      "explanation": "Efficiency $A : B = 2 : 1$. Total $= 3$ units/din.<br>Kul kaam $= 3 \\times 12 = 36$ units.<br>B akela karega $= 36 / 1 = 36$ din.",
+      "text": "A kisi kaam ko B se doguni gati se karta hai. Dono milkar wahi kaam 12 din me pura kar lete hain. B akela us kaam ko kitne din me karega?",
+      "answer_index": 2,
+      "question": "A kisi kaam ko B se doguni gati se karta hai. Dono milkar wahi kaam 12 din me pura kar lete hain. B akela us kaam ko kitne din me karega?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_81",
+      "exam": "PSSSB Sub Inspector 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "6 ghante",
+        "5 ghante",
+        "4.5 ghante",
+        "7 ghante"
+      ],
+      "explanation": "Total capacity = 60 units. $P = 5, Q = 4, R = 3$.<br>Kul kshamta $= 5 + 4 + 3 = 12$ units/ghanta.<br>Samay $= 60 / 12 = 5$ ghante.",
+      "text": "Teen pipes P, Q aur R kisi tanki ko kramashah 12, 15 aur 20 ghante me bhar sakte hain. Teeno ek sath khol diye jayein to tanki kitne ghante me bharegi?",
+      "answer_index": 1,
+      "question": "Teen pipes P, Q aur R kisi tanki ko kramashah 12, 15 aur 20 ghante me bhar sakte hain. Teeno ek sath khol diye jayein to tanki kitne ghante me bharegi?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_82",
+      "exam": "PSSSB Junior Draftsman 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "18 cm",
+        "24 cm",
+        "32 cm",
+        "20 cm"
+      ],
+      "explanation": "Area $= \\frac{\\sqrt{3}}{4} a^2 = 16\\sqrt{3} \\implies a^2 = 64 \\implies a = 8\\text{ cm}$.<br>Parimap $= 3a = 3 \\times 8 = 24\\text{ cm}$.",
+      "text": "Ek sambahu tribhuj (equilateral triangle) ka kshetraphal $16\\sqrt{3}\\text{ cm}^2$ hai. Iska parimap kya hoga?",
+      "answer_index": 1,
+      "question": "Ek sambahu tribhuj (equilateral triangle) ka kshetraphal $16\\sqrt{3}\\text{ cm}^2$ hai. Iska parimap kya hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_83",
+      "exam": "PSSSB Excise Inspector 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "1/4",
+        "3/8",
+        "1/3",
+        "2/5"
+      ],
+      "explanation": "Maan lijiye kul mixture 5L hai (4L milk, 1L water). $x$ liter nikalne par doodh bachega $4 - 4x/5$.<br>Naya doodh chahiye 2.5L (1:1 ke liye).<br>$4 - 4x/5 = 2.5 \\implies 4x/5 = 1.5 \\implies x = 15/8$.<br>Abhist hissa $= (15/8) / 5 = 3/8$.",
+      "text": "Ek bartan me milk aur water ka ratio 4:1 hai. Isme se kitna hissa mixture nikal kar utna hi paani mila diya jaye taaki naya ratio 1:1 ho jaye?",
+      "answer_index": 1,
+      "question": "Ek bartan me milk aur water ka ratio 4:1 hai. Isme se kitna hissa mixture nikal kar utna hi paani mila diya jaye taaki naya ratio 1:1 ho jaye?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_84",
+      "exam": "PSSSB Senior Assistant 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "34 runs",
+        "37 runs",
+        "36 runs",
+        "40 runs"
+      ],
+      "explanation": "$16A + 85 = 17(A + 3) \\implies 16A + 85 = 17A + 51 \\implies A = 34$.<br>Naya average $= 34 + 3 = 37$ runs.",
+      "text": "Ek batsman ka 16 innings tak ka kuch average tha. 17th inning me usne 85 runs banaye jisse uska average 3 badh gaya. 17th inning ke baad uska naya average kya hai?",
+      "answer_index": 1,
+      "question": "Ek batsman ka 16 innings tak ka kuch average tha. 17th inning me usne 85 runs banaye jisse uska average 3 badh gaya. 17th inning ke baad uska naya average kya hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_85",
+      "exam": "PSSSB Clerk 2022",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "0.3",
+        "30",
+        "3",
+        "0.03"
+      ],
+      "explanation": "$\\sqrt{0.000441} = 0.021$.<br>$\\sqrt{0.000049} = 0.007$.<br>$0.021 / 0.007 = 3$.",
+      "text": "$$\\sqrt{0.000441} \\div \\sqrt{0.000049}$$ ka maan kya hoga?",
+      "answer_index": 2,
+      "question": "$$\\sqrt{0.000441} \\div \\sqrt{0.000049}$$ ka maan kya hoga?",
+      "correct": 2,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_86",
+      "exam": "PSSSB Patwari Mains 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "80 km",
+        "72 km",
+        "64 km",
+        "90 km"
+      ],
+      "explanation": "Downstream $= 18\\text{ km/h}$, Upstream $= 12\\text{ km/h}$.<br>$\\frac{D}{18} + \\frac{D}{12} = 10 \\implies \\frac{2D + 3D}{36} = 10 \\implies 5D = 360 \\implies D = 72\\text{ km}$.",
+      "text": "Shant jal me boat ki gati 15 km/h hai aur dhara ki gati 3 km/h hai. Ek sthan tak jakar wapas lautne me kul 10 ghante lagte hain. Wah doori kya hai?",
+      "answer_index": 1,
+      "question": "Shant jal me boat ki gati 15 km/h hai aur dhara ki gati 3 km/h hai. Ek sthan tak jakar wapas lautne me kul 10 ghante lagte hain. Wah doori kya hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_87",
+      "exam": "PSSSB Jail Warder 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "7 m",
+        "14 m",
+        "21 m",
+        "12 m"
+      ],
+      "explanation": "$\\frac{\\text{Volume}}{\\text{CSA}} = \\frac{\\pi r^2 h}{2\\pi r h} = \\frac{r}{2}$.<br>$\\frac{924}{264} = 3.5 \\implies \\frac{r}{2} = 3.5 \\implies r = 7\\text{ m}$.<br>Diameter $= 2r = 14\\text{ m}$.",
+      "text": "Ek cylinder ka curved surface area $264\\text{ m}^2$ aur volume $924\\text{ m}^3$ hai. Iska diameter kya hoga? (Take $\\pi = 22/7$)",
+      "answer_index": 1,
+      "question": "Ek cylinder ka curved surface area $264\\text{ m}^2$ aur volume $924\\text{ m}^3$ hai. Iska diameter kya hoga? (Take $\\pi = 22/7$)",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_88",
+      "exam": "PSSSB Assistant Superintendent 2021",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "7.15",
+        "6.83",
+        "6.50",
+        "7.00"
+      ],
+      "explanation": "Pehli 6 prime sankhyayein: 2, 3, 5, 7, 11, 13.<br>Yog $= 2 + 3 + 5 + 7 + 11 + 13 = 41$.<br>Ausat $= 41 / 6 = 6.83$.",
+      "text": "Pehli 6 abhajya sankhyaon (prime numbers) ka ausat (average) kya hoga?",
+      "answer_index": 1,
+      "question": "Pehli 6 abhajya sankhyaon (prime numbers) ka ausat (average) kya hoga?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_89",
+      "exam": "PSSSB Clerk IT 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 980",
+        "Rs 992",
+        "Rs 1,000",
+        "Rs 972"
+      ],
+      "explanation": "Atirikt byaaj $= \\frac{800 \\times 3 \\times 3}{100} = \\text{Rs } 72$.<br>Nayi rashi $= 920 + 72 = \\text{Rs } 992$.",
+      "text": "Rs 800 ki rashi 3 saal me Simple Interest par Rs 920 ho jaati hai. Agar interest rate 3% p.a. badha di jaye, to wahi rashi 3 saal me kitni ho jayegi?",
+      "answer_index": 1,
+      "question": "Rs 800 ki rashi 3 saal me Simple Interest par Rs 920 ho jaati hai. Agar interest rate 3% p.a. badha di jaye, to wahi rashi 3 saal me kitni ho jayegi?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_90",
+      "exam": "PSSSB Excise Inspector 2023",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 3,200",
+        "Rs 3,000",
+        "Rs 2,800",
+        "Rs 3,500"
+      ],
+      "explanation": "Growth factor $= 6750 / 4500 = 1.5$.<br>$P \\times 1.5 = 4500 \\implies P = 4500 / 1.5 = \\text{Rs } 3,000$.",
+      "text": "Koi rashi Compound Interest par 2 saal me Rs 4,500 aur 4 saal me Rs 6,750 ho jaati hai. Wah mool-dhan (principal) kya hai?",
+      "answer_index": 1,
+      "question": "Koi rashi Compound Interest par 2 saal me Rs 4,500 aur 4 saal me Rs 6,750 ho jaati hai. Wah mool-dhan (principal) kya hai?",
+      "correct": 1,
+      "subject": "math"
+    },
+    {
+      "id": "json_q_1794654761278_91",
+      "exam": "PSSSB Senior Assistant 2024",
+      "topic": "Maths PSSSB PYQ",
+      "options": [
+        "Rs 1,200",
+        "Rs 1,800",
+        "Rs 1,500",
+        "Rs 2,000"
+      ],
+      "explanation": "Kshamta anupaat $A : B = \\frac{1}{10} : \\frac{1}{15} = 3 : 2$.<br>A ka hissa $= \\frac{3}{5} \\times 3000 = \\text{Rs } 1,800$.",
+      "text": "A aur B kisi kaam ko kramashah 10 din aur 15 din me kar sakte hain. Unhone Rs 3,000 me theka liya. Isme A ka hissa kitna hoga?",
+      "answer_index": 1,
+      "question": "A aur B kisi kaam ko kramashah 10 din aur 15 din me kar sakte hain. Unhone Rs 3,000 me theka liya. Isme A ka hissa kitna hoga?",
+      "correct": 1,
+      "subject": "math"
     }
   ]
 }
