@@ -1,7 +1,7 @@
 {
   "subject": "math",
-  "count": 124,
-  "updated_at": "2026-11-20T05:44:14.712Z",
+  "count": 130,
+  "updated_at": "2026-11-20T05:44:41.905Z",
   "questions": [
     {
       "options_en": [
@@ -2769,6 +2769,198 @@
         "Rs 2,000"
       ],
       "explanation": "Kshamta anupaat $A : B = \\frac{1}{10} : \\frac{1}{15} = 3 : 2$.<br>A ka hissa $= \\frac{3}{5} \\times 3000 = \\text{Rs } 1,800$."
+    },
+    {
+      "id": "json_q_1795153480635_0",
+      "chart_id": "ice_cream_parlor_distribution",
+      "topic": "Data Interpretation (DI) - 1",
+      "question": "What is the difference between the quantity of Vanilla in kg at parlor Q and that at parlor P?",
+      "question_en": "What is the difference between the quantity of Vanilla in kg at parlor Q and that at parlor P?",
+      "question_pa": "ਪਾਰਲਰ Q ਅਤੇ ਪਾਰਲਰ P ਵਿੱਚ ਵਨੀਲਾ ਆਈਸਕ੍ਰੀਮ ਦੀ ਮਾਤਰਾ (ਕਿਲੋਗ੍ਰਾਮ ਵਿੱਚ) ਦਾ ਕਿੰਨਾ ਅੰਤਰ ਹੈ?",
+      "options": [
+        "13",
+        "10",
+        "8",
+        "21"
+      ],
+      "options_en": [
+        "13",
+        "10",
+        "8",
+        "21"
+      ],
+      "options_pa": [
+        "13",
+        "10",
+        "8",
+        "21"
+      ],
+      "answer_index": 2,
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/main/images/di/Ice-Cream%20Parlor%20Distribution%20Chart.png",
+      "explanation_en": "",
+      "explanation_pa": "",
+      "subject": "math",
+      "part": "Naib Tehsildar"
+    },
+    {
+      "id": "json_q_1795153480635_1",
+      "chart_id": "ice_cream_parlor_distribution",
+      "topic": "Data Interpretation (DI) - 1",
+      "question": "Which two ice-creams are available in a smaller quantity at parlor P than at parlor Q?",
+      "question_en": "Which two ice-creams are available in a smaller quantity at parlor P than at parlor Q?",
+      "question_pa": "ਕਿਹੜੀਆਂ ਦੋ ਆਈਸਕ੍ਰੀਮਾਂ ਦੀ ਮਾਤਰਾ ਪਾਰਲਰ Q ਦੇ ਮੁਕਾਬਲੇ ਪਾਰਲਰ P ਵਿੱਚ ਘੱਟ ਹੈ?",
+      "options": [
+        "Butterscotch, Chocolate",
+        "Vanilla, Strawberry",
+        "Vanilla, Raspberry",
+        "Chocolate, Tutti Frutti"
+      ],
+      "options_en": [
+        "Butterscotch, Chocolate",
+        "Vanilla, Strawberry",
+        "Vanilla, Raspberry",
+        "Chocolate, Tutti Frutti"
+      ],
+      "options_pa": [
+        "ਬਟਰਸਕੌਚ, ਚਾਕਲੇਟ",
+        "ਵਨੀਲਾ, ਸਟ੍ਰਾਬੇਰੀ",
+        "ਵਨੀਲਾ, ਰਸਬੇਰੀ",
+        "ਚਾਕਲੇਟ, ਟੂਟੀ-ਫਰੂਟੀ"
+      ],
+      "answer_index": 0,
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/main/images/di/Ice-Cream%20Parlor%20Distribution%20Chart.png",
+      "explanation_en": "",
+      "explanation_pa": "",
+      "subject": "math",
+      "part": "Naib Tehsildar"
+    },
+    {
+      "id": "json_q_1795153480635_2",
+      "chart_id": "ice_cream_parlor_distribution",
+      "topic": "Data Interpretation (DI) - 1",
+      "question": "What is the difference between the combined quantity of Raspberry and Strawberry ice-creams at parlors P and Q?",
+      "question_en": "What is the difference between the combined quantity of Raspberry and Strawberry ice-creams at parlors P and Q?",
+      "question_pa": "ਪਾਰਲਰ P ਅਤੇ ਪਾਰਲਰ Q ਵਿੱਚ ਰਸਬੇਰੀ ਅਤੇ ਸਟ੍ਰਾਬੇਰੀ ਆਈਸਕ੍ਰੀਮ ਦੀ ਕੁੱਲ ਮਾਤਰਾ ਦਾ ਕਿੰਨਾ ਅੰਤਰ ਹੈ?",
+      "options": [
+        "22",
+        "28",
+        "23",
+        "35"
+      ],
+      "options_en": [
+        "22",
+        "28",
+        "23",
+        "35"
+      ],
+      "options_pa": [
+        "22",
+        "28",
+        "23",
+        "35"
+      ],
+      "answer_index": 0,
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/main/images/di/Ice-Cream%20Parlor%20Distribution%20Chart.png",
+      "explanation_en": "",
+      "explanation_pa": "",
+      "subject": "math",
+      "part": "Naib Tehsildar"
+    },
+    {
+      "id": "json_q_1795153480635_3",
+      "chart_id": "railway_goods_transport_2018_2020",
+      "topic": "Data Interpretation (DI) - 1",
+      "question": "During the period 2018–2020, for which region was the rate of increase in goods transported second highest?",
+      "question_en": "During the period 2018–2020, for which region was the rate of increase in goods transported second highest?",
+      "question_pa": "2018 ਤੋਂ 2020 ਦੇ ਸਮੇਂ ਦੌਰਾਨ, ਕਿਸ ਖੇਤਰ ਵਿੱਚ ਮਾਲ ਦੀ ਢੋਆ-ਢੁਆਈ ਵਿੱਚ ਵਾਧੇ ਦੀ ਦਰ ਦੂਜੇ ਨੰਬਰ 'ਤੇ ਸਭ ਤੋਂ ਵੱਧ ਸੀ?",
+      "options": [
+        "East",
+        "South",
+        "Northeast",
+        "North"
+      ],
+      "options_en": [
+        "East",
+        "South",
+        "Northeast",
+        "North"
+      ],
+      "options_pa": [
+        "ਪੂਰਬ",
+        "ਦੱਖਣ",
+        "ਉੱਤਰ-ਪੂਰਬ",
+        "ਉੱਤਰ"
+      ],
+      "answer_index": 2,
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/main/images/di/Railway%20Goods%20Transport%20Bar%20Chart.png",
+      "explanation_en": "",
+      "explanation_pa": "",
+      "subject": "math",
+      "part": "Naib Tehsildar"
+    },
+    {
+      "id": "json_q_1795153480635_4",
+      "chart_id": "railway_goods_transport_2018_2020",
+      "topic": "Data Interpretation (DI) - 1",
+      "question": "What is the approximate goods transported in North in 2018 to the goods transported in Northeast in 2020?",
+      "question_en": "What is the approximate goods transported in North in 2018 to the goods transported in Northeast in 2020?",
+      "question_pa": "2018 ਵਿੱਚ ਉੱਤਰੀ ਖੇਤਰ ਵਿੱਚ ਢੋਏ ਗਏ ਮਾਲ ਦੀ ਮਾਤਰਾ, 2020 ਵਿੱਚ ਉੱਤਰ-ਪੂਰਬੀ ਖੇਤਰ ਵਿੱਚ ਢੋਏ ਗਏ ਮਾਲ ਦੀ ਮਾਤਰਾ ਦਾ ਲਗਭਗ ਕਿੰਨਾ ਪ੍ਰਤੀਸ਼ਤ ਹੈ?",
+      "options": [
+        "31.16%",
+        "36.02%",
+        "58.44%",
+        "None of the above"
+      ],
+      "options_en": [
+        "31.16%",
+        "36.02%",
+        "58.44%",
+        "None of the above"
+      ],
+      "options_pa": [
+        "31.16%",
+        "36.02%",
+        "58.44%",
+        "ਇਨ੍ਹਾਂ ਵਿੱਚੋਂ ਕੋਈ ਨਹੀਂ"
+      ],
+      "answer_index": 2,
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/main/images/di/Railway%20Goods%20Transport%20Bar%20Chart.png",
+      "explanation_en": "",
+      "explanation_pa": "",
+      "subject": "math",
+      "part": "Naib Tehsildar"
+    },
+    {
+      "id": "json_q_1795153480635_5",
+      "chart_id": "railway_goods_transport_2018_2020",
+      "topic": "Data Interpretation (DI) - 1",
+      "question": "What is the ratio of average goods transported in South in the given three years to the average goods transported in West in the same period?",
+      "question_en": "What is the ratio of average goods transported in South in the given three years to the average goods transported in West in the same period?",
+      "question_pa": "ਦਿੱਤੇ ਤਿੰਨ ਸਾਲਾਂ ਵਿੱਚ ਦੱਖਣੀ ਖੇਤਰ ਵਿੱਚ ਢੋਏ ਗਏ ਮਾਲ ਦੀ ਔਸਤ ਮਾਤਰਾ ਦਾ, ਉਸੇ ਸਮੇਂ ਦੌਰਾਨ ਪੱਛਮੀ ਖੇਤਰ ਵਿੱਚ ਢੋਏ ਗਏ ਮਾਲ ਦੀ ਔਸਤ ਮਾਤਰਾ ਨਾਲ ਅਨੁਪਾਤ ਕੀ ਹੈ?",
+      "options": [
+        "41.76%",
+        "52.16%",
+        "57.86%",
+        "65.87%"
+      ],
+      "options_en": [
+        "41.76%",
+        "52.16%",
+        "57.86%",
+        "65.87%"
+      ],
+      "options_pa": [
+        "41.76%",
+        "52.16%",
+        "57.86%",
+        "65.87%"
+      ],
+      "answer_index": 1,
+      "image_url": "https://raw.githubusercontent.com/ohiharman/pb-quizes-data/main/images/di/Railway%20Goods%20Transport%20Bar%20Chart.png",
+      "explanation_en": "",
+      "explanation_pa": "",
+      "subject": "math",
+      "part": "Naib Tehsildar"
     }
   ]
 }
